@@ -63,6 +63,70 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is FinOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Het is geen eenmalige actie, maar een continue praktijk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Voor wie is AX1S Infra geschikt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AX1S Infra helpt SaaS, fintech en digital-first bedrijven die structureel willen besparen op cloud-, SaaS- en AI-kosten, van de juiste inkoopkeuzes tot optimalisatie van bestaande omgevingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kan ik besparen met FinOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Klanten realiseren gemiddeld 23% besparing op hun cloud- en compute-uitgaven na een FinOps-traject bij AX1S Infra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel zie ik resultaat van een FinOps-traject?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dit verschilt per organisatie, maar in de praktijk zien we vaak al na de eerste weken quick wins, gevolgd door structurele optimalisatie. Een klant van AX1S Infra realiseerde binnen 8 weken 23% besparing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kost een intake bij AX1S Infra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niets. De intake bij AX1S Infra is gratis en vrijblijvend, met een reactie binnen 24 uur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke diensten biedt AX1S Infra naast FinOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Naast FinOps en cost management biedt AX1S Infra managed colocation (Tier III/IV faciliteiten in Europa) en hardware brokering voor AI-workloads en enterprise-grade uptime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn de consultants van AX1S Infra gecertificeerd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Beide oprichters van AX1S Infra, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation."
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -276,6 +340,13 @@
   .titem iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
   .ttitle { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
   .tdesc { font-size: 13px; line-height: 1.6; color: #ced4e0; }
+
+  /* FAQ */
+  .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+  .faq-item { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 22px 24px; box-shadow: var(--card-shadow); }
+  .faq-item h3 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .faq-item p { font-size: 14px; line-height: 1.75; color: #ced4e0; }
+  .faq-item p a { color: var(--accent-light); font-weight: 600; }
 
   /* TEAM */
   .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
@@ -627,7 +698,7 @@
         <p class="finops-lead">FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen.</p>
         <p class="finops-lead">Geen eenmalige actie, maar een continue praktijk waarin elk team eigenaarschap neemt over de eigen kosten en verbruik.</p>
         <p class="finops-lead">De FinOps Foundation is de non-profit organisatie achter deze praktijk, onderdeel van de Linux Foundation. Zij ontwikkelen het FinOps-framework, de jaarlijkse State of FinOps-benchmark en de FinOps Certified Practitioner-certificering, die ook ons team heeft behaald.</p>
-        <div class="fstat-source">Bron: <a href="https://www.finops.org/introduction/what-is-finops/" target="_blank" rel="noopener">FinOps Foundation</a></div>
+        <div class="fstat-source">Bron: <a href="https://www.finops.org/introduction/what-is-finops/" target="_blank" rel="noopener">FinOps Foundation</a> · <a href="wat-is-finops.html">Lees de volledige uitleg</a></div>
       </div>
       <div class="priority-list reveal">
         <div class="stat-sublabel" style="margin-bottom:2px;">Grootste prioriteiten voor bedrijven nu</div>
@@ -653,6 +724,46 @@
         <p>7 korte vragen, direct een gepersonaliseerde score en concrete inzichten. Geen verplichting vooraf.</p>
       </div>
       <a href="finops-radar.html" class="btn-primary">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <span class="label reveal">Veelgestelde vragen</span>
+    <h2 class="title reveal">Vragen over FinOps en AX1S Infra</h2>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <h3>Wat is FinOps?</h3>
+        <p>FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Het is geen eenmalige actie, maar een continue praktijk. <a href="wat-is-finops.html">Lees de volledige uitleg over FinOps</a>.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Voor wie is AX1S Infra geschikt?</h3>
+        <p>AX1S Infra helpt SaaS, fintech en digital-first bedrijven die structureel willen besparen op cloud-, SaaS- en AI-kosten, van de juiste inkoopkeuzes tot optimalisatie van bestaande omgevingen.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Hoeveel kan ik besparen met FinOps?</h3>
+        <p>Klanten realiseren gemiddeld 23% besparing op hun cloud- en compute-uitgaven na een FinOps-traject. Doe de gratis <a href="finops-radar.html">FinOps Radar</a> voor een inschatting die is toegespitst op jouw situatie.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Hoe snel zie ik resultaat?</h3>
+        <p>Dat verschilt per organisatie, maar in de praktijk zien we vaak al na de eerste weken quick wins, gevolgd door structurele optimalisatie. Zo realiseerde een klant <a href="blog/case-23-procent-besparing.html">in 8 weken 23% besparing</a>.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Wat kost een intake bij AX1S Infra?</h3>
+        <p>Niets. De intake is gratis en vrijblijvend: we brengen samen met jou het besparingspotentieel in kaart, zonder verplichtingen, met een reactie binnen 24 uur.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Welke diensten biedt AX1S Infra naast FinOps?</h3>
+        <p>Naast FinOps en cost management bieden we managed colocation (Tier III/IV faciliteiten in Europa) en hardware brokering voor AI-workloads en enterprise-grade uptime.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Zijn de consultants van AX1S Infra gecertificeerd?</h3>
+        <p>Ja. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation.</p>
+      </div>
     </div>
   </div>
 </section>

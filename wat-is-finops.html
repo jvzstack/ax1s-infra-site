@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wat is FinOps? Uitleg, definitie en de FinOps Lifecycle | AX1S Infra</title>
+<meta name="description" content="FinOps uitgelegd: de definitie, de FinOps Lifecycle (Inform, Optimize, Operate) en hoe finance, engineering en operations samen cloud-, SaaS- en AI-kosten beheersen.">
+<link rel="canonical" href="https://ax1s-infra.com/wat-is-finops.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wat is FinOps? Uitleg, definitie en de FinOps Lifecycle | AX1S Infra">
+<meta property="og:description" content="FinOps uitgelegd: de definitie, de FinOps Lifecycle (Inform, Optimize, Operate) en hoe finance, engineering en operations samen cloud-, SaaS- en AI-kosten beheersen.">
+<meta property="og:url" content="https://ax1s-infra.com/wat-is-finops.html">
+<meta property="og:image" content="https://ax1s-infra.com/assets/ax1s-logo.png">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="AX1S Infra">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wat is FinOps? Uitleg, definitie en de FinOps Lifecycle | AX1S Infra">
+<meta name="twitter:description" content="FinOps uitgelegd: definitie, de FinOps Lifecycle en hoe je ermee start.">
+<meta name="twitter:image" content="https://ax1s-infra.com/assets/ax1s-logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wat is FinOps?",
+  "description": "FinOps uitgelegd: de definitie, de FinOps Lifecycle (Inform, Optimize, Operate) en hoe finance, engineering en operations samen cloud-, SaaS- en AI-kosten beheersen.",
+  "datePublished": "2026-07-31",
+  "dateModified": "2026-07-31",
+  "url": "https://ax1s-infra.com/wat-is-finops.html",
+  "articleSection": "Kennisbank",
+  "author": {
+    "@type": "Person",
+    "name": "Jelle van Zantwijk",
+    "url": "https://www.linkedin.com/in/jellevanzantwijk/",
+    "jobTitle": "Finance & FinOps"
+  },
+  "publisher": {
+    "@id": "https://ax1s-infra.com/#organization",
+    "@type": "Organization",
+    "name": "AX1S Infra",
+    "logo": { "@type": "ImageObject", "url": "https://ax1s-infra.com/assets/ax1s-logo.png" }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ax1s-infra.com/wat-is-finops.html" },
+  "inLanguage": "nl-NL"
+}
+</script>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="stylesheet" href="assets/blog.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html"><img src="assets/ax1s-logo.png" class="nav-logo" alt="AX1S Infra"></a>
+    <div class="nav-links">
+      <a href="finops-radar.html"><svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;vertical-align:-2px;"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.8" opacity="0.85"/><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"/><circle cx="16" cy="16" r="2.2" fill="currentColor"/></svg>FinOps Radar</a>
+      <a href="index.html#blog">Insights</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#finops">FinOps</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">Plan een intake</a>
+  </div>
+</nav>
+
+<section>
+  <div class="section-inner article-head">
+    <a href="index.html#finops" class="back-link"><iconify-icon icon="solar:arrow-left-linear" width="14"></iconify-icon> Terug naar home</a>
+    <span class="stag">Kennisbank</span>
+    <h1>Wat is FinOps?</h1>
+    <div class="article-meta"><img src="assets/team-jelle.jpg" class="author-avatar" alt="Jelle van Zantwijk"><span>Jelle van Zantwijk</span><span>·</span><span>31 jul 2026</span><span>·</span><span>4 min leestijd</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner article-body">
+
+    <p><strong>FinOps</strong> brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Het is geen eenmalige actie, maar een continue praktijk waarin elk team eigenaarschap neemt over de eigen kosten en verbruik.</p>
+
+    <p>De FinOps Foundation, onderdeel van de Linux Foundation, is de non-profit organisatie achter deze praktijk. Zij ontwikkelen het FinOps-framework, de jaarlijkse State of FinOps-benchmark en de FinOps Certified Practitioner-certificering.</p>
+
+    <h2>De FinOps Lifecycle: Inform, Optimize, Operate</h2>
+    <p>Het FinOps-framework beschrijft een doorlopende cyclus van drie fasen, die telkens opnieuw wordt doorlopen naarmate cloud-, SaaS- en AI-verbruik verandert:</p>
+    <ul>
+      <li><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon><span><strong>Inform:</strong> zichtbaarheid creëren in wie wat uitgeeft, met correcte tagging, allocatie en benchmarking, zodat teams hun eigen kosten kunnen zien.</span></li>
+      <li><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon><span><strong>Optimize:</strong> op basis van die zichtbaarheid gericht besparen: rightsizing, commitments zoals Reserved Instances of Savings Plans, en het opruimen van ongebruikte resources.</span></li>
+      <li><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon><span><strong>Operate:</strong> optimalisatie borgen in processen en automatisering, zodat kostenbeheer geen eenmalig project blijft maar onderdeel wordt van hoe teams werken.</span></li>
+    </ul>
+
+    <h2>Wie is betrokken bij FinOps?</h2>
+    <p>FinOps is per definitie cross-functioneel. Finance brengt budgetdiscipline en forecasting, engineering kent de technische mogelijkheden voor optimalisatie, en business/product-teams begrijpen welke uitgaven waarde opleveren. Zonder deze drie samen aan tafel blijft kostenbeheer óf te technisch óf te ver van de praktijk af staan.</p>
+
+    <h2>Waarin verschilt FinOps van traditioneel kostenbeheer?</h2>
+    <p>Traditioneel kostenbeheer is periodiek en top-down: een jaarlijks budget, achteraf gecontroleerd door finance. FinOps is doorlopend en gedecentraliseerd: teams zien hun eigen verbruik in (bijna) realtime en nemen zelf beslissingen, binnen een gedeeld raamwerk. Dat past bij de aard van cloud-, SaaS- en AI-uitgaven, die per uur of zelfs per API-call kunnen fluctueren, in tegenstelling tot vaste infrastructuurkosten uit het verleden.</p>
+
+    <h2>Hoe begin je met FinOps?</h2>
+    <p>De meeste organisaties starten met zichtbaarheid: weten wie wat uitgeeft, voordat er geoptimaliseerd wordt. Waar een organisatie op dit moment staat, verschilt vaak per praktijk (kostenallocatie, optimalisatie, planning) en hoeft niet overal gelijk te zijn. In <a href="blog/finops-volwassenheidsmodel.html">het FinOps volwassenheidsmodel</a> lees je hoe je dat voor jouw organisatie bepaalt, en in <a href="blog/5-manieren-cloudkosten-elimineren.html">5 manieren om onnodige cloudkosten te elimineren</a> staan concrete eerste stappen.</p>
+
+    <div class="article-cta">
+      <div>
+        <h3>Benieuwd waar jouw organisatie staat?</h3>
+        <p>Doe de FinOps Radar en ontdek in 2 minuten jullie eigen besparingspotentieel.</p>
+      </div>
+      <div class="article-cta-actions">
+        <a href="finops-radar.html" class="btn-primary">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        <a href="index.html#contact" class="article-cta-secondary">of plan direct een intake</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section>
+  <div class="section-inner">
+    <div class="related-title">Meer Insights</div>
+    <div class="blog-scroll">
+      <a href="blog/finops-volwassenheidsmodel.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-finops-volwassenheidsmodel.jpg" alt="Crawl, walk, run: het FinOps volwassenheidsmodel als groeitrap"></div>
+        <div class="blog-card-body"><span class="stag">FinOps</span><h3>Het FinOps volwassenheidsmodel</h3><div class="blog-card-footer"><span class="blog-card-more">Lees meer <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span><img src="assets/team-jelle.jpg" class="blog-card-avatar-sm" alt="Jelle van Zantwijk"></div></div>
+      </a>
+      <a href="blog/5-manieren-cloudkosten-elimineren.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-cloudkosten-elimineren.jpg" alt="Dashboard met dalende cloudkosten en infrastructuur"></div>
+        <div class="blog-card-body"><span class="stag">FinOps</span><h3>5 manieren om onnodige cloudkosten te elimineren</h3><div class="blog-card-footer"><span class="blog-card-more">Lees meer <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span><img src="assets/team-jelle.jpg" class="blog-card-avatar-sm" alt="Jelle van Zantwijk"></div></div>
+      </a>
+      <a href="blog/case-23-procent-besparing.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-case-23-procent.jpg" alt="Team viert 23% besparing binnen 8 weken"></div>
+        <div class="blog-card-body"><span class="stag">Klantcase</span><h3>Case: 23% besparing binnen 8 weken</h3><div class="blog-card-footer"><span class="blog-card-more">Lees meer <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span><img src="assets/team-jelle.jpg" class="blog-card-avatar-sm" alt="Jelle van Zantwijk"></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="assets/ax1s-logo.png" class="footer-logo" alt="AX1S Infra">
+      <p class="footer-sub">FinOps &amp; Infrastructure Consultants<br>Amsterdam, Nederland</p>
+    </div>
+    <div class="footer-right">
+      <div class="tier-badge"><iconify-icon icon="solar:server-path-linear" width="13"></iconify-icon> Powered by European Tier III Infrastructure</div>
+      <p class="copy">© 2026 AX1S Infra. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  const orbs = [
+    { bx: 0.70, by: 0.18, ax: 0.18, ay: 0.10, r: 0.50, spd: 0.0004, rgb: '20,90,240' },
+    { bx: 0.15, by: 0.75, ax: 0.14, ay: 0.12, r: 0.42, spd: 0.0003, rgb: '0,55,200' },
+    { bx: 0.82, by: 0.60, ax: 0.10, ay: 0.15, r: 0.35, spd: 0.0005, rgb: '10,70,220' },
+    { bx: 0.45, by: 0.40, ax: 0.20, ay: 0.08, r: 0.28, spd: 0.00035, rgb: '30,100,255' },
+  ];
+  function draw(ts) {
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = '#08090f';
+    ctx.fillRect(0, 0, W, H);
+    orbs.forEach((o, i) => {
+      const phase = ts * o.spd + i * 1.8;
+      const px = (o.bx + Math.sin(phase) * o.ax) * W;
+      const py = (o.by + Math.cos(phase * 0.7) * o.ay) * H;
+      const r  = o.r * Math.min(W, H);
+      const g = ctx.createRadialGradient(px, py, 0, px, py, r);
+      g.addColorStop(0,   `rgba(${o.rgb},0.45)`);
+      g.addColorStop(0.35,`rgba(${o.rgb},0.18)`);
+      g.addColorStop(0.7, `rgba(${o.rgb},0.05)`);
+      g.addColorStop(1,   `rgba(${o.rgb},0)`);
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, W, H);
+    });
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
