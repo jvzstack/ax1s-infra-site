@@ -97,7 +97,7 @@
       "name": "Hoe snel zie ik resultaat van een FinOps-traject?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dit verschilt per organisatie, maar in de praktijk zien we vaak al na de eerste weken quick wins, gevolgd door structurele optimalisatie. Een klant van AX1S Infra realiseerde binnen 8 weken 23% besparing."
+        "text": "Dit verschilt per organisatie en traject, maar in de praktijk zien we vaak al na de eerste weken quick wins, gevolgd door structurele optimalisatie. Een klant van AX1S Infra realiseerde 23% besparing binnen een gericht traject."
       }
     },
     {
@@ -343,9 +343,13 @@
 
   /* FAQ */
   .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
-  .faq-item { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 22px 24px; box-shadow: var(--card-shadow); }
-  .faq-item h3 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-  .faq-item p { font-size: 14px; line-height: 1.75; color: #ced4e0; }
+  .faq-item { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 0 24px; box-shadow: var(--card-shadow); transition: border-color 0.2s; }
+  .faq-item:hover { border-color: var(--accent-border); }
+  .faq-item summary { font-size: 16px; font-weight: 700; color: var(--text); padding: 20px 0; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 22px; font-weight: 400; line-height: 1; color: var(--accent-light); flex-shrink: 0; transition: transform 0.2s; }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item p { font-size: 14px; line-height: 1.75; color: #ced4e0; margin: 0; padding-bottom: 20px; }
   .faq-item p a { color: var(--accent-light); font-weight: 600; }
 
   /* TEAM */
@@ -583,10 +587,10 @@
         </div>
       </a>
       <a href="blog/case-23-procent-besparing.html" class="blog-card">
-        <div class="blog-card-media"><img src="assets/banner-case-23-procent.jpg" alt="Team viert 23% besparing binnen 8 weken"></div>
+        <div class="blog-card-media"><img src="assets/banner-case-23-procent.jpg" alt="Team viert 23% besparing op cloudkosten"></div>
         <div class="blog-card-body">
           <span class="stag">Klantcase</span>
-          <h3>Case: 23% besparing binnen 8 weken</h3>
+          <h3>Case: 23% besparing in een gericht traject</h3>
           <p>Hoe een SaaS-scale-up structureel bespaarde zonder in te leveren op performance of schaalbaarheid.</p>
           <div class="blog-card-meta"><span>22 mei 2026</span><span>·</span><span>5 min leestijd</span></div>
           <div class="blog-card-footer">
@@ -730,46 +734,6 @@
 
 <hr>
 
-<!-- FAQ -->
-<section id="faq">
-  <div class="section-inner">
-    <span class="label reveal">Veelgestelde vragen</span>
-    <h2 class="title reveal">Vragen over FinOps en AX1S Infra</h2>
-    <div class="faq-list">
-      <div class="faq-item reveal">
-        <h3>Wat is FinOps?</h3>
-        <p>FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Het is geen eenmalige actie, maar een continue praktijk. <a href="wat-is-finops.html">Lees de volledige uitleg over FinOps</a>.</p>
-      </div>
-      <div class="faq-item reveal">
-        <h3>Voor wie is AX1S Infra geschikt?</h3>
-        <p>AX1S Infra helpt SaaS, fintech en digital-first bedrijven die structureel willen besparen op cloud-, SaaS- en AI-kosten, van de juiste inkoopkeuzes tot optimalisatie van bestaande omgevingen.</p>
-      </div>
-      <div class="faq-item reveal">
-        <h3>Hoeveel kan ik besparen met FinOps?</h3>
-        <p>Klanten realiseren gemiddeld 23% besparing op hun cloud- en compute-uitgaven na een FinOps-traject. Doe de gratis <a href="finops-radar.html">FinOps Radar</a> voor een inschatting die is toegespitst op jouw situatie.</p>
-      </div>
-      <div class="faq-item reveal">
-        <h3>Hoe snel zie ik resultaat?</h3>
-        <p>Dat verschilt per organisatie, maar in de praktijk zien we vaak al na de eerste weken quick wins, gevolgd door structurele optimalisatie. Zo realiseerde een klant <a href="blog/case-23-procent-besparing.html">in 8 weken 23% besparing</a>.</p>
-      </div>
-      <div class="faq-item reveal">
-        <h3>Wat kost een intake bij AX1S Infra?</h3>
-        <p>Niets. De intake is gratis en vrijblijvend: we brengen samen met jou het besparingspotentieel in kaart, zonder verplichtingen, met een reactie binnen 24 uur.</p>
-      </div>
-      <div class="faq-item reveal">
-        <h3>Welke diensten biedt AX1S Infra naast FinOps?</h3>
-        <p>Naast FinOps en cost management bieden we managed colocation (Tier III/IV faciliteiten in Europa) en hardware brokering voor AI-workloads en enterprise-grade uptime.</p>
-      </div>
-      <div class="faq-item reveal">
-        <h3>Zijn de consultants van AX1S Infra gecertificeerd?</h3>
-        <p>Ja. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
@@ -802,6 +766,46 @@
           </form>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <span class="label reveal">Veelgestelde vragen</span>
+    <h2 class="title reveal">Vragen over FinOps en AX1S Infra</h2>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Wat is FinOps?</summary>
+        <p>FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Het is geen eenmalige actie, maar een continue praktijk. <a href="wat-is-finops.html">Lees de volledige uitleg over FinOps</a>.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Voor wie is AX1S Infra geschikt?</summary>
+        <p>AX1S Infra helpt SaaS, fintech en digital-first bedrijven die structureel willen besparen op cloud-, SaaS- en AI-kosten, van de juiste inkoopkeuzes tot optimalisatie van bestaande omgevingen.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Hoeveel kan ik besparen met FinOps?</summary>
+        <p>Klanten realiseren gemiddeld 23% besparing op hun cloud- en compute-uitgaven na een FinOps-traject. Doe de gratis <a href="finops-radar.html">FinOps Radar</a> voor een inschatting die is toegespitst op jouw situatie.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Hoe snel zie ik resultaat?</summary>
+        <p>Dat verschilt per organisatie en traject, maar in de praktijk zien we vaak al na de eerste weken quick wins, gevolgd door structurele optimalisatie. Zo realiseerde een klant <a href="blog/case-23-procent-besparing.html">23% besparing binnen een gericht traject</a>.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Wat kost een intake bij AX1S Infra?</summary>
+        <p>Niets. De intake is gratis en vrijblijvend: we brengen samen met jou het besparingspotentieel in kaart, zonder verplichtingen, met een reactie binnen 24 uur.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Welke diensten biedt AX1S Infra naast FinOps?</summary>
+        <p>Naast FinOps en cost management bieden we managed colocation (Tier III/IV faciliteiten in Europa) en hardware brokering voor AI-workloads en enterprise-grade uptime.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Zijn de consultants van AX1S Infra gecertificeerd?</summary>
+        <p>Ja. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation.</p>
+      </details>
     </div>
   </div>
 </section>
