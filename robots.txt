@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ax1s-infra.com/sitemap.xml
