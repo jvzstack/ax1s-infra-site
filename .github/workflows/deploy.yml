@@ -1,0 +1,52 @@
+name: Deploy to MijnDomein
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy site via SFTP
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy via SFTP with retries
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PRIVATE_KEY: ${{ secrets.SFTP_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SFTP_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+          cat > /tmp/sftp_batch.txt << 'EOF'
+          cd httpdocs
+          put -r assets
+          put -r blog
+          put index.html
+          put finops-radar.html
+          put robots.txt
+          put sitemap.xml
+          bye
+          EOF
+
+          max_attempts=5
+          for attempt in $(seq 1 $max_attempts); do
+            echo "Deploy attempt $attempt of $max_attempts..."
+            if sftp -i ~/.ssh/deploy_key -P "$SFTP_PORT" \
+                 -o StrictHostKeyChecking=accept-new \
+                 -o ConnectTimeout=15 \
+                 -b /tmp/sftp_batch.txt \
+                 "$SFTP_USERNAME@$SFTP_HOST"; then
+              echo "Deploy succeeded on attempt $attempt"
+              exit 0
+            fi
+            echo "Attempt $attempt failed, waiting 20s before retry..."
+            sleep 20
+          done
+          echo "All $max_attempts attempts failed"
+          exit 1
