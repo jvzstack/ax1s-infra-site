@@ -23,16 +23,17 @@ jobs:
           printf '%s\n' "$SFTP_PRIVATE_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
 
-          cat > /tmp/sftp_batch.txt << 'EOF'
-          cd httpdocs
-          put -r assets
-          put -r blog
-          put index.html
-          put finops-radar.html
-          put robots.txt
-          put sitemap.xml
-          bye
-          EOF
+          {
+            echo "cd httpdocs"
+            for item in *; do
+              if [ -d "$item" ]; then
+                echo "put -r $item"
+              else
+                echo "put $item"
+              fi
+            done
+            echo "bye"
+          } > /tmp/sftp_batch.txt
 
           max_attempts=5
           for attempt in $(seq 1 $max_attempts); do
