@@ -73,6 +73,19 @@
 .term-block h2 { font-size: 19px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
 .term-block p { font-size: 14px; line-height: 1.75; color: var(--muted); margin: 0; }
 .term-block p a { color: var(--accent-light); font-weight: 600; }
+
+.tool-preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.tool-preview-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
+.tool-preview-card:hover { border-color: var(--accent-border); transform: translateY(-2px); }
+.tool-preview-icon { width: 34px; height: 34px; border-radius: 9px; background: var(--accent-bg); color: var(--accent-light); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.tool-preview-card h4 { font-size: 13.5px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+.tool-preview-card p { font-size: 11.5px; line-height: 1.55; color: var(--muted); margin-bottom: 12px; flex-grow: 1; }
+.tool-preview-link { font-size: 11.5px; font-weight: 700; color: var(--accent-light); display: inline-flex; align-items: center; gap: 5px; margin-top: auto; }
+.more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
+.more-tools-all:hover { color: var(--accent-light); }
+@media (max-width: 768px) {
+  .tool-preview-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -228,6 +241,29 @@
       <h2>Total Cost of Ownership (TCO)</h2>
       <p>De volledige kosten van een technologiekeuze over de gehele levensduur, inclusief niet alleen de directe cloud- of licentiekosten maar ook beheer, migratie en eventuele uitfasering.</p>
     </div>
+
+    <div class="related-title" style="margin-top:36px;">Meer gratis tools</div>
+    <div class="tool-preview-grid">
+      <a href="finops-radar.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:radar-2-linear" width="18"></iconify-icon></div>
+        <h4>FinOps Radar</h4>
+        <p>7 korte vragen, direct een gepersonaliseerde score en besparingsindicatie.</p>
+        <span class="tool-preview-link">Start de Radar <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+      <a href="ri-vs-savings-plan-calculator.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:calculator-linear" width="18"></iconify-icon></div>
+        <h4>RI vs. Savings Plan Calculator</h4>
+        <p>Vergelijk On-Demand, Reserved Instances en Savings Plans. Geen e-mail nodig.</p>
+        <span class="tool-preview-link">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+      <a href="wat-is-finops.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:document-text-linear" width="18"></iconify-icon></div>
+        <h4>Wat is FinOps?</h4>
+        <p>De definitie en de FinOps Lifecycle: Inform, Optimize, Operate.</p>
+        <span class="tool-preview-link">Lees de uitleg <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+    </div>
+    <a href="gratis-tools.html" class="more-tools-all">Bekijk alle gratis tools &amp; templates &rarr;</a>
 
     <div class="article-cta">
       <div>

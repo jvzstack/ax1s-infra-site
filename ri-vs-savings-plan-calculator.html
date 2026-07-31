@@ -144,13 +144,15 @@ section { position: relative; z-index: 1; }
 .btn-primary:hover { background: #0060d0; transform: translateY(-1px); }
 
 .related-title { font-size: 18px; font-weight: 800; color: var(--text); margin: 48px 0 16px; }
-.related-list { display: flex; flex-direction: column; gap: 10px; }
-.related-item {
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  background: var(--card); border: 1px solid var(--card-border); border-radius: 12px;
-  padding: 14px 18px; font-size: 14px; font-weight: 600; color: var(--text); transition: border-color 0.2s;
-}
-.related-item:hover { border-color: var(--accent-border); }
+.tool-preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tool-preview-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
+.tool-preview-card:hover { border-color: var(--accent-border); transform: translateY(-2px); }
+.tool-preview-icon { width: 34px; height: 34px; border-radius: 9px; background: var(--accent-bg); color: var(--accent-light); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.tool-preview-card h4 { font-size: 13.5px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+.tool-preview-card p { font-size: 11.5px; line-height: 1.55; color: var(--muted); margin-bottom: 12px; flex-grow: 1; }
+.tool-preview-link { font-size: 11.5px; font-weight: 700; color: var(--accent-light); display: inline-flex; align-items: center; gap: 5px; margin-top: auto; }
+.more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
+.more-tools-all:hover { color: var(--accent-light); }
 
 footer { border-top: 1px solid var(--divider); background: var(--bg2); position: relative; z-index: 1; }
 .footer-inner { max-width: 1160px; margin: 0 auto; padding: 48px 32px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px; }
@@ -169,6 +171,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
   .result-card { flex-direction: column; align-items: flex-start; gap: 6px; }
   .result-card-amount { text-align: left; }
   .tool-cta { flex-direction: column; align-items: flex-start; }
+  .tool-preview-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -236,11 +239,28 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
     <a href="index.html#contact" class="btn-primary">Plan een gratis intake <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
   </div>
 
-  <div class="related-title">Meer gratis tools & inzichten</div>
-  <div class="related-list">
-    <a href="finops-radar.html" class="related-item">FinOps Radar — jouw besparingspotentieel in 2 minuten <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
-    <a href="blog/reserved-instances-vs-savings-plans.html" class="related-item">Achtergrond: Reserved Instances vs. Savings Plans <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+  <div class="related-title">Meer gratis tools</div>
+  <div class="tool-preview-grid">
+    <a href="finops-radar.html" class="tool-preview-card">
+      <div class="tool-preview-icon"><iconify-icon icon="solar:radar-2-linear" width="18"></iconify-icon></div>
+      <h4>FinOps Radar</h4>
+      <p>7 korte vragen, direct een gepersonaliseerde score en besparingsindicatie.</p>
+      <span class="tool-preview-link">Start de Radar <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+    </a>
+    <a href="finops-glossarium.html" class="tool-preview-card">
+      <div class="tool-preview-icon"><iconify-icon icon="solar:book-linear" width="18"></iconify-icon></div>
+      <h4>FinOps Glossarium</h4>
+      <p>20 kernbegrippen kort en duidelijk uitgelegd, inclusief Reserved Instances en Savings Plans.</p>
+      <span class="tool-preview-link">Bekijk het glossarium <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+    </a>
+    <a href="blog/reserved-instances-vs-savings-plans.html" class="tool-preview-card">
+      <div class="tool-preview-icon"><iconify-icon icon="solar:document-text-linear" width="18"></iconify-icon></div>
+      <h4>Achtergrondartikel</h4>
+      <p>Reserved Instances vs. Savings Plans: welk instrument past bij jouw workload?</p>
+      <span class="tool-preview-link">Lees het artikel <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+    </a>
   </div>
+  <a href="gratis-tools.html" class="more-tools-all">Bekijk alle gratis tools &amp; templates &rarr;</a>
 </div>
 
 <footer>

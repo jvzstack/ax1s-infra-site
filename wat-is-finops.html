@@ -58,6 +58,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="stylesheet" href="assets/blog.css">
+<style>
+.tool-preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.tool-preview-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
+.tool-preview-card:hover { border-color: var(--accent-border); transform: translateY(-2px); }
+.tool-preview-icon { width: 34px; height: 34px; border-radius: 9px; background: var(--accent-bg); color: var(--accent-light); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.tool-preview-card h4 { font-size: 13.5px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+.tool-preview-card p { font-size: 11.5px; line-height: 1.55; color: var(--muted); margin-bottom: 12px; flex-grow: 1; }
+.tool-preview-link { font-size: 11.5px; font-weight: 700; color: var(--accent-light); display: inline-flex; align-items: center; gap: 5px; margin-top: auto; }
+.more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
+.more-tools-all:hover { color: var(--accent-light); }
+@media (max-width: 768px) {
+  .tool-preview-grid { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body>
 
@@ -120,6 +134,35 @@
         <a href="index.html#contact" class="article-cta-secondary">of plan direct een intake</a>
       </div>
     </div>
+  </div>
+</section>
+
+<hr>
+
+<section>
+  <div class="section-inner">
+    <div class="related-title">Gratis tools</div>
+    <div class="tool-preview-grid">
+      <a href="finops-radar.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:radar-2-linear" width="18"></iconify-icon></div>
+        <h4>FinOps Radar</h4>
+        <p>7 korte vragen, direct een gepersonaliseerde score en besparingsindicatie.</p>
+        <span class="tool-preview-link">Start de Radar <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+      <a href="ri-vs-savings-plan-calculator.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:calculator-linear" width="18"></iconify-icon></div>
+        <h4>RI vs. Savings Plan Calculator</h4>
+        <p>Vergelijk On-Demand, Reserved Instances en Savings Plans. Geen e-mail nodig.</p>
+        <span class="tool-preview-link">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+      <a href="finops-glossarium.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:book-linear" width="18"></iconify-icon></div>
+        <h4>FinOps Glossarium</h4>
+        <p>20 kernbegrippen kort en duidelijk uitgelegd, van cloud waste tot de FinOps Lifecycle.</p>
+        <span class="tool-preview-link">Bekijk het glossarium <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+    </div>
+    <a href="gratis-tools.html" class="more-tools-all">Bekijk alle gratis tools &amp; templates &rarr;</a>
   </div>
 </section>
 
