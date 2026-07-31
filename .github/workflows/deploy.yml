@@ -13,16 +13,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to MijnDomein
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: './'
-          server-dir: './'
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.github/**
+          server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          ssh_private_key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          local_path: './*'
+          remote_path: '/httpdocs'
+          sftp_only: true
+          sftpArgs: '-o ConnectTimeout=10'
