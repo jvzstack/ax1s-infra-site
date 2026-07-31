@@ -255,6 +255,11 @@
   .stat-note { background: var(--card); border: 1px solid var(--card-border); border-radius: 12px; padding: 16px 18px; display: flex; gap: 12px; align-items: flex-start; box-shadow: var(--card-shadow); }
   .stat-note iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
   .stat-note p { font-size: 13px; line-height: 1.7; color: var(--muted); }
+  .stat-card-split { display: flex; align-items: center; gap: 20px; }
+  .stat-card-divider { width: 1px; align-self: stretch; background: var(--card-border); flex-shrink: 0; }
+  .stat-card-side { display: flex; align-items: flex-start; gap: 10px; flex: 1; min-width: 0; }
+  .stat-card-side iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
+  .stat-card-side p { font-size: 12.5px; line-height: 1.55; color: var(--muted); margin: 0; }
   .radar-stat-card {
     display: flex; align-items: center; gap: 18px; cursor: pointer;
     position: relative; overflow: hidden;
@@ -337,10 +342,28 @@
     padding: 30px 34px; box-shadow: var(--card-shadow);
   }
   .radar-promo-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(0,112,243,0.16); color: var(--accent-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; }
-  #self-serve-promo .radar-promo-card { padding: 15px 26px; }
-  #self-serve-promo .radar-promo-icon { width: 38px; height: 38px; border-radius: 10px; }
-  #self-serve-promo .radar-promo-text h3 { font-size: 16px; }
-  #self-serve-promo .radar-promo-text p { font-size: 12px; }
+  /* TOOLS SHOWCASE */
+  .tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; }
+  .tool-showcase-card {
+    background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(70,140,255,0.04));
+    border: 1px solid rgba(255,255,255,0.14); border-radius: 18px; padding: 24px;
+    display: flex; flex-direction: column; box-shadow: var(--card-shadow);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .tool-showcase-card:hover { border-color: var(--accent-border); transform: translateY(-3px); }
+  .tool-showcase-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: var(--accent-bg); color: var(--accent-light); margin-bottom: 14px; }
+  .tool-showcase-card h3 { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .tool-showcase-card p { font-size: 13.5px; line-height: 1.6; color: var(--muted); margin-bottom: 18px; flex-grow: 1; }
+  .tool-showcase-cta {
+    font-size: 13px; font-weight: 700; color: var(--accent-light);
+    background: var(--accent-bg); border: 1px solid var(--accent-border);
+    border-radius: 9px; padding: 11px 18px; width: fit-content;
+    display: inline-flex; align-items: center; gap: 7px;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+  .tool-showcase-card:hover .tool-showcase-cta { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); }
+  .more-tools-all:hover { color: var(--accent-light); }
   .radar-promo-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; }
   .radar-promo-text { flex: 1; }
   .radar-promo-text .stag { background: #fff; color: var(--accent); border-color: rgba(0,112,243,0.25); }
@@ -461,6 +484,8 @@
     .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
     .cert-block { max-width: 100%; }
     .hero-stats { gap: 10px; }
+    .stat-card-split { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .stat-card-divider { width: 100%; height: 1px; align-self: stretch; }
     .stat-num { font-size: 26px; }
 
     /* SECTIONS */
@@ -478,6 +503,7 @@
 
     /* SERVICES */
     .services-grid { grid-template-columns: 1fr; }
+    .tools-grid { grid-template-columns: 1fr; }
     .scard.featured { grid-column: span 1; }
     .checks { grid-template-columns: 1fr; }
 
@@ -505,7 +531,7 @@
   <div class="nav-inner">
     <img id="nav-logo" class="nav-logo" alt="AX1S Infra">
     <div class="nav-links">
-      <a href="finops-radar.html"><svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;vertical-align:-2px;"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.8" opacity="0.85"/><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"/><circle cx="16" cy="16" r="2.2" fill="currentColor"/></svg>FinOps Radar</a>
+      <a href="gratis-tools.html"><svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;vertical-align:-2px;"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.8" opacity="0.85"/><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"/><circle cx="16" cy="16" r="2.2" fill="currentColor"/></svg>Gratis Tools</a>
       <a href="#blog">Insights</a>
       <a href="#services">Services</a>
       <a href="#finops">FinOps</a>
@@ -540,10 +566,17 @@
       </div>
     </div>
     <div class="hero-stats reveal">
-      <div class="stat-card">
-        <div class="stat-sublabel">Gemiddelde besparing</div>
-        <div class="stat-num"><span class="num-white">23%</span></div>
-        <div class="stat-label">Na een FinOps traject</div>
+      <div class="stat-card stat-card-split">
+        <div>
+          <div class="stat-sublabel">Gemiddelde besparing</div>
+          <div class="stat-num"><span class="num-white">23%</span></div>
+          <div class="stat-label">Na een FinOps traject</div>
+        </div>
+        <div class="stat-card-divider"></div>
+        <div class="stat-card-side">
+          <iconify-icon icon="solar:eye-linear" width="18"></iconify-icon>
+          <p>Altijd transparant: je ziet precies waar elke euro aan cloud-, SaaS- en AI-budget heen gaat.</p>
+        </div>
       </div>
       <div class="stat-card">
         <div class="stat-sublabel">Instapdrempel</div>
@@ -685,16 +718,31 @@
 
 <!-- SELF-SERVE PROMO -->
 <section id="self-serve-promo">
-  <div class="section-inner" style="padding-top:28px; padding-bottom:28px;">
-    <div class="radar-promo-card reveal">
-      <div class="radar-promo-icon"><iconify-icon icon="solar:compass-linear" width="20"></iconify-icon></div>
-      <div class="radar-promo-text">
-        <span class="stag">Tip</span>
-        <h3>Liever zelf eerst proberen? Bekijk onze tips!</h3>
-        <p>Gratis rekentool, glossarium en downloadbare templates &mdash; geen gesprek nodig.</p>
-      </div>
-      <a href="gratis-tools.html" class="btn-secondary">Bekijk gratis tools <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+  <div class="section-inner" style="padding-top:32px; padding-bottom:36px;">
+    <span class="label reveal">Nog aan het overwegen?</span>
+    <h2 class="title reveal" style="font-size:26px;">Liever zelf eerst proberen?</h2>
+    <p class="subtitle reveal">Gratis tools, geen gesprek nodig — probeer ze zelf en kom later terug als je vragen hebt.</p>
+    <div class="tools-grid reveal">
+      <a href="finops-radar.html" class="tool-showcase-card">
+        <div class="tool-showcase-icon"><iconify-icon icon="solar:radar-2-linear" width="22"></iconify-icon></div>
+        <h3>FinOps Radar</h3>
+        <p>7 korte vragen, direct een gepersonaliseerde score en besparingsindicatie.</p>
+        <span class="tool-showcase-cta">Start de Radar <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+      </a>
+      <a href="ri-vs-savings-plan-calculator.html" class="tool-showcase-card">
+        <div class="tool-showcase-icon"><iconify-icon icon="solar:calculator-linear" width="22"></iconify-icon></div>
+        <h3>RI vs. Savings Plan Calculator</h3>
+        <p>Vergelijk On-Demand, Reserved Instances en Savings Plans. Geen e-mail nodig.</p>
+        <span class="tool-showcase-cta">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+      </a>
+      <a href="finops-glossarium.html" class="tool-showcase-card">
+        <div class="tool-showcase-icon"><iconify-icon icon="solar:book-linear" width="22"></iconify-icon></div>
+        <h3>FinOps Glossarium</h3>
+        <p>20 kernbegrippen kort en duidelijk uitgelegd, van cloud waste tot de FinOps Lifecycle.</p>
+        <span class="tool-showcase-cta">Bekijk het glossarium <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+      </a>
     </div>
+    <a href="gratis-tools.html" class="more-tools-all" style="margin-top:20px;">Bekijk alle gratis tools &amp; templates &rarr;</a>
   </div>
 </section>
 

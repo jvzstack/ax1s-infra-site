@@ -55,9 +55,16 @@
 .res-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-light); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 4px; padding: 3px 9px; margin-bottom: 10px; width: fit-content; }
 .res-card h3 { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
 .res-card p { font-size: 13.5px; line-height: 1.65; color: var(--muted); margin-bottom: 18px; flex-grow: 1; }
-.res-card a.res-cta { font-size: 13px; font-weight: 700; color: var(--accent-light); display: inline-flex; align-items: center; gap: 6px; margin-top: auto; }
+.res-card a.res-cta {
+  font-size: 13px; font-weight: 700; color: var(--accent-light);
+  background: var(--accent-bg); border: 1px solid var(--accent-border);
+  border-radius: 9px; padding: 11px 18px; margin-top: auto; width: fit-content;
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+}
+.res-card a.res-cta:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-1px); }
 .res-card a.res-cta iconify-icon { transition: transform 0.2s; }
-.res-card:hover a.res-cta iconify-icon { transform: translateX(3px); }
+.res-card a.res-cta:hover iconify-icon { transform: translateX(3px); }
 .res-section-title { font-size: 12px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin: 40px 0 4px; }
 .res-section-title:first-of-type { margin-top: 8px; }
 @media (max-width: 640px) {
@@ -72,7 +79,7 @@
   <div class="nav-inner">
     <a href="index.html"><img src="assets/ax1s-logo.png" class="nav-logo" alt="AX1S Infra"></a>
     <div class="nav-links">
-      <a href="finops-radar.html"><svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;vertical-align:-2px;"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.8" opacity="0.85"/><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"/><circle cx="16" cy="16" r="2.2" fill="currentColor"/></svg>FinOps Radar</a>
+      <a href="gratis-tools.html"><svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;vertical-align:-2px;"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.8" opacity="0.85"/><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"/><circle cx="16" cy="16" r="2.2" fill="currentColor"/></svg>Gratis Tools</a>
       <a href="index.html#blog">Insights</a>
       <a href="index.html#services">Services</a>
       <a href="index.html#finops">FinOps</a>
