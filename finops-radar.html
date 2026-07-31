@@ -197,6 +197,13 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 .tier-badge iconify-icon { color: var(--accent-light); }
 .copy { font-size: 11px; color: var(--muted); }
 
+.cert-block { display: flex; align-items: center; gap: 14px; background: var(--card); border: 1px solid var(--card-border); border-radius: 12px; padding: 14px 18px; box-shadow: var(--card-shadow); }
+.cert-block-badge { height: 44px; width: auto; flex-shrink: 0; }
+.cert-block-divider { width: 1px; height: 32px; background: var(--card-border); flex-shrink: 0; }
+.cert-block-logo { height: 22px; width: auto; opacity: 0.85; flex-shrink: 0; }
+.cert-block-text { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.cert-block-text strong { display: block; font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .wrap { padding: 100px 16px 48px; }
@@ -471,8 +478,52 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
     return { score, label, desc, shownFindings, savingsHtml };
   }
 
-  function renderResult() {
+  function renderGate() {
     const r = computeResult();
+
+    card.innerHTML = `
+      <div class="result-head">
+        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${r.score} * 3.6deg), rgba(255,255,255,0.10) calc(${r.score} * 3.6deg) 360deg); filter: blur(4px); opacity: 0.55;">
+          <div class="score-ring-inner">
+            <div class="score-num">?</div>
+            <div class="score-max">van 100</div>
+          </div>
+        </div>
+        <div class="result-label">Je Grip-score is berekend</div>
+        <div class="result-desc">Vul je e-mailadres in om je score, bevindingen en indicatieve besparingsruimte te bekijken.</div>
+      </div>
+
+      <div class="lead-block" id="gate-block" style="border-top:none; padding-top:0; margin-top:8px;">
+        <form id="radar-gate-form" class="ffields">
+          <div class="field"><label>E-mail</label><input type="email" required placeholder="naam@bedrijf.nl" name="email" id="gate-email"></div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Bekijk mijn resultaat <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
+        </form>
+        <p style="font-size:12px;color:var(--muted);margin-top:12px;text-align:center;">Alleen voor het tonen van je resultaat. Geen spam.</p>
+      </div>
+    `;
+
+    const gateForm = document.getElementById('radar-gate-form');
+    gateForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('gate-email').value;
+      const data = new FormData();
+      data.append('bron', 'FinOps Radar (e-mail gate)');
+      data.append('score', `${r.score} / 100 - ${r.label}`);
+      data.append('email', email);
+      try {
+        await fetch('https://formspree.io/f/xreowyvp', {
+          method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+        });
+      } catch (err) {
+        // Stil falen: de bezoeker blokkeren omdat een achtergrond-lead-capture mislukt is, is geen goede ervaring.
+      }
+      renderResult(r, email);
+    });
+
+    restartLink.style.display = 'block';
+  }
+
+  function renderResult(r, email) {
     const pct = r.score;
 
     card.innerHTML = `
@@ -498,15 +549,25 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
       <div class="lead-block" id="lead-block">
         <div class="lead-title">Wil je deze uitkomst laten toelichten voor jullie specifieke situatie?</div>
-        <div class="lead-sub">Laat je e-mailadres achter, dan nemen we vrijblijvend contact op. Naam en bedrijfsnaam zijn optioneel.</div>
+        <div class="lead-sub">Naam en bedrijfsnaam zijn optioneel.</div>
         <form id="radar-lead-form" class="ffields" action="https://formspree.io/f/xreowyvp" method="POST">
           <input type="hidden" name="bron" value="FinOps Radar">
           <input type="hidden" name="score" value="${r.score} / 100 - ${r.label}">
           <div class="field"><label>Naam <span class="opt">(optioneel)</span></label><input type="text" placeholder="Naam" name="naam"></div>
-          <div class="field"><label>E-mail</label><input type="email" required placeholder="naam@bedrijf.nl" name="email"></div>
+          <div class="field"><label>E-mail</label><input type="email" required placeholder="naam@bedrijf.nl" name="email" value="${email.replace(/"/g, '&quot;')}"></div>
           <div class="field"><label>Bedrijfsnaam <span class="opt">(optioneel)</span></label><input type="text" placeholder="Bedrijfsnaam" name="bedrijf"></div>
-          <button type="submit" class="btn-primary">Vraag toelichting aan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Vraag toelichting aan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
         </form>
+        <div class="cert-block" style="margin-top:20px;">
+          <img src="assets/finops-certified-badge.png" alt="FinOps Certified Practitioner" class="cert-block-badge">
+          <div class="cert-block-divider"></div>
+          <img src="assets/finops-foundation-logo.png" alt="FinOps Foundation" class="cert-block-logo">
+          <div class="cert-block-text">
+            <strong>FinOps Certified Practitioner</strong>
+            Gecertificeerd door de FinOps Foundation
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-top:14px;text-align:center;">Liever direct mailen? <a href="mailto:info@ax1s-infra.com" style="color:var(--accent-light);font-weight:600;">info@ax1s-infra.com</a></p>
       </div>
     `;
 
@@ -540,7 +601,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
   function render() {
     if (step === -1) renderIntro();
     else if (step >= 0 && step < questions.length) renderQuestion(step);
-    else renderResult();
+    else renderGate();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
