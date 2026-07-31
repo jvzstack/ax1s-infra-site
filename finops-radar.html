@@ -498,12 +498,12 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
       <div class="lead-block" id="lead-block">
         <div class="lead-title">Wil je deze uitkomst laten toelichten voor jullie specifieke situatie?</div>
-        <div class="lead-sub">Laat je gegevens achter, dan nemen we vrijblijvend contact op. Alle velden zijn optioneel.</div>
+        <div class="lead-sub">Laat je e-mailadres achter, dan nemen we vrijblijvend contact op. Naam en bedrijfsnaam zijn optioneel.</div>
         <form id="radar-lead-form" class="ffields" action="https://formspree.io/f/xreowyvp" method="POST">
           <input type="hidden" name="bron" value="FinOps Radar">
           <input type="hidden" name="score" value="${r.score} / 100 - ${r.label}">
           <div class="field"><label>Naam <span class="opt">(optioneel)</span></label><input type="text" placeholder="Naam" name="naam"></div>
-          <div class="field"><label>E-mail <span class="opt">(optioneel)</span></label><input type="email" placeholder="naam@bedrijf.nl" name="email"></div>
+          <div class="field"><label>E-mail</label><input type="email" required placeholder="naam@bedrijf.nl" name="email"></div>
           <div class="field"><label>Bedrijfsnaam <span class="opt">(optioneel)</span></label><input type="text" placeholder="Bedrijfsnaam" name="bedrijf"></div>
           <button type="submit" class="btn-primary">Vraag toelichting aan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
         </form>
@@ -527,10 +527,10 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
             lb.style.opacity = '1';
           }, 350);
         } else {
-          alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar j.vanzantwijk@ax1s-infra.com');
+          alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com');
         }
       } catch (err) {
-        alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar j.vanzantwijk@ax1s-infra.com');
+        alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com');
       }
     });
 

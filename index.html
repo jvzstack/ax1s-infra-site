@@ -522,7 +522,7 @@
       <h1 class="reveal">Grip op je techkosten, <em>vanaf dag één.</em></h1>
       <p class="hero-sub reveal">AX1S Infra helpt SaaS, fintech en digital-first bedrijven structureel besparen op cloud, SaaS en AI-kosten, van de juiste keuzes tot optimalisatie van bestaande omgevingen.</p>
       <div class="hero-btns reveal">
-        <a href="#contact" class="btn-primary">Gratis intake aanvragen <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        <a href="#contact" class="btn-primary">Reactie binnen 24 uur aanvragen <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
         <a href="#finops" class="btn-secondary">Meer over FinOps</a>
       </div>
       <div class="cert-block reveal">
@@ -782,6 +782,15 @@
           <div class="pi"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Eerste inzichten al na het intakegesprek</div>
           <div class="pi"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Vrijblijvend en zonder verplichtingen</div>
         </div>
+        <div class="cert-block reveal" style="margin-top:24px;">
+          <img id="contact-finops-badge" class="cert-block-badge" alt="FinOps Certified Practitioner">
+          <div class="cert-block-divider"></div>
+          <img id="contact-f2-logo" class="cert-block-logo" alt="FinOps Foundation">
+          <div class="cert-block-text">
+            <strong>FinOps Certified Practitioner</strong>
+            Gecertificeerd door de FinOps Foundation
+          </div>
+        </div>
       </div>
       <div class="reveal">
         <div class="form-card" id="form-container">
@@ -796,9 +805,10 @@
               <textarea placeholder="Beschrijf kort jullie situatie of vraagstuk. Bijv. hoge cloud-, SaaS- of AI-kosten, onduidelijkheid over uitgaven, of een concrete FinOps vraag." name="bericht"></textarea>
             </div>
             <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
-              Verstuur aanvraag <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
+              Aanvraag versturen &mdash; reactie binnen 24u <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
             </button>
           </form>
+          <p style="font-size:12px;color:var(--muted);margin-top:14px;text-align:center;">Liever direct mailen? <a href="mailto:info@ax1s-infra.com" style="color:var(--accent-light);font-weight:600;">info@ax1s-infra.com</a></p>
         </div>
       </div>
     </div>
@@ -874,6 +884,8 @@ document.getElementById('tcard-badge').src      = 'data:image/png;base64,' + FIN
 document.getElementById('tcard-f2').src         = 'data:image/png;base64,' + F2_B64;
 document.getElementById('tcard-badge-tom').src  = 'data:image/png;base64,' + FINOPS_B64;
 document.getElementById('tcard-f2-tom').src     = 'data:image/png;base64,' + F2_B64;
+document.getElementById('contact-finops-badge').src = 'data:image/png;base64,' + FINOPS_B64;
+document.getElementById('contact-f2-logo').src      = 'data:image/png;base64,' + F2_B64;
 
 const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
@@ -909,10 +921,10 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         fc.style.opacity = '1';
       }, 370);
     } else {
-      alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar j.vanzantwijk@ax1s-infra.com');
+      alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com');
     }
   } catch (err) {
-    alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar j.vanzantwijk@ax1s-infra.com');
+    alert('Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com');
   }
 });
 // Animated background
