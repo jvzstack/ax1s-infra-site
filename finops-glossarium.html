@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinOps Glossarium — 20 begrippen uitgelegd | AX1S Infra</title>
+<meta name="description" content="FinOps-woordenboek: 20 kernbegrippen kort en duidelijk uitgelegd, van cloud waste en rightsizing tot Reserved Instances en de FinOps Lifecycle.">
+<link rel="canonical" href="https://ax1s-infra.com/finops-glossarium.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FinOps Glossarium — 20 begrippen uitgelegd | AX1S Infra">
+<meta property="og:description" content="FinOps-woordenboek: 20 kernbegrippen kort en duidelijk uitgelegd, van cloud waste en rightsizing tot Reserved Instances en de FinOps Lifecycle.">
+<meta property="og:url" content="https://ax1s-infra.com/finops-glossarium.html">
+<meta property="og:image" content="https://ax1s-infra.com/assets/ax1s-logo.png">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="AX1S Infra">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FinOps Glossarium — 20 begrippen uitgelegd | AX1S Infra">
+<meta name="twitter:description" content="20 FinOps-kernbegrippen kort en duidelijk uitgelegd.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": "FinOps Glossarium",
+  "description": "20 kernbegrippen uit FinOps en cloud-kostenbeheer, kort en duidelijk uitgelegd.",
+  "url": "https://ax1s-infra.com/finops-glossarium.html",
+  "publisher": { "@id": "https://ax1s-infra.com/#organization" },
+  "inLanguage": "nl-NL",
+  "hasDefinedTerm": [
+    { "@type": "DefinedTerm", "name": "AI-kostenbeheer", "url": "https://ax1s-infra.com/finops-glossarium.html#ai-kostenbeheer", "description": "Het beheersen van uitgaven aan AI- en LLM-workloads: compute voor training en inference, API-kosten van modelproviders, en dataopslag." },
+    { "@type": "DefinedTerm", "name": "Chargeback & Showback", "url": "https://ax1s-infra.com/finops-glossarium.html#chargeback-showback", "description": "Twee manieren om cloudkosten zichtbaar te maken per team of product; bij chargeback wordt het bedrag ook daadwerkelijk doorbelast." },
+    { "@type": "DefinedTerm", "name": "Cloud Financial Management (CFM)", "url": "https://ax1s-infra.com/finops-glossarium.html#cfm", "description": "Overkoepelende term voor het financieel beheren van cloud-uitgaven, waar FinOps de meest gangbare praktijk binnen valt." },
+    { "@type": "DefinedTerm", "name": "Cloud unit economics", "url": "https://ax1s-infra.com/finops-glossarium.html#unit-economics", "description": "De kosten van cloud-infrastructuur uitgedrukt per eenheid waarde, bijvoorbeeld per klant of per transactie." },
+    { "@type": "DefinedTerm", "name": "Cloud waste", "url": "https://ax1s-infra.com/finops-glossarium.html#cloud-waste", "description": "Cloud-capaciteit waarvoor wordt betaald maar die niet nuttig wordt gebruikt." },
+    { "@type": "DefinedTerm", "name": "Commitment-based discount", "url": "https://ax1s-infra.com/finops-glossarium.html#commitment-discount", "description": "Verzamelnaam voor kortingen die je krijgt in ruil voor een verbruiks- of uitgavetoezegging aan een cloudprovider." },
+    { "@type": "DefinedTerm", "name": "Cost allocation", "url": "https://ax1s-infra.com/finops-glossarium.html#cost-allocation", "description": "Het toewijzen van cloud-, SaaS- en AI-kosten aan de teams, producten of kostenplaatsen die ze veroorzaken." },
+    { "@type": "DefinedTerm", "name": "Cost anomaly detection", "url": "https://ax1s-infra.com/finops-glossarium.html#anomaly-detection", "description": "Het automatisch signaleren van onverwachte kostenpieken." },
+    { "@type": "DefinedTerm", "name": "FinOps", "url": "https://ax1s-infra.com/finops-glossarium.html#finops", "description": "De praktijk waarin finance, engineering en operations samenwerken om cloud-, SaaS- en AI-uitgaven te beheersen." },
+    { "@type": "DefinedTerm", "name": "FinOps Certified Practitioner", "url": "https://ax1s-infra.com/finops-glossarium.html#fcp", "description": "Een certificering van de FinOps Foundation die aantoont dat iemand het FinOps-framework begrijpt en kan toepassen." },
+    { "@type": "DefinedTerm", "name": "FinOps Foundation", "url": "https://ax1s-infra.com/finops-glossarium.html#finops-foundation", "description": "De non-profit organisatie achter het FinOps-framework, onderdeel van de Linux Foundation." },
+    { "@type": "DefinedTerm", "name": "FinOps Lifecycle", "url": "https://ax1s-infra.com/finops-glossarium.html#lifecycle", "description": "De drie doorlopende fasen van het FinOps-framework: Inform, Optimize en Operate." },
+    { "@type": "DefinedTerm", "name": "Multi-cloud governance", "url": "https://ax1s-infra.com/finops-glossarium.html#multicloud-governance", "description": "Het consistent beheren van kosten, toegang en beleid over meerdere cloudproviders heen." },
+    { "@type": "DefinedTerm", "name": "Reserved Instance (RI)", "url": "https://ax1s-infra.com/finops-glossarium.html#reserved-instance", "description": "Een commitment aan een specifiek instance-type in een specifieke regio, voor 1 of 3 jaar, in ruil voor korting." },
+    { "@type": "DefinedTerm", "name": "Rightsizing", "url": "https://ax1s-infra.com/finops-glossarium.html#rightsizing", "description": "Het aanpassen van de capaciteit van een resource aan het daadwerkelijke verbruik." },
+    { "@type": "DefinedTerm", "name": "SaaS-sprawl", "url": "https://ax1s-infra.com/finops-glossarium.html#saas-sprawl", "description": "De ongecontroleerde groei van SaaS-abonnementen binnen een organisatie." },
+    { "@type": "DefinedTerm", "name": "Savings Plan", "url": "https://ax1s-infra.com/finops-glossarium.html#savings-plan", "description": "Een commitment op een vast bedrag aan compute-uitgave per uur, voor 1 of 3 jaar, ongeacht instance-type of regio." },
+    { "@type": "DefinedTerm", "name": "Spot instance", "url": "https://ax1s-infra.com/finops-glossarium.html#spot-instance", "description": "Ongebruikte cloudcapaciteit die tegen een fors gereduceerd tarief wordt aangeboden." },
+    { "@type": "DefinedTerm", "name": "Tagging (resource tagging)", "url": "https://ax1s-infra.com/finops-glossarium.html#tagging", "description": "Het labelen van cloud-resources met metadata zoals team, project of omgeving." },
+    { "@type": "DefinedTerm", "name": "Total Cost of Ownership (TCO)", "url": "https://ax1s-infra.com/finops-glossarium.html#tco", "description": "De volledige kosten van een technologiekeuze over de gehele levensduur." }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ax1s-infra.com/" },
+    { "@type": "ListItem", "position": 2, "name": "FinOps Glossarium", "item": "https://ax1s-infra.com/finops-glossarium.html" }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="stylesheet" href="assets/blog.css">
+<style>
+.glossary-index { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 8px; }
+.glossary-index a { font-size: 12px; font-weight: 600; color: var(--accent-light); background: var(--card); border: 1px solid var(--card-border); border-radius: 999px; padding: 6px 12px; transition: border-color 0.2s; }
+.glossary-index a:hover { border-color: var(--accent-border); }
+.term-block { padding: 22px 0; border-bottom: 1px solid var(--divider); scroll-margin-top: 90px; }
+.term-block:last-child { border-bottom: none; }
+.term-block h2 { font-size: 19px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+.term-block p { font-size: 14px; line-height: 1.75; color: var(--muted); margin: 0; }
+.term-block p a { color: var(--accent-light); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html"><img src="assets/ax1s-logo.png" class="nav-logo" alt="AX1S Infra"></a>
+    <div class="nav-links">
+      <a href="finops-radar.html"><svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;vertical-align:-2px;"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.8" opacity="0.85"/><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"/><circle cx="16" cy="16" r="2.2" fill="currentColor"/></svg>FinOps Radar</a>
+      <a href="index.html#blog">Insights</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#finops">FinOps</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">Plan een intake</a>
+  </div>
+</nav>
+
+<section>
+  <div class="section-inner article-head">
+    <a href="index.html#finops" class="back-link"><iconify-icon icon="solar:arrow-left-linear" width="14"></iconify-icon> Terug naar home</a>
+    <span class="stag">Kennisbank</span>
+    <h1>FinOps Glossarium</h1>
+    <div class="article-meta"><img src="assets/team-jelle.jpg" class="author-avatar" alt="Jelle van Zantwijk"><span>Jelle van Zantwijk</span><span>·</span><span>31 jul 2026</span><span>·</span><span>6 min leestijd</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner article-body">
+    <p>20 kernbegrippen uit FinOps en cloud-kostenbeheer, kort en duidelijk uitgelegd. Geen jargon-wedstrijd — gewoon opzoeken wat iets betekent en verder.</p>
+
+    <div class="glossary-index">
+      <a href="#ai-kostenbeheer">AI-kostenbeheer</a>
+      <a href="#chargeback-showback">Chargeback &amp; Showback</a>
+      <a href="#cfm">Cloud Financial Management</a>
+      <a href="#unit-economics">Cloud unit economics</a>
+      <a href="#cloud-waste">Cloud waste</a>
+      <a href="#commitment-discount">Commitment-based discount</a>
+      <a href="#cost-allocation">Cost allocation</a>
+      <a href="#anomaly-detection">Cost anomaly detection</a>
+      <a href="#finops">FinOps</a>
+      <a href="#fcp">FinOps Certified Practitioner</a>
+      <a href="#finops-foundation">FinOps Foundation</a>
+      <a href="#lifecycle">FinOps Lifecycle</a>
+      <a href="#multicloud-governance">Multi-cloud governance</a>
+      <a href="#reserved-instance">Reserved Instance</a>
+      <a href="#rightsizing">Rightsizing</a>
+      <a href="#saas-sprawl">SaaS-sprawl</a>
+      <a href="#savings-plan">Savings Plan</a>
+      <a href="#spot-instance">Spot instance</a>
+      <a href="#tagging">Tagging</a>
+      <a href="#tco">Total Cost of Ownership</a>
+    </div>
+
+    <div class="term-block" id="ai-kostenbeheer">
+      <h2>AI-kostenbeheer</h2>
+      <p>Het beheersen van uitgaven aan AI- en LLM-workloads: compute voor training en inference, API-kosten van modelproviders, en dataopslag. Door de snelle groei en variabele verbruikspatronen van AI-workloads is dit een van de snelst groeiende aandachtsgebieden binnen FinOps.</p>
+    </div>
+
+    <div class="term-block" id="chargeback-showback">
+      <h2>Chargeback &amp; Showback</h2>
+      <p>Twee manieren om cloudkosten zichtbaar te maken per team of product. Bij showback zie je de kosten, maar worden ze niet daadwerkelijk doorbelast; bij chargeback wordt het bedrag echt aan het budget van het team toegerekend. Showback is vaak de eerste stap richting chargeback.</p>
+    </div>
+
+    <div class="term-block" id="cfm">
+      <h2>Cloud Financial Management (CFM)</h2>
+      <p>Overkoepelende term voor het financieel beheren van cloud-uitgaven, waar FinOps de meest gangbare praktijk binnen valt. CFM omvat naast optimalisatie ook budgettering, forecasting en governance.</p>
+    </div>
+
+    <div class="term-block" id="unit-economics">
+      <h2>Cloud unit economics</h2>
+      <p>De kosten van cloud-infrastructuur uitgedrukt per eenheid waarde, bijvoorbeeld per klant, per transactie of per API-call. Hiermee wordt duidelijk of technologiekosten meegroeien met omzet, of sneller stijgen — een belangrijk signaal voor CFO's.</p>
+    </div>
+
+    <div class="term-block" id="cloud-waste">
+      <h2>Cloud waste</h2>
+      <p>Cloud-capaciteit waarvoor wordt betaald maar die niet (meer) nuttig wordt gebruikt: vergeten testomgevingen, ongebruikte opslagvolumes, overgedimensioneerde instances. Vaak de eerste en snelste bron van besparing in een FinOps-traject — zie ook onze <a href="blog/5-manieren-cloudkosten-elimineren.html">5 manieren om onnodige cloudkosten te elimineren</a>.</p>
+    </div>
+
+    <div class="term-block" id="commitment-discount">
+      <h2>Commitment-based discount</h2>
+      <p>Verzamelnaam voor kortingen die je krijgt in ruil voor een verbruiks- of uitgavetoezegging aan een cloudprovider, zoals Reserved Instances en Savings Plans. Hoe langer en zekerder de toezegging, hoe hoger doorgaans de korting. Reken het zelf door met onze <a href="ri-vs-savings-plan-calculator.html">RI vs. Savings Plan Calculator</a>.</p>
+    </div>
+
+    <div class="term-block" id="cost-allocation">
+      <h2>Cost allocation</h2>
+      <p>Het proces waarbij cloud-, SaaS- en AI-kosten worden toegewezen aan de teams, producten of kostenplaatsen die ze veroorzaken. Vereist consistente tagging en is de basis voor zowel showback als chargeback.</p>
+    </div>
+
+    <div class="term-block" id="anomaly-detection">
+      <h2>Cost anomaly detection</h2>
+      <p>Het automatisch signaleren van onverwachte kostenpieken, bijvoorbeeld door een verkeerd geconfigureerde resource of een vergeten proces dat blijft draaien. Vroege detectie voorkomt dat een fout weken doorloopt voordat iemand het opmerkt.</p>
+    </div>
+
+    <div class="term-block" id="finops">
+      <h2>FinOps</h2>
+      <p>De praktijk waarin finance, engineering en operations samenwerken om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Geen eenmalige actie, maar een continue praktijk. Zie de volledige uitleg op <a href="wat-is-finops.html">Wat is FinOps?</a></p>
+    </div>
+
+    <div class="term-block" id="fcp">
+      <h2>FinOps Certified Practitioner</h2>
+      <p>Een certificering van de FinOps Foundation die aantoont dat iemand het FinOps-framework begrijpt en kan toepassen. Beide oprichters van AX1S Infra zijn FinOps Certified Practitioner.</p>
+    </div>
+
+    <div class="term-block" id="finops-foundation">
+      <h2>FinOps Foundation</h2>
+      <p>De non-profit organisatie achter het FinOps-framework, onderdeel van de Linux Foundation. Zij publiceren onder andere de jaarlijkse State of FinOps-benchmark en beheren de FinOps Certified Practitioner-certificering.</p>
+    </div>
+
+    <div class="term-block" id="lifecycle">
+      <h2>FinOps Lifecycle</h2>
+      <p>De drie doorlopende fasen van het FinOps-framework: Inform (zichtbaarheid creëren), Optimize (gericht besparen) en Operate (optimalisatie borgen in processen). Zie <a href="wat-is-finops.html">Wat is FinOps?</a> voor de volledige uitleg.</p>
+    </div>
+
+    <div class="term-block" id="multicloud-governance">
+      <h2>Multi-cloud governance</h2>
+      <p>Het consistent beheren van kosten, toegang en beleid over meerdere cloudproviders heen. Zonder governance ontstaan al snel verschillende tagging-standaarden, beveiligingsniveaus en rapportagemethoden per cloud. Meer hierover in <a href="blog/multi-cloud-governance.html">Multi-cloud governance zonder complexiteit</a>.</p>
+    </div>
+
+    <div class="term-block" id="reserved-instance">
+      <h2>Reserved Instance (RI)</h2>
+      <p>Een commitment aan een specifiek instance-type in een specifieke regio, voor doorgaans 1 of 3 jaar, in ruil voor een aanzienlijke korting t.o.v. on-demand tarieven. Minder flexibel dan een Savings Plan, maar vaak met iets hogere korting. Vergelijk beide opties met onze <a href="ri-vs-savings-plan-calculator.html">RI vs. Savings Plan Calculator</a>.</p>
+    </div>
+
+    <div class="term-block" id="rightsizing">
+      <h2>Rightsizing</h2>
+      <p>Het aanpassen van de capaciteit van een resource (bijv. een virtuele machine) aan het daadwerkelijke verbruik. Overgedimensioneerde instances zijn een van de meest voorkomende vormen van cloud waste.</p>
+    </div>
+
+    <div class="term-block" id="saas-sprawl">
+      <h2>SaaS-sprawl</h2>
+      <p>De ongecontroleerde groei van SaaS-abonnementen binnen een organisatie, vaak aangeschaft door individuele teams zonder centraal overzicht. Leidt tot dubbele tools, vergeten licenties en onnodige kosten.</p>
+    </div>
+
+    <div class="term-block" id="savings-plan">
+      <h2>Savings Plan</h2>
+      <p>Een commitment op een vast bedrag aan compute-uitgave per uur, voor 1 of 3 jaar, ongeacht instance-type of regio. Flexibeler dan een Reserved Instance, met een vergelijkbare (soms iets lagere) korting. Vergelijk beide met onze <a href="ri-vs-savings-plan-calculator.html">RI vs. Savings Plan Calculator</a> of lees de achtergrond in <a href="blog/reserved-instances-vs-savings-plans.html">Reserved Instances vs. Savings Plans</a>.</p>
+    </div>
+
+    <div class="term-block" id="spot-instance">
+      <h2>Spot instance</h2>
+      <p>Ongebruikte cloudcapaciteit die tegen een fors gereduceerd tarief wordt aangeboden, met als risico dat de capaciteit met korte kennisgeving kan worden teruggevorderd. Geschikt voor onderbreekbare workloads zoals batch-verwerking.</p>
+    </div>
+
+    <div class="term-block" id="tagging">
+      <h2>Tagging (resource tagging)</h2>
+      <p>Het labelen van cloud-resources met metadata zoals team, project of omgeving. De basis voor betrouwbare kostenallocatie — zonder consistente tagging is nauwkeurige rapportage per team vrijwel onmogelijk.</p>
+    </div>
+
+    <div class="term-block" id="tco">
+      <h2>Total Cost of Ownership (TCO)</h2>
+      <p>De volledige kosten van een technologiekeuze over de gehele levensduur, inclusief niet alleen de directe cloud- of licentiekosten maar ook beheer, migratie en eventuele uitfasering.</p>
+    </div>
+
+    <div class="article-cta">
+      <div>
+        <h3>Term niet gevonden, of wil je het toegepast zien op jullie situatie?</h3>
+        <p>Doe de FinOps Radar of plan een gratis intake.</p>
+      </div>
+      <div class="article-cta-actions">
+        <a href="finops-radar.html" class="btn-primary">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        <a href="index.html#contact" class="article-cta-secondary">of plan direct een intake</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="assets/ax1s-logo.png" class="footer-logo" alt="AX1S Infra">
+      <p class="footer-sub">FinOps &amp; Infrastructure Consultants<br>Amsterdam, Nederland</p>
+    </div>
+    <div class="footer-right">
+      <div class="tier-badge"><iconify-icon icon="solar:server-path-linear" width="13"></iconify-icon> Powered by European Tier III Infrastructure</div>
+      <p class="copy">© 2026 AX1S Infra. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  const orbs = [
+    { bx: 0.70, by: 0.18, ax: 0.18, ay: 0.10, r: 0.50, spd: 0.0004, rgb: '20,90,240' },
+    { bx: 0.15, by: 0.75, ax: 0.14, ay: 0.12, r: 0.42, spd: 0.0003, rgb: '0,55,200' },
+    { bx: 0.82, by: 0.60, ax: 0.10, ay: 0.15, r: 0.35, spd: 0.0005, rgb: '10,70,220' },
+    { bx: 0.45, by: 0.40, ax: 0.20, ay: 0.08, r: 0.28, spd: 0.00035, rgb: '30,100,255' },
+  ];
+  function draw(ts) {
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = '#08090f';
+    ctx.fillRect(0, 0, W, H);
+    orbs.forEach((o, i) => {
+      const phase = ts * o.spd + i * 1.8;
+      const px = (o.bx + Math.sin(phase) * o.ax) * W;
+      const py = (o.by + Math.cos(phase * 0.7) * o.ay) * H;
+      const r  = o.r * Math.min(W, H);
+      const g = ctx.createRadialGradient(px, py, 0, px, py, r);
+      g.addColorStop(0,   `rgba(${o.rgb},0.45)`);
+      g.addColorStop(0.35,`rgba(${o.rgb},0.18)`);
+      g.addColorStop(0.7, `rgba(${o.rgb},0.05)`);
+      g.addColorStop(1,   `rgba(${o.rgb},0)`);
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, W, H);
+    });
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gratis FinOps tools, templates &amp; checklists | AX1S Infra</title>
+<meta name="description" content="Gratis en direct te gebruiken: de FinOps Radar, een RI vs. Savings Plan calculator, een FinOps-glossarium en downloadbare templates. Geen verplichting.">
+<link rel="canonical" href="https://ax1s-infra.com/gratis-tools.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gratis FinOps tools, templates & checklists | AX1S Infra">
+<meta property="og:description" content="Gratis en direct te gebruiken: de FinOps Radar, een RI vs. Savings Plan calculator, een FinOps-glossarium en downloadbare templates. Geen verplichting.">
+<meta property="og:url" content="https://ax1s-infra.com/gratis-tools.html">
+<meta property="og:image" content="https://ax1s-infra.com/assets/ax1s-logo.png">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="AX1S Infra">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gratis FinOps tools, templates & checklists | AX1S Infra">
+<meta name="twitter:description" content="Gratis en direct te gebruiken: tools, templates en checklists voor FinOps en cloud-kostenbeheer.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Gratis FinOps tools, templates & checklists",
+  "url": "https://ax1s-infra.com/gratis-tools.html",
+  "description": "Verzameling gratis, direct te gebruiken FinOps-tools en templates: rekentool, quiz, glossarium en downloadbare sjablonen.",
+  "isPartOf": { "@id": "https://ax1s-infra.com/#website" },
+  "publisher": { "@id": "https://ax1s-infra.com/#organization" },
+  "inLanguage": "nl-NL"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ax1s-infra.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Gratis tools & tips", "item": "https://ax1s-infra.com/gratis-tools.html" }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="stylesheet" href="assets/blog.css">
+<style>
+.res-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+.res-card {
+  background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(70,140,255,0.04));
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 18px; padding: 24px;
+  display: flex; flex-direction: column; box-shadow: var(--card-shadow); transition: border-color 0.2s, transform 0.2s;
+}
+.res-card:hover { border-color: var(--accent-border); transform: translateY(-2px); }
+.res-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: var(--accent-bg); color: var(--accent-light); margin-bottom: 14px; }
+.res-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-light); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 4px; padding: 3px 9px; margin-bottom: 10px; width: fit-content; }
+.res-card h3 { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.res-card p { font-size: 13.5px; line-height: 1.65; color: var(--muted); margin-bottom: 18px; flex-grow: 1; }
+.res-card a.res-cta { font-size: 13px; font-weight: 700; color: var(--accent-light); display: inline-flex; align-items: center; gap: 6px; margin-top: auto; }
+.res-card a.res-cta iconify-icon { transition: transform 0.2s; }
+.res-card:hover a.res-cta iconify-icon { transform: translateX(3px); }
+.res-section-title { font-size: 12px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin: 40px 0 4px; }
+.res-section-title:first-of-type { margin-top: 8px; }
+@media (max-width: 640px) {
+  .res-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html"><img src="assets/ax1s-logo.png" class="nav-logo" alt="AX1S Infra"></a>
+    <div class="nav-links">
+      <a href="finops-radar.html"><svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;vertical-align:-2px;"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.8" opacity="0.85"/><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"/><circle cx="16" cy="16" r="2.2" fill="currentColor"/></svg>FinOps Radar</a>
+      <a href="index.html#blog">Insights</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#finops">FinOps</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">Plan een intake</a>
+  </div>
+</nav>
+
+<section>
+  <div class="section-inner article-head">
+    <a href="index.html" class="back-link"><iconify-icon icon="solar:arrow-left-linear" width="14"></iconify-icon> Terug naar home</a>
+    <span class="stag">Gratis &amp; vrijblijvend</span>
+    <h1>Gratis tools, templates &amp; checklists</h1>
+    <div class="article-meta"><span>Direct te gebruiken, geen verplichting. Sommige tools vragen om een e-mailadres om je resultaat te sturen &mdash; downloads en de calculator niet.</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner article-body">
+
+    <div class="res-section-title">Interactieve tools</div>
+    <div class="res-grid">
+      <div class="res-card">
+        <div class="res-icon"><iconify-icon icon="solar:radar-2-linear" width="22"></iconify-icon></div>
+        <span class="res-tag">2 minuten</span>
+        <h3>FinOps Radar</h3>
+        <p>7 korte vragen over cloud, SaaS en AI. Direct een gepersonaliseerde score, bevindingen en indicatieve besparingsruimte.</p>
+        <a href="finops-radar.html" class="res-cta">Start de Radar <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+      </div>
+      <div class="res-card">
+        <div class="res-icon"><iconify-icon icon="solar:calculator-linear" width="22"></iconify-icon></div>
+        <span class="res-tag">Geen e-mail nodig</span>
+        <h3>RI vs. Savings Plan Calculator</h3>
+        <p>Vergelijk direct On-Demand, Reserved Instances en Savings Plans op basis van jullie uitgave en workload.</p>
+        <a href="ri-vs-savings-plan-calculator.html" class="res-cta">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+      </div>
+    </div>
+
+    <div class="res-section-title">Kennisbank</div>
+    <div class="res-grid">
+      <div class="res-card">
+        <div class="res-icon"><iconify-icon icon="solar:book-linear" width="22"></iconify-icon></div>
+        <span class="res-tag">20 begrippen</span>
+        <h3>FinOps Glossarium</h3>
+        <p>Kernbegrippen kort en duidelijk uitgelegd: van cloud waste en rightsizing tot de FinOps Lifecycle.</p>
+        <a href="finops-glossarium.html" class="res-cta">Bekijk het glossarium <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+      </div>
+      <div class="res-card">
+        <div class="res-icon"><iconify-icon icon="solar:document-text-linear" width="22"></iconify-icon></div>
+        <span class="res-tag">Uitleg</span>
+        <h3>Wat is FinOps?</h3>
+        <p>De definitie, de FinOps Lifecycle en hoe finance, engineering en operations samen cloudkosten beheersen.</p>
+        <a href="wat-is-finops.html" class="res-cta">Lees de uitleg <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+      </div>
+    </div>
+
+    <div class="res-section-title">Downloadbare templates</div>
+    <div class="res-grid">
+      <div class="res-card">
+        <div class="res-icon"><iconify-icon icon="solar:tag-linear" width="22"></iconify-icon></div>
+        <span class="res-tag">.xlsx</span>
+        <h3>Cloud Tagging Taxonomie</h3>
+        <p>Een kant-en-klare tagging-structuur met 8 aanbevolen starter-tags. Kopieer en pas aan naar jullie situatie.</p>
+        <a href="assets/downloads/AX1S-Cloud-Tagging-Taxonomie-Template.xlsx" class="res-cta" download>Download template <iconify-icon icon="solar:download-minimalistic-linear" width="14"></iconify-icon></a>
+      </div>
+      <div class="res-card">
+        <div class="res-icon"><iconify-icon icon="solar:chart-square-linear" width="22"></iconify-icon></div>
+        <span class="res-tag">.xlsx</span>
+        <h3>Maandelijks Cost Report</h3>
+        <p>Sjabloon met werkende formules: vul kosten per team in, totalen en veranderingen berekenen zichzelf.</p>
+        <a href="assets/downloads/AX1S-Maandelijks-Cost-Report-Template.xlsx" class="res-cta" download>Download template <iconify-icon icon="solar:download-minimalistic-linear" width="14"></iconify-icon></a>
+      </div>
+      <div class="res-card">
+        <div class="res-icon"><iconify-icon icon="solar:checklist-minimalistic-linear" width="22"></iconify-icon></div>
+        <span class="res-tag">.pdf</span>
+        <h3>FinOps Quick-Win Checklist</h3>
+        <p>16 concrete acties, van directe quick wins tot structurele borging. Print 'm uit en vink af.</p>
+        <a href="assets/downloads/AX1S-FinOps-QuickWin-Checklist.pdf" class="res-cta" download>Download checklist <iconify-icon icon="solar:download-minimalistic-linear" width="14"></iconify-icon></a>
+      </div>
+    </div>
+
+    <div class="article-cta">
+      <div>
+        <h3>Ergens tegenaan gelopen, of wil je het toegepast zien op jullie situatie?</h3>
+        <p>Een gratis intake geeft binnen 24 uur een eerlijk beeld van wat er te besparen valt.</p>
+      </div>
+      <div class="article-cta-actions">
+        <a href="index.html#contact" class="btn-primary">Plan een gratis intake <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="assets/ax1s-logo.png" class="footer-logo" alt="AX1S Infra">
+      <p class="footer-sub">FinOps &amp; Infrastructure Consultants<br>Amsterdam, Nederland</p>
+    </div>
+    <div class="footer-right">
+      <div class="tier-badge"><iconify-icon icon="solar:server-path-linear" width="13"></iconify-icon> Powered by European Tier III Infrastructure</div>
+      <p class="copy">© 2026 AX1S Infra. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  const orbs = [
+    { bx: 0.70, by: 0.18, ax: 0.18, ay: 0.10, r: 0.50, spd: 0.0004, rgb: '20,90,240' },
+    { bx: 0.15, by: 0.75, ax: 0.14, ay: 0.12, r: 0.42, spd: 0.0003, rgb: '0,55,200' },
+    { bx: 0.82, by: 0.60, ax: 0.10, ay: 0.15, r: 0.35, spd: 0.0005, rgb: '10,70,220' },
+    { bx: 0.45, by: 0.40, ax: 0.20, ay: 0.08, r: 0.28, spd: 0.00035, rgb: '30,100,255' },
+  ];
+  function draw(ts) {
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = '#08090f';
+    ctx.fillRect(0, 0, W, H);
+    orbs.forEach((o, i) => {
+      const phase = ts * o.spd + i * 1.8;
+      const px = (o.bx + Math.sin(phase) * o.ax) * W;
+      const py = (o.by + Math.cos(phase * 0.7) * o.ay) * H;
+      const r  = o.r * Math.min(W, H);
+      const g = ctx.createRadialGradient(px, py, 0, px, py, r);
+      g.addColorStop(0,   `rgba(${o.rgb},0.45)`);
+      g.addColorStop(0.35,`rgba(${o.rgb},0.18)`);
+      g.addColorStop(0.7, `rgba(${o.rgb},0.05)`);
+      g.addColorStop(1,   `rgba(${o.rgb},0)`);
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, W, H);
+    });
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
