@@ -261,11 +261,29 @@
   .stat-card-side { display: flex; align-items: flex-start; gap: 10px; flex: 1; min-width: 0; }
   .stat-card-side iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
   .stat-card-side p { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0; }
-  .intake-stat-card { display: block; text-decoration: none; transition: border-color 0.2s, transform 0.2s; }
-  .intake-stat-card:hover { border-color: var(--accent-border); transform: translateY(-2px); }
-  .intake-stat-cta { margin-top: 12px; font-size: 12.5px; font-weight: 700; color: var(--accent-light); display: inline-flex; align-items: center; gap: 5px; }
-  .intake-stat-card:hover .intake-stat-cta iconify-icon { transform: translateX(3px); }
-  .intake-stat-cta iconify-icon { transition: transform 0.2s; }
+  .intake-stat-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: border-color 0.2s; }
+  .intake-stat-card:hover { border-color: var(--accent-border); }
+  .intake-stat-btn {
+    flex-shrink: 0; text-decoration: none; font-size: 13px; font-weight: 700; color: #fff;
+    background: var(--accent); border-radius: 9px; padding: 11px 16px;
+    display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .intake-stat-btn:hover { background: #0060d0; transform: translateY(-1px); }
+  .contact-calendly-cta {
+    display: flex; align-items: center; gap: 12px; text-decoration: none;
+    background: linear-gradient(155deg, rgba(0,112,243,0.18), rgba(0,112,243,0.05));
+    border: 1px solid var(--accent-border); border-radius: 14px; padding: 16px 20px;
+    color: var(--text); box-shadow: var(--card-shadow); transition: border-color 0.2s, transform 0.2s;
+  }
+  .contact-calendly-cta:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .contact-calendly-cta iconify-icon:first-child { color: var(--accent-light); flex-shrink: 0; }
+  .contact-calendly-cta span { flex: 1; font-size: 14px; color: var(--muted); }
+  .contact-calendly-cta span strong { color: var(--text); font-weight: 700; }
+  .contact-calendly-arrow { color: var(--accent-light); flex-shrink: 0; transition: transform 0.2s; }
+  .contact-calendly-cta:hover .contact-calendly-arrow { transform: translateX(3px); }
+  .contact-or { display: flex; align-items: center; gap: 10px; margin: 16px 0; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .contact-or::before, .contact-or::after { content: ''; flex: 1; height: 1px; background: var(--divider); }
   .radar-stat-card {
     display: flex; align-items: center; gap: 18px; cursor: pointer;
     position: relative; overflow: hidden;
@@ -493,6 +511,8 @@
     .stat-card-split { flex-direction: column; align-items: flex-start; gap: 12px; }
     .stat-card-divider { width: 100%; height: 1px; align-self: stretch; }
     .stat-num { font-size: 26px; }
+    .intake-stat-card { flex-direction: column; align-items: flex-start; gap: 14px; }
+    .intake-stat-btn { width: 100%; justify-content: center; }
 
     /* SECTIONS */
     .section-inner { padding: 30px 20px; }
@@ -558,7 +578,7 @@
       <h1 class="reveal">Grip op je techkosten, <em>vanaf dag één.</em></h1>
       <p class="hero-sub reveal">AX1S Infra helpt SaaS, fintech en digital-first bedrijven structureel besparen op cloud, SaaS en AI-kosten, van de juiste keuzes tot optimalisatie van bestaande omgevingen.</p>
       <div class="hero-btns reveal">
-        <a href="#contact" class="btn-primary">Reactie binnen 24 uur aanvragen <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        <a href="#contact" class="btn-primary">Gratis intake-analyse aanvragen <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
         <a href="#finops" class="btn-secondary">Meer over FinOps</a>
       </div>
       <div class="cert-block reveal">
@@ -585,12 +605,14 @@
           <div class="stat-label">Inzicht in je budget</div>
         </div>
       </div>
-      <a href="#contact" class="stat-card intake-stat-card">
-        <div class="stat-sublabel">Instapdrempel</div>
-        <div class="stat-num"><span class="num-white">Gratis</span> <span class="unit unit-accent">intake</span></div>
-        <div class="stat-label">Vrijblijvend meekijken en besparingspotentieel in kaart brengen</div>
-        <div class="intake-stat-cta">Plan een intake <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></div>
-      </a>
+      <div class="stat-card intake-stat-card">
+        <div>
+          <div class="stat-sublabel">Instapdrempel</div>
+          <div class="stat-num"><span class="num-white">Gratis</span> <span class="unit unit-accent">intake</span></div>
+          <div class="stat-label">Vrijblijvend meekijken en besparingspotentieel in kaart brengen</div>
+        </div>
+        <a href="#contact" class="intake-stat-btn calendly-btn">Plannen <iconify-icon icon="solar:calendar-add-linear" width="14"></iconify-icon></a>
+      </div>
       <a href="finops-radar.html" class="stat-card radar-stat-card">
         <span class="radar-stat-badge">Gratis</span>
         <div class="radar-stat-icon"><img src="assets/radar-icon.png" alt="FinOps Radar" width="44" height="44"></div>
@@ -870,6 +892,12 @@
         </div>
       </div>
       <div class="reveal">
+        <a href="#contact" class="calendly-btn contact-calendly-cta">
+          <iconify-icon icon="solar:calendar-add-linear" width="18"></iconify-icon>
+          <span>Liever meteen een moment kiezen? <strong>Plan direct in de agenda</strong></span>
+          <iconify-icon icon="solar:arrow-right-linear" width="16" class="contact-calendly-arrow"></iconify-icon>
+        </a>
+        <div class="contact-or"><span>of vul het formulier in</span></div>
         <div class="form-card" id="form-container">
           <form id="contact-form" class="ffields" action="https://formspree.io/f/xreowyvp" method="POST">
             <div class="frow">

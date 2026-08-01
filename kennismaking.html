@@ -73,6 +73,21 @@ h1 { font-size: 32px; font-weight: 800; color: var(--text); letter-spacing: -0.6
 .field textarea { resize: none; height: 100px; }
 .btn-primary { font-size: 15px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 10px; padding: 15px 26px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: none; cursor: pointer; width: 100%; font-family: inherit; transition: background 0.2s, transform 0.15s; }
 .btn-primary:hover { background: #0060d0; transform: translateY(-1px); }
+.calendly-cta {
+  display: flex; align-items: center; gap: 12px; text-decoration: none;
+  background: linear-gradient(155deg, rgba(0,112,243,0.18), rgba(0,112,243,0.05));
+  border: 1px solid var(--accent-border); border-radius: 14px; padding: 16px 20px;
+  color: var(--text); box-shadow: var(--card-shadow); transition: border-color 0.2s, transform 0.2s;
+  margin-bottom: 16px;
+}
+.calendly-cta:hover { border-color: var(--accent); transform: translateY(-1px); }
+.calendly-cta iconify-icon:first-child { color: var(--accent-light); flex-shrink: 0; }
+.calendly-cta span { flex: 1; font-size: 14px; color: var(--muted); }
+.calendly-cta span strong { color: var(--text); font-weight: 700; display: block; font-size: 15px; }
+.calendly-arrow { color: var(--accent-light); flex-shrink: 0; transition: transform 0.2s; }
+.calendly-cta:hover .calendly-arrow { transform: translateX(3px); }
+.or-divider { display: flex; align-items: center; gap: 10px; margin: 0 0 16px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.or-divider::before, .or-divider::after { content: ''; flex: 1; height: 1px; background: var(--card-border); }
 
 .footer-mini { position: relative; z-index: 1; text-align: center; padding: 30px 24px 40px; font-size: 12px; color: #6c7688; }
 .footer-mini a { color: var(--accent-light); }
@@ -133,6 +148,13 @@ h1 { font-size: 32px; font-weight: 800; color: var(--text); letter-spacing: -0.6
         </div>
       </div>
     </div>
+
+    <a href="#form-container" class="calendly-btn calendly-cta">
+      <iconify-icon icon="solar:calendar-add-linear" width="20"></iconify-icon>
+      <span><strong>Plan direct een moment in de agenda</strong>Kies zelf een tijdstip &mdash; geen wachttijd</span>
+      <iconify-icon icon="solar:arrow-right-linear" width="16" class="calendly-arrow"></iconify-icon>
+    </a>
+    <div class="or-divider"><span>of stuur een bericht</span></div>
 
     <div class="form-card" id="form-container">
       <form id="contact-form" class="ffields" action="https://formspree.io/f/xreowyvp" method="POST">
