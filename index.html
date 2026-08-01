@@ -257,6 +257,7 @@
   .stat-note iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
   .stat-note p { font-size: 13px; line-height: 1.7; color: var(--muted); }
   .stat-card-split { display: flex; align-items: center; gap: 20px; }
+  .stat-card-split > div:not(.stat-card-divider) { flex: 1; text-align: center; }
   .stat-card-divider { width: 1px; align-self: stretch; background: var(--card-border); flex-shrink: 0; }
   .stat-card-side { display: flex; align-items: flex-start; gap: 10px; flex: 1; min-width: 0; }
   .stat-card-side iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
@@ -509,6 +510,7 @@
     .cert-block { max-width: 100%; }
     .hero-stats { gap: 10px; }
     .stat-card-split { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .stat-card-split > div:not(.stat-card-divider) { text-align: left; }
     .stat-card-divider { width: 100%; height: 1px; align-self: stretch; }
     .stat-num { font-size: 26px; }
     .intake-stat-card { flex-direction: column; align-items: flex-start; gap: 14px; }
@@ -604,6 +606,12 @@
           <div class="stat-num"><span class="num-green">100%</span></div>
           <div class="stat-label">Inzicht in je budget</div>
         </div>
+        <div class="stat-card-divider"></div>
+        <div>
+          <div class="stat-sublabel">Aanspreekpunt</div>
+          <div class="stat-num"><span>1</span></div>
+          <div class="stat-label" style="color:#fff;">Voor al jouw vragen</div>
+        </div>
       </div>
       <div class="stat-card intake-stat-card">
         <div>
@@ -611,7 +619,7 @@
           <div class="stat-num"><span class="num-white">Gratis</span> <span class="unit unit-accent">intake</span></div>
           <div class="stat-label">Vrijblijvend meekijken en besparingspotentieel in kaart brengen</div>
         </div>
-        <a href="#contact" class="intake-stat-btn calendly-btn">Plannen <iconify-icon icon="solar:calendar-add-linear" width="14"></iconify-icon></a>
+        <a href="https://calendly.com/j-vanzantwijk-ax1s-infra" target="_blank" rel="noopener" class="intake-stat-btn calendly-btn">Plannen <iconify-icon icon="solar:calendar-add-linear" width="14"></iconify-icon></a>
       </div>
       <a href="finops-radar.html" class="stat-card radar-stat-card">
         <span class="radar-stat-badge">Gratis</span>
@@ -750,14 +758,23 @@
 <section id="self-serve-promo">
   <div class="section-inner" style="padding-top:32px; padding-bottom:36px;">
     <span class="label reveal">Nog aan het overwegen?</span>
-    <h2 class="title reveal" style="font-size:26px;">Liever zelf eerst proberen?</h2>
-    <p class="subtitle reveal">Gratis tools, geen gesprek nodig — probeer ze zelf en kom later terug als je vragen hebt.</p>
+    <h2 class="title reveal" style="font-size:26px;">Eerst zelf proberen?</h2>
+    <p class="subtitle reveal">Gratis tools, geen gesprek nodig. Probeer ze zelf en kom later terug als je vragen hebt.</p>
+    <div class="radar-promo-card reveal" style="margin-top:24px;">
+      <div class="radar-promo-icon"><img src="assets/radar-icon.png" alt="FinOps Radar" width="56" height="56"></div>
+      <div class="radar-promo-text">
+        <span class="stag">Gratis tool</span>
+        <h3>FinOps Radar: ontdek binnen 2 minuten jouw verborgen besparing</h3>
+        <p>7 korte vragen, direct een gepersonaliseerde score en concrete inzichten. Geen verplichting vooraf.</p>
+      </div>
+      <a href="finops-radar.html" class="btn-primary">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+    </div>
     <div class="tools-grid reveal">
-      <a href="finops-radar.html" class="tool-showcase-card">
-        <div class="tool-showcase-icon"><iconify-icon icon="solar:radar-2-linear" width="22"></iconify-icon></div>
-        <h3>FinOps Radar</h3>
-        <p>7 korte vragen, direct een gepersonaliseerde score en besparingsindicatie.</p>
-        <span class="tool-showcase-cta">Start de Radar <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+      <a href="assets/downloads/AX1S-FinOps-QuickWin-Checklist.pdf" class="tool-showcase-card" download>
+        <div class="tool-showcase-icon"><iconify-icon icon="solar:checklist-minimalistic-linear" width="22"></iconify-icon></div>
+        <h3>FinOps Quick-Win Checklist</h3>
+        <p>16 concrete acties, van directe quick wins tot structurele borging. Print 'm uit en vink af.</p>
+        <span class="tool-showcase-cta">Download checklist <iconify-icon icon="solar:download-minimalistic-linear" width="14"></iconify-icon></span>
       </a>
       <a href="ri-vs-savings-plan-calculator.html" class="tool-showcase-card">
         <div class="tool-showcase-icon"><iconify-icon icon="solar:calculator-linear" width="22"></iconify-icon></div>
@@ -851,23 +868,6 @@
 
 <hr>
 
-<!-- RADAR PROMO -->
-<section id="radar-promo">
-  <div class="section-inner" style="padding-top:40px; padding-bottom:40px;">
-    <div class="radar-promo-card reveal">
-      <div class="radar-promo-icon"><img src="assets/radar-icon.png" alt="FinOps Radar" width="56" height="56"></div>
-      <div class="radar-promo-text">
-        <span class="stag">Gratis tool</span>
-        <h3>FinOps Radar: ontdek binnen 2 minuten jouw verborgen besparing</h3>
-        <p>7 korte vragen, direct een gepersonaliseerde score en concrete inzichten. Geen verplichting vooraf.</p>
-      </div>
-      <a href="finops-radar.html" class="btn-primary">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
-    </div>
-  </div>
-</section>
-
-<hr>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
@@ -892,7 +892,7 @@
         </div>
       </div>
       <div class="reveal">
-        <a href="#contact" class="calendly-btn contact-calendly-cta">
+        <a href="https://calendly.com/j-vanzantwijk-ax1s-infra" target="_blank" rel="noopener" class="calendly-btn contact-calendly-cta">
           <iconify-icon icon="solar:calendar-add-linear" width="18"></iconify-icon>
           <span>Liever meteen een moment kiezen? <strong>Plan direct in de agenda</strong></span>
           <iconify-icon icon="solar:arrow-right-linear" width="16" class="contact-calendly-arrow"></iconify-icon>
@@ -910,7 +910,7 @@
               <textarea placeholder="Beschrijf kort jullie situatie of vraagstuk. Bijv. hoge cloud-, SaaS- of AI-kosten, onduidelijkheid over uitgaven, of een concrete FinOps vraag." name="bericht"></textarea>
             </div>
             <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
-              Aanvraag versturen &mdash; reactie binnen 24u <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
+              Aanvraag versturen, reactie binnen 24u <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
             </button>
           </form>
           <p style="font-size:12px;color:var(--muted);margin-top:14px;text-align:center;">Liever direct mailen? <a href="mailto:info@ax1s-infra.com" style="color:var(--accent-light);font-weight:600;">info@ax1s-infra.com</a></p>

@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RI vs. Savings Plan Calculator — gratis rekentool | AX1S Infra</title>
+<title>RI vs. Savings Plan Calculator: gratis rekentool | AX1S Infra</title>
 <meta name="description" content="Vergelijk direct On-Demand, Reserved Instances en Savings Plans op basis van jullie cloud-uitgave en workload. Gratis rekentool, geen e-mailadres nodig.">
 <link rel="canonical" href="https://ax1s-infra.com/ri-vs-savings-plan-calculator.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="RI vs. Savings Plan Calculator — gratis rekentool | AX1S Infra">
+<meta property="og:title" content="RI vs. Savings Plan Calculator: gratis rekentool | AX1S Infra">
 <meta property="og:description" content="Vergelijk direct On-Demand, Reserved Instances en Savings Plans op basis van jullie cloud-uitgave en workload. Gratis rekentool, geen e-mailadres nodig.">
 <meta property="og:url" content="https://ax1s-infra.com/ri-vs-savings-plan-calculator.html">
 <meta property="og:image" content="https://ax1s-infra.com/assets/ax1s-logo.png">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:site_name" content="AX1S Infra">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="RI vs. Savings Plan Calculator — gratis rekentool | AX1S Infra">
+<meta name="twitter:title" content="RI vs. Savings Plan Calculator: gratis rekentool | AX1S Infra">
 <meta name="twitter:description" content="Vergelijk direct On-Demand, Reserved Instances en Savings Plans. Gratis, geen e-mailadres nodig.">
 <script type="application/ld+json">
 {
@@ -206,7 +206,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
   <div class="tool-logo"><iconify-icon icon="solar:calculator-linear" width="26"></iconify-icon></div>
   <span class="eyebrow">Gratis rekentool</span>
   <h1 class="tool-title">RI vs. Savings Plan Calculator</h1>
-  <p class="tool-sub">Vul jullie situatie in en zie direct wat On-Demand, Reserved Instances en Savings Plans schelen. Geen e-mailadres nodig — dit is gewoon een gratis tool.</p>
+  <p class="tool-sub">Vul jullie situatie in en zie direct wat On-Demand, Reserved Instances en Savings Plans schelen. Geen e-mailadres nodig, dit is gewoon een gratis tool.</p>
 
   <div class="tool-card">
     <div class="ffields">
@@ -218,9 +218,9 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
       <div class="field">
         <label for="predictability">Voorspelbaarheid van de workload</label>
         <select id="predictability">
-          <option value="stable">Zeer stabiel — verandert nauwelijks</option>
-          <option value="moderate" selected>Redelijk stabiel — schommelt wat</option>
-          <option value="variable">Wisselend — schaalt vaak op/af</option>
+          <option value="stable">Zeer stabiel (verandert nauwelijks)</option>
+          <option value="moderate" selected>Redelijk stabiel (schommelt wat)</option>
+          <option value="variable">Wisselend (schaalt vaak op/af)</option>
         </select>
       </div>
       <div class="field">
@@ -237,7 +237,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     <div class="reco-note" id="reco-note"><!-- injected by JS --></div>
 
-    <p class="disclaimer">Indicatieve, marktgemiddelde kortingspercentages voor grote cloudproviders. Werkelijke kortingen verschillen per instance-type, regio en leverancier — deze tool geeft een eerste richting, geen offerte.</p>
+    <p class="disclaimer">Indicatieve, marktgemiddelde kortingspercentages voor grote cloudproviders. Werkelijke kortingen verschillen per instance-type, regio en leverancier. Deze tool geeft een eerste richting, geen offerte.</p>
   </div>
 
   <div class="tool-cta">
@@ -349,7 +349,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
       return 'Bij een wisselende workload is een Savings Plan doorgaans slimmer: het geldt voor compute in het algemeen, in plaats van een specifiek instance-type. Reserved Instances lopen dan het risico op onderbenutte capaciteit.';
     }
     if (predictability === 'stable') {
-      return `Bij een zeer voorspelbare workload kun je met een Reserved Instance (${term} jaar) meestal de hoogste korting behalen — de lagere flexibiliteit is dan minder relevant.`;
+      return `Bij een zeer voorspelbare workload kun je met een Reserved Instance (${term} jaar) meestal de hoogste korting behalen. De lagere flexibiliteit is dan minder relevant.`;
     }
     return 'Bij een redelijk stabiele workload biedt een Savings Plan een goede balans tussen korting en flexibiliteit. Overweeg Reserved Instances alleen voor het deel dat echt vaststaat.';
   }

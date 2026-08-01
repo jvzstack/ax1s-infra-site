@@ -136,20 +136,17 @@ section { position: relative; z-index: 1; }
 .q-nav { display: flex; justify-content: flex-start; margin-top: auto; }
 
 /* RESULT */
-.result-head { text-align: center; margin-bottom: 28px; }
-.score-ring {
-  width: 168px; height: 168px; border-radius: 50%; margin: 0 auto 20px;
-  display: flex; align-items: center; justify-content: center; position: relative;
-}
-.score-ring-inner {
-  position: absolute; inset: 12px; border-radius: 50%; background: #0b0d18;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  border: 1px solid rgba(255,255,255,0.06);
-}
-.score-num { font-size: 38px; font-weight: 800; color: #fff; line-height: 1; }
-.score-max { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.result-head { text-align: center; margin-bottom: 22px; }
+.duo-avatars { display: flex; justify-content: center; margin-bottom: 12px; }
+.duo-avatars img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 2px solid #0d0f1a; box-shadow: 0 2px 10px rgba(0,0,0,0.35); }
+.duo-avatars img:not(:first-child) { margin-left: -12px; }
+.attribution-tag { font-size: 11px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
 .result-label { font-size: 24px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
 .result-desc { font-size: 15px; color: #ced4e0; max-width: 420px; margin: 0 auto; line-height: 1.7; }
+
+.score-pill-wrap { text-align: center; margin: 18px 0 4px; }
+.score-pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.05); border: 1px solid var(--card-border); border-radius: 999px; padding: 7px 16px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.score-pill b { color: var(--text); font-weight: 800; }
 
 .findings-title { font-size: 12px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin: 28px 0 14px; }
 .finding-item {
@@ -161,14 +158,21 @@ section { position: relative; z-index: 1; }
 
 .savings-box {
   background: linear-gradient(155deg, rgba(0,112,243,0.16), rgba(0,112,243,0.04));
-  border: 1px solid rgba(0,112,243,0.32); border-radius: 14px; padding: 22px 22px; margin-top: 22px;
+  border: 1px solid rgba(0,112,243,0.32); border-radius: 14px; padding: 24px; margin-top: 4px;
 }
-.savings-label { font-size: 11px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
-.savings-amount { font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 6px; }
+.savings-label { font-size: 11px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+.savings-amount { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 8px; }
 .savings-note { font-size: 14px; color: #ced4e0; line-height: 1.6; }
 
-.share-row { display: flex; gap: 10px; margin-top: 22px; flex-wrap: wrap; }
-.share-row .btn-secondary, .share-row .btn-primary { width: auto; flex: 1; min-width: 160px; }
+.share-row { display: flex; gap: 10px; margin-top: 0; flex-wrap: wrap; }
+.share-row .btn-secondary, .share-row .btn-primary { width: auto; flex: 1; min-width: 160px; padding: 10px 16px; font-size: 13px; }
+.share-row-intro { text-align: center; font-size: 14.5px; font-weight: 700; color: var(--text); margin-top: 20px; margin-bottom: 10px; }
+
+/* LIVE SIGNALS */
+.signal-row { margin-bottom: 22px; }
+.signal-row-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 8px; }
+.signal-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.signal-chip { font-size: 12px; font-weight: 600; color: var(--accent-light); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 999px; padding: 5px 12px; }
 
 /* LEAD FORM */
 .lead-block { margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--divider); }
@@ -178,9 +182,10 @@ section { position: relative; z-index: 1; }
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field label { font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
 .field label .opt { text-transform: none; font-weight: 500; letter-spacing: 0; color: #6c7688; }
-.field input { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 12px 14px; font-family: inherit; font-size: 14px; color: var(--text); transition: border-color 0.2s; width: 100%; }
-.field input::placeholder { color: #6c7688; }
-.field input:focus { outline: none; border-color: var(--accent); }
+.field input, .field textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 12px 14px; font-family: inherit; font-size: 14px; color: var(--text); transition: border-color 0.2s; width: 100%; }
+.field textarea { resize: vertical; min-height: 90px; line-height: 1.5; }
+.field input::placeholder, .field textarea::placeholder { color: #6c7688; }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); }
 .lead-success { text-align: center; padding: 8px 0; }
 .lead-success iconify-icon { color: var(--accent-light); }
 
@@ -234,8 +239,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
   .wrap { padding: 100px 16px 48px; }
   .tool-title { font-size: 28px; }
   .radar-card { padding: 26px 20px; }
-  .score-ring { width: 140px; height: 140px; }
-  .score-num { font-size: 32px; }
+  .savings-amount { font-size: 26px; }
 }
 </style>
 </head>
@@ -410,6 +414,34 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
     },
   ];
 
+  // Korte signalen die live opbouwen terwijl er wordt geantwoord, los van de e-mailgate.
+  const signalMap = {
+    0: { 2: 'Veel leveranciers' },
+    1: { 2: 'Geen duidelijke eigenaar' },
+    2: { 1: 'Contract verouderd', 2: 'Contract nooit herzien' },
+    3: { 2: 'Geen verbruiksmonitoring' },
+    4: { 1: 'Kosten niet gespecificeerd' },
+    5: { 1: 'Nog geen externe check' },
+  };
+  function getSignals() {
+    const out = [];
+    for (let i = 0; i < 6; i++) {
+      if (answers[i] !== null && signalMap[i] && signalMap[i][answers[i]]) {
+        out.push(signalMap[i][answers[i]]);
+      }
+    }
+    return out;
+  }
+  function signalChipsHtml() {
+    const signals = getSignals();
+    if (!signals.length) return '';
+    return `
+      <div class="signal-row">
+        <span class="signal-row-label">Tot nu toe opgepikt</span>
+        <div class="signal-chips">${signals.map(s => `<span class="signal-chip">${s}</span>`).join('')}</div>
+      </div>`;
+  }
+
   const card = document.getElementById('radar-card');
   const restartLink = document.getElementById('restart-link');
   let step = -1; // -1 = intro, 0-6 = questions, 7 = result
@@ -444,6 +476,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
         <div class="progress-top"><span>Vraag ${i + 1} van ${questions.length}</span><span>${Math.round(pct)}%</span></div>
         <div class="progress-bg"><div class="progress-fill" style="width:${pct}%"></div></div>
       </div>
+      ${signalChipsHtml()}
       <div class="q-text">${q.text}</div>
       <div class="q-options">${optsHtml}</div>
       <div class="q-nav">
@@ -490,26 +523,26 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     const findings = [];
     if (answers[0] === 2 && answers[4] === 1) {
-      findings.push('Met dit aantal leveranciers en onduidelijke facturen is de kans groot dat kosten dubbel of onnodig doorlopen.');
+      findings.push('Bij dit aantal leveranciers en facturen die niet uitgesplitst zijn, vinden wij bijna altijd kosten die dubbel lopen of gewoon vergeten zijn.');
     }
     if (answers[3] === 2) {
-      findings.push('Zonder verbruiksmonitoring lekt gemiddeld 10 tot 15 procent van het techbudget weg aan ongebruikte cloud-reserveringen en SaaS-licenties.');
+      findings.push('Onbenutte cloud-capaciteit en vergeten SaaS-licenties tikken samen al snel 10 tot 15 procent van het techbudget weg wanneer niemand het verbruik volgt.');
     }
     if (answers[2] === 1 || answers[2] === 2) {
-      findings.push('Contracten die langer dan een jaar niet herzien zijn, lopen vaak achter op actuele marktprijzen.');
+      findings.push('Contracten die langer dan een jaar niet herzien zijn, lopen achter op wat er nu in de markt te halen valt.');
     }
     if (answers[1] === 2) {
-      findings.push('Zonder duidelijke eigenaar van technologiekosten blijven besparingskansen vaak onopgemerkt.');
+      findings.push('Als niemand expliciet verantwoordelijk is voor de technologiekosten, zien wij besparingskansen structureel blijven liggen.');
     }
     if (answers[5] === 1) {
-      findings.push('Een frisse blik van buitenaf brengt vaak besparingen aan het licht die intern over het hoofd worden gezien.');
+      findings.push('Een blik van buitenaf legt besparingen bloot die intern over het hoofd zijn gezien.');
     }
     let shownFindings = findings.slice(0, 3);
     if (shownFindings.length < 2) {
       shownFindings.push('Jullie beantwoordden de meeste vragen al optimaal, de basis staat er goed voor.');
     }
 
-    let savingsHtml = '';
+    let heroHtml = '';
     if (score < 70 && answers[6] !== null) {
       const base = questions[6].options[answers[6]].base;
       // Besparingsrange schaalt mee met de score: hoe reactiever, hoe hoger het indicatieve potentieel.
@@ -517,15 +550,22 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
       const pctHigh = score <= 40 ? 0.20 : 0.12;
       const low = Math.round((base * 12 * pctLow) / 500) * 500;
       const high = Math.round((base * 12 * pctHigh) / 500) * 500;
-      savingsHtml = `
+      heroHtml = `
         <div class="savings-box">
           <div class="savings-label">Indicatieve besparingsruimte per jaar</div>
           <div class="savings-amount">€${low.toLocaleString('nl-NL')} – €${high.toLocaleString('nl-NL')}</div>
           <div class="savings-note">Op basis van jullie antwoorden: organisaties met een vergelijkbare score besparen doorgaans ${Math.round(pctLow*100)} tot ${Math.round(pctHigh*100)} procent op hun cloud-, SaaS- en AI-budget. Een eerste analyse geeft het exacte beeld.</div>
         </div>`;
+    } else {
+      heroHtml = `
+        <div class="savings-box">
+          <div class="savings-label">Status</div>
+          <div class="savings-amount" style="font-size:21px;">Jullie zitten er goed bovenop</div>
+          <div class="savings-note">Winst zit hier vooral in details: verfijning van de huidige aanpak, niet in grote structurele besparingen.</div>
+        </div>`;
     }
 
-    return { score, label, desc, shownFindings, savingsHtml };
+    return { score, label, desc, shownFindings, heroHtml };
   }
 
   function renderGate() {
@@ -533,15 +573,15 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     card.innerHTML = `
       <div class="result-head">
-        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${r.score} * 3.6deg), rgba(255,255,255,0.10) calc(${r.score} * 3.6deg) 360deg); filter: blur(4px); opacity: 0.55;">
-          <div class="score-ring-inner">
-            <div class="score-num">?</div>
-            <div class="score-max">van 100</div>
-          </div>
+        <div class="duo-avatars">
+          <img src="assets/team-tom.jpg" alt="Tom Prager">
+          <img src="assets/team-jelle.jpg" alt="Jelle van Zantwijk">
         </div>
-        <div class="result-label">Je Grip-score is berekend</div>
-        <div class="result-desc">Vul je e-mailadres in om je score, bevindingen en indicatieve besparingsruimte te bekijken.</div>
+        <div class="attribution-tag">Tom &amp; Jelle's eerste inschatting</div>
+        <div class="result-desc">We hebben jullie antwoorden bekeken. Vul je e-mailadres in voor de indicatieve besparing in euro's en de volledige toelichting per punt.</div>
       </div>
+
+      ${signalChipsHtml()}
 
       <div class="lead-block" id="gate-block" style="border-top:none; padding-top:0; margin-top:8px;">
         <form id="radar-gate-form" class="ffields">
@@ -578,35 +618,37 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     card.innerHTML = `
       <div class="result-head">
-        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${pct} * 3.6deg), rgba(255,255,255,0.10) calc(${pct} * 3.6deg) 360deg);">
-          <div class="score-ring-inner">
-            <div class="score-num">${pct}</div>
-            <div class="score-max">van 100</div>
-          </div>
+        <div class="duo-avatars">
+          <img src="assets/team-tom.jpg" alt="Tom Prager">
+          <img src="assets/team-jelle.jpg" alt="Jelle van Zantwijk">
         </div>
-        <div class="result-label">${r.label}</div>
+        <div class="attribution-tag">Tom &amp; Jelle's inschatting</div>
         <div class="result-desc">${r.desc}</div>
       </div>
+
+      ${r.heroHtml}
 
       <div class="findings-title">Wat opvalt</div>
       ${r.shownFindings.map(f => `<div class="finding-item"><iconify-icon icon="solar:danger-triangle-linear" width="16"></iconify-icon><span>${f}</span></div>`).join('')}
 
-      ${r.savingsHtml}
+      <div class="score-pill-wrap"><span class="score-pill">Score <b>${pct}/100</b> &middot; ${r.label}</span></div>
 
+      <p class="share-row-intro">Laten we samen een blik werpen op jouw situatie.</p>
       <div class="share-row">
-        <a href="#lead-block" class="btn-primary"><iconify-icon icon="solar:gift-linear" width="15"></iconify-icon> Vraag een gratis analyse aan</a>
+        <a href="#lead-block" class="btn-primary"><iconify-icon icon="solar:letter-linear" width="14"></iconify-icon> Naar contactformulier</a>
+        <a href="https://calendly.com/j-vanzantwijk-ax1s-infra" target="_blank" rel="noopener" class="btn-secondary calendly-btn"><iconify-icon icon="solar:calendar-add-linear" width="14"></iconify-icon> Plan een digitale kennismaking</a>
       </div>
 
       <div class="lead-block" id="lead-block">
-        <div class="lead-title">Wil je deze uitkomst laten toelichten voor jullie specifieke situatie?</div>
-        <div class="lead-sub">Naam en bedrijfsnaam zijn optioneel.</div>
+        <div class="lead-title">Liever eerst je situatie toelichten?</div>
         <form id="radar-lead-form" class="ffields" action="https://formspree.io/f/xreowyvp" method="POST">
           <input type="hidden" name="bron" value="FinOps Radar">
           <input type="hidden" name="score" value="${r.score} / 100 - ${r.label}">
           <div class="field"><label>Naam <span class="opt">(optioneel)</span></label><input type="text" placeholder="Naam" name="naam"></div>
           <div class="field"><label>E-mail</label><input type="email" required placeholder="naam@bedrijf.nl" name="email" value="${email.replace(/"/g, '&quot;')}"></div>
           <div class="field"><label>Bedrijfsnaam <span class="opt">(optioneel)</span></label><input type="text" placeholder="Bedrijfsnaam" name="bedrijf"></div>
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Vraag toelichting aan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
+          <div class="field"><label>Toelichting <span class="opt">(optioneel)</span></label><textarea placeholder="Beschrijf kort jullie situatie of vraagstuk. Bijv. hoge cloud-, SaaS- of AI-kosten, onduidelijkheid over uitgaven, of een concrete FinOps vraag." name="bericht"></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Aanvraag versturen, reactie binnen 24u <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
         </form>
         <div class="cert-block" style="margin-top:20px;">
           <img src="assets/finops-certified-badge.png" alt="FinOps Certified Practitioner" class="cert-block-badge">
