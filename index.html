@@ -256,9 +256,12 @@
   .stat-note { background: var(--card); border: 1px solid var(--card-border); border-radius: 12px; padding: 16px 18px; display: flex; gap: 12px; align-items: flex-start; box-shadow: var(--card-shadow); }
   .stat-note iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
   .stat-note p { font-size: 13px; line-height: 1.7; color: var(--muted); }
-  .stat-card-split { display: flex; align-items: center; gap: 20px; }
-  .stat-card-split > div:not(.stat-card-divider) { flex: 1; text-align: center; }
+  .stat-card-split { display: flex; align-items: center; gap: 18px; }
   .stat-card-divider { width: 1px; align-self: stretch; background: var(--card-border); flex-shrink: 0; }
+  .stat-cert-card { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+  .stat-cert-badge { height: 32px; width: auto; flex-shrink: 0; }
+  .stat-cert-text { font-size: 11px; color: var(--muted); line-height: 1.4; }
+  .stat-cert-text strong { display: block; font-size: 12.5px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
   .stat-card-side { display: flex; align-items: flex-start; gap: 10px; flex: 1; min-width: 0; }
   .stat-card-side iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
   .stat-card-side p { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0; }
@@ -509,10 +512,9 @@
     .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
     .cert-block { max-width: 100%; }
     .hero-stats { gap: 10px; }
-    .stat-card-split { flex-direction: column; align-items: flex-start; gap: 12px; }
-    .stat-card-split > div:not(.stat-card-divider) { text-align: left; }
-    .stat-card-divider { width: 100%; height: 1px; align-self: stretch; }
     .stat-num { font-size: 26px; }
+    .stat-card-split { flex-direction: column; align-items: flex-start; gap: 14px; }
+    .stat-card-divider { width: 100%; height: 1px; align-self: stretch; }
     .intake-stat-card { flex-direction: column; align-items: flex-start; gap: 14px; }
     .intake-stat-btn { width: 100%; justify-content: center; }
 
@@ -601,16 +603,12 @@
           <div class="stat-label">Na een FinOps traject</div>
         </div>
         <div class="stat-card-divider"></div>
-        <div>
-          <div class="stat-sublabel">Transparantie</div>
-          <div class="stat-num"><span class="num-green">100%</span></div>
-          <div class="stat-label">Inzicht in je budget</div>
-        </div>
-        <div class="stat-card-divider"></div>
-        <div>
-          <div class="stat-sublabel">Aanspreekpunt</div>
-          <div class="stat-num"><span>1</span></div>
-          <div class="stat-label" style="color:#fff;">Voor al jouw vragen</div>
+        <div class="stat-cert-card">
+          <img id="stat-finops-badge" class="stat-cert-badge" alt="FinOps Certified Practitioner">
+          <div class="stat-cert-text">
+            <strong>FinOps Certified</strong>
+            Gecertificeerd door de FinOps Foundation
+          </div>
         </div>
       </div>
       <div class="stat-card intake-stat-card">
@@ -991,6 +989,7 @@ document.getElementById('tcard-badge-tom').src  = 'data:image/png;base64,' + FIN
 document.getElementById('tcard-f2-tom').src     = 'data:image/png;base64,' + F2_B64;
 document.getElementById('contact-finops-badge').src = 'data:image/png;base64,' + FINOPS_B64;
 document.getElementById('contact-f2-logo').src      = 'data:image/png;base64,' + F2_B64;
+document.getElementById('stat-finops-badge').src    = 'data:image/png;base64,' + FINOPS_B64;
 
 const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
