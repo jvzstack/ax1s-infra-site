@@ -137,6 +137,17 @@ section { position: relative; z-index: 1; }
 
 /* RESULT */
 .result-head { text-align: center; margin-bottom: 22px; }
+.score-ring {
+  width: 104px; height: 104px; border-radius: 50%; margin: 0 auto 14px;
+  display: flex; align-items: center; justify-content: center; position: relative;
+}
+.score-ring-inner {
+  position: absolute; inset: 8px; border-radius: 50%; background: #0b0d18;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.score-num { font-size: 23px; font-weight: 800; color: #fff; line-height: 1; }
+.score-max { font-size: 10px; color: var(--muted); margin-top: 3px; }
 .duo-avatars { display: flex; justify-content: center; margin-bottom: 12px; }
 .duo-avatars img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 2px solid #0d0f1a; box-shadow: 0 2px 10px rgba(0,0,0,0.35); }
 .duo-avatars img:not(:first-child) { margin-left: -12px; }
@@ -169,10 +180,15 @@ section { position: relative; z-index: 1; }
 .share-row-intro { text-align: center; font-size: 14.5px; font-weight: 700; color: var(--text); margin-top: 20px; margin-bottom: 10px; }
 
 /* LIVE SIGNALS */
-.signal-row { margin-bottom: 22px; }
+.signal-row { margin-top: 22px; margin-bottom: 22px; }
 .signal-row-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 8px; }
 .signal-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .signal-chip { font-size: 12px; font-weight: 600; color: var(--accent-light); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 999px; padding: 5px 12px; }
+
+/* BLURRED PREVIEW (gate) */
+.preview-blur-wrap { position: relative; max-height: 210px; overflow: hidden; border-radius: 14px; margin: 22px 0 4px; }
+.preview-blur-content { filter: blur(6px); opacity: 0.6; pointer-events: none; user-select: none; }
+.preview-blur-fade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,13,24,0) 0%, rgba(9,10,17,0.92) 85%); }
 
 /* LEAD FORM */
 .lead-block { margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--divider); }
@@ -573,6 +589,12 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     card.innerHTML = `
       <div class="result-head">
+        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${r.score} * 3.6deg), rgba(255,255,255,0.10) calc(${r.score} * 3.6deg) 360deg); filter: blur(3px); opacity: 0.5;">
+          <div class="score-ring-inner">
+            <div class="score-num">?</div>
+            <div class="score-max">van 100</div>
+          </div>
+        </div>
         <div class="duo-avatars">
           <img src="assets/team-tom.jpg" alt="Tom Prager">
           <img src="assets/team-jelle.jpg" alt="Jelle van Zantwijk">
@@ -581,14 +603,23 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
         <div class="result-desc">We hebben jullie antwoorden bekeken. Vul je e-mailadres in voor de indicatieve besparing in euro's en de volledige toelichting per punt.</div>
       </div>
 
-      ${signalChipsHtml()}
-
       <div class="lead-block" id="gate-block" style="border-top:none; padding-top:0; margin-top:8px;">
         <form id="radar-gate-form" class="ffields">
           <div class="field"><label>E-mail</label><input type="email" required placeholder="naam@bedrijf.nl" name="email" id="gate-email"></div>
           <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Bekijk mijn resultaat <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
         </form>
         <p style="font-size:12px;color:var(--muted);margin-top:12px;text-align:center;">Denk er alvast even over na: waar zit bij jullie waarschijnlijk de grootste besparing?</p>
+      </div>
+
+      ${signalChipsHtml()}
+
+      <div class="preview-blur-wrap">
+        <div class="preview-blur-content">
+          ${r.heroHtml}
+          <div class="findings-title">Wat opvalt</div>
+          ${r.shownFindings.map(f => `<div class="finding-item"><iconify-icon icon="solar:danger-triangle-linear" width="16"></iconify-icon><span>${f}</span></div>`).join('')}
+        </div>
+        <div class="preview-blur-fade"></div>
       </div>
     `;
 
@@ -618,6 +649,12 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     card.innerHTML = `
       <div class="result-head">
+        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${pct} * 3.6deg), rgba(255,255,255,0.10) calc(${pct} * 3.6deg) 360deg);">
+          <div class="score-ring-inner">
+            <div class="score-num">${pct}</div>
+            <div class="score-max">van 100</div>
+          </div>
+        </div>
         <div class="duo-avatars">
           <img src="assets/team-tom.jpg" alt="Tom Prager">
           <img src="assets/team-jelle.jpg" alt="Jelle van Zantwijk">
