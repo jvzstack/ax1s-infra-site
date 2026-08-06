@@ -15,6 +15,7 @@ AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klante
 
 ## Insights (blog)
 
+- [Veelgestelde vragen over cloudkosten en FinOps](https://ax1s-infra.com/blog/veelgestelde-vragen-cloudkosten-finops.html): 14 directe vraag-en-antwoorden, van "waarom stijgen cloudkosten sneller dan omzet" tot FinOps uitbesteden of zelf doen
 - [Case: 23% besparing in een gericht traject](https://ax1s-infra.com/blog/case-23-procent-besparing.html): klantcase met concrete aanpak en resultaat
 - [5 manieren om onnodige cloudkosten te elimineren](https://ax1s-infra.com/blog/5-manieren-cloudkosten-elimineren.html)
 - [Het FinOps volwassenheidsmodel](https://ax1s-infra.com/blog/finops-volwassenheidsmodel.html): waar staat jouw organisatie?
