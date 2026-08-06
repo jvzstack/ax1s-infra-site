@@ -13,7 +13,7 @@
   --accent-bg:     rgba(0,112,243,0.09);
   --accent-border: rgba(0,112,243,0.22);
   --text:          #e8eaf0;
-  --muted:         #b7c0cd;
+  --muted:         #ced4e0;
 }
 html { scroll-behavior: smooth; }
 body { font-family: 'Manrope', sans-serif; background: var(--bg); color: var(--muted); line-height: 1.6; overflow-x: hidden; }
