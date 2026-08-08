@@ -404,21 +404,28 @@
 
   /* SERVICES */
   .services-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 32px; }
-  .scard { background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 24px; transition: border-color 0.25s; box-shadow: var(--card-shadow); }
+  .scard { background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 18px 20px; transition: border-color 0.25s; box-shadow: var(--card-shadow); }
   .service-stack { display: flex; flex-direction: column; gap: 16px; height: 100%; }
   .service-stack .scard { flex: 1; display: flex; flex-direction: column; justify-content: center; }
   .service-stack .scard p { margin-bottom: 0; }
   .scard:hover { border-color: var(--accent-border); }
   .scard.featured { grid-column: span 2; background: var(--accent-bg); border-color: var(--accent-border); }
-  .sicon { width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--accent-bg); color: var(--accent-light); margin-bottom: 12px; }
+  .sicon { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: var(--accent-bg); color: var(--accent-light); margin-bottom: 8px; }
   .scard:not(.featured) .sicon { background: var(--card); color: var(--muted); }
-  .stag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-light); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 4px; padding: 3px 9px; margin-bottom: 12px; }
+  .stag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-light); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 4px; padding: 3px 9px; margin-bottom: 8px; }
   .blog-card .stag { background: #fff; color: var(--accent); border-color: rgba(0,112,243,0.25); }
-  .scard h3 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-  .scard p { font-size: 15px; line-height: 1.7; color: var(--muted); margin-bottom: 14px; }
-  .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .ci { display: flex; align-items: center; gap: 7px; font-size: 16px; font-weight: 600; color: var(--text); }
+  .scard h3 { font-size: 19px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  .scard p { font-size: 14px; line-height: 1.6; color: var(--muted); margin-bottom: 10px; }
+  .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ci { display: flex; align-items: center; gap: 7px; font-size: 15px; font-weight: 600; color: var(--text); }
   .ci iconify-icon { color: var(--accent-light); flex-shrink: 0; }
+  .scard-cta {
+    margin-top: 14px; font-size: 13px; font-weight: 700; color: #fff;
+    background: var(--accent); border-radius: 9px; padding: 11px 18px; width: fit-content;
+    display: inline-flex; align-items: center; gap: 7px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .scard-cta:hover { background: #0060d0; transform: translateY(-1px); }
 
   /* FINOPS */
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 18px; align-items: start; }
@@ -746,6 +753,7 @@
           <div class="ci"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> Multi-cloud governance</div>
           <div class="ci"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> Kostendoorbelasting per team</div>
         </div>
+        <a href="#contact" class="scard-cta">Intake-analyse aanvragen <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
       </div>
       <div class="service-stack">
         <div class="scard reveal">
