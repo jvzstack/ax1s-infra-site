@@ -135,7 +135,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       "name": "Wat is FinOps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Het is geen eenmalige actie, maar een continue praktijk."
+        "text": "FinOps staat voor Financial Operations: finance, engineering en operations werken samen om cloud-, SaaS- en AI-uitgaven continu te beheersen in plaats van achteraf te controleren."
       }
     },
     {
@@ -234,6 +234,9 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   .nav-links a:hover { color: var(--text); }
   .nav-cta { font-size: 13px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 8px; padding: 10px 22px; transition: background 0.2s; }
   .nav-cta:hover { background: #0060d0; }
+  .nav-cta-group { display: flex; align-items: center; gap: 10px; }
+  .nav-cta-secondary { font-size: 13px; font-weight: 700; color: #1c1330; background: #a78bfa; border: 1px solid #a78bfa; border-radius: 8px; padding: 9px 18px; transition: background 0.2s; }
+  .nav-cta-secondary:hover { background: #9370f7; border-color: #9370f7; }
 
   /* HERO */
   .hero { min-height: auto; display: flex; align-items: center; padding: 112px 32px 48px; position: relative; z-index: 1; }
@@ -421,6 +424,8 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   }
   .tool-showcase-card:hover .tool-showcase-cta { background: var(--accent); border-color: var(--accent); color: #fff; }
   .more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); }
+  .more-tools-diensten-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; color: #1c1330; background: #a78bfa; border: 1px solid #a78bfa; border-radius: 8px; padding: 9px 16px; margin-top: 10px; transition: background 0.2s, transform 0.15s; }
+  .more-tools-diensten-btn:hover { background: #9370f7; transform: translateY(-1px); }
   .more-tools-all:hover { color: var(--accent-light); }
   .radar-promo-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; }
   .radar-promo-text { flex: 1; }
@@ -457,12 +462,13 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   .scard-cta-row .scard-cta { margin-top: 0; }
   .scard-cta-secondary {
     display: inline-flex; align-items: center; gap: 6px;
-    font-size: 13px; font-weight: 700; color: #a78bfa;
-    background: transparent; border: 1px solid rgba(167,139,250,0.45);
+    font-size: 13px; font-weight: 700; color: #1c1330;
+    background: #a78bfa; border: 1px solid #a78bfa;
     border-radius: 9px; padding: 11px 18px;
-    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    box-shadow: 0 4px 16px -4px rgba(167,139,250,0.55);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
   }
-  .scard-cta-secondary:hover { background: rgba(167,139,250,0.12); border-color: #a78bfa; transform: translateY(-1px); }
+  .scard-cta-secondary:hover { background: #9370f7; border-color: #9370f7; transform: translateY(-1px); box-shadow: 0 6px 20px -4px rgba(167,139,250,0.7); }
 
   /* FINOPS */
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 18px; align-items: start; }
@@ -517,7 +523,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   .promise-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
   .pi { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--muted); }
   .pi iconify-icon { color: var(--accent-light); }
-  .form-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 30px; box-shadow: var(--card-shadow); }
+  .form-card { background: linear-gradient(160deg, rgba(0,112,243,0.12), rgba(0,112,243,0.03)); border: 1px solid rgba(100,160,255,0.35); border-radius: 16px; padding: 30px; box-shadow: 0 24px 60px -24px rgba(0,112,243,0.5); }
   .ffields { display: flex; flex-direction: column; gap: 16px; }
   .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .field { display: flex; flex-direction: column; gap: 6px; }
@@ -545,6 +551,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     /* NAV */
     .nav-inner { padding: 0 20px; }
     .nav-links { display: none; }
+    .nav-cta-secondary { display: none; }
     .nav-logo { height: 30px; }
     .nav-cta { padding: 8px 16px; font-size: 12px; }
 
@@ -615,7 +622,10 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       <a href="#team">Team</a>
       <a href="#contact">Contact</a>
     </div>
-    <a href="#contact" class="nav-cta">Plan een intake</a>
+    <div class="nav-cta-group">
+      <a href="finops-diensten.html" class="nav-cta-secondary">Diensten &amp; opties</a>
+      <a href="#contact" class="nav-cta">Plan een intake</a>
+    </div>
   </div>
 </nav>
 
@@ -843,12 +853,13 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       </a>
       <a href="finops-glossarium.html" class="tool-showcase-card">
         <div class="tool-showcase-icon"><iconify-icon icon="solar:book-linear" width="22"></iconify-icon></div>
-        <h3>FinOps Glossarium</h3>
+        <h3>FinOps Begrippenlijst</h3>
         <p>20 kernbegrippen kort en duidelijk uitgelegd, van cloud waste tot de FinOps Lifecycle.</p>
-        <span class="tool-showcase-cta">Bekijk het glossarium <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+        <span class="tool-showcase-cta">Bekijk de begrippenlijst <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
       </a>
     </div>
     <a href="gratis-tools.html" class="more-tools-all" style="margin-top:20px;">Bekijk alle gratis tools &amp; templates &rarr;</a>
+    <a href="finops-diensten.html" class="more-tools-diensten-btn">Bekijk onze diensten &amp; opties &rarr;</a>
   </div>
 </section>
 
@@ -909,10 +920,11 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     <div class="two-col">
       <div class="finops-col reveal">
         <div class="stat-sublabel" style="margin-bottom:10px;">Wat is FinOps?</div>
-        <p class="finops-lead">FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen.</p>
-        <p class="finops-lead">Geen eenmalige actie, maar een continue praktijk waarin elk team eigenaarschap neemt over de eigen kosten en verbruik.</p>
+        <p class="finops-lead">FinOps is de praktijk waarin finance en engineering gezamenlijk eigenaarschap nemen over cloud-, SaaS- en AI-kosten, in plaats van dat kosten achteraf door finance worden gecontroleerd.</p>
+        <p class="finops-lead">Elk team ziet zijn eigen verbruik en stuurt daar continu op bij, in plaats van dat kostenbeheer een jaarlijkse exercitie is.</p>
         <p class="finops-lead">De FinOps Foundation is de non-profit organisatie achter deze praktijk, onderdeel van de Linux Foundation. Zij ontwikkelen het FinOps-framework, de jaarlijkse State of FinOps-benchmark en de FinOps Certified Practitioner-certificering, die ook ons team heeft behaald.</p>
-        <div class="fstat-source">Bron: <a href="https://www.finops.org/introduction/what-is-finops/" target="_blank" rel="noopener">FinOps Foundation</a> · <a href="wat-is-finops.html">Lees de volledige uitleg</a></div>
+        <a href="wat-is-finops.html" class="btn-secondary" style="margin-bottom:12px;">Lees de volledige uitleg over FinOps <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        <div class="fstat-source">Bron: <a href="https://www.finops.org/introduction/what-is-finops/" target="_blank" rel="noopener">FinOps Foundation</a></div>
       </div>
       <div class="priority-list reveal">
         <div class="stat-sublabel" style="margin-bottom:2px;">Grootste prioriteiten voor bedrijven nu</div>
@@ -989,7 +1001,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     <div class="faq-list">
       <details class="faq-item reveal">
         <summary>Wat is FinOps?</summary>
-        <p>FinOps brengt finance, engineering en operations samen om verspilling in cloud-, SaaS- en AI-uitgaven terug te dringen en meer waarde uit technologie te halen. Het is geen eenmalige actie, maar een continue praktijk. <a href="wat-is-finops.html">Lees de volledige uitleg over FinOps</a>.</p>
+        <p>FinOps staat voor Financial Operations: finance, engineering en operations werken samen om cloud-, SaaS- en AI-uitgaven continu te beheersen in plaats van achteraf te controleren. <a href="wat-is-finops.html">Lees de volledige uitleg over FinOps</a>.</p>
       </details>
       <details class="faq-item reveal">
         <summary>Voor wie is AX1S Infra geschikt?</summary>
