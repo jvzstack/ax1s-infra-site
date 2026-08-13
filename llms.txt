@@ -7,6 +7,7 @@ AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klante
 ## Belangrijkste pagina's
 
 - [Homepage](https://ax1s-infra.com/): diensten, team, FinOps-uitleg, veelgestelde vragen en contact
+- [FinOps diensten](https://ax1s-infra.com/finops-diensten.html): drie manieren om te starten, van gratis intake tot een afgebakend FinOps-traject of doorlopende FinOps-as-a-Service
 - [Wat is FinOps?](https://ax1s-infra.com/wat-is-finops.html): definitie en de FinOps Lifecycle (Inform, Optimize, Operate)
 - [Gratis tools, templates & checklists](https://ax1s-infra.com/gratis-tools.html): overzicht van alle gratis resources
 - [FinOps Radar](https://ax1s-infra.com/finops-radar.html): gratis tool, 7 vragen, directe inschatting van besparingspotentieel

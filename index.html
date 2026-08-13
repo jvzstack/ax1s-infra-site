@@ -453,6 +453,16 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     transition: background 0.2s, transform 0.15s;
   }
   .scard-cta:hover { background: #0060d0; transform: translateY(-1px); }
+  .scard-cta-row { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 14px; }
+  .scard-cta-row .scard-cta { margin-top: 0; }
+  .scard-cta-secondary {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 700; color: #a78bfa;
+    background: transparent; border: 1px solid rgba(167,139,250,0.45);
+    border-radius: 9px; padding: 11px 18px;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  }
+  .scard-cta-secondary:hover { background: rgba(167,139,250,0.12); border-color: #a78bfa; transform: translateY(-1px); }
 
   /* FINOPS */
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 18px; align-items: start; }
@@ -780,7 +790,10 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
           <div class="ci"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> Multi-cloud governance</div>
           <div class="ci"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> Kostendoorbelasting per team</div>
         </div>
-        <a href="#contact" class="scard-cta">Intake-analyse aanvragen <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+        <div class="scard-cta-row">
+          <a href="#contact" class="scard-cta">Intake-analyse aanvragen <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+          <a href="finops-diensten.html" class="scard-cta-secondary">Bekijk alle diensten &amp; opties &rarr;</a>
+        </div>
       </div>
       <div class="service-stack">
         <div class="scard reveal">
