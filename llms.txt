@@ -1,6 +1,6 @@
 # AX1S Infra
 
-> AX1S Infra helpt SaaS, fintech en digital-first bedrijven besparen op cloud-, SaaS- en AI-kosten. FinOps Certified Practitioners, gevestigd in Amsterdam.
+> AX1S Infra helpt digital-first bedrijven besparen op cloud- en AI-kosten. FinOps Certified Practitioners, gevestigd in Amsterdam.
 
 AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klanten realiseren gemiddeld 23% besparing op cloud- en compute-uitgaven na een FinOps-traject. Diensten: FinOps & Technology Cost Management, Managed Colocation (Tier III/IV faciliteiten in Europa) en Hardware & Performance Brokering voor AI-workloads. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation. De intake is gratis en vrijblijvend, met reactie binnen 24 uur.
 

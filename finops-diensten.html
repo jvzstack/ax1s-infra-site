@@ -104,7 +104,9 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 .price-card.theme-teal .price-icon { background: rgba(52,211,153,0.14); color: #34d399; }
 .price-card.theme-teal .price-badge { color: #34d399; background: rgba(52,211,153,0.12); border-color: rgba(52,211,153,0.35); }
 
-.price-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid; border-radius: 4px; padding: 4px 10px; margin-bottom: 14px; width: fit-content; align-self: center; }
+.price-badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid; border-radius: 4px; padding: 4px 10px; width: fit-content; }
+.price-badge-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; align-self: center; margin-bottom: 14px; }
+.price-badge-secondary { display: inline-block; font-size: 9.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); background: transparent; border: 1px solid rgba(255,255,255,0.20); border-radius: 4px; padding: 4px 8px; width: fit-content; white-space: nowrap; }
 .price-card h3 { font-size: 20px; font-weight: 800; color: var(--text); margin-bottom: 6px; }
 .price-amount { font-size: 21px; font-weight: 800; color: #fff; margin-bottom: 12px; }
 .price-amount .unit { font-size: 12.5px; font-weight: 600; color: var(--muted); display: block; margin-top: 2px; }
@@ -117,9 +119,16 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 .theme-teal .price-feature iconify-icon { color: #34d399; }
 .price-cta { text-align: center; font-size: 14px; font-weight: 700; padding: 13px 20px; border-radius: 10px; min-height: 48px; box-sizing: border-box; transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
 
-/* Knop 1: solide, paars en opvallend */
-.price-cta.cta-purple { background: #a78bfa; color: #1c1330; border: 1px solid #a78bfa; }
-.price-cta.cta-purple:hover { background: #9370f7; transform: translateY(-1px); }
+/* Knop 1: solide wit, zachte gloed */
+.price-cta.cta-purple {
+  color: #0a0e1a; border: none; background: radial-gradient(circle at 50% -20%, #d9e9ff 0%, #ffffff 60%);
+  box-shadow: 0 4px 20px -4px rgba(255,255,255,0.6), 0 0 26px -2px rgba(0,112,243,0.5);
+}
+.price-cta.cta-purple:hover {
+  background: radial-gradient(circle at 50% -20%, #c3ddff 0%, #ffffff 65%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 18px -6px rgba(255,255,255,0.35), 0 0 20px -4px rgba(0,112,243,0.5);
+}
 
 /* Knop 2: solide, primair blauw */
 .price-cta.cta-blue { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
@@ -134,9 +143,27 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 .honest-note-avatars img:not(:first-child) { margin-left: -14px; }
 .honest-note p { font-size: 14px; line-height: 1.65; color: var(--muted); margin: 0; }
 .honest-note p strong { color: var(--text); }
+
+.payresults-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  background: var(--card);
+  border: 1px solid rgba(0,112,243,0.4);
+  border-radius: 14px; padding: 16px 24px; margin-top: 36px;
+  box-shadow: 0 0 0 1px rgba(0,112,243,0.10), 0 0 22px -6px rgba(0,112,243,0.5);
+}
+.payresults-text { flex: 1 1 420px; min-width: 240px; }
+.payresults-title { font-size: 17px; font-weight: 800; color: var(--text); margin-bottom: 3px; }
+.payresults-sub { font-size: 12.5px; font-weight: 700; color: var(--accent-light); margin-bottom: 3px; }
+.payresults-body { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin: 0; }
+.payresults-cta { flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 9px; padding: 11px 18px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }
+.payresults-cta:hover { background: #0060d0; transform: translateY(-1px); }
+
 @media (max-width: 860px) {
   .pricing-grid { grid-template-columns: 1fr; }
   .honest-note { flex-direction: column; text-align: center; }
+  .payresults-banner { flex-direction: column; align-items: flex-start; }
+  .payresults-text { flex: none; width: 100%; }
+  .payresults-cta { width: 100%; justify-content: center; }
 }
 </style>
 </head>
@@ -169,29 +196,45 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 
 <section>
   <div class="section-inner" style="padding-top:0;">
+
+    <div class="payresults-banner">
+      <div class="payresults-text">
+        <h3 class="payresults-title">Ook mogelijk: Pay on Results</h3>
+        <p class="payresults-sub">Liever alleen betalen bij aantoonbare besparing?</p>
+        <p class="payresults-body">Bij elke dienst is het mogelijk om te werken op basis van no cure no pay: je betaalt dan een percentage van de besparing die we daadwerkelijk realiseren, in plaats van een vast tarief. Bespreken we graag tijdens het eerste gesprek.</p>
+      </div>
+      <a href="index.html#contact" class="payresults-cta">Start zonder risico <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+    </div>
+
     <div class="pricing-grid">
 
       <div class="price-card theme-purple">
         <span class="price-ribbon">Aanbevolen startpunt</span>
         <div class="price-icon"><iconify-icon icon="solar:magnifer-linear" width="20"></iconify-icon></div>
-        <span class="price-badge">Intake</span>
+        <div class="price-badge-row">
+          <span class="price-badge">Intake</span>
+          <span class="price-badge-secondary">Pay on results mogelijk</span>
+        </div>
         <h3>Vrijblijvende Intake</h3>
         <div class="price-amount">Kosteloos</div>
         <p class="price-desc">Een kort traject waarin we kritisch met je meekijken en samen potentiële verbeteringen in kaart brengen.</p>
         <div class="price-features">
-          <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Kritische blik op je huidige cloud-, SaaS- en AI-uitgaven</div>
+          <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Kritische blik op je huidige cloud- en AI-uitgaven</div>
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Potentiële verbeteringen in kaart gebracht</div>
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Eerlijk advies, ook als wij niet de juiste partij zijn</div>
         </div>
-        <a href="index.html#contact" class="price-cta cta-purple">Plan kosteloos traject</a>
+        <a href="index.html#contact" class="price-cta cta-purple">Plan intake</a>
       </div>
 
       <div class="price-card theme-blue">
         <div class="price-icon"><iconify-icon icon="solar:refresh-circle-linear" width="20"></iconify-icon></div>
-        <span class="price-badge">Kernaanbod</span>
+        <div class="price-badge-row">
+          <span class="price-badge">Kernaanbod</span>
+          <span class="price-badge-secondary">Pay on results mogelijk</span>
+        </div>
         <h3>FinOps-as-a-Service</h3>
         <div class="price-amount">Op aanvraag</div>
-        <p class="price-desc">Cloud-, SaaS- en AI-omgevingen veranderen continu. Dit is het gebruikelijke traject: wij blijven meekijken zodat besparingen ook blijven staan.</p>
+        <p class="price-desc">Cloud- en AI-omgevingen veranderen continu. Dit is het gebruikelijke traject: wij blijven meekijken zodat besparingen ook blijven staan.</p>
         <div class="price-features">
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Doorlopende monitoring &amp; rapportage</div>
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Periodieke reviews en bijsturing</div>
@@ -203,12 +246,15 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 
       <div class="price-card theme-teal">
         <div class="price-icon"><iconify-icon icon="solar:chart-2-linear" width="20"></iconify-icon></div>
-        <span class="price-badge">Op maat</span>
+        <div class="price-badge-row">
+          <span class="price-badge">Op maat</span>
+          <span class="price-badge-secondary">Pay on results mogelijk</span>
+        </div>
         <h3>FinOps-traject</h3>
         <div class="price-amount">Op maat<span class="unit">Na een vrijblijvend voorstel</span></div>
         <p class="price-desc">Een afgebakend maatwerkproject waarin we verspilling opsporen en een werkend FinOps-framework opzetten.</p>
         <div class="price-features">
-          <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Volledige verbruiksanalyse cloud, SaaS en AI</div>
+          <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Volledige verbruiksanalyse cloud en AI</div>
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Concreet optimalisatieplan met verwachte besparing</div>
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Hulp bij implementatie van de eerste quick wins</div>
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Kostendoorbelasting per team opzetten</div>

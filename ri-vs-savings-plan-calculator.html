@@ -120,8 +120,7 @@ nav {
 .nav-cta { font-size: 13px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 8px; padding: 10px 22px; transition: background 0.2s; }
 .nav-cta:hover { background: #0060d0; }
 .nav-cta-group { display: flex; align-items: center; gap: 10px; }
-.nav-cta-secondary { font-size: 13px; font-weight: 700; color: #1c1330; background: #a78bfa; border: 1px solid #a78bfa; border-radius: 8px; padding: 9px 18px; transition: background 0.2s; }
-.nav-cta-secondary:hover { background: #9370f7; border-color: #9370f7; }
+.nav-cta-secondary { font-size: 13px; font-weight: 700; border-radius: 8px; padding: 9px 18px; }
 
 section { position: relative; z-index: 1; }
 .wrap { max-width: 720px; margin: 0 auto; padding: 128px 24px 64px; position: relative; z-index: 1; }
@@ -207,8 +206,19 @@ section { position: relative; z-index: 1; }
 .tool-preview-card:hover .tool-preview-link iconify-icon { transform: translateX(3px); }
 .tool-preview-link iconify-icon { transition: transform 0.2s; }
 .more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
-.more-tools-diensten-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; color: #1c1330; background: #a78bfa; border: 1px solid #a78bfa; border-radius: 8px; padding: 9px 16px; margin-top: 10px; transition: background 0.2s, transform 0.15s; }
-.more-tools-diensten-btn:hover { background: #9370f7; transform: translateY(-1px); }
+.more-tools-diensten-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; border-radius: 8px; padding: 9px 16px; margin-top: 10px; }
+
+/* Soft glowing white CTA — shared "diensten & opties" button treatment */
+.nav-cta-secondary, .more-tools-diensten-btn {
+  color: #0a0e1a; border: none; background: radial-gradient(circle at 50% -20%, #d9e9ff 0%, #ffffff 60%);
+  box-shadow: 0 4px 20px -4px rgba(255,255,255,0.6), 0 0 26px -2px rgba(0,112,243,0.5);
+  transition: box-shadow 0.2s, transform 0.15s, background 0.2s;
+}
+.nav-cta-secondary:hover, .more-tools-diensten-btn:hover {
+  background: radial-gradient(circle at 50% -20%, #c3ddff 0%, #ffffff 65%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 18px -6px rgba(255,255,255,0.35), 0 0 20px -4px rgba(0,112,243,0.5);
+}
 .more-tools-all:hover { color: var(--accent-light); }
 
 footer { border-top: 1px solid var(--divider); background: var(--bg2); position: relative; z-index: 1; }
