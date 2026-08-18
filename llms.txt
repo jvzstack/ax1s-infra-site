@@ -2,20 +2,28 @@
 
 > AX1S Infra helpt digital-first bedrijven besparen op cloud- en AI-kosten. FinOps Certified Practitioners, gevestigd in Amsterdam.
 
-AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klanten realiseren gemiddeld 23% besparing op cloud- en compute-uitgaven na een FinOps-traject. Diensten: FinOps & Technology Cost Management, Managed Colocation (Tier III/IV faciliteiten in Europa) en Hardware & Performance Brokering voor AI-workloads. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation. De intake is gratis en vrijblijvend, met reactie binnen 24 uur.
+AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klanten realiseren gemiddeld 23% besparing op cloud- en compute-uitgaven na een FinOps-traject. Diensten: FinOps & Technology Cost Management, Managed Colocation (Tier III/IV faciliteiten in Europa) en Hardware & Performance Brokering voor AI-workloads. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation. De Cloud & AI Savings Scan (gratis eerste analyse) is vrijblijvend en kosteloos.
 
 ## Belangrijkste pagina's
 
 - [Homepage](https://ax1s-infra.com/): diensten, team, FinOps-uitleg, veelgestelde vragen en contact
-- [FinOps diensten](https://ax1s-infra.com/finops-diensten.html): drie manieren om te starten, van gratis intake tot een afgebakend FinOps-traject of doorlopende FinOps-as-a-Service
+- [Cloud & AI Savings Scan](https://ax1s-infra.com/savings-scan.html): gratis, vrijblijvende scan van cloud- en AI-uitgaven, met de belangrijkste kostenposten, optimalisatiekansen en een indicatie van het besparingspotentieel
+- [FinOps diensten](https://ax1s-infra.com/finops-diensten.html): drie manieren om te starten, van een gratis Cloud & AI Savings Scan tot een afgebakend FinOps-traject of doorlopende FinOps-as-a-Service
 - [Wat is FinOps?](https://ax1s-infra.com/wat-is-finops.html): definitie en de FinOps Lifecycle (Inform, Optimize, Operate)
 - [Gratis tools, templates & checklists](https://ax1s-infra.com/gratis-tools.html): overzicht van alle gratis resources
-- [FinOps Radar](https://ax1s-infra.com/finops-radar.html): gratis tool, 7 vragen, directe inschatting van besparingspotentieel
+- [FinOps Radar](https://ax1s-infra.com/finops-radar.html): gratis tool met drie invalshoeken in één interface: cloudkosten-quiz, AI-kostencalculator en RI vs. Savings Plan vergelijker
 - [RI vs. Savings Plan Calculator](https://ax1s-infra.com/ri-vs-savings-plan-calculator.html): gratis rekentool, geen e-mail nodig
+- [AI-kostencalculator](https://ax1s-infra.com/ai-kosten-calculator.html): gratis rekentool voor AI/LLM-kosten op basis van model, volume en tokens, geen e-mail nodig
 - [FinOps Begrippenlijst](https://ax1s-infra.com/finops-glossarium.html): 20 kernbegrippen uit FinOps en cloud-kostenbeheer
 
 ## Insights (blog)
 
+- [5 kostbare fouten die je public cloud onnodig duur maken](https://ax1s-infra.com/blog/5-kostbare-fouten-public-cloud.html): architectuur-, capaciteits- en contractkeuzes die de cloudrekening onnodig opdrijven
+- [Wacht even... wie stuurt er eigenlijk op onze IT-kosten?](https://ax1s-infra.com/blog/wie-stuurt-op-it-kosten.html): waarom IT-kostenoptimalisatie een gedeelde verantwoordelijkheid is van finance, IT, procurement en business
+- [De verschuiving van cloud naar alle technologie](https://ax1s-infra.com/blog/van-cloud-naar-alle-technologie.html): waarom FinOps niet meer alleen over cloud gaat, maar over de volledige IT-stack
+- [Het trillion-dollar casino: wel AI-kosten tracken, geen zicht op ROI](https://ax1s-infra.com/blog/ai-spend-roi-trillion-dollar-casino.html): waarom kosten bijhouden niet hetzelfde is als rendement begrijpen
+- [Hoe voorkom je een IT-factuur die 3x hoger uitvalt dan gepland?](https://ax1s-infra.com/blog/it-factuur-3x-hoger-voorkomen.html): financiële logica inbouwen vóórdat code live gaat
+- [AI-budget overschreden? Je bent niet de enige](https://ax1s-infra.com/blog/ai-budget-overschreden.html): vier redenen waarom AI-kosten zo vaak uit de hand lopen
 - [Veelgestelde vragen over cloudkosten en FinOps](https://ax1s-infra.com/blog/veelgestelde-vragen-cloudkosten-finops.html): 14 directe vraag-en-antwoorden, van "waarom stijgen cloudkosten sneller dan omzet" tot FinOps uitbesteden of zelf doen
 - [Case: 23% besparing in een gericht traject](https://ax1s-infra.com/blog/case-23-procent-besparing.html): klantcase met concrete aanpak en resultaat
 - [5 manieren om onnodige cloudkosten te elimineren](https://ax1s-infra.com/blog/5-manieren-cloudkosten-elimineren.html)
@@ -25,6 +33,6 @@ AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klante
 
 ## Contact
 
-- Gratis intake: https://ax1s-infra.com/#contact
+- Cloud & AI Savings Scan (gratis): https://ax1s-infra.com/savings-scan.html
 - Jelle van Zantwijk (Finance & FinOps): https://www.linkedin.com/in/jellevanzantwijk/
 - Tom Prager (AI Infrastructure): https://www.linkedin.com/in/tom-prager-898899285/

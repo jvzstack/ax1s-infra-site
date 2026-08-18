@@ -30,26 +30,26 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9506946&fmt=gif" />
 </noscript>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FinOps Radar: Ontdek jouw verborgen cloudbesparing | AX1S Infra</title>
-<meta name="description" content="Doe de gratis FinOps Radar: 7 vragen, 2 minuten, en een gepersonaliseerde inschatting van jouw verborgen cloudbesparing. Geen verplichting.">
+<title>FinOps Radar: cloud-, AI- en RI-kosten in één tool | AX1S Infra</title>
+<meta name="description" content="De gratis FinOps Radar: cloudkosten-quiz, AI-kostencalculator en RI vs. Savings Plan vergelijker in één tool. Kies je invalshoek, direct resultaat, geen verplichting.">
 <link rel="canonical" href="https://ax1s-infra.com/finops-radar.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="FinOps Radar: Ontdek jouw verborgen cloudbesparing | AX1S Infra">
-<meta property="og:description" content="Doe de gratis FinOps Radar: 7 vragen, 2 minuten, en een gepersonaliseerde inschatting van jouw verborgen cloudbesparing. Geen verplichting.">
+<meta property="og:title" content="FinOps Radar: cloud-, AI- en RI-kosten in één tool | AX1S Infra">
+<meta property="og:description" content="De gratis FinOps Radar: cloudkosten-quiz, AI-kostencalculator en RI vs. Savings Plan vergelijker in één tool. Kies je invalshoek, direct resultaat, geen verplichting.">
 <meta property="og:url" content="https://ax1s-infra.com/finops-radar.html">
 <meta property="og:image" content="https://ax1s-infra.com/assets/radar-icon.png">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:site_name" content="AX1S Infra">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FinOps Radar: Ontdek jouw verborgen cloudbesparing | AX1S Infra">
-<meta name="twitter:description" content="Doe de gratis FinOps Radar: 7 vragen, 2 minuten, en een gepersonaliseerde inschatting van jouw verborgen cloudbesparing.">
+<meta name="twitter:title" content="FinOps Radar: cloud-, AI- en RI-kosten in één tool | AX1S Infra">
+<meta name="twitter:description" content="De gratis FinOps Radar: cloudkosten-quiz, AI-kostencalculator en RI vs. Savings Plan vergelijker in één tool.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "FinOps Radar",
   "url": "https://ax1s-infra.com/finops-radar.html",
-  "description": "Gratis tool: 7 vragen die in 2 minuten een gepersonaliseerde inschatting geven van verborgen cloudbesparing.",
+  "description": "Gratis tool met drie invalshoeken: cloudkosten-quiz, AI-kostencalculator en RI vs. Savings Plan vergelijker.",
   "isPartOf": { "@id": "https://ax1s-infra.com/#website" },
   "publisher": { "@id": "https://ax1s-infra.com/#organization" },
   "inLanguage": "nl-NL",
@@ -63,7 +63,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   "@id": "https://ax1s-infra.com/finops-radar.html#app",
   "name": "FinOps Radar",
   "url": "https://ax1s-infra.com/finops-radar.html",
-  "description": "Gratis tool: 7 vragen die in 2 minuten een gepersonaliseerde inschatting geven van verborgen cloudbesparing. Geen installatie of account nodig.",
+  "description": "Gratis tool met drie invalshoeken: cloudkosten-quiz, AI-kostencalculator en RI vs. Savings Plan vergelijker. Geen installatie of account nodig.",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
@@ -220,6 +220,66 @@ section { position: relative; z-index: 1; }
 .savings-amount { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 8px; }
 .savings-note { font-size: 14px; color: #ced4e0; line-height: 1.6; }
 
+/* MULTI-TOOL RESULT CARDS (AI / RI modes) */
+.result-title { font-size: 12px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin: 24px 0 14px; }
+.result-grid { display: flex; flex-direction: column; gap: 12px; }
+.result-card {
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 14px;
+  padding: 16px 18px; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  transition: border-color 0.2s;
+}
+.result-card.recommended { border-color: var(--accent); background: linear-gradient(155deg, rgba(0,112,243,0.14), rgba(0,112,243,0.03)); }
+.result-card-name { font-size: 14.5px; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.result-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: var(--accent); color: #fff; border-radius: 4px; padding: 3px 8px; }
+.result-card-sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.result-card-amount { text-align: right; }
+.result-card-price { font-size: 17px; font-weight: 800; color: var(--text); }
+.result-card-price-sub { font-size: 11px; color: var(--muted); margin-top: 1px; }
+.result-card-save { font-size: 12px; color: var(--accent-light); font-weight: 700; margin-top: 3px; }
+.result-empty { font-size: 13.5px; color: var(--muted); background: rgba(255,255,255,0.03); border: 1px dashed var(--card-border); border-radius: 12px; padding: 18px 20px; text-align: center; }
+.field-hint { font-size: 11.5px; color: #ff8a8a; margin-top: 4px; min-height: 14px; }
+
+.breakdown-row { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+.breakdown-bar { flex: 1; height: 8px; border-radius: 999px; background: rgba(255,255,255,0.08); overflow: hidden; display: flex; }
+.breakdown-bar-in { background: var(--accent-light); height: 100%; }
+.breakdown-bar-out { background: #a78bfa; height: 100%; }
+.breakdown-legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); margin-top: 8px; flex-wrap: wrap; }
+.breakdown-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.breakdown-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+.reco-note {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--card); border: 1px solid var(--card-border); border-radius: 12px;
+  padding: 16px 18px; margin-top: 20px;
+}
+.reco-note iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
+.reco-note p { font-size: 13px; color: #ced4e0; line-height: 1.65; }
+
+.disclaimer { font-size: 12px; color: var(--muted); margin-top: 18px; line-height: 1.6; }
+
+/* MODE MENU */
+.mode-grid { display: flex; flex-direction: column; gap: 12px; }
+.mode-card {
+  display: flex; align-items: center; gap: 14px;
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 14px;
+  padding: 18px; cursor: pointer; text-align: left; font-family: inherit;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s; width: 100%;
+}
+.mode-card:hover { border-color: var(--accent-border); background: rgba(0,112,243,0.06); transform: translateY(-1px); }
+.mode-icon { width: 42px; height: 42px; border-radius: 11px; background: var(--accent-bg); color: var(--accent-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.mode-card-text { flex: 1; }
+.mode-card-text h3 { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.mode-card-text p { font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+.mode-card > iconify-icon { color: var(--muted); flex-shrink: 0; transition: transform 0.15s; }
+.mode-card:hover > iconify-icon { transform: translateX(3px); color: var(--accent-light); }
+.mode-card-gold { margin-top: 12px; border-color: rgba(212,175,55,0.5); box-shadow: 0 0 0 1px rgba(212,175,55,0.14), 0 0 22px -6px rgba(212,175,55,0.5); }
+.mode-card-gold:hover { border-color: rgba(212,175,55,0.8); background: rgba(212,175,55,0.07); }
+.mode-icon-gold { background: rgba(212,175,55,0.16); color: #d4af37; }
+.mode-card-gold:hover > iconify-icon { color: #d4af37; }
+
+.back-to-menu-link { display: block; text-align: center; font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+.back-to-menu-link:hover { color: var(--accent-light); }
+
 .share-row { display: flex; gap: 10px; margin-top: 0; flex-wrap: wrap; }
 .share-row .btn-secondary, .share-row .btn-primary { width: auto; flex: 1; min-width: 160px; padding: 10px 16px; font-size: 13px; }
 .share-row-intro { text-align: center; font-size: 14.5px; font-weight: 700; color: var(--text); margin-top: 20px; margin-bottom: 10px; }
@@ -230,11 +290,6 @@ section { position: relative; z-index: 1; }
 .signal-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .signal-chip { font-size: 12px; font-weight: 600; color: var(--accent-light); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 999px; padding: 5px 12px; }
 
-/* BLURRED PREVIEW (gate) */
-.preview-blur-wrap { position: relative; max-height: 210px; overflow: hidden; border-radius: 14px; margin: 22px 0 4px; }
-.preview-blur-content { filter: blur(6px); opacity: 0.6; pointer-events: none; user-select: none; }
-.preview-blur-fade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,13,24,0) 0%, rgba(9,10,17,0.92) 85%); }
-
 /* LEAD FORM */
 .lead-block { margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--divider); }
 .lead-title { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
@@ -243,10 +298,13 @@ section { position: relative; z-index: 1; }
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field label { font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
 .field label .opt { text-transform: none; font-weight: 500; letter-spacing: 0; color: #6c7688; }
-.field input, .field textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 12px 14px; font-family: inherit; font-size: 14px; color: var(--text); transition: border-color 0.2s; width: 100%; }
+.field input, .field textarea, .field select { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 12px 14px; font-family: inherit; font-size: 14px; color: var(--text); transition: border-color 0.2s; width: 100%; }
 .field textarea { resize: vertical; min-height: 90px; line-height: 1.5; }
 .field input::placeholder, .field textarea::placeholder { color: #6c7688; }
-.field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); }
+.field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--accent); }
+.field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23b7c0cd' d='M1 1l5 5 5-5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+.field-note { font-size: 11.5px; color: #8891a3; margin-top: 1px; }
+.frow2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .lead-success { text-align: center; padding: 8px 0; }
 .lead-success iconify-icon { color: var(--accent-light); }
 
@@ -277,14 +335,15 @@ section { position: relative; z-index: 1; }
 
 /* Soft glowing white CTA — shared "diensten & opties" button treatment */
 .nav-cta-secondary, .more-tools-diensten-btn {
-  color: #0a0e1a; border: none; background: radial-gradient(circle at 50% -20%, #d9e9ff 0%, #ffffff 60%);
-  box-shadow: 0 4px 20px -4px rgba(255,255,255,0.6), 0 0 26px -2px rgba(0,112,243,0.5);
-  transition: box-shadow 0.2s, transform 0.15s, background 0.2s;
+  color: #0a0e1a; border: 1px solid transparent; background: radial-gradient(circle at 50% -20%, #eef5ff 0%, #ffffff 70%);
+  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.25);
+  transition: box-shadow 0.2s, transform 0.15s, background 0.2s, border-color 0.2s;
 }
 .nav-cta-secondary:hover, .more-tools-diensten-btn:hover {
-  background: radial-gradient(circle at 50% -20%, #c3ddff 0%, #ffffff 65%);
+  background: radial-gradient(circle at 50% -20%, #cfe1ff 0%, #ffffff 65%);
+  border-color: rgba(0,112,243,0.4);
   transform: translateY(-1px);
-  box-shadow: 0 5px 18px -6px rgba(255,255,255,0.35), 0 0 20px -4px rgba(0,112,243,0.5);
+  box-shadow: 0 3px 10px -3px rgba(0,0,0,0.3);
 }
 .more-tools-all:hover { color: var(--accent-light); }
 @media (max-width: 640px) {
@@ -315,6 +374,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
   .tool-title { font-size: 28px; }
   .radar-card { padding: 26px 20px; }
   .savings-amount { font-size: 26px; }
+  .frow2 { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -334,16 +394,18 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
     </div>
     <div class="nav-cta-group">
       <a href="finops-diensten.html" class="nav-cta-secondary">Diensten &amp; opties</a>
-      <a href="index.html#contact" class="nav-cta">Plan een intake</a>
+      <a href="savings-scan.html" class="nav-cta">Plan een Gratis Savings Scan</a>
     </div>
   </div>
 </nav>
 
 <div class="wrap">
   <div class="radar-logo"><img src="assets/radar-icon.png" alt="FinOps Radar" width="56" height="56"></div>
-  <span class="eyebrow">FinOps Radar</span>
-  <h1 class="tool-title">Ontdek binnen 2 minuten<br>jouw verborgen cloudbesparing.</h1>
-  <p class="tool-sub">7 korte vragen over jullie cloudkosten, direct een gepersonaliseerde score en concrete inzichten. Geen verplichting, geen wachttijd.</p>
+  <span class="eyebrow" id="mode-eyebrow">FinOps Radar</span>
+  <h1 class="tool-title" id="mode-title">Eén radar, drie manieren<br>om je techkosten te doorgronden.</h1>
+  <p class="tool-sub" id="mode-sub">Kies hieronder waar je grip op wil krijgen: cloudkosten, AI-kosten, of Reserved Instances vs. Savings Plans. Geen verplichting, geen wachttijd.</p>
+
+  <a href="#" id="back-to-menu-link" class="back-to-menu-link" style="display:none;">&larr; Andere tool kiezen</a>
 
   <div class="radar-card" id="radar-card">
     <!-- content injected by JS -->
@@ -371,6 +433,12 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
         <h4>Wat is FinOps?</h4>
         <p>De definitie en de FinOps Lifecycle: Inform, Optimize, Operate.</p>
         <span class="tool-preview-link">Lees de uitleg <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+      <a href="ai-kosten-calculator.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:cpu-bolt-linear" width="18"></iconify-icon></div>
+        <h4>AI-kostencalculator</h4>
+        <p>Bereken direct wat jullie AI-gebruik gaat kosten, inclusief opbouw en groeiprojectie.</p>
+        <span class="tool-preview-link">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
       </a>
     </div>
     <a href="gratis-tools.html" class="more-tools-all">Bekijk alle gratis tools &amp; templates &rarr;</a>
@@ -523,8 +591,24 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
   const card = document.getElementById('radar-card');
   const restartLink = document.getElementById('restart-link');
-  let step = -1; // -1 = intro, 0-6 = questions, 7 = result
+  const backToMenuLink = document.getElementById('back-to-menu-link');
+  let mode = null; // null = menu, 'cloud' | 'ai' | 'ri'
+  let step = -1; // -1 = intro, 0-6 = questions, 7 = result (cloud mode only)
   let answers = new Array(questions.length).fill(null);
+
+  const MODE_COPY = {
+    menu:  { eyebrow: 'FinOps Radar', title: 'Eén radar, drie manieren<br>om je techkosten te doorgronden.', sub: 'Kies hieronder waar je grip op wil krijgen: cloudkosten, AI-kosten, of Reserved Instances vs. Savings Plans. Geen verplichting, geen wachttijd.' },
+    cloud: { eyebrow: 'FinOps Radar &middot; Cloudkosten', title: 'Ontdek binnen 2 minuten<br>jouw verborgen cloudbesparing.', sub: '7 korte vragen over jullie cloudkosten, direct een gepersonaliseerde score en concrete inzichten.' },
+    ai:    { eyebrow: 'FinOps Radar &middot; AI-kosten', title: 'Bereken direct<br>jullie AI-kosten.', sub: 'Vul je AI-gebruik in en zie meteen de maandelijkse kosten, de opbouw ervan en een groeiprojectie.' },
+    ri:    { eyebrow: 'FinOps Radar &middot; RI vs. Savings Plan', title: 'Vergelijk On-Demand,<br>Reserved Instances en Savings Plans.', sub: 'Vul jullie situatie in en zie direct wat de opties schelen.' },
+  };
+  function setModeHeader() {
+    const c = MODE_COPY[mode === null ? 'menu' : mode];
+    document.getElementById('mode-eyebrow').innerHTML = c.eyebrow;
+    document.getElementById('mode-title').innerHTML = c.title;
+    document.getElementById('mode-sub').textContent = c.sub;
+    backToMenuLink.style.display = mode === null ? 'none' : 'block';
+  }
 
   function renderIntro() {
     card.innerHTML = `
@@ -647,66 +731,6 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
     return { score, label, desc, shownFindings, heroHtml };
   }
 
-  function renderGate() {
-    const r = computeResult();
-
-    card.innerHTML = `
-      <div class="result-head">
-        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${r.score} * 3.6deg), rgba(255,255,255,0.10) calc(${r.score} * 3.6deg) 360deg); filter: blur(3px); opacity: 0.5;">
-          <div class="score-ring-inner">
-            <div class="score-num">?</div>
-            <div class="score-max">van 100</div>
-          </div>
-        </div>
-        <div class="duo-avatars">
-          <img src="assets/team-tom.jpg" alt="Tom Prager">
-          <img src="assets/team-jelle.jpg" alt="Jelle van Zantwijk">
-        </div>
-        <div class="attribution-tag">Tom &amp; Jelle's eerste inschatting</div>
-        <div class="result-desc">We hebben jullie antwoorden bekeken. Vul je e-mailadres in voor de indicatieve besparing in euro's en de volledige toelichting per punt.</div>
-      </div>
-
-      <div class="lead-block" id="gate-block" style="border-top:none; padding-top:0; margin-top:8px;">
-        <form id="radar-gate-form" class="ffields">
-          <div class="field"><label>E-mail</label><input type="email" required placeholder="naam@bedrijf.nl" name="email" id="gate-email"></div>
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Bekijk mijn resultaat <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></button>
-        </form>
-        <p style="font-size:12px;color:var(--muted);margin-top:12px;text-align:center;">Denk er alvast even over na: waar zit bij jullie waarschijnlijk de grootste besparing?</p>
-      </div>
-
-      ${signalChipsHtml()}
-
-      <div class="preview-blur-wrap">
-        <div class="preview-blur-content">
-          ${r.heroHtml}
-          <div class="findings-title">Wat opvalt</div>
-          ${r.shownFindings.map(f => `<div class="finding-item"><iconify-icon icon="solar:danger-triangle-linear" width="16"></iconify-icon><span>${f}</span></div>`).join('')}
-        </div>
-        <div class="preview-blur-fade"></div>
-      </div>
-    `;
-
-    const gateForm = document.getElementById('radar-gate-form');
-    gateForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const email = document.getElementById('gate-email').value;
-      const data = new FormData();
-      data.append('bron', 'FinOps Radar (e-mail gate)');
-      data.append('score', `${r.score} / 100 - ${r.label}`);
-      data.append('email', email);
-      try {
-        await fetch('https://formspree.io/f/xreowyvp', {
-          method: 'POST', body: data, headers: { 'Accept': 'application/json' }
-        });
-      } catch (err) {
-        // Stil falen: de bezoeker blokkeren omdat een achtergrond-lead-capture mislukt is, is geen goede ervaring.
-      }
-      renderResult(r, email);
-    });
-
-    restartLink.style.display = 'block';
-  }
-
   function renderResult(r, email) {
     const pct = r.score;
 
@@ -790,10 +814,321 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
     restartLink.style.display = 'block';
   }
 
+  function renderMenu() {
+    card.innerHTML = `
+      <div class="mode-grid">
+        <button type="button" class="mode-card" data-mode="cloud">
+          <div class="mode-icon"><iconify-icon icon="solar:radar-2-linear" width="22"></iconify-icon></div>
+          <div class="mode-card-text"><h3>Cloudkosten besparen</h3><p>7 vragen, direct een score en besparingsindicatie</p></div>
+          <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+        </button>
+        <button type="button" class="mode-card" data-mode="ai">
+          <div class="mode-icon"><iconify-icon icon="solar:cpu-bolt-linear" width="22"></iconify-icon></div>
+          <div class="mode-card-text"><h3>AI-kosten besparen</h3><p>Bereken je AI/LLM-kosten op basis van model en volume</p></div>
+          <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+        </button>
+        <button type="button" class="mode-card" data-mode="ri">
+          <div class="mode-icon"><iconify-icon icon="solar:calculator-linear" width="22"></iconify-icon></div>
+          <div class="mode-card-text"><h3>RI vs. Savings Plan vergelijken</h3><p>Vergelijk On-Demand, Reserved Instances en Savings Plans</p></div>
+          <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+        </button>
+      </div>
+      <a href="savings-scan.html" class="mode-card mode-card-gold">
+        <div class="mode-icon mode-icon-gold"><iconify-icon icon="solar:gift-linear" width="22"></iconify-icon></div>
+        <div class="mode-card-text"><h3>Liever direct persoonlijk advies?</h3><p>Start de gratis Cloud &amp; AI Savings Scan</p></div>
+        <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+      </a>
+    `;
+    card.querySelectorAll('.mode-card[data-mode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        mode = btn.getAttribute('data-mode');
+        if (mode === 'cloud') { step = -1; answers = new Array(questions.length).fill(null); }
+        render();
+      });
+    });
+    restartLink.style.display = 'none';
+  }
+
+  const AI_TIERS = {
+    flagship: { name: 'Vlaggenschip-model', inPrice: 2.20, outPrice: 9.00 },
+    mid:      { name: 'Middenklasse-model', inPrice: 0.14, outPrice: 0.55 },
+    light:    { name: 'Lichtgewicht/snel model', inPrice: 0.04, outPrice: 0.16 },
+  };
+  const AI_CACHE_DISCOUNT = { none: 0, partial: 0.25, full: 0.5 };
+  const AI_CACHE_LABEL = { none: 'geen caching', partial: 'deels caching', full: 'structurele caching' };
+
+  function renderAI() {
+    card.innerHTML = `
+      <div class="ffields">
+        <div class="field">
+          <label for="ai-tier">Modelklasse</label>
+          <select id="ai-tier">
+            <option value="flagship">Vlaggenschip-model (bijv. GPT-4o / Claude Sonnet-klasse)</option>
+            <option value="mid" selected>Middenklasse-model (bijv. GPT-4o-mini / Claude Haiku-klasse)</option>
+            <option value="light">Lichtgewicht/snel model</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ai-requests">Aantal requests per dag</label>
+          <input type="number" id="ai-requests" min="0" step="10" placeholder="bijv. 5000" value="5000" inputmode="numeric">
+          <div class="field-hint" id="ai-requests-hint"></div>
+        </div>
+        <div class="frow2">
+          <div class="field">
+            <label for="ai-in-tokens">Gem. input-tokens per request</label>
+            <input type="number" id="ai-in-tokens" min="0" step="50" placeholder="bijv. 800" value="800" inputmode="numeric">
+            <div class="field-note">Een A4'tje tekst is ongeveer 700 tokens.</div>
+          </div>
+          <div class="field">
+            <label for="ai-out-tokens">Gem. output-tokens per request</label>
+            <input type="number" id="ai-out-tokens" min="0" step="50" placeholder="bijv. 300" value="300" inputmode="numeric">
+            <div class="field-note">Output-tokens zijn per model 3&ndash;4x duurder dan input.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="ai-caching">Prompt caching / context-hergebruik</label>
+          <select id="ai-caching">
+            <option value="none">Nee, elke request is los</option>
+            <option value="partial" selected>Deels, voor een deel van de requests</option>
+            <option value="full">Ja, structureel voor vaste system-prompts/context</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ai-growth">Verwachte groei in gebruik per maand (%, optioneel)</label>
+          <input type="number" id="ai-growth" min="0" step="1" placeholder="bijv. 10" value="0" inputmode="numeric">
+        </div>
+      </div>
+
+      <div class="result-title">Geschatte kosten</div>
+      <div class="result-grid" id="ai-result-grid"></div>
+      <div id="ai-breakdown-wrap"></div>
+      <div class="findings-title">Wat opvalt</div>
+      <div id="ai-findings"></div>
+      <p class="disclaimer">Indicatieve, gemiddelde marktprijzen per 1 miljoen tokens voor de genoemde modelklassen. Werkelijke tarieven verschillen per provider, model en moment. Deze tool geeft een eerste richting, geen offerte.</p>
+    `;
+
+    const tierSelect = document.getElementById('ai-tier');
+    const requestsInput = document.getElementById('ai-requests');
+    const inTokInput = document.getElementById('ai-in-tokens');
+    const outTokInput = document.getElementById('ai-out-tokens');
+    const cachingSelect = document.getElementById('ai-caching');
+    const growthInput = document.getElementById('ai-growth');
+    const requestsHint = document.getElementById('ai-requests-hint');
+    const resultGrid = document.getElementById('ai-result-grid');
+    const breakdownWrap = document.getElementById('ai-breakdown-wrap');
+    const findingsEl = document.getElementById('ai-findings');
+
+    function fmtEUR(n) { return '€' + Math.round(n).toLocaleString('nl-NL'); }
+
+    function validateAI() {
+      const requests = parseFloat(requestsInput.value);
+      const inTok = parseFloat(inTokInput.value);
+      const outTok = parseFloat(outTokInput.value);
+      if (requestsInput.value.trim() === '' || inTokInput.value.trim() === '' || outTokInput.value.trim() === '') return { valid: false, hint: '' };
+      if (isNaN(requests) || isNaN(inTok) || isNaN(outTok)) return { valid: false, hint: 'Vul geldige getallen in.' };
+      if (requests < 0 || inTok < 0 || outTok < 0) return { valid: false, hint: 'Vul positieve waarden in.' };
+      return { valid: true, requests, inTok, outTok };
+    }
+
+    function updateAI() {
+      const check = validateAI();
+      requestsHint.textContent = check.hint || '';
+      if (!check.valid) {
+        resultGrid.innerHTML = `<div class="result-empty">Vul geldige waarden in om de schatting te zien.</div>`;
+        breakdownWrap.innerHTML = '';
+        findingsEl.innerHTML = '';
+        return;
+      }
+      const tierKey = tierSelect.value;
+      const tier = AI_TIERS[tierKey];
+      const cacheKey = cachingSelect.value;
+      const cacheDiscount = AI_CACHE_DISCOUNT[cacheKey];
+      const growth = Math.max(0, parseFloat(growthInput.value) || 0);
+
+      const monthlyRequests = check.requests * 30;
+      const monthlyInTokens = monthlyRequests * check.inTok;
+      const monthlyOutTokens = monthlyRequests * check.outTok;
+      const inCost = (monthlyInTokens / 1e6) * tier.inPrice * (1 - cacheDiscount);
+      const outCost = (monthlyOutTokens / 1e6) * tier.outPrice;
+      const monthlyCost = inCost + outCost;
+      const annualCost = monthlyCost * 12;
+
+      const rows = [
+        { name: 'Deze maand', sub: `${tier.name} &middot; ${AI_CACHE_LABEL[cacheKey]}`, price: monthlyCost, priceSub: null, recommended: false },
+        { name: 'Per jaar', sub: 'Bij gelijkblijvend gebruik', price: annualCost, priceSub: null, recommended: false },
+      ];
+      let doublingMonths = null;
+      if (growth > 0) {
+        const projected = monthlyCost * Math.pow(1 + growth / 100, 6);
+        doublingMonths = Math.log(2) / Math.log(1 + growth / 100);
+        rows.push({ name: 'Over 6 maanden', sub: `Bij ${growth}% groei per maand`, price: projected, priceSub: `+${fmtEUR(projected - monthlyCost)} t.o.v. nu`, recommended: true });
+      }
+      resultGrid.innerHTML = rows.map(r => `
+        <div class="result-card ${r.recommended ? 'recommended' : ''}">
+          <div>
+            <div class="result-card-name">${r.name} ${r.recommended ? '<span class="result-badge">Projectie</span>' : ''}</div>
+            <div class="result-card-sub">${r.sub}</div>
+          </div>
+          <div class="result-card-amount">
+            <div class="result-card-price">${fmtEUR(r.price)}</div>
+            ${r.priceSub ? `<div class="result-card-save">${r.priceSub}</div>` : ''}
+          </div>
+        </div>
+      `).join('');
+
+      const totalCost = inCost + outCost || 1;
+      const inPct = Math.round((inCost / totalCost) * 100);
+      const outPct = 100 - inPct;
+      breakdownWrap.innerHTML = `
+        <div class="breakdown-row">
+          <div class="breakdown-bar"><div class="breakdown-bar-in" style="width:${inPct}%"></div><div class="breakdown-bar-out" style="width:${outPct}%"></div></div>
+        </div>
+        <div class="breakdown-legend">
+          <span><span class="breakdown-dot" style="background:var(--accent-light)"></span>Input-tokens: ${fmtEUR(inCost)} (${inPct}%)</span>
+          <span><span class="breakdown-dot" style="background:#a78bfa"></span>Output-tokens: ${fmtEUR(outCost)} (${outPct}%)</span>
+        </div>
+      `;
+
+      const findings = [];
+      if (outCost > inCost * 2 && tierKey === 'flagship') findings.push('Output-tokens domineren jullie kosten. Voor lange antwoorden op een vlaggenschip-model loont het om de gewenste lengte te sturen of eenvoudigere taken naar een goedkoper model te routeren.');
+      if (cacheKey === 'none' && monthlyRequests > 10000) findings.push('Jullie hergebruiken nu geen context. Prompt caching op vaste system-prompts of documentcontext kan al snel 30 tot 50 procent van de input-kosten schelen.');
+      if (growth >= 5 && doublingMonths !== null) findings.push(`Bij dit groeitempo verdubbelen jullie AI-kosten binnen ongeveer ${Math.round(doublingMonths)} maanden. Dat is het moment om nu al op efficiëntie te sturen, niet pas als het budget knelt.`);
+      if (tierKey === 'flagship' && monthlyCost > 2000) findings.push('Voor hoogvolume, minder complexe taken (classificatie, samenvatten, extractie) is een middenklasse-model vaak 10 tot 15 keer goedkoper, met nauwelijks merkbaar kwaliteitsverlies.');
+      let shown = findings.slice(0, 3);
+      if (shown.length < 2) shown.push('Jullie zetten de efficiëntere opties al goed in. Winst zit hier vooral in het scherp houden van piekmomenten en nieuwe use cases.');
+      findingsEl.innerHTML = shown.map(f => `<div class="finding-item"><iconify-icon icon="solar:lightbulb-linear" width="16"></iconify-icon><span>${f}</span></div>`).join('');
+    }
+
+    [tierSelect, cachingSelect].forEach(el => el.addEventListener('change', updateAI));
+    [requestsInput, inTokInput, outTokInput, growthInput].forEach(el => el.addEventListener('input', updateAI));
+    requestsInput.addEventListener('blur', () => {
+      const parsed = parseFloat(requestsInput.value);
+      if (!isNaN(parsed) && parsed < 0) requestsInput.value = 0;
+      updateAI();
+    });
+    updateAI();
+    restartLink.style.display = 'none';
+  }
+
+  const RI_DISCOUNTS = { sp: { 1: 0.25, 3: 0.45 }, ri: { 1: 0.30, 3: 0.52 } };
+
+  function renderRI() {
+    card.innerHTML = `
+      <div class="ffields">
+        <div class="field">
+          <label for="ri-spend">Maandelijkse on-demand compute-uitgave (&euro;)</label>
+          <input type="number" id="ri-spend" min="0" step="100" placeholder="bijv. 10000" value="10000" inputmode="numeric">
+          <div class="field-hint" id="ri-spend-hint"></div>
+        </div>
+        <div class="field">
+          <label for="ri-predictability">Voorspelbaarheid van de workload</label>
+          <select id="ri-predictability">
+            <option value="stable">Zeer stabiel (verandert nauwelijks)</option>
+            <option value="moderate" selected>Redelijk stabiel (schommelt wat)</option>
+            <option value="variable">Wisselend (schaalt vaak op/af)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ri-term">Gewenst commitment-niveau</label>
+          <select id="ri-term">
+            <option value="1">1 jaar</option>
+            <option value="3" selected>3 jaar</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="result-title">Vergelijking op jaarbasis</div>
+      <div class="result-grid" id="ri-result-grid"></div>
+      <div class="reco-note" id="ri-reco-note"></div>
+      <p class="disclaimer">Indicatieve, marktgemiddelde kortingspercentages voor grote cloudproviders. Werkelijke kortingen verschillen per instance-type, regio en leverancier. Deze tool geeft een eerste richting, geen offerte.</p>
+    `;
+
+    const spendInput = document.getElementById('ri-spend');
+    const predictSelect = document.getElementById('ri-predictability');
+    const termSelect = document.getElementById('ri-term');
+    const resultGrid = document.getElementById('ri-result-grid');
+    const recoNote = document.getElementById('ri-reco-note');
+    const spendHint = document.getElementById('ri-spend-hint');
+
+    function fmtEUR(n) { return '€' + Math.round(n).toLocaleString('nl-NL'); }
+    function recommend(predictability) {
+      if (predictability === 'variable') return 'sp';
+      if (predictability === 'stable') return 'ri';
+      return 'sp';
+    }
+    function recoText(predictability, term) {
+      if (predictability === 'variable') return 'Bij een wisselende workload is een Savings Plan doorgaans slimmer: het geldt voor compute in het algemeen, in plaats van een specifiek instance-type. Reserved Instances lopen dan het risico op onderbenutte capaciteit.';
+      if (predictability === 'stable') return `Bij een zeer voorspelbare workload kun je met een Reserved Instance (${term} jaar) meestal de hoogste korting behalen. De lagere flexibiliteit is dan minder relevant.`;
+      return 'Bij een redelijk stabiele workload biedt een Savings Plan een goede balans tussen korting en flexibiliteit. Overweeg Reserved Instances alleen voor het deel dat echt vaststaat.';
+    }
+    function validateRI() {
+      const raw = spendInput.value.trim();
+      if (raw === '') return { valid: false, hint: '' };
+      const parsed = parseFloat(raw);
+      if (isNaN(parsed)) return { valid: false, hint: 'Vul een geldig bedrag in.' };
+      if (parsed < 0) return { valid: false, hint: 'Vul een positief bedrag in.' };
+      return { valid: true, value: parsed, hint: '' };
+    }
+
+    function updateRI() {
+      const check = validateRI();
+      spendHint.textContent = check.hint;
+      if (!check.valid) {
+        resultGrid.innerHTML = `<div class="result-empty">Vul een positief maandbedrag in om de vergelijking te zien.</div>`;
+        recoNote.innerHTML = '';
+        return;
+      }
+      const spend = check.value;
+      const predictability = predictSelect.value;
+      const term = parseInt(termSelect.value, 10);
+      const annualOnDemand = spend * 12;
+      const annualSP = annualOnDemand * (1 - RI_DISCOUNTS.sp[term]);
+      const annualRI = annualOnDemand * (1 - RI_DISCOUNTS.ri[term]);
+      const reco = recommend(predictability);
+      const rows = [
+        { key: 'od', name: 'On-Demand', sub: 'Geen commitment', price: annualOnDemand, save: 0 },
+        { key: 'sp', name: `Savings Plan (${term} jaar)`, sub: 'Flexibel, geldt voor compute in het algemeen', price: annualSP, save: RI_DISCOUNTS.sp[term] },
+        { key: 'ri', name: `Reserved Instance (${term} jaar)`, sub: 'Vast instance-type, hoogste korting', price: annualRI, save: RI_DISCOUNTS.ri[term] },
+      ];
+      resultGrid.innerHTML = rows.map(r => {
+        const savedAmount = annualOnDemand - r.price;
+        return `
+        <div class="result-card ${r.key === reco ? 'recommended' : ''}">
+          <div>
+            <div class="result-card-name">${r.name} ${r.key === reco ? '<span class="result-badge">Aanbevolen</span>' : ''}</div>
+            <div class="result-card-sub">${r.sub}</div>
+          </div>
+          <div class="result-card-amount">
+            <div class="result-card-price">${fmtEUR(r.price)} / jaar</div>
+            <div class="result-card-price-sub">${fmtEUR(r.price / 12)} / maand</div>
+            ${r.save > 0 ? `<div class="result-card-save">-${Math.round(r.save*100)}% &middot; bespaar ${fmtEUR(savedAmount)}/jaar</div>` : ''}
+          </div>
+        </div>
+      `;
+      }).join('');
+      recoNote.innerHTML = `<iconify-icon icon="solar:lightbulb-linear" width="20"></iconify-icon><p>${recoText(predictability, term)}</p>`;
+    }
+
+    spendInput.addEventListener('blur', () => {
+      const parsed = parseFloat(spendInput.value);
+      if (!isNaN(parsed) && parsed < 0) spendInput.value = 0;
+      updateRI();
+    });
+    [spendInput, predictSelect, termSelect].forEach(el => el.addEventListener('input', updateRI));
+    updateRI();
+    restartLink.style.display = 'none';
+  }
+
   function render() {
-    if (step === -1) renderIntro();
-    else if (step >= 0 && step < questions.length) renderQuestion(step);
-    else renderGate();
+    setModeHeader();
+    if (mode === null) renderMenu();
+    else if (mode === 'cloud') {
+      if (step === -1) renderIntro();
+      else if (step >= 0 && step < questions.length) renderQuestion(step);
+      else renderResult(computeResult(), '');
+    }
+    else if (mode === 'ai') renderAI();
+    else if (mode === 'ri') renderRI();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -801,6 +1136,12 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
     e.preventDefault();
     step = -1;
     answers = new Array(questions.length).fill(null);
+    render();
+  });
+
+  backToMenuLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    mode = null;
     render();
   });
 

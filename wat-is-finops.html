@@ -102,6 +102,10 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 .tool-preview-card:hover .tool-preview-link { background: var(--accent); border-color: var(--accent); color: #fff; }
 .tool-preview-card:hover .tool-preview-link iconify-icon { transform: translateX(3px); }
 .tool-preview-link iconify-icon { transition: transform 0.2s; }
+.tool-preview-card.tool-preview-gold { border-color: rgba(212,175,55,0.35); }
+.tool-preview-card.tool-preview-gold .tool-preview-icon { background: rgba(212,175,55,0.16); color: #d4af37; }
+.tool-preview-card.tool-preview-gold:hover { border-color: rgba(212,175,55,0.6); }
+.tool-preview-card.tool-preview-gold:hover .tool-preview-link { background: #d4af37; border-color: #d4af37; color: #2a1f08; }
 .more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
 .more-tools-all:hover { color: var(--accent-light); }
 @media (max-width: 768px) {
@@ -125,7 +129,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     </div>
     <div class="nav-cta-group">
       <a href="finops-diensten.html" class="nav-cta-secondary">Diensten &amp; opties</a>
-      <a href="index.html#contact" class="nav-cta">Plan een intake</a>
+      <a href="savings-scan.html" class="nav-cta">Plan een Gratis Savings Scan</a>
     </div>
   </div>
 </nav>
@@ -178,7 +182,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
           <a href="finops-radar.html" class="btn-primary">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
           <a href="finops-diensten.html" class="btn-diensten">Diensten &amp; opties</a>
         </div>
-        <a href="index.html#contact" class="article-cta-secondary">of plan direct een intake</a>
+        <a href="savings-scan.html" class="article-cta-secondary">of start de Savings Scan</a>
       </div>
     </div>
   </div>
@@ -190,10 +194,16 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   <div class="section-inner">
     <div class="related-title">Gratis tools</div>
     <div class="tool-preview-grid">
+      <a href="savings-scan.html" class="tool-preview-card tool-preview-gold">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:magnifer-linear" width="18"></iconify-icon></div>
+        <h4>Cloud &amp; AI Savings Scan</h4>
+        <p>Ontdek waar je cloud- en AI-uitgaven naartoe gaan en wat er te besparen valt.</p>
+        <span class="tool-preview-link">Start de Savings Scan <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
       <a href="finops-radar.html" class="tool-preview-card">
         <div class="tool-preview-icon"><iconify-icon icon="solar:radar-2-linear" width="18"></iconify-icon></div>
         <h4>FinOps Radar</h4>
-        <p>7 korte vragen, direct een gepersonaliseerde score en besparingsindicatie.</p>
+        <p>Cloudkosten, AI-kosten of RI vs. Savings Plan: kies je invalshoek, direct resultaat.</p>
         <span class="tool-preview-link">Start de Radar <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
       </a>
       <a href="ri-vs-savings-plan-calculator.html" class="tool-preview-card">
@@ -207,6 +217,12 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
         <h4>FinOps Begrippenlijst</h4>
         <p>20 kernbegrippen kort en duidelijk uitgelegd, van cloud waste tot de FinOps Lifecycle.</p>
         <span class="tool-preview-link">Bekijk de begrippenlijst <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
+      </a>
+      <a href="ai-kosten-calculator.html" class="tool-preview-card">
+        <div class="tool-preview-icon"><iconify-icon icon="solar:cpu-bolt-linear" width="18"></iconify-icon></div>
+        <h4>AI-kostencalculator</h4>
+        <p>Bereken direct wat jullie AI-gebruik gaat kosten, inclusief opbouw en groeiprojectie.</p>
+        <span class="tool-preview-link">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span>
       </a>
     </div>
     <a href="gratis-tools.html" class="more-tools-all">Bekijk alle gratis tools &amp; templates &rarr;</a>

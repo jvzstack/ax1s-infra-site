@@ -98,14 +98,15 @@ hr { border: none; border-top: 1px solid var(--divider); position: relative; z-i
 
 /* Soft glowing white CTA — shared "diensten & opties" button treatment */
 .nav-cta-secondary, .btn-diensten, .more-tools-diensten-btn {
-  color: #0a0e1a; border: none; background: radial-gradient(circle at 50% -20%, #d9e9ff 0%, #ffffff 60%);
-  box-shadow: 0 4px 20px -4px rgba(255,255,255,0.6), 0 0 26px -2px rgba(0,112,243,0.5);
-  transition: box-shadow 0.2s, transform 0.15s, background 0.2s;
+  color: #0a0e1a; border: 1px solid transparent; background: radial-gradient(circle at 50% -20%, #eef5ff 0%, #ffffff 70%);
+  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.25);
+  transition: box-shadow 0.2s, transform 0.15s, background 0.2s, border-color 0.2s;
 }
 .nav-cta-secondary:hover, .btn-diensten:hover, .more-tools-diensten-btn:hover {
-  background: radial-gradient(circle at 50% -20%, #c3ddff 0%, #ffffff 65%);
+  background: radial-gradient(circle at 50% -20%, #cfe1ff 0%, #ffffff 65%);
+  border-color: rgba(0,112,243,0.4);
   transform: translateY(-1px);
-  box-shadow: 0 5px 18px -6px rgba(255,255,255,0.35), 0 0 20px -4px rgba(0,112,243,0.5);
+  box-shadow: 0 3px 10px -3px rgba(0,0,0,0.3);
 }
 
 /* RELATED */

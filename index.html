@@ -257,8 +257,10 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   .hero-sub { font-size: 17px; color: #ced4e0; line-height: 1.75; max-width: 500px; margin-bottom: 36px; }
   .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
 
-  .btn-primary { font-size: 14px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 8px; padding: 13px 26px; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s, transform 0.15s; }
+  .btn-primary { font-size: 14px; font-weight: 700; color: #fff; background: var(--accent); border: 1px solid transparent; border-radius: 8px; padding: 13px 26px; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s, transform 0.15s; }
   .btn-primary:hover { background: #0060d0; transform: translateY(-1px); }
+  .btn-primary.btn-gold-outline { border-color: #d4af37; background: rgba(0,112,243,0.7); }
+  .btn-primary.btn-gold-outline:hover { background: rgba(0,112,243,0.85); }
   .btn-secondary { font-size: 14px; font-weight: 600; color: var(--text); background: transparent; border: 1px solid var(--card-border); border-radius: 8px; padding: 13px 26px; display: inline-flex; align-items: center; gap: 8px; transition: border-color 0.2s, transform 0.15s; }
   .btn-secondary:hover { border-color: var(--muted); transform: translateY(-1px); }
 
@@ -305,15 +307,30 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   .stat-card-side { display: flex; align-items: flex-start; gap: 10px; flex: 1; min-width: 0; }
   .stat-card-side iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
   .stat-card-side p { font-size: 15px; line-height: 1.5; color: var(--muted); margin: 0; }
-  .intake-stat-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: border-color 0.2s; }
-  .intake-stat-card:hover { border-color: var(--accent-border); }
-  .intake-stat-btn {
-    flex-shrink: 0; text-decoration: none; font-size: 13px; font-weight: 700; color: #fff;
-    background: var(--accent); border-radius: 9px; padding: 11px 16px;
-    display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
-    transition: background 0.2s, transform 0.15s;
+  .scan-stat-card {
+    display: flex; align-items: center; gap: 18px; cursor: pointer;
+    position: relative; overflow: hidden;
+    padding: 20px 23px;
+    background: linear-gradient(155deg, rgba(0,112,243,0.35) 0%, rgba(4,20,54,0.9) 100%);
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 0 1px rgba(212,175,55,0.25) inset, 0 16px 34px -14px rgba(0,112,243,0.7);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    text-decoration: none;
   }
-  .intake-stat-btn:hover { background: #0060d0; transform: translateY(-1px); }
+  .scan-stat-card::before {
+    content: ''; position: absolute; top: -50%; right: -15%; width: 160px; height: 160px;
+    background: radial-gradient(circle, rgba(120,190,255,0.5), transparent 70%);
+    pointer-events: none;
+  }
+  .scan-stat-card:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -14px rgba(0,112,243,0.85); border-color: #e6c560; }
+  .scan-stat-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.16); color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; z-index: 1; overflow: hidden; }
+  .scan-stat-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+  .scan-stat-text { flex: 1; position: relative; z-index: 1; }
+  .scan-stat-text .stat-sublabel { font-size: 11px; color: #e8d18f; margin-bottom: 3px; }
+  .scan-stat-title { font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+  .scan-stat-sub { font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.45; }
+  .scan-stat-arrow { color: #fff; flex-shrink: 0; transition: transform 0.2s; position: relative; z-index: 1; }
+  .scan-stat-card:hover .scan-stat-arrow { transform: translateX(3px); }
   .contact-calendly-cta {
     display: flex; align-items: center; gap: 12px; text-decoration: none;
     background: linear-gradient(155deg, rgba(0,112,243,0.18), rgba(0,112,243,0.05));
@@ -411,7 +428,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   }
   .radar-promo-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(0,112,243,0.16); color: var(--accent-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; }
   /* TOOLS SHOWCASE */
-  .tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; }
+  .tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
   .tool-showcase-card {
     background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(70,140,255,0.04));
     border: 1px solid rgba(255,255,255,0.14); border-radius: 18px; padding: 24px;
@@ -459,11 +476,11 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   .ci iconify-icon { color: var(--accent-light); flex-shrink: 0; }
   .scard-cta {
     margin-top: 14px; font-size: 13px; font-weight: 700; color: #fff;
-    background: var(--accent); border-radius: 9px; padding: 11px 18px; width: fit-content;
+    background: rgba(0,112,243,0.7); border: 1px solid #d4af37; border-radius: 9px; padding: 10px 17px; width: fit-content;
     display: inline-flex; align-items: center; gap: 7px;
     transition: background 0.2s, transform 0.15s;
   }
-  .scard-cta:hover { background: #0060d0; transform: translateY(-1px); }
+  .scard-cta:hover { background: rgba(0,112,243,0.85); transform: translateY(-1px); }
   .scard-cta-row { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
   .scard-cta-row .scard-cta { margin-top: 0; }
   .scard-cta-secondary {
@@ -472,37 +489,21 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     border-radius: 9px; padding: 11px 18px;
   }
 
-  /* Soft glowing white CTA — shared "diensten & opties" button treatment */
+  /* Soft white CTA — shared "diensten & opties" button treatment */
   .nav-cta-secondary, .scard-cta-secondary, .more-tools-diensten-btn {
-    color: #0a0e1a; border: none; background: radial-gradient(circle at 50% -20%, #d9e9ff 0%, #ffffff 60%);
-    box-shadow: 0 4px 20px -4px rgba(255,255,255,0.6), 0 0 26px -2px rgba(0,112,243,0.5);
-    transition: box-shadow 0.2s, transform 0.15s, background 0.2s;
+    color: #0a0e1a; border: 1px solid transparent; background: radial-gradient(circle at 50% -20%, #eef5ff 0%, #ffffff 70%);
+    box-shadow: 0 2px 8px -2px rgba(0,0,0,0.25);
+    transition: box-shadow 0.2s, transform 0.15s, background 0.2s, border-color 0.2s;
   }
   .nav-cta-secondary:hover, .scard-cta-secondary:hover, .more-tools-diensten-btn:hover {
-    background: radial-gradient(circle at 50% -20%, #c3ddff 0%, #ffffff 65%);
+    background: radial-gradient(circle at 50% -20%, #cfe1ff 0%, #ffffff 65%);
+    border-color: rgba(0,112,243,0.4);
     transform: translateY(-1px);
-    box-shadow: 0 5px 18px -6px rgba(255,255,255,0.35), 0 0 20px -4px rgba(0,112,243,0.5);
+    box-shadow: 0 3px 10px -3px rgba(0,0,0,0.3);
   }
 
-  /* Pay on Results teaser strip */
-  .payresults-banner {
-    display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
-    background: var(--card);
-    border: 1px solid rgba(212,175,55,0.5);
-    border-radius: 14px; padding: 16px 24px; margin: 20px 0 28px;
-    box-shadow: 0 0 0 1px rgba(212,175,55,0.14), 0 0 22px -6px rgba(212,175,55,0.5);
-  }
-  .payresults-text { flex: 1 1 420px; min-width: 240px; }
-  .payresults-title { font-size: 17px; font-weight: 800; color: var(--text); margin-bottom: 3px; }
-  .payresults-sub { font-size: 12.5px; font-weight: 700; color: var(--accent-light); margin-bottom: 3px; }
-  .payresults-body { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin: 0; }
-  .payresults-cta { flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 9px; padding: 11px 18px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }
-  .payresults-cta:hover { background: #0060d0; transform: translateY(-1px); }
-  @media (max-width: 768px) {
-    .payresults-banner { flex-direction: column; align-items: flex-start; }
-    .payresults-text { flex: none; width: 100%; }
-    .payresults-cta { width: 100%; justify-content: center; }
-  }
+  .ci.ci-gold { color: #c2a355; }
+  .ci.ci-gold iconify-icon { color: #c2a355; }
 
   /* FINOPS */
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 18px; align-items: start; }
@@ -557,7 +558,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   .promise-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
   .pi { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--muted); }
   .pi iconify-icon { color: var(--accent-light); }
-  .form-card { background: linear-gradient(160deg, rgba(0,112,243,0.12), rgba(0,112,243,0.03)); border: 1px solid rgba(100,160,255,0.35); border-radius: 16px; padding: 30px; box-shadow: 0 24px 60px -24px rgba(0,112,243,0.5); }
+  .form-card { background: linear-gradient(160deg, rgba(0,112,243,0.12), rgba(0,112,243,0.03)); border: 1px solid rgba(212,175,55,0.4); border-radius: 16px; padding: 30px; box-shadow: 0 24px 60px -24px rgba(0,112,243,0.5), 0 0 34px -18px rgba(212,175,55,0.35); }
   .ffields { display: flex; flex-direction: column; gap: 16px; }
   .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .field { display: flex; flex-direction: column; gap: 6px; }
@@ -603,8 +604,6 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     .stat-num { font-size: 26px; }
     .stat-card-split { flex-direction: column; align-items: flex-start; gap: 14px; }
     .stat-card-divider { width: 100%; height: 1px; align-self: stretch; }
-    .intake-stat-card { flex-direction: column; align-items: flex-start; gap: 14px; }
-    .intake-stat-btn { width: 100%; justify-content: center; }
 
     /* SECTIONS */
     .section-inner { padding: 30px 20px; }
@@ -658,7 +657,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     </div>
     <div class="nav-cta-group">
       <a href="finops-diensten.html" class="nav-cta-secondary">Diensten &amp; opties</a>
-      <a href="#contact" class="nav-cta">Plan een intake</a>
+      <a href="savings-scan.html" class="nav-cta">Plan een Gratis Savings Scan</a>
     </div>
   </div>
 </nav>
@@ -673,7 +672,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       <h1 class="reveal">Grip op je cloud- en AI-kosten, <em>vanaf dag één.</em></h1>
       <p class="hero-sub reveal">AX1S Infra helpt digital-first bedrijven met het in kaart brengen en reduceren van cloud- en AI-uitgaven.</p>
       <div class="hero-btns reveal">
-        <a href="#contact" class="btn-primary">Gratis intake-analyse aanvragen <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        <a href="savings-scan.html" class="btn-primary btn-gold-outline">Plan een Gratis Savings Scan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
         <a href="#finops" class="btn-secondary">Meer over FinOps</a>
       </div>
       <div class="cert-block reveal">
@@ -705,14 +704,15 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
           </div>
         </div>
       </div>
-      <div class="stat-card intake-stat-card">
-        <div>
-          <div class="stat-sublabel">Kennismaking</div>
-          <div class="stat-num"><span class="num-white">Gratis</span> <span class="unit unit-accent">intake</span></div>
-          <div class="stat-label">Vrijblijvend meekijken en besparingspotentieel in kaart brengen</div>
+      <a href="savings-scan.html" class="stat-card scan-stat-card">
+        <div class="scan-stat-icon"><img src="assets/savings-scan-icon.png" alt="Cloud &amp; AI Savings Scan" width="44" height="44"></div>
+        <div class="scan-stat-text">
+          <div class="stat-sublabel">Kosteloos</div>
+          <div class="scan-stat-title">Cloud &amp; AI Savings Scan</div>
+          <div class="scan-stat-sub">Ontdek waar je cloud- en AI-uitgaven naartoe gaan en wat er te besparen valt</div>
         </div>
-        <a href="https://calendly.com/j-vanzantwijk-ax1s-infra" target="_blank" rel="noopener" class="intake-stat-btn calendly-btn">Plannen <iconify-icon icon="solar:calendar-add-linear" width="14"></iconify-icon></a>
-      </div>
+        <iconify-icon icon="solar:arrow-right-linear" width="18" class="scan-stat-arrow"></iconify-icon>
+      </a>
       <a href="finops-radar.html" class="stat-card radar-stat-card">
         <span class="radar-stat-badge">Gratis</span>
         <div class="radar-stat-icon"><img src="assets/radar-icon.png" alt="FinOps Radar" width="44" height="44"></div>
@@ -736,6 +736,78 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     <h2 class="title reveal">Laatste artikelen.</h2>
     <p class="subtitle reveal">Praktische inzichten over FinOps, cloud- en AI-kosten.</p>
     <div class="blog-scroll reveal">
+      <a href="blog/5-kostbare-fouten-public-cloud.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-5-fouten-public-cloud.jpg" alt="Meter die naar het rood uitslaat: vijf fouten die cloudkosten flink opdrijven"></div>
+        <div class="blog-card-body">
+          <span class="stag">Cloud</span>
+          <h3>5 kostbare fouten die je public cloud onnodig duur maken</h3>
+          <div class="blog-card-meta"><span>17 aug 2026</span><span>·</span><span>5 min leestijd</span></div>
+          <div class="blog-card-footer">
+            <span class="blog-card-cta">Lees artikel <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+            <img src="assets/team-jelle.jpg" class="blog-card-avatar" alt="Jelle van Zantwijk">
+          </div>
+        </div>
+      </a>
+      <a href="blog/wie-stuurt-op-it-kosten.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-wie-stuurt-it-kosten.jpg" alt="Vier afdelingen rond een centraal FinOps-dashboard: finance, IT, procurement en business"></div>
+        <div class="blog-card-body">
+          <span class="stag">Governance</span>
+          <h3>Wacht even... wie stuurt er eigenlijk op onze IT-kosten?</h3>
+          <div class="blog-card-meta"><span>16 aug 2026</span><span>·</span><span>4 min leestijd</span></div>
+          <div class="blog-card-footer">
+            <span class="blog-card-cta">Lees artikel <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+            <img src="assets/team-tom.jpg" class="blog-card-avatar" alt="Tom Prager">
+          </div>
+        </div>
+      </a>
+      <a href="blog/van-cloud-naar-alle-technologie.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-cloud-naar-alle-technologie.jpg" alt="De verschuiving van cloud naar de volledige technologie-stack"></div>
+        <div class="blog-card-body">
+          <span class="stag">FinOps</span>
+          <h3>De verschuiving van cloud naar alle technologie</h3>
+          <div class="blog-card-meta"><span>14 aug 2026</span><span>·</span><span>4 min leestijd</span></div>
+          <div class="blog-card-footer">
+            <span class="blog-card-cta">Lees artikel <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+            <img src="assets/team-jelle.jpg" class="blog-card-avatar" alt="Jelle van Zantwijk">
+          </div>
+        </div>
+      </a>
+      <a href="blog/ai-spend-roi-trillion-dollar-casino.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-ai-spend-roi-casino.jpg" alt="AI-spend ROI weergegeven als een roulettetafel, symbool voor gokken zonder inzicht"></div>
+        <div class="blog-card-body">
+          <span class="stag">AI</span>
+          <h3>Het trillion-dollar casino: wel AI-kosten tracken, geen zicht op ROI</h3>
+          <div class="blog-card-meta"><span>13 aug 2026</span><span>·</span><span>4 min leestijd</span></div>
+          <div class="blog-card-footer">
+            <span class="blog-card-cta">Lees artikel <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+            <img src="assets/team-tom.jpg" class="blog-card-avatar" alt="Tom Prager">
+          </div>
+        </div>
+      </a>
+      <a href="blog/it-factuur-3x-hoger-voorkomen.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-it-factuur-3x-hoger.jpg" alt="Kostenvoorspelling die 3x hoger uitvalt dan de geplande IT-factuur"></div>
+        <div class="blog-card-body">
+          <span class="stag">FinOps</span>
+          <h3>Hoe voorkom je een IT-factuur die 3x hoger uitvalt dan gepland?</h3>
+          <div class="blog-card-meta"><span>11 aug 2026</span><span>·</span><span>4 min leestijd</span></div>
+          <div class="blog-card-footer">
+            <span class="blog-card-cta">Lees artikel <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+            <img src="assets/team-jelle.jpg" class="blog-card-avatar" alt="Jelle van Zantwijk">
+          </div>
+        </div>
+      </a>
+      <a href="blog/ai-budget-overschreden.html" class="blog-card">
+        <div class="blog-card-media"><img src="assets/banner-ai-budget-overschreden.jpg" alt="AI-budget overschreden: stijgende inferencekosten en een waarschuwing op een dashboard"></div>
+        <div class="blog-card-body">
+          <span class="stag">AI</span>
+          <h3>AI-budget overschreden? Je bent niet de enige</h3>
+          <div class="blog-card-meta"><span>10 aug 2026</span><span>·</span><span>4 min leestijd</span></div>
+          <div class="blog-card-footer">
+            <span class="blog-card-cta">Lees artikel <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+            <img src="assets/team-tom.jpg" class="blog-card-avatar" alt="Tom Prager">
+          </div>
+        </div>
+      </a>
       <a href="blog/veelgestelde-vragen-cloudkosten-finops.html" class="blog-card">
         <div class="blog-card-media"><img src="assets/banner-veelgestelde-vragen.png" alt="Visuele weergave van veelgestelde vragen over cloudkosten en FinOps"></div>
         <div class="blog-card-body">
@@ -821,15 +893,6 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
     <span class="label reveal">Wat we doen</span>
     <h2 class="title reveal">Van FinOps tot colocatie.</h2>
 
-    <div class="payresults-banner reveal">
-      <div class="payresults-text">
-        <h3 class="payresults-title">Pay on Results</h3>
-        <p class="payresults-sub">Liever alleen betalen bij aantoonbare besparing?</p>
-        <p class="payresults-body">Bij elke dienst is het mogelijk om te werken op basis van no cure no pay: je betaalt dan een percentage van de besparing die we daadwerkelijk realiseren, in plaats van een vast tarief. Bespreken we graag tijdens het eerste gesprek.</p>
-      </div>
-      <a href="#contact" class="payresults-cta">Start zonder risico <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
-    </div>
-
     <div class="services-grid">
       <div class="scard featured reveal">
         <div class="sicon"><iconify-icon icon="solar:chart-2-linear" width="22"></iconify-icon></div>
@@ -842,9 +905,10 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
           <div class="ci"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> AI-kostenbeheersing</div>
           <div class="ci"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> Multi-cloud governance</div>
           <div class="ci"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> Kostendoorbelasting per team</div>
+          <div class="ci ci-gold"><iconify-icon icon="solar:check-circle-linear" width="15"></iconify-icon> Geen besparing, geen kosten</div>
         </div>
         <div class="scard-cta-row">
-          <a href="#contact" class="scard-cta">Intake-analyse aanvragen <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
+          <a href="savings-scan.html" class="scard-cta">Plan een Gratis Savings Scan <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></a>
           <a href="finops-diensten.html" class="scard-cta-secondary">Bekijk alle diensten &amp; opties &rarr;</a>
         </div>
       </div>
@@ -877,7 +941,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       <div class="radar-promo-text">
         <span class="stag">Gratis tool</span>
         <h3>FinOps Radar: ontdek binnen 2 minuten jouw verborgen besparing</h3>
-        <p>7 korte vragen, direct een gepersonaliseerde score en concrete inzichten. Geen verplichting vooraf.</p>
+        <p>Cloudkosten, AI-kosten of RI vs. Savings Plan: kies je invalshoek, direct resultaat.</p>
       </div>
       <a href="finops-radar.html" class="btn-primary">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
     </div>
@@ -899,6 +963,12 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
         <h3>FinOps Begrippenlijst</h3>
         <p>20 kernbegrippen kort en duidelijk uitgelegd, van cloud waste tot de FinOps Lifecycle.</p>
         <span class="tool-showcase-cta">Bekijk de begrippenlijst <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+      </a>
+      <a href="ai-kosten-calculator.html" class="tool-showcase-card">
+        <div class="tool-showcase-icon"><iconify-icon icon="solar:cpu-bolt-linear" width="22"></iconify-icon></div>
+        <h3>AI-kostencalculator</h3>
+        <p>Bereken direct wat jullie AI-gebruik gaat kosten, inclusief opbouw en groeiprojectie.</p>
+        <span class="tool-showcase-cta">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
       </a>
     </div>
     <a href="gratis-tools.html" class="more-tools-all" style="margin-top:20px;">Bekijk alle gratis tools &amp; templates &rarr;</a>
@@ -991,7 +1061,6 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       <div class="reveal">
         <p style="font-size:15px;line-height:1.8;color:#ced4e0;">Deel welke cloud- of AI-leveranciers je gebruikt, wat de kosten ongeveer zijn en wat de uitdaging is. AX1S geeft al in het eerste gesprek een eerlijk beeld van wat er te besparen valt.</p>
         <div class="promise-list">
-          <div class="pi"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Reactie binnen 24 uur</div>
           <div class="pi"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Eerste inzichten al na het intakegesprek</div>
           <div class="pi"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Vrijblijvend en zonder verplichtingen</div>
         </div>
