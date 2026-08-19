@@ -117,17 +117,17 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 .theme-teal .price-feature iconify-icon { color: #34d399; }
 .price-cta { text-align: center; font-size: 14px; font-weight: 700; padding: 13px 20px; border-radius: 10px; min-height: 48px; box-sizing: border-box; transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
 
-/* Knop 1: gouden randje, geen vlak */
-.price-cta.cta-gold { background: transparent; color: #d4af37; border: 1px solid #d4af37; }
-.price-cta.cta-gold:hover { background: rgba(212,175,55,0.12); transform: translateY(-1px); }
+/* Knop 1: goud, licht gevuld met zachte gloed */
+.price-cta.cta-gold { background: rgba(212,175,55,0.14); color: #f0d78a; border: 1px solid #d4af37; box-shadow: 0 0 16px -6px rgba(212,175,55,0.5); }
+.price-cta.cta-gold:hover { background: rgba(212,175,55,0.26); border-color: #e8c454; box-shadow: 0 0 22px -4px rgba(212,175,55,0.75); transform: translateY(-1px); }
 
-/* Knop 2: solide, primair blauw */
-.price-cta.cta-blue { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
-.price-cta.cta-blue:hover { background: #0060d0; transform: translateY(-1px); }
+/* Knop 2: transparant blauw */
+.price-cta.cta-blue { background: rgba(0,112,243,0.75); color: #fff; border: 1px solid var(--accent); }
+.price-cta.cta-blue:hover { background: rgba(0,112,243,0.9); transform: translateY(-1px); }
 
-/* Knop 3: solide, smaragdgroen met donkere tekst */
-.price-cta.cta-teal { background: #34d399; color: #06251c; border: 1px solid #34d399; }
-.price-cta.cta-teal:hover { background: #2ec28d; transform: translateY(-1px); }
+/* Knop 3: transparant smaragdgroen met donkere tekst */
+.price-cta.cta-teal { background: rgba(52,211,153,0.75); color: #06251c; border: 1px solid #34d399; }
+.price-cta.cta-teal:hover { background: rgba(52,211,153,0.9); transform: translateY(-1px); }
 .honest-note { display: flex; align-items: center; gap: 20px; background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 22px 26px; margin-top: 36px; box-shadow: var(--card-shadow); }
 .honest-note-avatars { display: flex; flex-shrink: 0; }
 .honest-note-avatars img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid #0d0f1a; }
@@ -204,7 +204,6 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
         <div class="price-icon"><iconify-icon icon="solar:magnifer-linear" width="20"></iconify-icon></div>
         <span class="price-badge">Savings Scan</span>
         <h3>Cloud &amp; AI Savings Scan</h3>
-        <div class="price-amount">Kosteloos</div>
         <p class="price-desc">We brengen eerst in kaart waar je cloud- en AI-uitgaven naartoe gaan, waar optimalisatie mogelijk is en welk besparingspotentieel er ligt. Zo weet je vooraf of een optimalisatietraject überhaupt interessant is.</p>
         <div class="price-features">
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Inzicht in de belangrijkste kostenposten</div>
@@ -212,14 +211,13 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Indicatie van het besparingspotentieel</div>
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Prioritering en concrete aanbevelingen voor vervolgstappen</div>
         </div>
-        <a href="savings-scan.html" class="price-cta cta-gold">Start de gratis Savings Scan</a>
+        <a href="savings-scan.html" class="price-cta cta-gold">Plan de Gratis Scan</a>
       </div>
 
       <div class="price-card theme-blue">
         <div class="price-icon"><iconify-icon icon="solar:refresh-circle-linear" width="20"></iconify-icon></div>
         <span class="price-badge">Kernaanbod</span>
         <h3>FinOps-as-a-Service</h3>
-        <div class="price-amount">Op aanvraag</div>
         <p class="price-desc">Cloud- en AI-omgevingen veranderen continu. Dit is het gebruikelijke traject: wij blijven meekijken zodat besparingen ook blijven staan.</p>
         <div class="price-features">
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Doorlopende monitoring &amp; rapportage</div>
@@ -234,7 +232,6 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
         <div class="price-icon"><iconify-icon icon="solar:chart-2-linear" width="20"></iconify-icon></div>
         <span class="price-badge">Op maat</span>
         <h3>FinOps-traject</h3>
-        <div class="price-amount">Op maat<span class="unit">Na een vrijblijvend voorstel</span></div>
         <p class="price-desc">Een afgebakend maatwerkproject waarin we verspilling opsporen en een werkend FinOps-framework opzetten.</p>
         <div class="price-features">
           <div class="price-feature"><iconify-icon icon="solar:check-circle-linear" width="16"></iconify-icon> Volledige verbruiksanalyse cloud en AI</div>
