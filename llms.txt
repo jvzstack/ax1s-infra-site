@@ -18,6 +18,10 @@ AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klante
 
 ## Insights (blog)
 
+- [Oh nee, het budget is alweer overschreden](https://ax1s-infra.com/blog/budget-alweer-overschreden.html): hoe een nieuwe AI-feature een kwartaalbudget ongemerkt met tientallen procenten overschrijdt
+- [Wacht, is deze investering nog wel rendabel?](https://ax1s-infra.com/blog/investering-nog-rendabel.html): waarom een goed functionerend AI-model niet hetzelfde is als een nog rendabele investering
+- [Dit AI-project leek goedkoop, tot de rekening kwam](https://ax1s-infra.com/blog/ai-project-rekening-kwam.html): van kleine pilot naar bijna 300x hogere kosten na uitrol naar productie
+- [Oh nee, niemand heeft dit kostenplaatje ooit gecheckt](https://ax1s-infra.com/blog/kostenplaatje-nooit-gecheckt.html): waarom een reserved instance commitment die ooit logisch was, ongemerkt geld kan blijven lekken
 - [3 stappen om verspilling in de cloud te vinden](https://ax1s-infra.com/blog/verspilling-cloud-vinden.html): toegewezen capaciteit versus gebruik, resources zonder eigenaar en verouderde contracten systematisch opsporen
 - [Wie stuurt op cloud- en AI-kosten?](https://ax1s-infra.com/blog/wie-stuurt-cloud-ai-kosten.html): vier vragen die blootleggen waar het eigenaarschap over cloud- en AI-kosten ontbreekt
 - [5 stappen naar een voorspelbaar cloudbudget](https://ax1s-infra.com/blog/voorspelbaar-cloudbudget.html): van verbruik als startpunt tot een vast kwartaalritme voor budgetherziening
