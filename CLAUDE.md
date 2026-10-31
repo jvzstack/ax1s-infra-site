@@ -37,6 +37,19 @@ Alle pagina's delen hetzelfde donkere design-systeem (accent `#0070F3`/`#4DA3FF`
 
 Radar is herbouwd tot één hub met een keuzemenu bovenaan (geen automatische quiz meer): **Cloudkosten** (de originele 7-vragen-quiz), **AI-kosten** en **RI vs. Savings Plan** (dezelfde logica als de losse rekentool-pagina's, hier live-updatend zonder de invoervelden opnieuw op te bouwen — belangrijk om focus tijdens typen te behouden). Onder de derde menu-optie staat een **goud-omrande link** naar de gratis intake (`index.html#contact`). Kop/subtekst/eyebrow passen zich per gekozen modus aan via `setModeHeader()`; een "← Andere tool kiezen"-link brengt je terug naar het menu. De cloud-quiz zelf heeft **geen e-mailmuur meer** — resultaat (euro-besparingsrange + bevindingen, toegeschreven aan "Tom & Jelle's inschatting") verschijnt direct na de laatste vraag; het los daaronder staande contactformulier is puur optioneel. De losse pagina's (`ai-kosten-calculator.html`, `ri-vs-savings-plan-calculator.html`) blijven gewoon bestaan en zijn bewust **niet** samengevoegd — dat is expliciet zo gekozen zodat ze apart kunnen blijven scoren op GEO/SEO, terwijl de Radar op de site zelf als hét ene overkoepelende visitekaartje fungeert.
 
+## Tweetalig: NL (root) + EN (`/en/`)
+
+De Nederlandse pagina's in de root zijn de **bron**; `en/` is een gegenereerde spiegel (niet met de hand bewerken, wordt overschreven). Elke pagina heeft rechtsboven in de nav een `NL`/`EN`-pil (`.lang-switch`, stijl in `assets/lang-switch.css`), plus hreflang (nl/en/x-default=NL), EN-canonical, `og:locale en_GB` en vertaalde JSON-LD. `kennismaking.html` (LinkedIn-outreach, noindex) is bewust **niet** vertaald. Downloads in `assets/downloads/` blijven Nederlands (EN-pagina's zeggen "(Dutch version)"). Banners in `assets/banner-*.png/jpg` hebben Nederlandse tekst in de afbeelding zelf.
+
+Workflow na elke wijziging aan NL-tekst (de gebruiker voert dit niet zelf uit, jij doet het):
+1. Werk de NL-pagina bij.
+2. `python3 -m venv /tmp/i18nvenv && /tmp/i18nvenv/bin/pip install beautifulsoup4` (eenmalig), dan `/tmp/i18nvenv/bin/python .i18n/i18n.py extract`: toont nieuwe/gewijzigde NL-tekstblokken zonder vertaling (`.i18n/missing.json`).
+3. Voeg vertalingen toe als `{"<NL-tekst>": "<EN-tekst>"}` in een nieuw `.i18n/tr/bNN.json` (inline markup staat als `{1}...{/1}`-tokens; die moeten identiek terugkomen).
+4. Tekst die in `<script>` staat (Radar, calculators, formulier-meldingen) staat in `.i18n/make_js_repl.py`; draai `python3 .i18n/make_js_repl.py` om `js_replacements.json` te regenereren. Gebruik daar typografische apostrofs (’) in EN-tekst, anders breken JS-strings.
+5. `/tmp/i18nvenv/bin/python .i18n/i18n.py build` regenereert `en/` en patcht NL-pagina's (idempotent), dan `python3 .i18n/make_sitemap.py` voor sitemap + hreflang.
+6. Nieuwe pagina? Voeg hem toe aan `sitemap.xml` (NL), draai build + make_sitemap, en update `llms.txt` (NL + English-sectie).
+`.i18n/` begint met een punt, dus de deploy-workflow uploadt het niet; `en/` wordt wel mee-gedeployd.
+
 ## Volgende stap (nog niet uitgevoerd)
 
 Tweede leadmagnet naast de Radar productiseren: de **Kosteloze Intake**-kaart (linkerkaart op `finops-diensten.html`) wordt bewust de "high-value, low-scalability"-tegenhanger van de Radar ("laagdrempelig, schaalbaar"). Moet er visueel echt uitspringen tussen de andere twee kaarten — zelfde goud-randje/gloed-behandeling als de Pay on Results-banner en de Radar-menu-link. Daarna links naar deze dienst toevoegen op bijna alle andere pagina's van de site.

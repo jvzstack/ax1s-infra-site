@@ -1,0 +1,701 @@
+{
+ "same": [],
+ "pairs": [
+  [
+   700,
+   "{1} {2}Fragmented cost visibility{/2}: every provider has its own billing format and dashboards, so nobody has the overall picture."
+  ],
+  [
+   701,
+   "{1} {2}Inconsistent tagging and naming policy{/2}: what is a \"project\" tag in one cloud is called \"cost-center\" elsewhere, resulting in duplicate work and errors."
+  ],
+  [
+   702,
+   "{1} {2}Separate security and access models{/2}: every platform has its own IAM model, making auditing and compliance needlessly complex."
+  ],
+  [
+   703,
+   "Governance without a dedicated platform team"
+  ],
+  [
+   704,
+   "You don't need a large internal platform team to solve this. Most of the gain lies in three relatively simple steps:"
+  ],
+  [
+   705,
+   "1. One shared cost model, regardless of the source"
+  ],
+  [
+   706,
+   "A cloud-agnostic cost report, in which usage from all providers is normalised to the same dimensions (team, project, environment), gives immediate overview without having to report separately per platform."
+  ],
+  [
+   707,
+   "2. One tagging standard, centrally enforced"
+  ],
+  [
+   708,
+   "Define a minimal set of mandatory tags that mean the same on every platform, and enforce this with automated policy checks when resources are created. This prevents governance from depending on individual discipline."
+  ],
+  [
+   709,
+   "3. Regular cross-cloud reviews"
+  ],
+  [
+   710,
+   "A recurring (for example monthly) overview in which usage, costs and deviations across all clouds are discussed prevents each platform from living its own isolated life."
+  ],
+  [
+   711,
+   "Multi-cloud governance isn't about centralising everything. It's about consistent baseline agreements, while teams keep the freedom to choose the right platform per workload."
+  ],
+  [
+   712,
+   "When to consider consolidating?"
+  ],
+  [
+   713,
+   "Sometimes the conclusion after a governance review is that consolidating to fewer providers does make sense, particularly when the operational overhead of multiple platforms no longer outweighs the benefits. That is, however, an outcome of good governance, not a prerequisite for it."
+  ],
+  [
+   714,
+   "Want to get a grip on your multi-cloud environment?"
+  ],
+  [
+   715,
+   "Do the FinOps Radar and find out in 2 minutes where your governance can improve."
+  ],
+  [
+   716,
+   "Setting up multi-cloud governance without a large platform team: three practical steps to get a grip on costs and management across multiple clouds."
+  ],
+  [
+   717,
+   "Three practical steps to get a grip on costs and management across multiple clouds."
+  ],
+  [
+   718,
+   "Reserved Instances vs. Savings Plans | AX1S Infra"
+  ],
+  [
+   719,
+   "Reserved Instances vs. Savings Plans: which fits your workload?"
+  ],
+  [
+   720,
+   "Two routes to the same discount"
+  ],
+  [
+   721,
+   "As soon as a workload runs predictably and continuously, you leave money on the table by paying everything at the on-demand rate. Cloud providers reward commitment with substantial discounts, generally between 20 and 60 percent, depending on term and type of commitment. The two best-known routes are Reserved Instances (RIs) and Savings Plans. They look alike, but the differences determine in practice how much flexibility you retain."
+  ],
+  [
+   722,
+   "Reserved Instances: maximum discount, less flexibility"
+  ],
+  [
+   723,
+   "With a Reserved Instance you commit to a specific instance type, in a specific region, for a period of usually one or three years. The discount is generally the highest, especially with an upfront payment. The flip side: if your architecture changes, or you switch to a different instance type, the reservation no longer matches and you still miss out on the return."
+  ],
+  [
+   724,
+   "Savings Plans: slightly lower discount, much more room to move"
+  ],
+  [
+   725,
+   "A Savings Plan works differently: you commit to a fixed amount of usage per hour, regardless of which instance type, family or even (with some providers) region you use. That makes the instrument resilient to architectural changes. The discount is generally slightly lower than with an RI of the same term, but the risk of \"wasted\" commitment is considerably smaller."
+  ],
+  [
+   726,
+   "Which fits your situation?"
+  ],
+  [
+   727,
+   "{1} Stable, long-unchanged workload on a fixed instance type? A Reserved Instance delivers the highest discount."
+  ],
+  [
+   728,
+   "{1} Growing or changing infrastructure, migrations planned, or multiple teams making their own instance choices? Go for a Savings Plan."
+  ],
+  [
+   729,
+   "{1} In doubt? Start with a Savings Plan on your most predictable base usage and build it out gradually."
+  ],
+  [
+   730,
+   "The biggest pitfall: overcommitment"
+  ],
+  [
+   731,
+   "The biggest mistake we see is not choosing the wrong instrument, but committing to too much volume. Always calculate on the basis of your minimum, structural usage over recent months, not on your peak load. Anything above that you simply leave running on on-demand."
+  ],
+  [
+   732,
+   "Rule of thumb: never commit to more than 70 to 80 percent of your average usage. That way you keep room for seasonal fluctuations and growth, without missing the discount on your base usage."
+  ],
+  [
+   733,
+   "Combining is possible, and often optimal"
+  ],
+  [
+   734,
+   "In practice a layered approach works best: Savings Plans for the flexible base, supplemented with targeted Reserved Instances on the workloads that demonstrably stay stable for years. That does require ongoing monitoring: commitments are not a one-off decision, but an instrument you need to recalibrate periodically as your infrastructure changes."
+  ],
+  [
+   735,
+   "In doubt about the right purchasing strategy?"
+  ],
+  [
+   736,
+   "Do the FinOps Radar and find out in 2 minutes where your purchasing strategy can improve."
+  ],
+  [
+   737,
+   "Reserved Instances or Savings Plans: which instrument fits your workload? Practical explanation, pitfalls and how to determine the right commitment level."
+  ],
+  [
+   738,
+   "Which instrument fits your workload? Practical explanation and pitfalls."
+  ],
+  [
+   739,
+   "The shift from cloud to all technology | AX1S Infra"
+  ],
+  [
+   740,
+   "No IT department saves on 'the cloud' alone any more"
+  ],
+  [
+   741,
+   "Anyone who today still sees FinOps as a trick to lower AWS or Azure bills is behind the facts. The latest figures don't lie: the FinOps Foundation has officially changed its mission from \"managing the value of Cloud\" to {1}\"managing the value of Technology\"{/1}."
+  ],
+  [
+   742,
+   "That is not wordplay. It is an acknowledgement of what is already happening in practice: IT costs have become completely fragmented across cloud, AI, SaaS, software and own data centres, and that fragmentation calls for one coherent picture instead of separate pots."
+  ],
+  [
+   743,
+   "IT costs are fragmented"
+  ],
+  [
+   744,
+   "Within organisations, the FinOps team now manages a much broader range than a few years ago:"
+  ],
+  [
+   745,
+   "{1} {2}98%{/2} AI spend (was 31% two years ago)"
+  ],
+  [
+   746,
+   "{1} {2}90%{/2} SaaS licences"
+  ],
+  [
+   747,
+   "{1} {2}64%{/2} software licences"
+  ],
+  [
+   748,
+   "{1} {2}57%{/2} private cloud & {3}48%{/3} data centres"
+  ],
+  [
+   749,
+   "The jump in AI spend stands out most: from a niche application to something almost every FinOps team now manages as standard. Anyone who still sees AI costs separately from the rest of the tech stack is by now missing most of the story."
+  ],
+  [
+   750,
+   "Where the biggest gains are now"
+  ],
+  [
+   751,
+   "At AX1S we now see the biggest gains and cost-effectiveness in the total IT stack, no longer just in cloud. An organisation that only looks at the cloud bill while SaaS licences and AI spend are left untouched structurally leaves savings potential on the table. The {1}free tools and templates{/1} from AX1S, including the FinOps Radar and the AI Cost Calculator, have therefore been deliberately built to look at cloud and AI costs together."
+  ],
+  [
+   752,
+   "Two years ago, AI spend fell under the management of 31% of FinOps teams. Today that is 98%. No other category has gone mainstream within FinOps as fast."
+  ],
+  [
+   753,
+   "Who in your organisation takes the initiative to make SaaS and AI costs centrally visible?"
+  ],
+  [
+   754,
+   "Want to have your entire tech stack mapped out?"
+  ],
+  [
+   755,
+   "The FinOps Foundation changed its mission from 'managing the value of Cloud' to 'managing the value of Technology'. What that shift means for FinOps teams."
+  ],
+  [
+   756,
+   "The FinOps Foundation changed its mission from 'managing the value of Cloud' to 'managing the value of Technology'."
+  ],
+  [
+   757,
+   "What the FinOps Foundation's changed mission means for FinOps teams."
+  ],
+  [
+   758,
+   "The shift from cloud to the full technology stack: AI, SaaS, data centres and code"
+  ],
+  [
+   759,
+   "Frequently asked questions about cloud costs and FinOps | AX1S Infra"
+  ],
+  [
+   760,
+   "{1}{2} Back to Insights{/1} {3}FAQ{/3}"
+  ],
+  [
+   761,
+   "These are the questions we get most often about cloud costs and FinOps, gathered in one place. No jargon contest, just direct answers. For the underlying terms you can also consult the {1}FinOps Glossary{/1}."
+  ],
+  [
+   762,
+   "Why cloud costs get out of hand"
+  ],
+  [
+   763,
+   "Why are our cloud costs rising faster than our revenue?"
+  ],
+  [
+   764,
+   "Cloud infrastructure scales with usage, but without active steering it also scales with carelessness: new features run on new resources, old resources are rarely cleaned up, and nobody feels the bill directly. Revenue growth and technology growth therefore often drift apart until someone explicitly steers on it."
+  ],
+  [
+   765,
+   "How much of an average cloud budget is waste?"
+  ],
+  [
+   766,
+   "That differs greatly per organisation, but unused cloud capacity often quickly eats up 10 to 15 percent of the cloud budget as soon as nobody structurally tracks usage."
+  ],
+  [
+   767,
+   "What are signs that an organisation has no grip on cloud costs?"
+  ],
+  [
+   768,
+   "Nobody can explain in one sentence what the cloud budget is spent on, the invoice is opened with surprise afterwards instead of being predicted beforehand, and nobody is explicitly responsible for the costs, only for the technology behind them."
+  ],
+  [
+   769,
+   "Saving on cloud costs: the practical side"
+  ],
+  [
+   770,
+   "What is rightsizing and how much does it deliver?"
+  ],
+  [
+   771,
+   "Rightsizing is adjusting the capacity of a resource to actual usage. Instances are often chosen too generously at the start of a project and never reconsidered afterwards. Based on usage data, 20 to 40 percent savings can usually be achieved on the workload concerned, without any impact on performance."
+  ],
+  [
+   772,
+   "What is the difference between Reserved Instances and Savings Plans?"
+  ],
+  [
+   773,
+   "Both are commitment discounts in exchange for a usage or spend commitment. A Reserved Instance is tied to a specific instance type and region, a Savings Plan commits to a fixed amount of compute spend per hour, regardless of which instance type you use. Savings Plans are more flexible, Reserved Instances sometimes give a slightly higher discount for highly predictable workloads. (The full comparison is in {1}Reserved Instances vs. Savings Plans{/1}.)"
+  ],
+  [
+   774,
+   "How do you make cloud costs visible per team or customer?"
+  ],
+  [
+   775,
+   "Through cost allocation: consistent tagging on team, project and environment, followed by chargeback or showback so teams see for themselves what their infrastructure costs. Once that is visible, behaviour often changes by itself."
+  ],
+  [
+   776,
+   "What about the costs of AI and LLMs within FinOps?"
+  ],
+  [
+   777,
+   "AI cost management has become a focus area of its own within FinOps: compute for training and inference, API costs from model providers and data storage quickly add up and are often not yet separately visible in existing cost reports. The same discipline (measure, allocate, optimise) applies, only the tooling and the recognition of waste are still less mature than with traditional cloud compute."
+  ],
+  [
+   778,
+   "FinOps as a practice"
+  ],
+  [
+   779,
+   "What exactly is FinOps?"
+  ],
+  [
+   780,
+   "In short: teams gain visibility into their own cloud and AI usage and take responsibility for it, instead of finance checking it afterwards. That cross-functional interplay between finance, engineering and operations is the core of FinOps. (See also {1}What is FinOps?{/1} for the full explanation.)"
+  ],
+  [
+   781,
+   "What is the FinOps Lifecycle?"
+  ],
+  [
+   782,
+   "The FinOps Lifecycle consists of three continuous phases: Inform (visibility and cost allocation), Optimize (rightsizing, commitments and eliminating waste) and Operate (embedding in processes and team behaviour). The phases are repeated, not gone through once."
+  ],
+  [
+   783,
+   "Who within an organisation is responsible for cloud costs?"
+  ],
+  [
+   784,
+   "In practice nobody, unless it is explicitly assigned. Engineering mainly optimises for performance and speed, finance sees the bill but often lacks technical context. FinOps is meant to make those two worlds speak the same language, with a clear owner for costs per team."
+  ],
+  [
+   785,
+   "Is FinOps only relevant for large companies?"
+  ],
+  [
+   786,
+   "No. Scale-ups and SaaS companies feel the impact of unmanaged cloud costs sooner, because infrastructure costs have a more direct effect on margin and cash runway. The sooner the basics are in place (visibility, tagging, ownership), the less needs cleaning up later."
+  ],
+  [
+   787,
+   "Outsourcing FinOps or doing it yourself"
+  ],
+  [
+   788,
+   "Can you implement FinOps yourself or do you need an external party?"
+  ],
+  [
+   789,
+   "Both are possible. Many organisations start with the basics themselves, tagging and a first cost overview, and bring in an external party once it goes beyond clean-up: setting up a structural framework, negotiating commitments, or creating ownership between teams that never prioritise it themselves."
+  ],
+  [
+   790,
+   "How much can I save with a FinOps engagement?"
+  ],
+  [
+   791,
+   "That depends on the starting point: the more waste and the less insight there is now, the greater the potential. Customers of AX1S Infra achieve an average saving of 23% on their cloud and compute spend after a focused engagement. (Read the {1}full case{/1}.)"
+  ],
+  [
+   792,
+   "How long does it take before you see results?"
+  ],
+  [
+   793,
+   "This differs per organisation and engagement, but in practice we often see quick wins after the first few weeks, such as cleaning up unused resources, followed by structural optimisation that runs for months."
+  ],
+  [
+   794,
+   "Your question not listed? Feel free to ask it directly, or first do the free FinOps Radar for an estimate tailored to your situation."
+  ],
+  [
+   795,
+   "Answers to the most frequently asked questions about cloud costs, FinOps and saving on cloud, SaaS and AI spend, practical and without jargon."
+  ],
+  [
+   796,
+   "Answers to the most frequently asked questions about cloud costs, FinOps and saving on cloud, SaaS and AI spend."
+  ],
+  [
+   797,
+   "FAQ"
+  ],
+  [
+   798,
+   "Both are commitment discounts in exchange for a usage or spend commitment. A Reserved Instance is tied to a specific instance type and region, a Savings Plan commits to a fixed amount of compute spend per hour, regardless of which instance type you use. Savings Plans are more flexible, Reserved Instances sometimes give a slightly higher discount for highly predictable workloads."
+  ],
+  [
+   799,
+   "That depends on the starting point: the more waste and the less insight there is now, the greater the potential. Customers of AX1S Infra achieve an average saving of 23 percent on their cloud and compute spend after a focused engagement."
+  ],
+  [
+   800,
+   "In short: teams gain visibility into their own cloud and AI usage and take responsibility for it, instead of finance checking it afterwards. That cross-functional interplay between finance, engineering and operations is the core of FinOps."
+  ],
+  [
+   801,
+   "How long does it take before you see results from a FinOps engagement?"
+  ],
+  [
+   802,
+   "3 steps to find waste in the cloud | AX1S Infra"
+  ],
+  [
+   803,
+   "A pile-up of small choices"
+  ],
+  [
+   804,
+   "Waste in the cloud is rarely the result of one big mistake. It builds up from small choices that seemed logical at the time."
+  ],
+  [
+   805,
+   "These three steps map it out systematically, without you having to set up a full FinOps engagement right away."
+  ],
+  [
+   806,
+   "1. Compare allocated capacity with actual usage"
+  ],
+  [
+   807,
+   "Most waste isn't in what is running, but in what has been set up needlessly large. Servers, storage and databases are often configured more generously than needed, \"to be safe,\" and then stay unchanged for years. Put allocated capacity next to actual usage over the past 30 days. Anything with structurally low utilisation is a first candidate to downsize or switch off."
+  ],
+  [
+   808,
+   "2. Look for resources without an owner"
+  ],
+  [
+   809,
+   "Over time every cloud environment collects resources that were once created for a specific project, which has since been completed or stopped. The resource itself happily keeps running, and nobody feels responsible for it any more. Search the environment by tags, labels and creation date. Anything without a clear owner or an actively linked project deserves a conversation: still needed, or simply never switched off. At AX1S this comes up in almost every scan, often accounting for a considerable part of the first savings found. With the {1}FinOps Radar{/1} you get a first indication within 2 minutes of how much of this there could be at your organisation."
+  ],
+  [
+   810,
+   "3. Check whether contracts still match current usage"
+  ],
+  [
+   811,
+   "Reserved instances and savings plans were once taken out based on an expected usage pattern. If that pattern has changed, for example through a migration or an architecture change, the contract often stays in place while no longer being optimal. Compare current commitments with actual usage via the {1}RI vs. Savings Plan Calculator{/1}. A contract that was once advantageous may by now be costing money instead of saving it."
+  ],
+  [
+   812,
+   "Finding waste is rarely complicated. It mainly takes looking for it, something that quickly gets skipped in the daily rush."
+  ],
+  [
+   813,
+   "When did someone last take a critical look at everything that is running, instead of at the invoices coming in?"
+  ],
+  [
+   814,
+   "Want to have us find out where the waste is at your organisation?"
+  ],
+  [
+   815,
+   "Waste in the cloud is rarely one big mistake, but a pile-up of small choices. Three steps to map it systematically, without a full FinOps engagement."
+  ],
+  [
+   816,
+   "Waste in the cloud is rarely one big mistake, but a pile-up of small choices. Three steps to find it systematically."
+  ],
+  [
+   817,
+   "Three steps to systematically map waste, without a full FinOps engagement."
+  ],
+  [
+   818,
+   "5 steps to a predictable cloud budget | AX1S Infra"
+  ],
+  [
+   819,
+   "Last year, plus a margin"
+  ],
+  [
+   820,
+   "Most cloud budgets aren't a budget. It's last year, plus a margin. By the end of the quarter it turns out nobody can explain exactly why it turned out differently. Not because something went wrong, but because there was never a structure in place to predict it."
+  ],
+  [
+   821,
+   "These five steps are what we see recurring at organisations that do get their cloud budget under control."
+  ],
+  [
+   822,
+   "1. Start with current usage"
+  ],
+  [
+   823,
+   "Many companies first set an amount and look for the justification afterwards. Rather, first look at what is actually running now, who uses it and why. At AX1S we find that this is the step that is skipped most often. Want a quick first indication without sitting down for it yourself? The {1}FinOps Radar{/1} gives a first picture of your savings potential within 2 minutes."
+  ],
+  [
+   824,
+   "2. Work with multiple scenarios"
+  ],
+  [
+   825,
+   "Normal usage, growth and peak load produce three completely different amounts. Anyone who calculates with just one fixed number is almost guaranteed to be off. This is particularly relevant for AI workloads: a pilot with 50 users behaves completely differently financially from the same feature with 5,000 users. With the {1}AI Cost Calculator{/1} you can calculate that growth, including the breakdown and projection."
+  ],
+  [
+   826,
+   "3. Define who is responsible for what"
+  ],
+  [
+   827,
+   "A predictable budget requires clear ownership: who may decide on new capacity, new tools, or new AI integrations. Without that ownership a familiar pattern emerges: engineering builds, finance pays, and nobody has a real overview. At AX1S we see this in almost every intake conversation: the question \"who decided on this?\" more often gets a shrug than a name."
+  ],
+  [
+   828,
+   "4. Use automatic alerting, not monthly reports"
+  ],
+  [
+   829,
+   "A report at the end of the month comes too late; the money has already been spent. Set up interim alerting as soon as a team approaches a preset percentage of the budget, so you can adjust before it becomes an overrun."
+  ],
+  [
+   830,
+   "5. Review the budget every quarter, not every year"
+  ],
+  [
+   831,
+   "Cloud and AI environments change faster than an annual budgeting cycle can keep up with. A budget set once a year is outdated again within a few months. Build in a fixed quarterly moment at which usage, scenarios and ownership are reviewed again. Still unsure whether your reserved instances or savings plans are the right starting point? The {1}RI vs. Savings Plan Calculator{/1} compares on-demand, reserved instances and savings plans without you having to leave an email address."
+  ],
+  [
+   832,
+   "A predictable cloud budget isn't a matter of guessing better, but of structure: usage as the starting point, scenarios instead of one number, clear ownership, interim alerting, and a fixed rhythm."
+  ],
+  [
+   833,
+   "Can you right now, without looking, say what your cloud budget will do this quarter at 20% growth? If not, that is exactly where step 2 makes the difference."
+  ],
+  [
+   834,
+   "Want to have your cloud budget calculated?"
+  ],
+  [
+   835,
+   "Most cloud budgets aren't a budget, but last year plus a margin. Five steps organisations use to get a structural grip on their cloud budget."
+  ],
+  [
+   836,
+   "Most cloud budgets aren't a budget, but last year plus a margin. Five steps to a structural grip on your cloud budget."
+  ],
+  [
+   837,
+   "Five steps organisations use to get a structural grip on their cloud budget."
+  ],
+  [
+   838,
+   "Who steers cloud and AI costs? | AX1S Infra"
+  ],
+  [
+   839,
+   "Four questions that quickly expose ownership"
+  ],
+  [
+   840,
+   "At most organisations there is no doubt about who pays the invoices. There is, however, about who actually steers what is being spent."
+  ],
+  [
+   841,
+   "These four questions expose that quickly. Ask them internally, and the answer (or the lack of one) immediately tells you where ownership is missing."
+  ],
+  [
+   842,
+   "1. Who may decide to switch on new cloud or AI capacity?"
+  ],
+  [
+   843,
+   "At many organisations the answer is: anyone with the right access permissions. A developer can put a new instance or a new AI model live without a financial check in between. That is not a matter of carelessness. It was simply never defined who may make that decision, and who is responsible for the result afterwards."
+  ],
+  [
+   844,
+   "2. Who sees a cost increase first, and how quickly?"
+  ],
+  [
+   845,
+   "At most companies the answer lies somewhere between \"at the end of the month\" and \"if finance happens to notice.\" By then the money has already been spent, and adjusting is no longer possible, only explaining. Whoever steers sees a deviation within days, not at the end of a billing cycle."
+  ],
+  [
+   846,
+   "3. Who can explain why a cost item has risen, without first having to find out?"
+  ],
+  [
+   847,
+   "At AX1S we often ask this first during an intake: \"why did this item rise last month?\" The answer is rarely immediate. Usually a search through invoices and dashboards comes first before an explanation follows. That delay is itself the answer: if nobody knows right away, nobody is actively steering on it either."
+  ],
+  [
+   848,
+   "4. Who is held accountable when the budget is exceeded?"
+  ],
+  [
+   849,
+   "Not who bears it on the balance sheet, but who is in the conversation when it goes wrong. At many organisations that is nobody specific; the overrun is simply accepted as \"just how it went.\" Without a point of accountability, cost management remains non-committal, however good the intentions."
+  ],
+  [
+   850,
+   "Four short questions, and usually it becomes clear from the first one what is wrong. Not because of ill will, but because steering was never explicitly assigned."
+  ],
+  [
+   851,
+   "Ask these four questions at your next team meeting. The silence that follows is often the clearest answer."
+  ],
+  [
+   852,
+   "Want to know where ownership is missing at your organisation?"
+  ],
+  [
+   853,
+   "Four questions that quickly expose where ownership of cloud and AI costs is missing within an organisation, and why steering is rarely explicitly assigned."
+  ],
+  [
+   854,
+   "Four questions that quickly expose where ownership of cloud and AI costs is missing within an organisation."
+  ],
+  [
+   855,
+   "Four questions that quickly expose where ownership of cloud and AI costs is missing."
+  ],
+  [
+   856,
+   "Four departments around a central FinOps dashboard"
+  ],
+  [
+   857,
+   "Wait a moment... who actually steers our IT costs? | AX1S Infra"
+  ],
+  [
+   858,
+   "Four perspectives, one blind spot"
+  ],
+  [
+   859,
+   "Ask the question out loud in an organisation and you rarely get the same answer. Everyone has only part of the picture:"
+  ],
+  [
+   860,
+   "{1} {2}Finance{/2} sees the costs, but not always the technical cause."
+  ],
+  [
+   861,
+   "{1} {2}IT{/2} sees the usage, but not always the financial impact."
+  ],
+  [
+   862,
+   "{1} {2}Procurement{/2} knows the agreements, but not always the operational necessity."
+  ],
+  [
+   863,
+   "{1} {2}The business{/2} ultimately determines what value is set against the costs."
+  ],
+  [
+   864,
+   "That is exactly why cost optimisation works poorly when a single department is made solely responsible. Put it with finance and you get generic savings targets without technical support. Put it with IT and the financial priorities stay under-exposed."
+  ],
+  [
+   865,
+   "Where FinOps comes in"
+  ],
+  [
+   866,
+   "FinOps brings financial, technical and operational insights together to make better decisions about IT costs and the value set against them. That means the question is no longer just: {1}what does it cost?{/1} But also: {2}why does it cost this? What does it deliver? And can it be done smarter?{/2}"
+  ],
+  [
+   867,
+   "That requires collaboration between finance, IT, procurement and the business, with someone who actually leads that conversation and makes the decisions. Without that point of contact it stays with isolated observations that lead nowhere. Our {1}FinOps Glossary{/1} is a handy starting point if you notice that departments are literally speaking a different language about costs."
+  ],
+  [
+   868,
+   "Cost optimisation that is placed with a single department generally stalls at treating symptoms. Structural savings only arise once finance, IT, procurement and the business use the same figures."
+  ],
+  [
+   869,
+   "Who in your organisation is truly responsible for IT cost optimisation? If the answer isn't immediately clear, that is probably already the first point for improvement."
+  ],
+  [
+   870,
+   "Curious where that point for improvement lies for you?"
+  ],
+  [
+   871,
+   "Finance sees the costs, IT sees the usage, procurement knows the agreements and the business determines the value. Why IT cost optimisation fails when a single department is left to do it alone."
+  ],
+  [
+   872,
+   "Why IT cost optimisation fails when a single department is left to do it alone, and where FinOps comes in."
+  ],
+  [
+   873,
+   "Why IT cost optimisation fails when a single department is left to do it alone."
+  ]
+ ]
+}

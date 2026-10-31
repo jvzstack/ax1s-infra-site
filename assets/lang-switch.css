@@ -1,0 +1,20 @@
+/* Language toggle (NL / EN), top right in the nav */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.04em; line-height: 1;
+  color: var(--text, #e8eaf0);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px; padding: 8px 12px;
+  white-space: nowrap; text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.lang-switch iconify-icon { color: var(--accent-light, #4da3ff); }
+.lang-switch:hover { background: rgba(77,163,255,0.12); border-color: rgba(77,163,255,0.5); color: #fff; }
+.lang-switch:focus-visible { outline: 2px solid var(--accent-light, #4da3ff); outline-offset: 2px; }
+@media (max-width: 1100px) {
+  .nav-cta-group { gap: 8px; }
+}
+@media (max-width: 768px) {
+  .lang-switch { padding: 7px 10px; font-size: 11px; gap: 4px; }
+}

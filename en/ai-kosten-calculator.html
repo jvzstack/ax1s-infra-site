@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VZ06WVBT34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VZ06WVBT34');
+</script>
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "9506946";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img alt="" height="1" src="https://px.ads.linkedin.com/collect/?pid=9506946&amp;fmt=gif" style="display:none;" width="1"/>
+</noscript>
+<!-- Leadinfo tracking code -->
+<script>
+(function(l,e,a,d,i,n,f,o){if(!l[i]){l.GlobalLeadinfoNamespace=l.GlobalLeadinfoNamespace||[];
+l.GlobalLeadinfoNamespace.push(i);l[i]=function(){(l[i].q=l[i].q||[]).push(arguments)};l[i].t=l[i].t||n;
+l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;o.src=d;f.parentNode.insertBefore(o,f);}
+}(window,document,'script','https://cdn.leadinfo.net/ping.js','leadinfo','LI-6A8698CFF133A'));
+</script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Cost Calculator: calculate your LLM spend | AX1S Infra</title>
+<meta content="Instantly calculate what your AI usage will cost based on model, volume and tokens. Free calculator with cost breakdown and growth projection, no email address needed." name="description"/>
+<link href="https://ax1s-infra.com/en/ai-kosten-calculator.html" rel="canonical"/>
+<link href="https://ax1s-infra.com/ai-kosten-calculator.html" hreflang="nl" rel="alternate"/>
+<link href="https://ax1s-infra.com/en/ai-kosten-calculator.html" hreflang="en" rel="alternate"/>
+<link href="https://ax1s-infra.com/ai-kosten-calculator.html" hreflang="x-default" rel="alternate"/>
+
+
+
+<meta content="website" property="og:type"/>
+<meta content="AI Cost Calculator: calculate your LLM spend | AX1S Infra" property="og:title"/>
+<meta content="Instantly calculate what your AI usage will cost based on model, volume and tokens. Free calculator with cost breakdown and growth projection, no email address needed." property="og:description"/>
+<meta content="https://ax1s-infra.com/en/ai-kosten-calculator.html" property="og:url"/>
+<meta content="https://ax1s-infra.com/assets/ax1s-logo.png" property="og:image"/>
+<meta content="en_GB" property="og:locale"/>
+<meta content="AX1S Infra" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AI Cost Calculator: calculate your LLM spend | AX1S Infra" name="twitter:title"/>
+<meta content="Instantly calculate what your AI usage will cost. Free, no email address needed." name="twitter:description"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI Cost Calculator",
+  "url": "https://ax1s-infra.com/en/ai-kosten-calculator.html",
+  "description": "Free calculator to estimate AI and LLM costs based on model, request volume and tokens, including growth projection.",
+  "isPartOf": {
+    "@id": "https://ax1s-infra.com/#website"
+  },
+  "publisher": {
+    "@id": "https://ax1s-infra.com/#organization"
+  },
+  "inLanguage": "en",
+  "mainEntity": {
+    "@id": "https://ax1s-infra.com/en/ai-kosten-calculator.html#app"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://ax1s-infra.com/en/ai-kosten-calculator.html#app",
+  "name": "AI Cost Calculator",
+  "url": "https://ax1s-infra.com/en/ai-kosten-calculator.html",
+  "description": "Free calculator to estimate AI and LLM costs based on model class, request volume, tokens and caching, including growth projection. No email address or account needed.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "publisher": {
+    "@id": "https://ax1s-infra.com/#organization"
+  },
+  "inLanguage": "en"
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ax1s-infra.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI Cost Calculator",
+      "item": "https://ax1s-infra.com/en/ai-kosten-calculator.html"
+    }
+  ]
+}</script>
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:            #08090f;
+  --bg2:           #0b0d16;
+  --card:          rgba(70,140,255,0.055);
+  --card-border:   rgba(90,150,255,0.20);
+  --card-shadow:   0 6px 22px -12px rgba(0,112,243,0.35);
+  --faint:         rgba(255,255,255,0.06);
+  --divider:       rgba(255,255,255,0.07);
+  --accent:        #0070f3;
+  --accent-light:  #4da3ff;
+  --accent-bg:     rgba(0,112,243,0.09);
+  --accent-border: rgba(0,112,243,0.22);
+  --text:          #e8eaf0;
+  --muted:         #ced4e0;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Manrope', sans-serif; background: var(--bg); color: var(--muted); line-height: 1.6; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+#bg-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0.85; }
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(8,9,15,0.88); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--divider); height: 68px;
+}
+.nav-inner { max-width: 1160px; margin: 0 auto; padding: 0 32px; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { height: 38px; width: auto; display: block; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--muted); transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+.nav-cta { font-size: 13px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 8px; padding: 10px 22px; transition: background 0.2s; }
+.nav-cta:hover { background: #0060d0; }
+.nav-cta-group { display: flex; align-items: center; gap: 10px; }
+.nav-cta-secondary { font-size: 13px; font-weight: 700; border-radius: 8px; padding: 9px 18px; }
+
+section { position: relative; z-index: 1; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 128px 24px 64px; position: relative; z-index: 1; }
+.eyebrow { font-size: 11px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.14em; text-transform: uppercase; display: block; margin-bottom: 12px; text-align: center; }
+.tool-logo { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin: 0 auto 18px; border-radius: 16px; background: var(--accent-bg); border: 1px solid var(--accent-border); color: var(--accent-light); }
+.tool-title { font-size: 36px; font-weight: 800; color: var(--text); letter-spacing: -0.8px; line-height: 1.15; text-align: center; margin-bottom: 12px; }
+.tool-sub { font-size: 17px; color: #ced4e0; text-align: center; max-width: 520px; margin: 0 auto 40px; line-height: 1.7; }
+
+.tool-card {
+  background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(70,140,255,0.04));
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 20px;
+  padding: 36px 32px; box-shadow: var(--card-shadow);
+}
+
+.ffields { display: flex; flex-direction: column; gap: 18px; }
+.frow2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+.field-note { font-size: 11.5px; color: #8891a3; margin-top: 1px; }
+.field input, .field select {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px;
+  padding: 13px 14px; font-family: inherit; font-size: 15px; color: var(--text); transition: border-color 0.2s; width: 100%;
+}
+.field input::placeholder { color: #6c7688; }
+.field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+.field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23b7c0cd' d='M1 1l5 5 5-5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+
+.result-title { font-size: 12px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin: 32px 0 16px; }
+.result-grid { display: flex; flex-direction: column; gap: 12px; }
+.result-card {
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 14px;
+  padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  transition: border-color 0.2s;
+}
+.result-card.recommended { border-color: var(--accent); background: linear-gradient(155deg, rgba(0,112,243,0.14), rgba(0,112,243,0.03)); }
+.result-card-name { font-size: 15px; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.result-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: var(--accent); color: #fff; border-radius: 4px; padding: 3px 8px; }
+.result-card-sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.result-card-amount { text-align: right; }
+.result-card-price { font-size: 18px; font-weight: 800; color: var(--text); }
+.result-card-price-sub { font-size: 11px; color: var(--muted); margin-top: 1px; }
+.result-card-save { font-size: 12px; color: var(--accent-light); font-weight: 700; margin-top: 3px; }
+.result-empty { font-size: 13.5px; color: var(--muted); background: rgba(255,255,255,0.03); border: 1px dashed var(--card-border); border-radius: 12px; padding: 18px 20px; text-align: center; }
+.field-hint { font-size: 11.5px; color: #ff8a8a; margin-top: 4px; min-height: 14px; }
+
+.breakdown-row { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+.breakdown-bar { flex: 1; height: 8px; border-radius: 999px; background: rgba(255,255,255,0.08); overflow: hidden; display: flex; }
+.breakdown-bar-in { background: var(--accent-light); height: 100%; }
+.breakdown-bar-out { background: #a78bfa; height: 100%; }
+.breakdown-legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.breakdown-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.breakdown-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+.findings-title { font-size: 12px; font-weight: 700; color: var(--accent-light); letter-spacing: 0.08em; text-transform: uppercase; margin: 28px 0 14px; }
+.finding-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 12px;
+  padding: 14px 16px; margin-bottom: 10px; font-size: 14px; color: #ced4e0; line-height: 1.6;
+}
+.finding-item iconify-icon { color: var(--accent-light); flex-shrink: 0; margin-top: 2px; }
+
+.disclaimer { font-size: 12px; color: var(--muted); margin-top: 18px; line-height: 1.6; }
+
+.tool-cta {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+  background: var(--card); border: 1px solid var(--card-border); border-radius: 16px;
+  padding: 24px 28px; margin-top: 32px; box-shadow: var(--card-shadow);
+}
+.tool-cta h3 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.tool-cta p { font-size: 13px; color: var(--muted); }
+.btn-primary {
+  font-size: 14px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 8px;
+  padding: 13px 26px; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: #0060d0; transform: translateY(-1px); }
+
+.related-title { font-size: 18px; font-weight: 800; color: var(--text); margin: 48px 0 16px; }
+.tool-preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tool-preview-card { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
+.tool-preview-card:hover { border-color: var(--accent-border); transform: translateY(-2px); }
+.tool-preview-icon { width: 34px; height: 34px; border-radius: 9px; background: var(--accent-bg); color: var(--accent-light); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.tool-preview-card h4 { font-size: 13.5px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+.tool-preview-card p { font-size: 11.5px; line-height: 1.55; color: var(--muted); margin-bottom: 12px; flex-grow: 1; }
+.tool-preview-link {
+  font-size: 11.5px; font-weight: 700; color: var(--accent-light);
+  background: var(--accent-bg); border: 1px solid var(--accent-border);
+  border-radius: 8px; padding: 8px 13px; margin-top: auto; width: fit-content;
+  display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.tool-preview-card:hover .tool-preview-link { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tool-preview-card:hover .tool-preview-link iconify-icon { transform: translateX(3px); }
+.tool-preview-link iconify-icon { transition: transform 0.2s; }
+.tool-preview-card.tool-preview-gold { border-color: rgba(212,175,55,0.35); }
+.tool-preview-card.tool-preview-gold .tool-preview-icon { background: rgba(212,175,55,0.16); color: #d4af37; }
+.tool-preview-card.tool-preview-gold:hover { border-color: rgba(212,175,55,0.6); }
+.tool-preview-card.tool-preview-gold:hover .tool-preview-link { background: #d4af37; border-color: #d4af37; color: #2a1f08; }
+.more-tools-all { display: block; text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
+.more-tools-diensten-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; border-radius: 8px; padding: 9px 16px; margin-top: 10px; }
+
+/* Soft glowing white CTA — shared "diensten & opties" button treatment */
+.nav-cta-secondary, .more-tools-diensten-btn {
+  color: #0a0e1a; border: 1px solid transparent; background: radial-gradient(circle at 50% -20%, #eef5ff 0%, #ffffff 70%);
+  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.25);
+  transition: box-shadow 0.2s, transform 0.15s, background 0.2s, border-color 0.2s;
+}
+.nav-cta-secondary:hover, .more-tools-diensten-btn:hover {
+  background: radial-gradient(circle at 50% -20%, #cfe1ff 0%, #ffffff 65%);
+  border-color: rgba(0,112,243,0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px -3px rgba(0,0,0,0.3);
+}
+.more-tools-all:hover { color: var(--accent-light); }
+
+footer { border-top: 1px solid var(--divider); background: var(--bg2); position: relative; z-index: 1; }
+.footer-inner { max-width: 1160px; margin: 0 auto; padding: 48px 32px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px; }
+.footer-logo { height: 30px; width: auto; display: block; margin-bottom: 14px; }
+.footer-sub { font-size: 13px; color: #ced4e0; line-height: 1.8; margin-bottom: 14px; }
+.footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.tier-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--card-border); border-radius: 6px; padding: 6px 12px; font-size: 11px; font-weight: 600; color: var(--muted); }
+.tier-badge iconify-icon { color: var(--accent-light); }
+.copy { font-size: 11px; color: var(--muted); }
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .nav-cta-secondary { display: none; }
+  .wrap { padding: 100px 16px 48px; }
+  .tool-title { font-size: 28px; }
+  .tool-card { padding: 24px 20px; }
+  .frow2 { grid-template-columns: 1fr; }
+  .result-card { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .result-card-amount { text-align: left; }
+  .tool-cta { flex-direction: column; align-items: flex-start; }
+  .tool-preview-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<link href="../assets/lang-switch.css" rel="stylesheet"/></head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<nav>
+<div class="nav-inner">
+<a href="index.html"><img alt="AX1S Infra" class="nav-logo" src="../assets/ax1s-logo.png"/></a>
+<div class="nav-links">
+<a href="finops-radar.html"><svg fill="none" height="13" style="margin-right:5px;vertical-align:-2px;" viewbox="0 0 32 32" width="13" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" opacity="0.3" r="13.5" stroke="currentColor" stroke-width="1.8"></circle><circle cx="16" cy="16" opacity="0.5" r="8.5" stroke="currentColor" stroke-width="1.8"></circle><circle cx="16" cy="16" opacity="0.85" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M16 16 L16 2.5 A13.5 13.5 0 0 1 27.7 9 Z" fill="currentColor" opacity="0.45"></path><circle cx="16" cy="16" fill="currentColor" r="2.2"></circle></svg>FinOps Radar</a><a href="index.html#blog">Insights</a> <a href="index.html#services">Services</a> <a href="index.html#team">Team</a> <a href="index.html#contact">Contact</a></div>
+<div class="nav-cta-group"><a class="nav-cta-secondary" href="finops-diensten.html">Services &amp; options</a> <a class="nav-cta" href="savings-scan.html">Book a Free Savings Scan</a><a aria-label="Nederlandse versie" class="lang-switch" href="../ai-kosten-calculator.html" hreflang="nl" lang="nl" title="Nederlandse versie"><iconify-icon icon="solar:global-linear" width="14"></iconify-icon><span>NL</span></a></div>
+</div>
+</nav>
+<div class="wrap">
+<div class="tool-logo"><iconify-icon icon="solar:cpu-bolt-linear" width="26"></iconify-icon></div><span class="eyebrow">Free calculator</span><h1 class="tool-title">AI Cost Calculator</h1>
+<p class="tool-sub">Enter your AI usage and instantly see an indication of the monthly costs, their breakdown and where there is most to steer. No email address needed, this is simply a free tool.</p>
+<div class="tool-card">
+<div class="ffields">
+<div class="field">
+<label for="tier">Model class</label>
+<select id="tier">
+<option value="flagship">Flagship model (e.g. GPT-4o / Claude Sonnet class)</option>
+<option selected="" value="mid">Mid-range model (e.g. GPT-4o-mini / Claude Haiku class)</option>
+<option value="light">Lightweight/fast model</option>
+</select>
+</div>
+<div class="field">
+<label for="requests">Number of requests per day</label>
+<input id="requests" inputmode="numeric" min="0" placeholder="e.g. 5000" step="10" type="number" value="5000"/>
+<div class="field-hint" id="requests-hint"></div>
+</div>
+<div class="frow2">
+<div class="field">
+<label for="in-tokens">Avg. input tokens per request</label>
+<input id="in-tokens" inputmode="numeric" min="0" placeholder="e.g. 800" step="50" type="number" value="800"/>
+<div class="field-note">A page of A4 text is roughly 700 tokens.</div>
+</div>
+<div class="field">
+<label for="out-tokens">Avg. output tokens per request</label>
+<input id="out-tokens" inputmode="numeric" min="0" placeholder="e.g. 300" step="50" type="number" value="300"/>
+<div class="field-note">Output tokens are 3–4x more expensive than input, depending on the model.</div>
+</div>
+</div>
+<div class="field">
+<label for="caching">Prompt caching / context reuse</label>
+<select id="caching">
+<option value="none">No, every request is standalone</option>
+<option selected="" value="partial">Partly, for some of the requests</option>
+<option value="full">Yes, structurally for fixed system prompts/context</option>
+</select>
+</div>
+<div class="field">
+<label for="growth">Expected usage growth per month (%, optional)</label>
+<input id="growth" inputmode="numeric" min="0" placeholder="e.g. 10" step="1" type="number" value="0"/>
+</div>
+</div>
+<div class="result-title">Estimated costs</div>
+<div class="result-grid" id="result-grid"><!-- injected by JS --></div>
+<div id="breakdown-wrap"><!-- injected by JS --></div>
+<div class="findings-title">What stands out</div>
+<div id="findings"><!-- injected by JS --></div>
+<p class="disclaimer">Indicative, average market prices per 1 million tokens for the model classes mentioned. Actual rates differ per provider, model and moment. This tool gives a first direction, not a quote.</p>
+</div>
+<div class="tool-cta">
+<div>
+<h3>Want us to calculate this for your specific AI usage?</h3>
+<p>A free Cloud &amp; AI Savings Scan gives the exact picture, including concrete savings options.</p>
+</div><a class="btn-primary" href="savings-scan.html">Start the free Savings Scan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a></div>
+<div class="related-title">More free tools</div>
+<div class="tool-preview-grid">
+<a class="tool-preview-card tool-preview-gold" href="savings-scan.html">
+<div class="tool-preview-icon"><iconify-icon icon="solar:magnifer-linear" width="18"></iconify-icon></div>
+<h4>Cloud &amp; AI Savings Scan</h4>
+<p>Find out where your cloud and AI spend goes and what you could save.</p><span class="tool-preview-link">Start the Savings Scan <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span></a>
+<a class="tool-preview-card" href="finops-radar.html">
+<div class="tool-preview-icon"><iconify-icon icon="solar:radar-2-linear" width="18"></iconify-icon></div>
+<h4>FinOps Radar</h4>
+<p>Cloud costs, AI costs or RI vs. Savings Plan: pick your angle and get an instant result.</p><span class="tool-preview-link">Start the Radar <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span></a>
+<a class="tool-preview-card" href="ri-vs-savings-plan-calculator.html">
+<div class="tool-preview-icon"><iconify-icon icon="solar:calculator-linear" width="18"></iconify-icon></div>
+<h4>RI vs. Savings Plan Calculator</h4>
+<p>Compare On-Demand, Reserved Instances and Savings Plans. No email needed.</p><span class="tool-preview-link">Open the calculator <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span></a>
+<a class="tool-preview-card" href="finops-glossarium.html">
+<div class="tool-preview-icon"><iconify-icon icon="solar:book-linear" width="18"></iconify-icon></div>
+<h4>FinOps Glossary</h4>
+<p>20 key terms explained briefly and clearly, from cloud waste to the FinOps Lifecycle.</p><span class="tool-preview-link">View the glossary <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon></span></a>
+</div><a class="more-tools-all" href="gratis-tools.html">View all free tools &amp; templates →</a> <a class="more-tools-diensten-btn" href="finops-diensten.html">View our services &amp; options →</a></div>
+<footer>
+<div class="footer-inner">
+<div>
+<img alt="AX1S Infra" class="footer-logo" src="../assets/ax1s-logo.png"/>
+<p class="footer-sub">FinOps &amp; Infrastructure Consultants<br/>Amsterdam, the Netherlands</p>
+</div>
+<div class="footer-right">
+<div class="tier-badge"><iconify-icon icon="solar:server-path-linear" width="13"></iconify-icon> Powered by European Tier III Infrastructure</div>
+<p class="copy">© 2026 AX1S Infra. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  const orbs = [
+    { bx: 0.70, by: 0.18, ax: 0.18, ay: 0.10, r: 0.50, spd: 0.0004, rgb: '20,90,240' },
+    { bx: 0.15, by: 0.75, ax: 0.14, ay: 0.12, r: 0.42, spd: 0.0003, rgb: '0,55,200' },
+    { bx: 0.82, by: 0.60, ax: 0.10, ay: 0.15, r: 0.35, spd: 0.0005, rgb: '10,70,220' },
+    { bx: 0.45, by: 0.40, ax: 0.20, ay: 0.08, r: 0.28, spd: 0.00035, rgb: '30,100,255' },
+  ];
+  function draw(ts) {
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = '#08090f';
+    ctx.fillRect(0, 0, W, H);
+    orbs.forEach((o, i) => {
+      const phase = ts * o.spd + i * 1.8;
+      const px = (o.bx + Math.sin(phase) * o.ax) * W;
+      const py = (o.by + Math.cos(phase * 0.7) * o.ay) * H;
+      const r  = o.r * Math.min(W, H);
+      const g = ctx.createRadialGradient(px, py, 0, px, py, r);
+      g.addColorStop(0,   `rgba(${o.rgb},0.45)`);
+      g.addColorStop(0.35,`rgba(${o.rgb},0.18)`);
+      g.addColorStop(0.7, `rgba(${o.rgb},0.05)`);
+      g.addColorStop(1,   `rgba(${o.rgb},0)`);
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, W, H);
+    });
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+
+(function() {
+  const TIERS = {
+    flagship: { name: 'Flagship model', inPrice: 2.20, outPrice: 9.00 },
+    mid:      { name: 'Mid-range model', inPrice: 0.14, outPrice: 0.55 },
+    light:    { name: 'Lightweight/fast model', inPrice: 0.04, outPrice: 0.16 },
+  };
+  const CACHE_DISCOUNT = { none: 0, partial: 0.25, full: 0.5 };
+  const CACHE_LABEL = { none: 'no caching', partial: 'partial caching', full: 'structural caching' };
+
+  const tierSelect = document.getElementById('tier');
+  const requestsInput = document.getElementById('requests');
+  const inTokInput = document.getElementById('in-tokens');
+  const outTokInput = document.getElementById('out-tokens');
+  const cachingSelect = document.getElementById('caching');
+  const growthInput = document.getElementById('growth');
+  const requestsHint = document.getElementById('requests-hint');
+  const resultGrid = document.getElementById('result-grid');
+  const breakdownWrap = document.getElementById('breakdown-wrap');
+  const findingsEl = document.getElementById('findings');
+
+  function fmtEUR(n) {
+    return '€' + Math.round(n).toLocaleString('en-GB');
+  }
+
+  function validate() {
+    const requests = parseFloat(requestsInput.value);
+    const inTok = parseFloat(inTokInput.value);
+    const outTok = parseFloat(outTokInput.value);
+    if (requestsInput.value.trim() === '' || inTokInput.value.trim() === '' || outTokInput.value.trim() === '') {
+      return { valid: false, hint: '' };
+    }
+    if (isNaN(requests) || isNaN(inTok) || isNaN(outTok)) {
+      return { valid: false, hint: 'Enter valid numbers.' };
+    }
+    if (requests < 0 || inTok < 0 || outTok < 0) {
+      return { valid: false, hint: 'Enter positive values.' };
+    }
+    return { valid: true, requests, inTok, outTok };
+  }
+
+  function render() {
+    const check = validate();
+    requestsHint.textContent = check.hint || '';
+
+    if (!check.valid) {
+      resultGrid.innerHTML = `<div class="result-empty">Enter valid values to see the estimate.</div>`;
+      breakdownWrap.innerHTML = '';
+      findingsEl.innerHTML = '';
+      return;
+    }
+
+    const tierKey = tierSelect.value;
+    const tier = TIERS[tierKey];
+    const cacheKey = cachingSelect.value;
+    const cacheDiscount = CACHE_DISCOUNT[cacheKey];
+    const growth = Math.max(0, parseFloat(growthInput.value) || 0);
+
+    const monthlyRequests = check.requests * 30;
+    const monthlyInTokens = monthlyRequests * check.inTok;
+    const monthlyOutTokens = monthlyRequests * check.outTok;
+
+    const inCost = (monthlyInTokens / 1e6) * tier.inPrice * (1 - cacheDiscount);
+    const outCost = (monthlyOutTokens / 1e6) * tier.outPrice;
+    const monthlyCost = inCost + outCost;
+    const annualCost = monthlyCost * 12;
+
+    const rows = [
+      { key: 'month', name: 'This month', sub: `${tier.name} &middot; ${CACHE_LABEL[cacheKey]}`, price: monthlyCost, priceSub: null, recommended: false },
+      { key: 'year', name: 'Per year', sub: 'At constant usage', price: annualCost, priceSub: null, recommended: false },
+    ];
+
+    let doublingMonths = null;
+    if (growth > 0) {
+      const projected = monthlyCost * Math.pow(1 + growth / 100, 6);
+      doublingMonths = Math.log(2) / Math.log(1 + growth / 100);
+      rows.push({
+        key: 'projected', name: 'In 6 months', sub: `At ${growth}% growth per month`,
+        price: projected, priceSub: `+${fmtEUR(projected - monthlyCost)} vs. now`, recommended: true,
+      });
+    }
+
+    resultGrid.innerHTML = rows.map(r => `
+      <div class="result-card ${r.recommended ? 'recommended' : ''}">
+        <div>
+          <div class="result-card-name">${r.name} ${r.recommended ? '<span class="result-badge">Projection</span>' : ''}</div>
+          <div class="result-card-sub">${r.sub}</div>
+        </div>
+        <div class="result-card-amount">
+          <div class="result-card-price">${fmtEUR(r.price)}</div>
+          ${r.priceSub ? `<div class="result-card-save">${r.priceSub}</div>` : ''}
+        </div>
+      </div>
+    `).join('');
+
+    const totalCost = inCost + outCost || 1;
+    const inPct = Math.round((inCost / totalCost) * 100);
+    const outPct = 100 - inPct;
+    breakdownWrap.innerHTML = `
+      <div class="breakdown-row">
+        <div class="breakdown-bar"><div class="breakdown-bar-in" style="width:${inPct}%"></div><div class="breakdown-bar-out" style="width:${outPct}%"></div></div>
+      </div>
+      <div class="breakdown-legend">
+        <span><span class="breakdown-dot" style="background:var(--accent-light)"></span>Input tokens: ${fmtEUR(inCost)} (${inPct}%)</span>
+        <span><span class="breakdown-dot" style="background:#a78bfa"></span>Output tokens: ${fmtEUR(outCost)} (${outPct}%)</span>
+      </div>
+    `;
+
+    const findings = [];
+    if (outCost > inCost * 2 && tierKey === 'flagship') {
+      findings.push('Output tokens dominate your costs. For long answers on a flagship model it pays to control the desired length or route simpler tasks to a cheaper model.');
+    }
+    if (cacheKey === 'none' && monthlyRequests > 10000) {
+      findings.push('You aren’t reusing context right now. Prompt caching on fixed system prompts or document context can quickly save 30 to 50 percent of input costs.');
+    }
+    if (growth >= 5 && doublingMonths !== null) {
+      findings.push(`At this growth rate your AI costs will double in about ${Math.round(doublingMonths)} months. That is the moment to start steering on efficiency now, not only once the budget is under pressure.`);
+    }
+    if (tierKey === 'flagship' && monthlyCost > 2000) {
+      findings.push('For high-volume, less complex tasks (classification, summarisation, extraction) a mid-range model is often 10 to 15 times cheaper, with barely noticeable quality loss.');
+    }
+    let shown = findings.slice(0, 3);
+    if (shown.length < 2) {
+      shown.push('You’re already making good use of the more efficient options. The gains here lie mainly in keeping a close eye on peak moments and new use cases.');
+    }
+    findingsEl.innerHTML = shown.map(f => `<div class="finding-item"><iconify-icon icon="solar:lightbulb-linear" width="16"></iconify-icon><span>${f}</span></div>`).join('');
+  }
+
+  [tierSelect, cachingSelect].forEach(el => el.addEventListener('change', render));
+  [requestsInput, inTokInput, outTokInput, growthInput].forEach(el => el.addEventListener('input', render));
+  requestsInput.addEventListener('blur', () => {
+    const parsed = parseFloat(requestsInput.value);
+    if (!isNaN(parsed) && parsed < 0) requestsInput.value = 0;
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>

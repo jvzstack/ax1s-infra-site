@@ -1,0 +1,948 @@
+{
+ "index.html": [
+  [
+   "Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com",
+   "Something went wrong. Please try again or send an email to info@ax1s-infra.com"
+  ],
+  [
+   "Aanvraag versturen, reactie binnen 24u <iconify",
+   "Send request, reply within 24h <iconify"
+  ],
+  [
+   "Bedankt. We nemen binnen 24 uur contact op.",
+   "Thank you. We’ll get back to you within 24 hours."
+  ],
+  [
+   "Gecertificeerd door de FinOps Foundation",
+   "Certified by the FinOps Foundation"
+  ],
+  [
+   "<img src=\"assets/team-jelle.jpg\"",
+   "<img src=\"../assets/team-jelle.jpg\""
+  ],
+  [
+   "<img src=\"assets/team-tom.jpg\"",
+   "<img src=\"../assets/team-tom.jpg\""
+  ],
+  [
+   "Start de FinOps Radar <iconify",
+   "Start the FinOps Radar <iconify"
+  ],
+  [
+   "Liever direct mailen? <a",
+   "Prefer to email directly? <a"
+  ],
+  [
+   ">Aanvraag ontvangen<",
+   ">Request received<"
+  ]
+ ],
+ "savings-scan.html": [
+  [
+   "Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com",
+   "Something went wrong. Please try again or send an email to info@ax1s-infra.com"
+  ],
+  [
+   "Bedankt. We nemen snel contact met je op om de Savings Scan in te plannen.",
+   "Thank you. We’ll contact you shortly to schedule the Savings Scan."
+  ],
+  [
+   "<img src=\"assets/finops-certified-badge.png\"",
+   "<img src=\"../assets/finops-certified-badge.png\""
+  ],
+  [
+   "<img src=\"assets/finops-foundation-logo.png\"",
+   "<img src=\"../assets/finops-foundation-logo.png\""
+  ],
+  [
+   "Gecertificeerd door de FinOps Foundation",
+   "Certified by the FinOps Foundation"
+  ],
+  [
+   "<img src=\"assets/team-jelle.jpg\"",
+   "<img src=\"../assets/team-jelle.jpg\""
+  ],
+  [
+   "<img src=\"assets/team-tom.jpg\"",
+   "<img src=\"../assets/team-tom.jpg\""
+  ],
+  [
+   "Liever direct mailen? <a",
+   "Prefer to email directly? <a"
+  ],
+  [
+   ">Aanvraag ontvangen<",
+   ">Request received<"
+  ]
+ ],
+ "finops-radar.html": [
+  [
+   "title: 'Eén radar, drie manieren<br>om je techkosten te doorgronden.', sub: 'Kies hieronder waar je grip op wil krijgen: cloudkosten, AI-kosten, of Reserved Instances vs. Savings Plans. Geen verplichting, geen wachttijd.'",
+   "title: 'One radar, three ways<br>to understand your tech costs.', sub: 'Choose below where you want to get a grip: cloud costs, AI costs, or Reserved Instances vs. Savings Plans. No obligation, no waiting.'"
+  ],
+  [
+   "Op basis van jullie antwoorden: organisaties met een vergelijkbare score besparen doorgaans ${Math.round(pctLow*100)} tot ${Math.round(pctHigh*100)} procent op hun cloudbudget. Een eerste analyse geeft het exacte beeld.",
+   "Based on your answers: organisations with a comparable score generally save ${Math.round(pctLow*100)} to ${Math.round(pctHigh*100)} percent on their cloud budget. A first analysis gives the exact picture."
+  ],
+  [
+   "eyebrow: 'FinOps Radar &middot; Cloudkosten', title: 'Ontdek binnen 2 minuten<br>jouw verborgen cloudbesparing.', sub: '7 korte vragen over jullie cloudkosten, direct een gepersonaliseerde score en concrete inzichten.'",
+   "eyebrow: 'FinOps Radar &middot; Cloud costs', title: 'Discover your hidden cloud savings<br>in 2 minutes.', sub: '7 short questions about your cloud costs, an instant personalised score and concrete insights.'"
+  ],
+  [
+   "Bij een wisselende workload is een Savings Plan doorgaans slimmer: het geldt voor compute in het algemeen, in plaats van een specifiek instance-type. Reserved Instances lopen dan het risico op onderbenutte capaciteit.",
+   "With a variable workload a Savings Plan is generally smarter: it applies to compute in general, instead of a specific instance type. Reserved Instances then risk leaving capacity underused."
+  ],
+  [
+   "<label>Toelichting <span class=\"opt\">(optioneel)</span></label><textarea placeholder=\"Beschrijf kort jullie situatie of vraagstuk. Bijv. hoge cloudkosten, onduidelijkheid over uitgaven, of een concrete FinOps vraag.\"",
+   "<label>Additional details <span class=\"opt\">(optional)</span></label><textarea placeholder=\"Briefly describe your situation or question. E.g. high cloud costs, lack of clarity about spend, or a specific FinOps question.\""
+  ],
+  [
+   "Indicatieve, gemiddelde marktprijzen per 1 miljoen tokens voor de genoemde modelklassen. Werkelijke tarieven verschillen per provider, model en moment. Deze tool geeft een eerste richting, geen offerte.",
+   "Indicative, average market prices per 1 million tokens for the model classes mentioned. Actual rates differ per provider, model and moment. This tool gives a first direction, not a quote."
+  ],
+  [
+   "Indicatieve, marktgemiddelde kortingspercentages voor grote cloudproviders. Werkelijke kortingen verschillen per instance-type, regio en leverancier. Deze tool geeft een eerste richting, geen offerte.",
+   "Indicative, market-average discount percentages for major cloud providers. Actual discounts differ per instance type, region and vendor. This tool gives a first direction, not a quote."
+  ],
+  [
+   "eyebrow: 'FinOps Radar &middot; AI-kosten', title: 'Bereken direct<br>jullie AI-kosten.', sub: 'Vul je AI-gebruik in en zie meteen de maandelijkse kosten, de opbouw ervan en een groeiprojectie.'",
+   "eyebrow: 'FinOps Radar &middot; AI costs', title: 'Instantly calculate<br>your AI costs.', sub: 'Enter your AI usage and immediately see the monthly costs, their breakdown and a growth projection.'"
+  ],
+  [
+   "Output-tokens domineren jullie kosten. Voor lange antwoorden op een vlaggenschip-model loont het om de gewenste lengte te sturen of eenvoudigere taken naar een goedkoper model te routeren.",
+   "Output tokens dominate your costs. For long answers on a flagship model it pays to control the desired length or route simpler tasks to a cheaper model."
+  ],
+  [
+   "Bij dit groeitempo verdubbelen jullie AI-kosten binnen ongeveer ${Math.round(doublingMonths)} maanden. Dat is het moment om nu al op efficiëntie te sturen, niet pas als het budget knelt.",
+   "At this growth rate your AI costs will double in about ${Math.round(doublingMonths)} months. That is the moment to start steering on efficiency now, not only once the budget is under pressure."
+  ],
+  [
+   "Voor hoogvolume, minder complexe taken (classificatie, samenvatten, extractie) is een middenklasse-model vaak 10 tot 15 keer goedkoper, met nauwelijks merkbaar kwaliteitsverlies.",
+   "For high-volume, less complex tasks (classification, summarisation, extraction) a mid-range model is often 10 to 15 times cheaper, with barely noticeable quality loss."
+  ],
+  [
+   "Bij een redelijk stabiele workload biedt een Savings Plan een goede balans tussen korting en flexibiliteit. Overweeg Reserved Instances alleen voor het deel dat echt vaststaat.",
+   "With a fairly stable workload a Savings Plan offers a good balance between discount and flexibility. Consider Reserved Instances only for the part that is truly fixed."
+  ],
+  [
+   "Bij een zeer voorspelbare workload kun je met een Reserved Instance (${term} jaar) meestal de hoogste korting behalen. De lagere flexibiliteit is dan minder relevant.",
+   "With a highly predictable workload you can usually achieve the highest discount with a Reserved Instance (${term}-year). The lower flexibility is then less relevant."
+  ],
+  [
+   "Jullie hergebruiken nu geen context. Prompt caching op vaste system-prompts of documentcontext kan al snel 30 tot 50 procent van de input-kosten schelen.",
+   "You aren’t reusing context right now. Prompt caching on fixed system prompts or document context can quickly save 30 to 50 percent of input costs."
+  ],
+  [
+   "'Bij dit aantal leveranciers en facturen die niet uitgesplitst zijn, vinden wij bijna altijd kosten die dubbel lopen of gewoon vergeten zijn.'",
+   "'With this many vendors and invoices that aren’t itemised, we almost always find costs that are duplicated or simply forgotten.'"
+  ],
+  [
+   "title: 'Vergelijk On-Demand,<br>Reserved Instances en Savings Plans.', sub: 'Vul jullie situatie in en zie direct wat de opties schelen.'",
+   "title: 'Compare On-Demand,<br>Reserved Instances and Savings Plans.', sub: 'Enter your situation and see directly what the options save.'"
+  ],
+  [
+   "Jullie zetten de efficiëntere opties al goed in. Winst zit hier vooral in het scherp houden van piekmomenten en nieuwe use cases.",
+   "You’re already making good use of the more efficient options. The gains here lie mainly in keeping a close eye on peak moments and new use cases."
+  ],
+  [
+   "'Onbenutte cloud-capaciteit tikt vaak al snel 10 tot 15 procent van het cloudbudget weg wanneer niemand het verbruik volgt.'",
+   "'Unused cloud capacity often quickly eats up 10 to 15 percent of the cloud budget when nobody tracks usage.'"
+  ],
+  [
+   "'Als niemand expliciet verantwoordelijk is voor de technologiekosten, zien wij besparingskansen structureel blijven liggen.'",
+   "'When nobody is explicitly responsible for technology costs, we see savings opportunities structurally left on the table.'"
+  ],
+  [
+   "\"Wanneer zijn jullie belangrijkste cloudcontracten (bijv. committed use of Enterprise Agreement) voor het laatst herzien?\"",
+   "\"When were your most important cloud contracts (e.g. committed use or Enterprise Agreement) last reviewed?\""
+  ],
+  [
+   "\"Staan jullie cloudkosten los gespecificeerd per team of project, of zitten ze verweven in een totaalbedrag?\"",
+   "\"Are your cloud costs itemised per team or project, or are they bundled into a single total?\""
+  ],
+  [
+   "<label>Bedrijfsnaam <span class=\"opt\">(optioneel)</span></label><input type=\"text\" placeholder=\"Bedrijfsnaam\"",
+   "<label>Company name <span class=\"opt\">(optional)</span></label><input type=\"text\" placeholder=\"Company name\""
+  ],
+  [
+   "'Contracten die langer dan een jaar niet herzien zijn, lopen achter op wat er nu in de markt te halen valt.'",
+   "'Contracts that haven’t been reviewed for more than a year lag behind what can be achieved in the market today.'"
+  ],
+  [
+   "Winst zit hier vooral in details: verfijning van de huidige aanpak, niet in grote structurele besparingen.",
+   "The gains here are mainly in the details: refining the current approach, not in large structural savings."
+  ],
+  [
+   "<h3>RI vs. Savings Plan vergelijken</h3><p>Vergelijk On-Demand, Reserved Instances en Savings Plans</p>",
+   "<h3>Compare RI vs. Savings Plan</h3><p>Compare On-Demand, Reserved Instances and Savings Plans</p>"
+  ],
+  [
+   "\"Hebben jullie inzicht in onbenutte cloud-capaciteit (bijv. te ruime instances, vergeten resources)?\"",
+   "\"Do you have insight into unused cloud capacity (e.g. oversized instances, forgotten resources)?\""
+  ],
+  [
+   "\"Is er in het afgelopen jaar een externe partij geweest die jullie cloudkosten heeft doorgelicht?\"",
+   "\"In the past year, has an external party reviewed your cloud costs?\""
+  ],
+  [
+   "\"Hoeveel actieve cloud-accounts of -omgevingen hebben jullie (productie, staging, per team)?\"",
+   "\"How many active cloud accounts or environments do you have (production, staging, per team)?\""
+  ],
+  [
+   "<label>Naam <span class=\"opt\">(optioneel)</span></label><input type=\"text\" placeholder=\"Naam\"",
+   "<label>Name <span class=\"opt\">(optional)</span></label><input type=\"text\" placeholder=\"Name\""
+  ],
+  [
+   "<h3>Liever direct persoonlijk advies?</h3><p>Start de gratis Cloud &amp; AI Savings Scan</p>",
+   "<h3>Prefer direct personal advice?</h3><p>Start the free Cloud &amp; AI Savings Scan</p>"
+  ],
+  [
+   "'Jullie hebben waarschijnlijk weinig zicht op waar het cloudbudget precies naartoe gaat.'",
+   "'You probably have little visibility into exactly where the cloud budget is going.'"
+  ],
+  [
+   "name: `Savings Plan (${term} jaar)`, sub: 'Flexibel, geldt voor compute in het algemeen'",
+   "name: `Savings Plan (${term}-year)`, sub: 'Flexible, applies to compute in general'"
+  ],
+  [
+   "<h3>AI-kosten besparen</h3><p>Bereken je AI/LLM-kosten op basis van model en volume</p>",
+   "<h3>Save on AI costs</h3><p>Calculate your AI/LLM costs based on model and volume</p>"
+  ],
+  [
+   "'Een blik van buitenaf legt besparingen bloot die intern over het hoofd zijn gezien.'",
+   "'An outside perspective exposes savings that have been overlooked internally.'"
+  ],
+  [
+   "<h3>Cloudkosten besparen</h3><p>7 vragen, direct een score en besparingsindicatie</p>",
+   "<h3>Save on cloud costs</h3><p>7 questions, an instant score and savings indication</p>"
+  ],
+  [
+   "name: `Reserved Instance (${term} jaar)`, sub: 'Vast instance-type, hoogste korting'",
+   "name: `Reserved Instance (${term}-year)`, sub: 'Fixed instance type, highest discount'"
+  ],
+  [
+   "'Jullie beantwoordden de meeste vragen al optimaal, de basis staat er goed voor.'",
+   "'You already answered most questions optimally, the foundation is in good shape.'"
+  ],
+  [
+   "Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com",
+   "Something went wrong. Please try again or send an email to info@ax1s-infra.com"
+  ],
+  [
+   "{ none: 'geen caching', partial: 'deels caching', full: 'structurele caching' }",
+   "{ none: 'no caching', partial: 'partial caching', full: 'structural caching' }"
+  ],
+  [
+   "<label>E-mail</label><input type=\"email\" required placeholder=\"naam@bedrijf.nl\"",
+   "<label>Email</label><input type=\"email\" required placeholder=\"name@company.com\""
+  ],
+  [
+   "\"Is er iemand intern verantwoordelijk voor het bewaken van de cloudkosten?\"",
+   "\"Is someone internally responsible for monitoring cloud costs?\""
+  ],
+  [
+   "'Er is aandacht voor kosten, maar een compleet overzicht ontbreekt nog.'",
+   "'There is attention for costs, but a complete overview is still missing.'"
+  ],
+  [
+   "<label for=\"ai-caching\">Prompt caching / context-hergebruik</label>",
+   "<label for=\"ai-caching\">Prompt caching / context reuse</label>"
+  ],
+  [
+   "'Jullie zitten er goed bovenop. Winst zit hier vooral in details.'",
+   "'You’re on top of it. The gains here are mainly in the details.'"
+  ],
+  [
+   "<label for=\"ai-out-tokens\">Gem. output-tokens per request</label>",
+   "<label for=\"ai-out-tokens\">Avg. output tokens per request</label>"
+  ],
+  [
+   "<label for=\"ai-in-tokens\">Gem. input-tokens per request</label>",
+   "<label for=\"ai-in-tokens\">Avg. input tokens per request</label>"
+  ],
+  [
+   "name: 'Over 6 maanden', sub: `Bij ${growth}% groei per maand`",
+   "name: 'In 6 months', sub: `At ${growth}% growth per month`"
+  ],
+  [
+   "Middenklasse-model (bijv. GPT-4o-mini / Claude Haiku-klasse)",
+   "Mid-range model (e.g. GPT-4o-mini / Claude Haiku class)"
+  ],
+  [
+   "Vul een positief maandbedrag in om de vergelijking te zien.",
+   "Enter a positive monthly amount to see the comparison."
+  ],
+  [
+   "Output-tokens zijn per model 3&ndash;4x duurder dan input.",
+   "Output tokens are 3&ndash;4x more expensive than input, depending on the model."
+  ],
+  [
+   "Ja, structureel voor vaste system-prompts/context</option>",
+   "Yes, structurally for fixed system prompts/context</option>"
+  ],
+  [
+   "href=\"savings-scan.html\" class=\"mode-card mode-card-gold\"",
+   "href=\"savings-scan.html\" class=\"mode-card mode-card-gold\""
+  ],
+  [
+   "<div class=\"result-title\">Vergelijking op jaarbasis</div>",
+   "<div class=\"result-title\">Annual comparison</div>"
+  ],
+  [
+   "Vlaggenschip-model (bijv. GPT-4o / Claude Sonnet-klasse)",
+   "Flagship model (e.g. GPT-4o / Claude Sonnet class)"
+  ],
+  [
+   "<label for=\"ai-requests\">Aantal requests per dag</label>",
+   "<label for=\"ai-requests\">Number of requests per day</label>"
+  ],
+  [
+   "<option value=\"light\">Lichtgewicht/snel model</option>",
+   "<option value=\"light\">Lightweight/fast model</option>"
+  ],
+  [
+   "name: 'Per jaar', sub: 'Bij gelijkblijvend gebruik'",
+   "name: 'Per year', sub: 'At constant usage'"
+  ],
+  [
+   "\"Wat is jullie geschatte maandelijkse cloudbudget?\"",
+   "\"What is your estimated monthly cloud budget?\""
+  ],
+  [
+   "Verwachte groei in gebruik per maand (%, optioneel)",
+   "Expected usage growth per month (%, optional)"
+  ],
+  [
+   "Laten we samen een blik werpen op jouw situatie.",
+   "Let’s take a look at your situation together."
+  ],
+  [
+   "<div class=\"result-title\">Geschatte kosten</div>",
+   "<div class=\"result-title\">Estimated costs</div>"
+  ],
+  [
+   "Vul geldige waarden in om de schatting te zien.",
+   "Enter valid values to see the estimate."
+  ],
+  [
+   " Resultaat direct zichtbaar, geen verplichting<",
+   " Result immediately visible, no obligation<"
+  ],
+  [
+   "Aanvraag versturen, reactie binnen 24u <iconify",
+   "Send request, reply within 24h <iconify"
+  ],
+  [
+   "Maandelijkse on-demand compute-uitgave (&euro;)",
+   "Monthly on-demand compute spend (&euro;)"
+  ],
+  [
+   "Deels, voor een deel van de requests</option>",
+   "Partly, for some of the requests</option>"
+  ],
+  [
+   "<img src=\"assets/finops-certified-badge.png\"",
+   "<img src=\"../assets/finops-certified-badge.png\""
+  ],
+  [
+   "<img src=\"assets/finops-foundation-logo.png\"",
+   "<img src=\"../assets/finops-foundation-logo.png\""
+  ],
+  [
+   "<span class=\"result-badge\">Aanbevolen</span>",
+   "<span class=\"result-badge\">Recommended</span>"
+  ],
+  [
+   "&middot; bespaar ${fmtEUR(savedAmount)}/jaar",
+   "&middot; save ${fmtEUR(savedAmount)}/year"
+  ],
+  [
+   "<div class=\"findings-title\">Wat opvalt</div>",
+   "<div class=\"findings-title\">What stands out</div>"
+  ],
+  [
+   "Bedankt. We nemen binnen 24 uur contact op.",
+   "Thank you. We’ll get back to you within 24 hours."
+  ],
+  [
+   "<span class=\"result-badge\">Projectie</span>",
+   "<span class=\"result-badge\">Projection</span>"
+  ],
+  [
+   "width=\"14\"></iconify-icon> Vorige</button>",
+   "width=\"14\"></iconify-icon> Previous</button>"
+  ],
+  [
+   "<option value=\"3\" selected>3 jaar</option>",
+   "<option value=\"3\" selected>3 years</option>"
+  ],
+  [
+   "Gecertificeerd door de FinOps Foundation",
+   "Certified by the FinOps Foundation"
+  ],
+  [
+   "<label for=\"ai-tier\">Modelklasse</label>",
+   "<label for=\"ai-tier\">Model class</label>"
+  ],
+  [
+   "Een A4'tje tekst is ongeveer 700 tokens.",
+   "A page of A4 text is roughly 700 tokens."
+  ],
+  [
+   "Voorspelbaarheid van de workload</label>",
+   "Workload predictability</label>"
+  ],
+  [
+   "<div class=\"savings-label\">Status</div>",
+   "<div class=\"savings-label\">Status</div>"
+  ],
+  [
+   "Vraag ${i + 1} van ${questions.length}",
+   "Question ${i + 1} of ${questions.length}"
+  ],
+  [
+   "Indicatieve besparingsruimte per jaar",
+   "Indicative annual savings potential"
+  ],
+  [
+   "<div class=\"score-max\">van 100</div>",
+   "<div class=\"score-max\">out of 100</div>"
+  ],
+  [
+   "Liever eerst je situatie toelichten?",
+   "Prefer to explain your situation first?"
+  ],
+  [
+   "hint: 'Vul een positief bedrag in.'",
+   "hint: 'Enter a positive amount.'"
+  ],
+  [
+   "\"Een beetje, maar niet structureel\"",
+   "\"A little, but not structurally\""
+  ],
+  [
+   "Jullie zitten er goed bovenop</div>",
+   "You’re on top of it</div>"
+  ],
+  [
+   " Plan een digitale kennismaking</a>",
+   " Schedule a digital introduction</a>"
+  ],
+  [
+   "Zeer stabiel (verandert nauwelijks)",
+   "Very stable (hardly changes)"
+  ],
+  [
+   "\"Ja, iemand met dit als hoofdtaak\"",
+   "\"Yes, someone with this as their main task\""
+  ],
+  [
+   "label = 'Bewust maar versnipperd';",
+   "label = 'Aware but fragmented';"
+  ],
+  [
+   "hint: 'Vul positieve waarden in.'",
+   "hint: 'Enter positive values.'"
+  ],
+  [
+   "hint: 'Vul een geldig bedrag in.'",
+   "hint: 'Enter a valid amount.'"
+  ],
+  [
+   "\"Ja, dit wordt actief gemonitord\"",
+   "\"Yes, this is actively monitored\""
+  ],
+  [
+   "Nee, elke request is los</option>",
+   "No, every request is standalone</option>"
+  ],
+  [
+   "<option value=\"1\">1 jaar</option>",
+   "<option value=\"1\">1 year</option>"
+  ],
+  [
+   "<img src=\"assets/team-jelle.jpg\"",
+   "<img src=\"../assets/team-jelle.jpg\""
+  ],
+  [
+   "hint: 'Vul geldige getallen in.'",
+   "hint: 'Enter valid numbers.'"
+  ],
+  [
+   "\"Ja, maar het is een taak erbij\"",
+   "\"Yes, but it’s an extra task\""
+  ],
+  [
+   " 7 korte multiple-choice vragen<",
+   " 7 short multiple-choice questions<"
+  ],
+  [
+   "Redelijk stabiel (schommelt wat)",
+   "Fairly stable (fluctuates somewhat)"
+  ],
+  [
+   "name: 'Lichtgewicht/snel model'",
+   "name: 'Lightweight/fast model'"
+  ],
+  [
+   "${fmtEUR(r.price / 12)} / maand",
+   "${fmtEUR(r.price / 12)} / month"
+  ],
+  [
+   "<img src=\"assets/team-tom.jpg\"",
+   "<img src=\"../assets/team-tom.jpg\""
+  ],
+  [
+   "\"Verweven in een totaalbedrag\"",
+   "\"Bundled into a single total\""
+  ],
+  [
+   "Start de FinOps Radar <iconify",
+   "Start the FinOps Radar <iconify"
+  ],
+  [
+   "Wisselend (schaalt vaak op/af)",
+   "Variable (often scales up/down)"
+  ],
+  [
+   "Tom &amp; Jelle's inschatting",
+   "Tom &amp; Jelle’s assessment"
+  ],
+  [
+   "'Kosten niet gespecificeerd'",
+   "'Costs not itemised'"
+  ],
+  [
+   "\"Minder dan 1 jaar geleden\"",
+   "\"Less than 1 year ago\""
+  ],
+  [
+   "name: 'Vlaggenschip-model'",
+   "name: 'Flagship model'"
+  ],
+  [
+   "name: 'Middenklasse-model'",
+   "name: 'Mid-range model'"
+  ],
+  [
+   "'Geen duidelijke eigenaar'",
+   "'No clear owner'"
+  ],
+  [
+   "'Geen verbruiksmonitoring'",
+   "'No usage monitoring'"
+  ],
+  [
+   " Duurt ongeveer 2 minuten<",
+   " Takes about 2 minutes<"
+  ],
+  [
+   " Naar contactformulier</a>",
+   " To the contact form</a>"
+  ],
+  [
+   "${fmtEUR(r.price)} / jaar",
+   "${fmtEUR(r.price)} / year"
+  ],
+  [
+   "placeholder=\"bijv. 10000\"",
+   "placeholder=\"e.g. 10000\""
+  ],
+  [
+   "Gewenst commitment-niveau",
+   "Desired commitment level"
+  ],
+  [
+   "\"Nee, niemand specifiek\"",
+   "\"No, nobody specific\""
+  ],
+  [
+   "{ label: \"Ja\", pts: 15 }",
+   "{ label: \"Yes\", pts: 15 }"
+  ],
+  [
+   "{ label: \"Nee\", pts: 0 }",
+   "{ label: \"No\", pts: 0 }"
+  ],
+  [
+   "'Contract nooit herzien'",
+   "'Contract never reviewed'"
+  ],
+  [
+   "'Nog geen externe check'",
+   "'No external check yet'"
+  ],
+  [
+   "Liever direct mailen? <a",
+   "Prefer to email directly? <a"
+  ],
+  [
+   "placeholder=\"bijv. 5000\"",
+   "placeholder=\"e.g. 5000\""
+  ],
+  [
+   "toLocaleString('nl-NL')",
+   "toLocaleString('en-GB')"
+  ],
+  [
+   "Score <b>${pct}/100</b>",
+   "Score <b>${pct}/100</b>"
+  ],
+  [
+   "placeholder=\"bijv. 800\"",
+   "placeholder=\"e.g. 800\""
+  ],
+  [
+   "placeholder=\"bijv. 300\"",
+   "placeholder=\"e.g. 300\""
+  ],
+  [
+   "sub: 'Geen commitment'",
+   "sub: 'No commitment'"
+  ],
+  [
+   "\"1 tot 3 jaar geleden\"",
+   "\"1 to 3 years ago\""
+  ],
+  [
+   "placeholder=\"bijv. 10\"",
+   "placeholder=\"e.g. 10\""
+  ],
+  [
+   "\"€150.000 - €500.000\"",
+   "\"€150,000 - €500,000\""
+  ],
+  [
+   ">Aanvraag ontvangen<",
+   ">Request received<"
+  ],
+  [
+   "\"Los gespecificeerd\"",
+   "\"Itemised separately\""
+  ],
+  [
+   "\"€50.000 - €150.000\"",
+   "\"€50,000 - €150,000\""
+  ],
+  [
+   "'Contract verouderd'",
+   "'Contract outdated'"
+  ],
+  [
+   "\"Nee, geen inzicht\"",
+   "\"No, no insight\""
+  ],
+  [
+   "\"Minder dan €5.000\"",
+   "\"Less than €5,000\""
+  ],
+  [
+   "\"€20.000 - €50.000\"",
+   "\"€20,000 - €50,000\""
+  ],
+  [
+   "\"Meer dan €500.000\"",
+   "\"More than €500,000\""
+  ],
+  [
+   "'Veel leveranciers'",
+   "'Many vendors'"
+  ],
+  [
+   "Tot nu toe opgepikt",
+   "Picked up so far"
+  ],
+  [
+   "label = 'Reactief';",
+   "label = 'Reactive';"
+  ],
+  [
+   "name: 'Deze maand'",
+   "name: 'This month'"
+  ],
+  [
+   "\"€5.000 - €20.000\"",
+   "\"€5,000 - €20,000\""
+  ],
+  [
+   "Output-tokens: ${",
+   "Output tokens: ${"
+  ],
+  [
+   "Input-tokens: ${",
+   "Input tokens: ${"
+  ],
+  [
+   "label = 'Grip';",
+   "label = 'In control';"
+  ],
+  [
+   "\"Minder dan 5\"",
+   "\"Fewer than 5\""
+  ],
+  [
+   "\"Weet ik niet\"",
+   "\"I don’t know\""
+  ],
+  [
+   "\"Meer dan 15\"",
+   "\"More than 15\""
+  ],
+  [
+   "t.o.v. nu`",
+   "vs. now`"
+  ],
+  [
+   "\"5 tot 15\"",
+   "\"5 to 15\""
+  ]
+ ],
+ "ai-kosten-calculator.html": [
+  [
+   "Indicatieve, gemiddelde marktprijzen per 1 miljoen tokens voor de genoemde modelklassen. Werkelijke tarieven verschillen per provider, model en moment. Deze tool geeft een eerste richting, geen offerte.",
+   "Indicative, average market prices per 1 million tokens for the model classes mentioned. Actual rates differ per provider, model and moment. This tool gives a first direction, not a quote."
+  ],
+  [
+   "Output-tokens domineren jullie kosten. Voor lange antwoorden op een vlaggenschip-model loont het om de gewenste lengte te sturen of eenvoudigere taken naar een goedkoper model te routeren.",
+   "Output tokens dominate your costs. For long answers on a flagship model it pays to control the desired length or route simpler tasks to a cheaper model."
+  ],
+  [
+   "Bij dit groeitempo verdubbelen jullie AI-kosten binnen ongeveer ${Math.round(doublingMonths)} maanden. Dat is het moment om nu al op efficiëntie te sturen, niet pas als het budget knelt.",
+   "At this growth rate your AI costs will double in about ${Math.round(doublingMonths)} months. That is the moment to start steering on efficiency now, not only once the budget is under pressure."
+  ],
+  [
+   "Voor hoogvolume, minder complexe taken (classificatie, samenvatten, extractie) is een middenklasse-model vaak 10 tot 15 keer goedkoper, met nauwelijks merkbaar kwaliteitsverlies.",
+   "For high-volume, less complex tasks (classification, summarisation, extraction) a mid-range model is often 10 to 15 times cheaper, with barely noticeable quality loss."
+  ],
+  [
+   "Jullie hergebruiken nu geen context. Prompt caching op vaste system-prompts of documentcontext kan al snel 30 tot 50 procent van de input-kosten schelen.",
+   "You aren’t reusing context right now. Prompt caching on fixed system prompts or document context can quickly save 30 to 50 percent of input costs."
+  ],
+  [
+   "Jullie zetten de efficiëntere opties al goed in. Winst zit hier vooral in het scherp houden van piekmomenten en nieuwe use cases.",
+   "You’re already making good use of the more efficient options. The gains here lie mainly in keeping a close eye on peak moments and new use cases."
+  ],
+  [
+   "{ none: 'geen caching', partial: 'deels caching', full: 'structurele caching' }",
+   "{ none: 'no caching', partial: 'partial caching', full: 'structural caching' }"
+  ],
+  [
+   "name: 'Over 6 maanden', sub: `Bij ${growth}% groei per maand`",
+   "name: 'In 6 months', sub: `At ${growth}% growth per month`"
+  ],
+  [
+   "Middenklasse-model (bijv. GPT-4o-mini / Claude Haiku-klasse)",
+   "Mid-range model (e.g. GPT-4o-mini / Claude Haiku class)"
+  ],
+  [
+   "Output-tokens zijn per model 3&ndash;4x duurder dan input.",
+   "Output tokens are 3&ndash;4x more expensive than input, depending on the model."
+  ],
+  [
+   "Ja, structureel voor vaste system-prompts/context</option>",
+   "Yes, structurally for fixed system prompts/context</option>"
+  ],
+  [
+   "Vlaggenschip-model (bijv. GPT-4o / Claude Sonnet-klasse)",
+   "Flagship model (e.g. GPT-4o / Claude Sonnet class)"
+  ],
+  [
+   "<option value=\"light\">Lichtgewicht/snel model</option>",
+   "<option value=\"light\">Lightweight/fast model</option>"
+  ],
+  [
+   "name: 'Per jaar', sub: 'Bij gelijkblijvend gebruik'",
+   "name: 'Per year', sub: 'At constant usage'"
+  ],
+  [
+   "Verwachte groei in gebruik per maand (%, optioneel)",
+   "Expected usage growth per month (%, optional)"
+  ],
+  [
+   "<div class=\"result-title\">Geschatte kosten</div>",
+   "<div class=\"result-title\">Estimated costs</div>"
+  ],
+  [
+   "Vul geldige waarden in om de schatting te zien.",
+   "Enter valid values to see the estimate."
+  ],
+  [
+   "Deels, voor een deel van de requests</option>",
+   "Partly, for some of the requests</option>"
+  ],
+  [
+   "<div class=\"findings-title\">Wat opvalt</div>",
+   "<div class=\"findings-title\">What stands out</div>"
+  ],
+  [
+   "<span class=\"result-badge\">Projectie</span>",
+   "<span class=\"result-badge\">Projection</span>"
+  ],
+  [
+   "Een A4'tje tekst is ongeveer 700 tokens.",
+   "A page of A4 text is roughly 700 tokens."
+  ],
+  [
+   "hint: 'Vul positieve waarden in.'",
+   "hint: 'Enter positive values.'"
+  ],
+  [
+   "Nee, elke request is los</option>",
+   "No, every request is standalone</option>"
+  ],
+  [
+   "hint: 'Vul geldige getallen in.'",
+   "hint: 'Enter valid numbers.'"
+  ],
+  [
+   "name: 'Lichtgewicht/snel model'",
+   "name: 'Lightweight/fast model'"
+  ],
+  [
+   "name: 'Vlaggenschip-model'",
+   "name: 'Flagship model'"
+  ],
+  [
+   "name: 'Middenklasse-model'",
+   "name: 'Mid-range model'"
+  ],
+  [
+   "placeholder=\"bijv. 5000\"",
+   "placeholder=\"e.g. 5000\""
+  ],
+  [
+   "toLocaleString('nl-NL')",
+   "toLocaleString('en-GB')"
+  ],
+  [
+   "placeholder=\"bijv. 800\"",
+   "placeholder=\"e.g. 800\""
+  ],
+  [
+   "placeholder=\"bijv. 300\"",
+   "placeholder=\"e.g. 300\""
+  ],
+  [
+   "placeholder=\"bijv. 10\"",
+   "placeholder=\"e.g. 10\""
+  ],
+  [
+   "name: 'Deze maand'",
+   "name: 'This month'"
+  ],
+  [
+   "Output-tokens: ${",
+   "Output tokens: ${"
+  ],
+  [
+   "Input-tokens: ${",
+   "Input tokens: ${"
+  ],
+  [
+   "t.o.v. nu`",
+   "vs. now`"
+  ]
+ ],
+ "ri-vs-savings-plan-calculator.html": [
+  [
+   "Bij een wisselende workload is een Savings Plan doorgaans slimmer: het geldt voor compute in het algemeen, in plaats van een specifiek instance-type. Reserved Instances lopen dan het risico op onderbenutte capaciteit.",
+   "With a variable workload a Savings Plan is generally smarter: it applies to compute in general, instead of a specific instance type. Reserved Instances then risk leaving capacity underused."
+  ],
+  [
+   "Indicatieve, marktgemiddelde kortingspercentages voor grote cloudproviders. Werkelijke kortingen verschillen per instance-type, regio en leverancier. Deze tool geeft een eerste richting, geen offerte.",
+   "Indicative, market-average discount percentages for major cloud providers. Actual discounts differ per instance type, region and vendor. This tool gives a first direction, not a quote."
+  ],
+  [
+   "Bij een redelijk stabiele workload biedt een Savings Plan een goede balans tussen korting en flexibiliteit. Overweeg Reserved Instances alleen voor het deel dat echt vaststaat.",
+   "With a fairly stable workload a Savings Plan offers a good balance between discount and flexibility. Consider Reserved Instances only for the part that is truly fixed."
+  ],
+  [
+   "Bij een zeer voorspelbare workload kun je met een Reserved Instance (${term} jaar) meestal de hoogste korting behalen. De lagere flexibiliteit is dan minder relevant.",
+   "With a highly predictable workload you can usually achieve the highest discount with a Reserved Instance (${term}-year). The lower flexibility is then less relevant."
+  ],
+  [
+   "name: `Savings Plan (${term} jaar)`, sub: 'Flexibel, geldt voor compute in het algemeen'",
+   "name: `Savings Plan (${term}-year)`, sub: 'Flexible, applies to compute in general'"
+  ],
+  [
+   "name: `Reserved Instance (${term} jaar)`, sub: 'Vast instance-type, hoogste korting'",
+   "name: `Reserved Instance (${term}-year)`, sub: 'Fixed instance type, highest discount'"
+  ],
+  [
+   "Vul een positief maandbedrag in om de vergelijking te zien.",
+   "Enter a positive monthly amount to see the comparison."
+  ],
+  [
+   "<div class=\"result-title\">Vergelijking op jaarbasis</div>",
+   "<div class=\"result-title\">Annual comparison</div>"
+  ],
+  [
+   "Maandelijkse on-demand compute-uitgave (&euro;)",
+   "Monthly on-demand compute spend (&euro;)"
+  ],
+  [
+   "<span class=\"result-badge\">Aanbevolen</span>",
+   "<span class=\"result-badge\">Recommended</span>"
+  ],
+  [
+   "&middot; bespaar ${fmtEUR(savedAmount)}/jaar",
+   "&middot; save ${fmtEUR(savedAmount)}/year"
+  ],
+  [
+   "<option value=\"3\" selected>3 jaar</option>",
+   "<option value=\"3\" selected>3 years</option>"
+  ],
+  [
+   "Voorspelbaarheid van de workload</label>",
+   "Workload predictability</label>"
+  ],
+  [
+   "hint: 'Vul een positief bedrag in.'",
+   "hint: 'Enter a positive amount.'"
+  ],
+  [
+   "Zeer stabiel (verandert nauwelijks)",
+   "Very stable (hardly changes)"
+  ],
+  [
+   "hint: 'Vul een geldig bedrag in.'",
+   "hint: 'Enter a valid amount.'"
+  ],
+  [
+   "<option value=\"1\">1 jaar</option>",
+   "<option value=\"1\">1 year</option>"
+  ],
+  [
+   "Redelijk stabiel (schommelt wat)",
+   "Fairly stable (fluctuates somewhat)"
+  ],
+  [
+   "${fmtEUR(r.price / 12)} / maand",
+   "${fmtEUR(r.price / 12)} / month"
+  ],
+  [
+   "Wisselend (schaalt vaak op/af)",
+   "Variable (often scales up/down)"
+  ],
+  [
+   "${fmtEUR(r.price)} / jaar",
+   "${fmtEUR(r.price)} / year"
+  ],
+  [
+   "placeholder=\"bijv. 10000\"",
+   "placeholder=\"e.g. 10000\""
+  ],
+  [
+   "Gewenst commitment-niveau",
+   "Desired commitment level"
+  ],
+  [
+   "toLocaleString('nl-NL')",
+   "toLocaleString('en-GB')"
+  ],
+  [
+   "sub: 'Geen commitment'",
+   "sub: 'No commitment'"
+  ]
+ ]
+}

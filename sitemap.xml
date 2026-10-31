@@ -1,177 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ax1s-infra.com/</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/savings-scan.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/savings-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/savings-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/savings-scan.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/savings-scan.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/savings-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/savings-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/savings-scan.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/finops-radar.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/finops-radar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/finops-radar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/finops-radar.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/finops-radar.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/finops-radar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/finops-radar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/finops-radar.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/finops-diensten.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/finops-diensten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/finops-diensten.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/finops-diensten.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/finops-diensten.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/finops-diensten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/finops-diensten.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/finops-diensten.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/wat-is-finops.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/wat-is-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/wat-is-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/wat-is-finops.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/wat-is-finops.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/wat-is-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/wat-is-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/wat-is-finops.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/gratis-tools.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/gratis-tools.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/gratis-tools.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/gratis-tools.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/gratis-tools.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/gratis-tools.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/gratis-tools.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/gratis-tools.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/ri-vs-savings-plan-calculator.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/ri-vs-savings-plan-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/ri-vs-savings-plan-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/ri-vs-savings-plan-calculator.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/ri-vs-savings-plan-calculator.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/ri-vs-savings-plan-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/ri-vs-savings-plan-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/ri-vs-savings-plan-calculator.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/ai-kosten-calculator.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/ai-kosten-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/ai-kosten-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/ai-kosten-calculator.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/ai-kosten-calculator.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/ai-kosten-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/ai-kosten-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/ai-kosten-calculator.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/finops-glossarium.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/finops-glossarium.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/finops-glossarium.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/finops-glossarium.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/finops-glossarium.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/finops-glossarium.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/finops-glossarium.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/finops-glossarium.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/budget-alweer-overschreden.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/budget-alweer-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/budget-alweer-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/budget-alweer-overschreden.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/budget-alweer-overschreden.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/budget-alweer-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/budget-alweer-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/budget-alweer-overschreden.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/investering-nog-rendabel.html</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/investering-nog-rendabel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/investering-nog-rendabel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/investering-nog-rendabel.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/investering-nog-rendabel.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/investering-nog-rendabel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/investering-nog-rendabel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/investering-nog-rendabel.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/ai-project-rekening-kwam.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-project-rekening-kwam.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-project-rekening-kwam.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-project-rekening-kwam.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/ai-project-rekening-kwam.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-project-rekening-kwam.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-project-rekening-kwam.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-project-rekening-kwam.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/kostenplaatje-nooit-gecheckt.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/kostenplaatje-nooit-gecheckt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/kostenplaatje-nooit-gecheckt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/kostenplaatje-nooit-gecheckt.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/kostenplaatje-nooit-gecheckt.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/kostenplaatje-nooit-gecheckt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/kostenplaatje-nooit-gecheckt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/kostenplaatje-nooit-gecheckt.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/verspilling-cloud-vinden.html</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/verspilling-cloud-vinden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/verspilling-cloud-vinden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/verspilling-cloud-vinden.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/verspilling-cloud-vinden.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/verspilling-cloud-vinden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/verspilling-cloud-vinden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/verspilling-cloud-vinden.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/wie-stuurt-cloud-ai-kosten.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/wie-stuurt-cloud-ai-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/wie-stuurt-cloud-ai-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/wie-stuurt-cloud-ai-kosten.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/wie-stuurt-cloud-ai-kosten.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/wie-stuurt-cloud-ai-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/wie-stuurt-cloud-ai-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/wie-stuurt-cloud-ai-kosten.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/voorspelbaar-cloudbudget.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/voorspelbaar-cloudbudget.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/voorspelbaar-cloudbudget.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/voorspelbaar-cloudbudget.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/voorspelbaar-cloudbudget.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/voorspelbaar-cloudbudget.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/voorspelbaar-cloudbudget.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/voorspelbaar-cloudbudget.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/ai-kosten-signalen.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-kosten-signalen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-kosten-signalen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-kosten-signalen.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/ai-kosten-signalen.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-kosten-signalen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-kosten-signalen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-kosten-signalen.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/5-kostbare-fouten-public-cloud.html</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/5-kostbare-fouten-public-cloud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/5-kostbare-fouten-public-cloud.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/5-kostbare-fouten-public-cloud.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/5-kostbare-fouten-public-cloud.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/5-kostbare-fouten-public-cloud.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/5-kostbare-fouten-public-cloud.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/5-kostbare-fouten-public-cloud.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/wie-stuurt-op-it-kosten.html</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/wie-stuurt-op-it-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/wie-stuurt-op-it-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/wie-stuurt-op-it-kosten.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/wie-stuurt-op-it-kosten.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/wie-stuurt-op-it-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/wie-stuurt-op-it-kosten.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/wie-stuurt-op-it-kosten.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/van-cloud-naar-alle-technologie.html</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/van-cloud-naar-alle-technologie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/van-cloud-naar-alle-technologie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/van-cloud-naar-alle-technologie.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/van-cloud-naar-alle-technologie.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/van-cloud-naar-alle-technologie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/van-cloud-naar-alle-technologie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/van-cloud-naar-alle-technologie.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/ai-spend-roi-trillion-dollar-casino.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-spend-roi-trillion-dollar-casino.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-spend-roi-trillion-dollar-casino.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-spend-roi-trillion-dollar-casino.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/ai-spend-roi-trillion-dollar-casino.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-spend-roi-trillion-dollar-casino.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-spend-roi-trillion-dollar-casino.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-spend-roi-trillion-dollar-casino.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/it-factuur-3x-hoger-voorkomen.html</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/it-factuur-3x-hoger-voorkomen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/it-factuur-3x-hoger-voorkomen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/it-factuur-3x-hoger-voorkomen.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/it-factuur-3x-hoger-voorkomen.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/it-factuur-3x-hoger-voorkomen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/it-factuur-3x-hoger-voorkomen.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/it-factuur-3x-hoger-voorkomen.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/ai-budget-overschreden.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-budget-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-budget-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-budget-overschreden.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/ai-budget-overschreden.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-budget-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-budget-overschreden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-budget-overschreden.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/veelgestelde-vragen-cloudkosten-finops.html</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/veelgestelde-vragen-cloudkosten-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/veelgestelde-vragen-cloudkosten-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/veelgestelde-vragen-cloudkosten-finops.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/veelgestelde-vragen-cloudkosten-finops.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/veelgestelde-vragen-cloudkosten-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/veelgestelde-vragen-cloudkosten-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/veelgestelde-vragen-cloudkosten-finops.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/5-manieren-cloudkosten-elimineren.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/5-manieren-cloudkosten-elimineren.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/5-manieren-cloudkosten-elimineren.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/5-manieren-cloudkosten-elimineren.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/5-manieren-cloudkosten-elimineren.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/5-manieren-cloudkosten-elimineren.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/5-manieren-cloudkosten-elimineren.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/5-manieren-cloudkosten-elimineren.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/reserved-instances-vs-savings-plans.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/reserved-instances-vs-savings-plans.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/reserved-instances-vs-savings-plans.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/reserved-instances-vs-savings-plans.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/reserved-instances-vs-savings-plans.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/reserved-instances-vs-savings-plans.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/reserved-instances-vs-savings-plans.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/reserved-instances-vs-savings-plans.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/finops-volwassenheidsmodel.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/finops-volwassenheidsmodel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/finops-volwassenheidsmodel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/finops-volwassenheidsmodel.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/finops-volwassenheidsmodel.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/finops-volwassenheidsmodel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/finops-volwassenheidsmodel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/finops-volwassenheidsmodel.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/multi-cloud-governance.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/multi-cloud-governance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/multi-cloud-governance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/multi-cloud-governance.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/multi-cloud-governance.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/multi-cloud-governance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/multi-cloud-governance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/multi-cloud-governance.html"/>
   </url>
   <url>
     <loc>https://ax1s-infra.com/blog/case-23-procent-besparing.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/case-23-procent-besparing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/case-23-procent-besparing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/case-23-procent-besparing.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/case-23-procent-besparing.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/case-23-procent-besparing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/case-23-procent-besparing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/case-23-procent-besparing.html"/>
   </url>
 </urlset>

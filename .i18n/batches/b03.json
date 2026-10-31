@@ -1,0 +1,694 @@
+{
+ "same": [
+  360,
+  362,
+  364,
+  366,
+  368,
+  370,
+  372,
+  374,
+  377,
+  380,
+  382,
+  384,
+  386,
+  388,
+  390,
+  392,
+  422,
+  454,
+  455,
+  456,
+  457,
+  468,
+  469,
+  480
+ ],
+ "pairs": [
+  [
+   330,
+   "Free and ready to use: tools, templates and checklists for FinOps and cloud cost management."
+  ],
+  [
+   331,
+   "Free FinOps tools, templates & checklists"
+  ],
+  [
+   332,
+   "Collection of free, ready-to-use FinOps tools and templates: calculators, quiz, glossary and downloadable templates."
+  ],
+  [
+   333,
+   "Free tools & tips"
+  ],
+  [
+   334,
+   "What is FinOps? Explanation, definition and the FinOps Lifecycle | AX1S Infra"
+  ],
+  [
+   335,
+   "{1}FinOps{/1} brings finance, engineering and operations together to reduce waste in cloud, SaaS and AI spend and to get more value out of technology. It is not a one-off action but a continuous practice in which every team takes ownership of its own costs and usage."
+  ],
+  [
+   336,
+   "The FinOps Foundation, part of the Linux Foundation, is the non-profit organisation behind this practice. It develops the FinOps framework, the annual State of FinOps benchmark and the FinOps Certified Practitioner certification."
+  ],
+  [
+   337,
+   "The FinOps Lifecycle: Inform, Optimize, Operate"
+  ],
+  [
+   338,
+   "The FinOps framework describes a continuous cycle of three phases, which is gone through again and again as cloud, SaaS and AI usage changes:"
+  ],
+  [
+   339,
+   "{1}{2}{3}Inform:{/3} create visibility into who spends what, with correct tagging, allocation and benchmarking, so teams can see their own costs.{/2}"
+  ],
+  [
+   340,
+   "{1}{2}{3}Optimize:{/3} on the basis of that visibility, save in a targeted way: rightsizing, commitments such as Reserved Instances or Savings Plans, and cleaning up unused resources.{/2}"
+  ],
+  [
+   341,
+   "{1}{2}{3}Operate:{/3} embed optimisation in processes and automation, so cost management doesn't stay a one-off project but becomes part of how teams work.{/2}"
+  ],
+  [
+   342,
+   "Who is involved in FinOps?"
+  ],
+  [
+   343,
+   "FinOps is cross-functional by definition. Finance brings budget discipline and forecasting, engineering knows the technical options for optimisation, and business/product teams understand which spend creates value. Without these three at the table together, cost management ends up either too technical or too far removed from practice."
+  ],
+  [
+   344,
+   "How does FinOps differ from traditional cost management?"
+  ],
+  [
+   345,
+   "Traditional cost management is periodic and top-down: an annual budget, checked after the fact by finance. FinOps is continuous and decentralised: teams see their own usage in (near) real time and make decisions themselves, within a shared framework. That fits the nature of cloud, SaaS and AI spend, which can fluctuate per hour or even per API call, unlike the fixed infrastructure costs of the past."
+  ],
+  [
+   346,
+   "How do you get started with FinOps?"
+  ],
+  [
+   347,
+   "Most organisations start with visibility: knowing who spends what, before optimising. Where an organisation currently stands often differs per practice (cost allocation, optimisation, planning) and doesn't need to be the same everywhere. In {1}the FinOps maturity model{/1} you can read how to determine that for your organisation, and {2}5 ways to eliminate unnecessary cloud costs{/2} lists concrete first steps."
+  ],
+  [
+   348,
+   "A concrete example"
+  ],
+  [
+   349,
+   "An engineering team runs a test environment on heavy instance types because nobody knows exactly which capacity is needed. Without FinOps, finance only sees at the end of the quarter that cloud costs have risen, without knowing why. With FinOps the team sees the usage itself, recognises the overprovisioning within a few weeks and adjusts the instance types based on actual usage. The same logic applies to SaaS subscriptions nobody uses any more and AI workloads whose cost per API call keeps rising: visibility at the team itself is what makes the difference."
+  ],
+  [
+   350,
+   "Curious where your organisation stands?"
+  ],
+  [
+   351,
+   "Free tools"
+  ],
+  [
+   352,
+   "FinOps explained: the definition, the FinOps Lifecycle (Inform, Optimize, Operate) and how finance, engineering and operations together keep cloud, SaaS and AI costs under control."
+  ],
+  [
+   353,
+   "FinOps explained: definition, the FinOps Lifecycle and how to get started."
+  ],
+  [
+   354,
+   "FinOps connects cloud, AI, costs and performance"
+  ],
+  [
+   355,
+   "FinOps Glossary: 20 terms explained | AX1S Infra"
+  ],
+  [
+   356,
+   "20 key terms from FinOps and cloud cost management, explained briefly and clearly. No jargon contest, just look up what something means and move on."
+  ],
+  [
+   357,
+   "{1}AI cost management{/1} {2}Chargeback & Showback{/2} {3}Cloud Financial Management{/3} {4}Cloud unit economics{/4} {5}Cloud waste{/5} {6}Commitment-based discount{/6} {7}Cost allocation{/7} {8}Cost anomaly detection{/8} {9}FinOps{/9} {10}FinOps Certified Practitioner{/10} {11}FinOps Foundation{/11} {12}FinOps Lifecycle{/12} {13}Multi-cloud governance{/13} {14}Reserved Instance{/14} {15}Rightsizing{/15} {16}SaaS sprawl{/16} {17}Savings Plan{/17} {18}Spot instance{/18} {19}Tagging{/19} {20}Total Cost of Ownership{/20}"
+  ],
+  [
+   358,
+   "AI cost management"
+  ],
+  [
+   359,
+   "Controlling spend on AI and LLM workloads: compute for training and inference, API costs from model providers, and data storage. Because of the rapid growth and variable usage patterns of AI workloads, this is one of the fastest-growing focus areas within FinOps."
+  ],
+  [
+   361,
+   "Two ways of making cloud costs visible per team or product. With showback you see the costs but they aren't actually charged; with chargeback the amount is really allocated to the team's budget. Showback is often the first step towards chargeback."
+  ],
+  [
+   363,
+   "Umbrella term for the financial management of cloud spend, of which FinOps is the most common practice. Besides optimisation, CFM also covers budgeting, forecasting and governance."
+  ],
+  [
+   365,
+   "The cost of cloud infrastructure expressed per unit of value, for example per customer, per transaction or per API call. This shows whether technology costs grow along with revenue or rise faster: an important signal for CFOs."
+  ],
+  [
+   367,
+   "Cloud capacity that is paid for but no longer (or never) used usefully: forgotten test environments, unused storage volumes, oversized instances. Often the first and fastest source of savings in a FinOps engagement. See also our {1}5 ways to eliminate unnecessary cloud costs{/1}."
+  ],
+  [
+   369,
+   "Collective name for discounts you get in exchange for a usage or spend commitment to a cloud provider, such as Reserved Instances and Savings Plans. The longer and more certain the commitment, the higher the discount generally is. Work it out yourself with our {1}RI vs. Savings Plan Calculator{/1}."
+  ],
+  [
+   371,
+   "The process of assigning cloud, SaaS and AI costs to the teams, products or cost centres that cause them. Requires consistent tagging and is the foundation for both showback and chargeback."
+  ],
+  [
+   373,
+   "Automatically flagging unexpected cost spikes, for example caused by a misconfigured resource or a forgotten process that keeps running. Early detection prevents a mistake from running for weeks before anyone notices."
+  ],
+  [
+   375,
+   "A certification from the FinOps Foundation that demonstrates someone understands and can apply the FinOps framework. Both founders of AX1S Infra are FinOps Certified Practitioners."
+  ],
+  [
+   376,
+   "The non-profit organisation behind the FinOps framework, part of the Linux Foundation. It publishes, among other things, the annual State of FinOps benchmark and manages the FinOps Certified Practitioner certification."
+  ],
+  [
+   378,
+   "The three continuous phases of the FinOps framework: Inform (create visibility), Optimize (save in a targeted way) and Operate (embed optimisation in processes). See {1}What is FinOps?{/1} for the full explanation."
+  ],
+  [
+   379,
+   "Consistently managing costs, access and policy across multiple cloud providers. Without governance, different tagging standards, security levels and reporting methods quickly emerge per cloud. More on this in {1}Multi-cloud governance without the complexity{/1}."
+  ],
+  [
+   381,
+   "A commitment to a specific instance type in a specific region, generally for 1 or 3 years, in exchange for a substantial discount compared with on-demand rates. Less flexible than a Savings Plan, but often with a slightly higher discount. Compare both options with our {1}RI vs. Savings Plan Calculator{/1}."
+  ],
+  [
+   383,
+   "Adjusting the capacity of a resource (e.g. a virtual machine) to actual usage. Oversized instances are one of the most common forms of cloud waste."
+  ],
+  [
+   385,
+   "The uncontrolled growth of SaaS subscriptions within an organisation, often purchased by individual teams without central oversight. Leads to duplicate tools, forgotten licences and unnecessary costs."
+  ],
+  [
+   387,
+   "A commitment to a fixed amount of compute spend per hour, for 1 or 3 years, regardless of instance type or region. More flexible than a Reserved Instance, with a comparable (sometimes slightly lower) discount. Compare both with our {1}RI vs. Savings Plan Calculator{/1} or read the background in {2}Reserved Instances vs. Savings Plans{/2}."
+  ],
+  [
+   389,
+   "Unused cloud capacity offered at a heavily reduced rate, with the risk that the capacity can be reclaimed at short notice. Suitable for interruptible workloads such as batch processing."
+  ],
+  [
+   391,
+   "Labelling cloud resources with metadata such as team, project or environment. The basis for reliable cost allocation: without consistent tagging, accurate reporting per team is almost impossible."
+  ],
+  [
+   393,
+   "The full cost of a technology choice over its entire lifetime, including not only the direct cloud or licence costs but also management, migration and any decommissioning."
+  ],
+  [
+   394,
+   "Term not found, or want to see it applied to your situation?"
+  ],
+  [
+   395,
+   "Do the FinOps Radar or start the free Cloud & AI Savings Scan."
+  ],
+  [
+   396,
+   "{1}Start the FinOps Radar {2}{/1} {3}or start the Savings Scan{/3}"
+  ],
+  [
+   397,
+   "FinOps glossary: 20 key terms explained briefly and clearly, from cloud waste and rightsizing to Reserved Instances and the FinOps Lifecycle."
+  ],
+  [
+   398,
+   "20 key FinOps terms explained briefly and clearly."
+  ],
+  [
+   399,
+   "FinOps Glossary: key terms from A to Z"
+  ],
+  [
+   400,
+   "The uncontrolled growth of SaaS subscriptions within an organisation."
+  ],
+  [
+   401,
+   "20 key terms from FinOps and cloud cost management, explained briefly and clearly."
+  ],
+  [
+   402,
+   "A certification from the FinOps Foundation that demonstrates someone understands and can apply the FinOps framework."
+  ],
+  [
+   403,
+   "The three continuous phases of the FinOps framework: Inform, Optimize and Operate."
+  ],
+  [
+   404,
+   "Adjusting the capacity of a resource to actual usage."
+  ],
+  [
+   405,
+   "Consistently managing costs, access and policy across multiple cloud providers."
+  ],
+  [
+   406,
+   "Unused cloud capacity offered at a heavily reduced rate."
+  ],
+  [
+   407,
+   "The practice in which finance, engineering and operations work together to control cloud, SaaS and AI spend."
+  ],
+  [
+   408,
+   "Assigning cloud, SaaS and AI costs to the teams, products or cost centres that cause them."
+  ],
+  [
+   409,
+   "The non-profit organisation behind the FinOps framework, part of the Linux Foundation."
+  ],
+  [
+   410,
+   "A commitment to a specific instance type in a specific region, for 1 or 3 years, in exchange for a discount."
+  ],
+  [
+   411,
+   "The cost of cloud infrastructure expressed per unit of value, for example per customer or per transaction."
+  ],
+  [
+   412,
+   "Controlling spend on AI and LLM workloads: compute for training and inference, API costs from model providers, and data storage."
+  ],
+  [
+   413,
+   "Collective name for discounts you get in exchange for a usage or spend commitment to a cloud provider."
+  ],
+  [
+   414,
+   "Labelling cloud resources with metadata such as team, project or environment."
+  ],
+  [
+   415,
+   "Two ways of making cloud costs visible per team or product; with chargeback the amount is actually charged."
+  ],
+  [
+   416,
+   "Automatically flagging unexpected cost spikes."
+  ],
+  [
+   417,
+   "Cloud capacity that is paid for but not used usefully."
+  ],
+  [
+   418,
+   "A commitment to a fixed amount of compute spend per hour, for 1 or 3 years, regardless of instance type or region."
+  ],
+  [
+   419,
+   "The full cost of a technology choice over its entire lifetime."
+  ],
+  [
+   420,
+   "Umbrella term for the financial management of cloud spend, of which FinOps is the most common practice."
+  ],
+  [
+   421,
+   "FinOps Radar: cloud, AI and RI costs in one tool | AX1S Infra"
+  ],
+  [
+   423,
+   "One radar, three ways{1}to understand your tech costs."
+  ],
+  [
+   424,
+   "Choose below where you want to get a grip: cloud costs, AI costs, or Reserved Instances vs. Savings Plans. No obligation, no waiting."
+  ],
+  [
+   425,
+   "{1}← Choose another tool{/1}"
+  ],
+  [
+   426,
+   "{1}Answer the questions again{/1}"
+  ],
+  [
+   427,
+   "The free FinOps Radar: cloud cost quiz, AI cost calculator and RI vs. Savings Plan comparison in one tool. Pick your angle, instant result, no obligation."
+  ],
+  [
+   428,
+   "The free FinOps Radar: cloud cost quiz, AI cost calculator and RI vs. Savings Plan comparison in one tool."
+  ],
+  [
+   429,
+   "Free tool with three angles: cloud cost quiz, AI cost calculator and RI vs. Savings Plan comparison."
+  ],
+  [
+   430,
+   "Free tool with three angles: cloud cost quiz, AI cost calculator and RI vs. Savings Plan comparison. No installation or account needed."
+  ],
+  [
+   431,
+   "AI Cost Calculator: calculate your LLM spend | AX1S Infra"
+  ],
+  [
+   432,
+   "Enter your AI usage and instantly see an indication of the monthly costs, their breakdown and where there is most to steer. No email address needed, this is simply a free tool."
+  ],
+  [
+   433,
+   "Model class"
+  ],
+  [
+   434,
+   "Flagship model (e.g. GPT-4o / Claude Sonnet class)"
+  ],
+  [
+   435,
+   "Mid-range model (e.g. GPT-4o-mini / Claude Haiku class)"
+  ],
+  [
+   436,
+   "Lightweight/fast model"
+  ],
+  [
+   437,
+   "Number of requests per day"
+  ],
+  [
+   438,
+   "Avg. input tokens per request"
+  ],
+  [
+   439,
+   "A page of A4 text is roughly 700 tokens."
+  ],
+  [
+   440,
+   "Avg. output tokens per request"
+  ],
+  [
+   441,
+   "Output tokens are 3–4x more expensive than input, depending on the model."
+  ],
+  [
+   442,
+   "Prompt caching / context reuse"
+  ],
+  [
+   443,
+   "No, every request is standalone"
+  ],
+  [
+   444,
+   "Partly, for some of the requests"
+  ],
+  [
+   445,
+   "Yes, structurally for fixed system prompts/context"
+  ],
+  [
+   446,
+   "Expected usage growth per month (%, optional)"
+  ],
+  [
+   447,
+   "Estimated costs"
+  ],
+  [
+   448,
+   "What stands out"
+  ],
+  [
+   449,
+   "Indicative, average market prices per 1 million tokens for the model classes mentioned. Actual rates differ per provider, model and moment. This tool gives a first direction, not a quote."
+  ],
+  [
+   450,
+   "Want us to calculate this for your specific AI usage?"
+  ],
+  [
+   451,
+   "A free Cloud & AI Savings Scan gives the exact picture, including concrete savings options."
+  ],
+  [
+   452,
+   "Instantly calculate what your AI usage will cost based on model, volume and tokens. Free calculator with cost breakdown and growth projection, no email address needed."
+  ],
+  [
+   453,
+   "Instantly calculate what your AI usage will cost. Free, no email address needed."
+  ],
+  [
+   458,
+   "Free calculator to estimate AI and LLM costs based on model, request volume and tokens, including growth projection."
+  ],
+  [
+   459,
+   "Free calculator to estimate AI and LLM costs based on model class, request volume, tokens and caching, including growth projection. No email address or account needed."
+  ],
+  [
+   460,
+   "RI vs. Savings Plan Calculator: free calculator | AX1S Infra"
+  ],
+  [
+   461,
+   "Enter your situation and instantly see the difference between On-Demand, Reserved Instances and Savings Plans. No email address needed, this is simply a free tool."
+  ],
+  [
+   462,
+   "Monthly on-demand compute spend (€)"
+  ],
+  [
+   463,
+   "Workload predictability"
+  ],
+  [
+   464,
+   "Very stable (hardly changes)"
+  ],
+  [
+   465,
+   "Fairly stable (fluctuates somewhat)"
+  ],
+  [
+   466,
+   "Variable (often scales up/down)"
+  ],
+  [
+   467,
+   "Desired commitment level"
+  ],
+  [
+   470,
+   "Annual comparison"
+  ],
+  [
+   471,
+   "Indicative, market-average discount percentages for major cloud providers. Actual discounts differ per instance type, region and vendor. This tool gives a first direction, not a quote."
+  ],
+  [
+   472,
+   "Want us to calculate this for your specific architecture?"
+  ],
+  [
+   473,
+   "A free Cloud & AI Savings Scan gives the exact picture, tailored to your instance mix."
+  ],
+  [
+   474,
+   "20 key terms explained briefly and clearly, including Reserved Instances and Savings Plans."
+  ],
+  [
+   475,
+   "Background article"
+  ],
+  [
+   476,
+   "Reserved Instances vs. Savings Plans: which instrument fits your workload?"
+  ],
+  [
+   477,
+   "{1}Read the article {2}{/1}"
+  ],
+  [
+   478,
+   "Instantly compare On-Demand, Reserved Instances and Savings Plans based on your cloud spend and workload. Free calculator, no email address needed."
+  ],
+  [
+   479,
+   "Instantly compare On-Demand, Reserved Instances and Savings Plans. Free, no email address needed."
+  ],
+  [
+   481,
+   "Free calculator to compare On-Demand, Reserved Instances and Savings Plans based on cloud spend and workload predictability."
+  ],
+  [
+   482,
+   "Free calculator to compare On-Demand, Reserved Instances and Savings Plans based on cloud spend and workload predictability. No email address or account needed."
+  ],
+  [
+   483,
+   "5 costly mistakes that make your public cloud needlessly expensive | AX1S Infra"
+  ],
+  [
+   484,
+   "It's rarely one wrong setting"
+  ],
+  [
+   485,
+   "It lies in architecture, capacity and contracts that no longer match how something is actually used. That makes these mistakes harder to find than an isolated misconfiguration, but they are the pattern we see most often at AX1S in cloud bills that come in far higher than necessary. These are the five that most often carry through into the bill."
+  ],
+  [
+   486,
+   "1. You only calculate with today's usage"
+  ],
+  [
+   487,
+   "What happens to costs if the number of users, transactions or the amount of data doubles? Anyone who doesn't ask that question upfront is confronted with it at the first growth spurt. So calculate in advance with several scenarios: normal usage, growth and peak load, so the architecture works not just for today."
+  ],
+  [
+   488,
+   "2. You reserve capacity \"to be safe\""
+  ],
+  [
+   489,
+   "Unused capacity costs money too, even when nothing runs on it. So look at actual usage and, where possible, make sure capacity can scale up and down automatically, instead of sizing well above need by default."
+  ],
+  [
+   490,
+   "3. You commit to long-term obligations too early"
+  ],
+  [
+   491,
+   "Reserved Instances and Savings Plans can deliver a lot of benefit, but only if you actually use the capacity. So only commit once usage is predictable enough. (Not sure which form suits you? Read our article on {1}Reserved Instances vs. Savings Plans{/1}, or calculate it directly with our {2}RI vs. Savings Plan Calculator{/2}.)"
+  ],
+  [
+   492,
+   "4. You only look at compute"
+  ],
+  [
+   493,
+   "A cloud environment consists of more than servers. Storage, databases, backups, networking, logging and managed services often weigh at least as heavily in the total bill. So look at the cost of the entire workload, not just its most visible component."
+  ],
+  [
+   494,
+   "5. You only look at costs once the environment is already running"
+  ],
+  [
+   495,
+   "You can still optimise then, but important choices have often already been made. So include costs during the design phase. Not only: does this architecture work technically? But also: what does this architecture cost at growth and over the full period of use?"
+  ],
+  [
+   496,
+   "That is what FinOps is more about, according to AX1S: not just saving afterwards, but making better choices upfront. (Is your environment already running and do you want to clean up first? Also read our article on {1}5 ways to eliminate unnecessary cloud costs{/1}.)"
+  ],
+  [
+   497,
+   "Take your three biggest cloud costs from last month. Do you know exactly what causes each one? Usage, overcapacity, contract choices or architecture?"
+  ],
+  [
+   498,
+   "Want to know exactly what the cause is in your environment?"
+  ],
+  [
+   499,
+   "It's rarely one wrong setting. Five architecture, capacity and contract choices that most often carry through into an unnecessarily high cloud bill, and how to avoid them."
+  ],
+  [
+   500,
+   "Five architecture, capacity and contract choices that most often carry through into an unnecessarily high cloud bill."
+  ],
+  [
+   501,
+   "5 ways to eliminate unnecessary cloud costs | AX1S Infra"
+  ],
+  [
+   502,
+   "Why cloud costs creep up"
+  ],
+  [
+   503,
+   "Cloud costs rarely grow because of one big mistake. They build up through a pile of small decisions: a test environment that keeps running after the sprint, a storage volume that was never cleaned up, an instance chosen two sizes too big \"just to be sure\". Harmless on their own, but together they quickly add up to tens of percent of unnecessary spend."
+  ],
+  [
+   504,
+   "The good news: all these sources of waste can be recognised and fixed without it costing performance or agility. Below are the five places where we most often find immediate savings at customers."
+  ],
+  [
+   505,
+   "1. First map your usage"
+  ],
+  [
+   506,
+   "You can't save on what you can't see. The first step is always a baseline: which resources are running, who created them, and what are they actually used for? A good tagging strategy is indispensable here: without consistent tags for team, project and environment, cost analysis stays guesswork."
+  ],
+  [
+   507,
+   "2. Clean up unused resources"
+  ],
+  [
+   508,
+   "This is almost always the quickest win. Examples we come across structurally:"
+  ],
+  [
+   509,
+   "{1} Detached storage volumes that were never deleted after a server was torn down"
+  ],
+  [
+   510,
+   "{1} Snapshots and backups retained far longer than policy prescribes"
+  ],
+  [
+   511,
+   "{1} Load balancers and IP addresses without active traffic"
+  ],
+  [
+   512,
+   "{1} Test and staging environments that simply keep running after office hours"
+  ],
+  [
+   513,
+   "3. Rightsizing: pay for what you need"
+  ],
+  [
+   514,
+   "Instances are often oversized at the start of a project and never reconsidered afterwards. By analysing usage data over a few weeks, you can systematically determine the right instance size, often with 20 to 40 percent savings on the workload concerned, without any impact on performance."
+  ],
+  [
+   515,
+   "4. Use commitment discounts where possible"
+  ],
+  [
+   516,
+   "For predictable, continuous workloads, substantial discounts are waiting via Reserved Instances or Savings Plans. The trick is to commit only on the part of your usage that is structural, and to leave variable or uncertain workloads on on-demand. (You can read more about this in our article on {1}Reserved Instances vs. Savings Plans{/1}.)"
+  ],
+  [
+   517,
+   "5. Make costs visible per team"
+  ],
+  [
+   518,
+   "As soon as teams see for themselves what their infrastructure costs, behaviour changes on its own. Cost allocation per team or product isn't meant to punish, but to create ownership. After all, the most sustainable form of saving is the one that doesn't have to be enforced again and again."
+  ],
+  [
+   519,
+   "Our own engagements show that these five steps together are generally good for an average saving of 23% on cloud and compute spend, without compromising scalability."
+  ]
+ ]
+}

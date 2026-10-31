@@ -44,3 +44,18 @@ AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klante
 - Cloud & AI Savings Scan (gratis): https://ax1s-infra.com/savings-scan.html
 - Jelle van Zantwijk (Finance & FinOps): https://www.linkedin.com/in/jellevanzantwijk/
 - Tom Prager (AI Infrastructure): https://www.linkedin.com/in/tom-prager-898899285/
+
+## English version
+
+The full site is also available in English under https://ax1s-infra.com/en/ (language toggle top right on every page). Every Dutch page has an English twin at the same path, e.g. /blog/x.html becomes /en/blog/x.html.
+
+- [Homepage (EN)](https://ax1s-infra.com/en/): services, team, FinOps explainer, FAQ and contact
+- [Cloud & AI Savings Scan (EN)](https://ax1s-infra.com/en/savings-scan.html): free, non-binding scan of cloud and AI spend with main cost drivers, optimisation opportunities and an indication of savings potential
+- [FinOps services (EN)](https://ax1s-infra.com/en/finops-diensten.html): three ways to start, from a free Cloud & AI Savings Scan to a focused FinOps engagement or ongoing FinOps-as-a-Service
+- [What is FinOps? (EN)](https://ax1s-infra.com/en/wat-is-finops.html): definition and the FinOps Lifecycle (Inform, Optimize, Operate)
+- [Free tools, templates & checklists (EN)](https://ax1s-infra.com/en/gratis-tools.html): overview of all free resources
+- [FinOps Radar (EN)](https://ax1s-infra.com/en/finops-radar.html): free tool with three angles: cloud cost quiz, AI cost calculator and RI vs. Savings Plan comparison
+- [RI vs. Savings Plan Calculator (EN)](https://ax1s-infra.com/en/ri-vs-savings-plan-calculator.html): free calculator, no email needed
+- [AI Cost Calculator (EN)](https://ax1s-infra.com/en/ai-kosten-calculator.html): free calculator for AI/LLM costs by model, volume and tokens, no email needed
+- [FinOps Glossary (EN)](https://ax1s-infra.com/en/finops-glossarium.html): 20 key terms from FinOps and cloud cost management
+- [Insights / blog (EN)](https://ax1s-infra.com/en/): all 20 articles are available under https://ax1s-infra.com/en/blog/

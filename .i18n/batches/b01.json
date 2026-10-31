@@ -1,0 +1,441 @@
+{
+ "same": [
+  0,
+  1,
+  22,
+  23,
+  24,
+  25,
+  26,
+  28,
+  29,
+  43,
+  54,
+  55,
+  59,
+  103,
+  104,
+  105,
+  106,
+  20,
+  21
+ ],
+ "pairs": [
+  [
+   2,
+   "{1}Services & options{/1} {2}Book a Free Savings Scan{/2}"
+  ],
+  [
+   3,
+   "{1}Free calculator{/1}"
+  ],
+  [
+   4,
+   "AI Cost Calculator"
+  ],
+  [
+   5,
+   "{1}Start the free Savings Scan {2}{/1}"
+  ],
+  [
+   6,
+   "More free tools"
+  ],
+  [
+   7,
+   "Cloud & AI Savings Scan"
+  ],
+  [
+   8,
+   "Find out where your cloud and AI spend goes and what you could save."
+  ],
+  [
+   9,
+   "{1}Start the Savings Scan {2}{/1}"
+  ],
+  [
+   10,
+   "Cloud costs, AI costs or RI vs. Savings Plan: pick your angle and get an instant result."
+  ],
+  [
+   11,
+   "{1}Start the Radar {2}{/1}"
+  ],
+  [
+   12,
+   "RI vs. Savings Plan Calculator"
+  ],
+  [
+   13,
+   "Compare On-Demand, Reserved Instances and Savings Plans. No email needed."
+  ],
+  [
+   14,
+   "{1}Open the calculator {2}{/1}"
+  ],
+  [
+   15,
+   "FinOps Glossary"
+  ],
+  [
+   16,
+   "20 key terms explained briefly and clearly, from cloud waste to the FinOps Lifecycle."
+  ],
+  [
+   17,
+   "{1}View the glossary {2}{/1}"
+  ],
+  [
+   18,
+   "{1}View all free tools & templates →{/1} {2}View our services & options →{/2}"
+  ],
+  [
+   19,
+   "FinOps & Infrastructure Consultants{1}Amsterdam, the Netherlands"
+  ],
+  [
+   27,
+   "{1}Start the free Savings Scan {2}{/1} {3}Services & options{/3}"
+  ],
+  [
+   30,
+   "5 costly mistakes that make your public cloud needlessly expensive"
+  ],
+  [
+   31,
+   "How to prevent an IT bill that comes in 3x higher than planned"
+  ],
+  [
+   32,
+   "5 ways to eliminate unnecessary cloud costs"
+  ],
+  [
+   33,
+   "Reserved Instances vs. Savings Plans"
+  ],
+  [
+   34,
+   "A gauge swinging into the red: five mistakes that drive cloud costs up"
+  ],
+  [
+   35,
+   "Cost forecast coming in 3x higher than the planned IT bill"
+  ],
+  [
+   36,
+   "Dashboard showing falling cloud costs and infrastructure"
+  ],
+  [
+   37,
+   "Comparison of Reserved Instances and Savings Plans"
+  ],
+  [
+   38,
+   "More Insights"
+  ],
+  [
+   39,
+   "{1}Read more {2}{/1}{3}"
+  ],
+  [
+   40,
+   "{1}{2} Back to Insights{/1} {3}Cloud{/3}"
+  ],
+  [
+   41,
+   "The free Cloud & AI Savings Scan maps your main cost drivers and optimisation opportunities."
+  ],
+  [
+   42,
+   "{1}or start with the FinOps Radar{/1}"
+  ],
+  [
+   44,
+   "The FinOps maturity model"
+  ],
+  [
+   45,
+   "{1}Customer case{/1}"
+  ],
+  [
+   46,
+   "Case: 23% savings in a focused engagement"
+  ],
+  [
+   47,
+   "Crawl, walk, run: the FinOps maturity model as a growth ladder"
+  ],
+  [
+   48,
+   "Team celebrates 23% savings on cloud costs"
+  ],
+  [
+   49,
+   "{1}Start the FinOps Radar {2}{/1} {3}Services & options{/3}"
+  ],
+  [
+   50,
+   "{1}or start the Savings Scan{/1}"
+  ],
+  [
+   51,
+   "{1}{2} Back to Insights{/1} {3}FinOps{/3}"
+  ],
+  [
+   52,
+   "Curious what this means for your organisation?"
+  ],
+  [
+   53,
+   "Do the FinOps Radar and discover your score and savings potential in 2 minutes."
+  ],
+  [
+   56,
+   "Wait a moment... who actually steers our IT costs?"
+  ],
+  [
+   57,
+   "The trillion-dollar casino: tracking AI costs, but no view on ROI"
+  ],
+  [
+   58,
+   "AI budget exceeded? You're not the only one"
+  ],
+  [
+   60,
+   "Frequently asked questions about cloud costs and FinOps"
+  ],
+  [
+   61,
+   "AI budget exceeded: rising inference costs and a warning on a dashboard"
+  ],
+  [
+   62,
+   "Visual representation of frequently asked questions about cloud costs and FinOps"
+  ],
+  [
+   63,
+   "{1}{2} Back to Insights{/1} {3}AI{/3}"
+  ],
+  [
+   64,
+   "Four departments around IT costs: finance, IT, procurement and business"
+  ],
+  [
+   65,
+   "5 steps to a predictable cloud budget"
+  ],
+  [
+   66,
+   "3 signs your AI costs are getting out of hand"
+  ],
+  [
+   67,
+   "AI budget exceeded: rising inference costs"
+  ],
+  [
+   68,
+   "AI spend ROI shown as a roulette table"
+  ],
+  [
+   69,
+   "Dashboard with cloud budget trend and calendar"
+  ],
+  [
+   70,
+   "This AI project looked cheap, until the bill arrived"
+  ],
+  [
+   71,
+   "Oh no, nobody ever checked this cost item"
+  ],
+  [
+   72,
+   "Three phone screens showing an AI pilot growing into production, with almost 300x higher costs"
+  ],
+  [
+   73,
+   "A reserved instance commitment that has not been reviewed for two years"
+  ],
+  [
+   74,
+   "Three signs that AI costs are getting out of hand"
+  ],
+  [
+   75,
+   "AI spend ROI shown as a roulette table, a symbol for gambling without visibility"
+  ],
+  [
+   76,
+   "Oh no, the budget has been exceeded again"
+  ],
+  [
+   77,
+   "Four steps from quarter start to budget overrun caused by growing AI adoption"
+  ],
+  [
+   78,
+   "Three phone screens showing an AI pilot growing into production"
+  ],
+  [
+   79,
+   "Do the FinOps Radar and discover your own savings potential in 2 minutes."
+  ],
+  [
+   80,
+   "Multi-cloud governance without the complexity"
+  ],
+  [
+   81,
+   "Azure, AWS and Google Cloud connected through central governance and compliance"
+  ],
+  [
+   82,
+   "Wait, is this investment still profitable?"
+  ],
+  [
+   83,
+   "The shift from cloud to all technology"
+  ],
+  [
+   84,
+   "The shift from cloud to the full technology stack"
+  ],
+  [
+   85,
+   "Five costly mistakes that make public cloud needlessly expensive"
+  ],
+  [
+   86,
+   "3 steps to find waste in the cloud"
+  ],
+  [
+   87,
+   "An AI investment whose profitability was never recalculated"
+  ],
+  [
+   88,
+   "Three numbered steps to find waste in the cloud"
+  ],
+  [
+   89,
+   "{1}{2} Back to Insights{/1} {3}Governance{/3}"
+  ],
+  [
+   90,
+   "Dashboard with cloud budget trend and calendar, a symbol for a predictable cloud budget"
+  ],
+  [
+   91,
+   "Three steps to find waste in the cloud"
+  ],
+  [
+   92,
+   "Who steers cloud and AI costs?"
+  ],
+  [
+   93,
+   "Four questions around a central cloud and AI cost symbol"
+  ],
+  [
+   94,
+   "Four departments around a central FinOps dashboard: finance, IT, procurement and business"
+  ],
+  [
+   95,
+   "{1} Insight into your main cost drivers"
+  ],
+  [
+   96,
+   "{1} First optimisation opportunities mapped"
+  ],
+  [
+   97,
+   "{1} Indication of the savings potential"
+  ],
+  [
+   98,
+   "{1} Prioritisation and concrete recommendations for next steps"
+  ],
+  [
+   99,
+   "What is FinOps?"
+  ],
+  [
+   100,
+   "The definition and the FinOps Lifecycle: Inform, Optimize, Operate."
+  ],
+  [
+   101,
+   "{1}Read the explainer {2}{/1}"
+  ],
+  [
+   102,
+   "{1}{2} Back to home{/1} {3}Knowledge base{/3}"
+  ],
+  [
+   107,
+   "Instantly calculate what your AI usage will cost, including breakdown and growth projection."
+  ],
+  [
+   108,
+   "Knowledge base"
+  ],
+  [
+   109,
+   "FinOps Quick-Win Checklist"
+  ],
+  [
+   110,
+   "16 concrete actions, from immediate quick wins to structural embedding. Print it out and tick them off. (Dutch version)"
+  ],
+  [
+   111,
+   "{1}Download checklist {2}{/1}"
+  ],
+  [
+   112,
+   "{1}FinOps Certified Practitioner{/1} Certified by the FinOps Foundation"
+  ],
+  [
+   113,
+   "{1} Non-binding and without obligations"
+  ],
+  [
+   114,
+   "{1}or fill in the form{/1}"
+  ],
+  [
+   115,
+   "Name"
+  ],
+  [
+   116,
+   "Company"
+  ],
+  [
+   117,
+   "Business email address"
+  ],
+  [
+   118,
+   "How can we help you?"
+  ],
+  [
+   120,
+   "Company name"
+  ],
+  [
+   122,
+   "AX1S Infra | FinOps & Infrastructure Specialists"
+  ],
+  [
+   119,
+   "Prefer to email directly? {1}info@ax1s-infra.com{/1}"
+  ],
+  [
+   121,
+   "name@company.com"
+  ]
+ ]
+}

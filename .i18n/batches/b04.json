@@ -1,0 +1,725 @@
+{
+ "same": [],
+ "pairs": [
+  [
+   520,
+   "The good news is that you don't have to do this perfectly in one go. Start with the clean-up, because that delivers visible results fastest, and build from there on tagging, rightsizing and commitments."
+  ],
+  [
+   521,
+   "Five concrete places where AX1S Infra most often finds immediate savings in cloud costs at customers, without giving up performance or agility."
+  ],
+  [
+   522,
+   "Five concrete places where AX1S Infra most often finds immediate savings in cloud costs at customers."
+  ],
+  [
+   523,
+   "AI budget exceeded? You're not the only one | AX1S Infra"
+  ],
+  [
+   524,
+   "How a pilot grows into a cost item nobody saw coming"
+  ],
+  [
+   525,
+   "The pattern is familiar by now. A pilot with a few LLM calls grows within a few months into ten teams running on the same model. Nobody let that happen on purpose: it just happened, because nobody was tracking it. There was no moment when someone consciously decided to triple the budget. There was only a series of small, logical decisions that together produced a very different bill."
+  ],
+  [
+   526,
+   "Where it goes wrong"
+  ],
+  [
+   527,
+   "At AX1S we see four recurring causes when an AI budget gets out of hand."
+  ],
+  [
+   528,
+   "{1} {2}Inference isn't seen as a cost item, but as \"just an API call\".{/2} Until the invoice is three times as high as last month, and nobody can pinpoint which team or feature is responsible."
+  ],
+  [
+   529,
+   "{1} {2}Engineering builds, finance pays.{/2} Who causes the costs and who is responsible for them are rarely the same person. Without clear cost allocation, nobody feels ownership of the usage."
+  ],
+  [
+   530,
+   "{1} {2}GPU capacity is reserved upfront, not evaluated afterwards.{/2} Overcapacity for AI workloads is more expensive than in regular cloud environments, and often only becomes apparent when it's already too late."
+  ],
+  [
+   531,
+   "{1} {2}Nobody asks upfront: what will this model cost when scaled to production?{/2} A pilot with 50 users behaves completely differently financially from a production environment with 5,000 users, but that calculation is rarely made in advance."
+  ],
+  [
+   532,
+   "Do you want to make that calculation upfront? Our {1}AI Cost Calculator{/1} shows directly, based on model class, volume and tokens, what a chosen set-up will cost, including the breakdown and a growth projection to production scale."
+  ],
+  [
+   533,
+   "The figures confirm the pattern: 98% of FinOps practitioners now name AI cost management as a top priority, compared with only a fraction of that two years ago. That is no coincidence. It is an industry catching up on a problem that has existed for a long time."
+  ],
+  [
+   534,
+   "The good news: each of these four causes can be recognised and fixed as soon as you start looking at them. Begin with the question most organisations can't yet answer: do you know exactly what your latest AI feature costs in inference per 1,000 users? If not, that is precisely where it goes wrong."
+  ],
+  [
+   535,
+   "Want to know where your AI budget is going?"
+  ],
+  [
+   536,
+   "An AI pilot with a few LLM calls grows within months into a cost item nobody saw coming. Four reasons why AI costs so often get out of hand, and what to do about it."
+  ],
+  [
+   537,
+   "An AI pilot with a few LLM calls grows within months into a cost item nobody saw coming. Four reasons why AI costs so often get out of hand."
+  ],
+  [
+   538,
+   "Four reasons why AI costs so often get out of hand, and what to do about it."
+  ],
+  [
+   539,
+   "AI spend ROI shown as a casino table"
+  ],
+  [
+   540,
+   "3 signs your AI costs are getting out of hand | AX1S Infra"
+  ],
+  [
+   541,
+   "AI costs scale with users, not with infrastructure"
+  ],
+  [
+   542,
+   "AI costs behave differently from a regular cloud bill. They don't scale with your infrastructure, but with your users. And users simply grow faster than budgets are adjusted."
+  ],
+  [
+   543,
+   "These are three signs we encounter most often at organisations where the AI bill has already got out of hand, or is about to in the short term."
+  ],
+  [
+   544,
+   "1. Nobody can answer the question \"what does our AI feature cost per user?\""
+  ],
+  [
+   545,
+   "If that question gets a shrug, that is itself the signal. A team building a chatbot or recommendation engine looks at functionality. Nobody calculates by default what each extra user adds in inference costs. At AX1S we see this in almost every intake conversation: the technology works, adoption grows, but the cost per user has never been calculated. With the {1}AI Cost Calculator{/1} you can work it out in a few minutes, including the growth projection."
+  ],
+  [
+   546,
+   "2. The monthly invoice structurally deviates from the previous one, for no clear reason"
+  ],
+  [
+   547,
+   "With regular cloud costs, an increase can usually be traced to a concrete cause: new capacity, a new project. With AI costs that clear trigger is often missing. The invoice simply rises with usage, and nobody has actively tracked that usage. Anyone who has seen this pattern for a few months without an explanation is almost certainly behind the facts."
+  ],
+  [
+   548,
+   "3. Success first feels like a compliment, and only later like a bill"
+  ],
+  [
+   549,
+   "An AI feature takes off. Users find it valuable, adoption grows, everyone is happy. That very success is what lets the costs quietly grow along, without anyone consciously looking at it. By the time the invoice stands out, the growth is long under way. Not because something went wrong, but because nobody associates success with a rising cost item."
+  ],
+  [
+   550,
+   "None of these three signs is a problem on its own. The problem arises when nobody recognises them before the bill comes in at three times what was expected."
+  ],
+  [
+   551,
+   "Do you calculate your AI costs per user now, or only as a total at the bottom of the invoice?"
+  ],
+  [
+   552,
+   "Want to know where your AI costs are going?"
+  ],
+  [
+   553,
+   "AI costs don't scale with infrastructure, but with users. Three signs we encounter most often at organisations where the AI bill is getting out of hand or is about to."
+  ],
+  [
+   554,
+   "AI costs don't scale with infrastructure, but with users. Three signs we encounter most often at organisations with AI costs that are getting out of hand."
+  ],
+  [
+   555,
+   "Three signs we encounter most often at organisations where the AI bill is getting out of hand."
+  ],
+  [
+   556,
+   "Three signs that AI costs are getting out of hand, visualised with a warning triangle"
+  ],
+  [
+   557,
+   "This AI project looked cheap, until the bill arrived | AX1S Infra"
+  ],
+  [
+   558,
+   "Month 1: a small pilot"
+  ],
+  [
+   559,
+   "A team gets the green light for a pilot: an AI model that answers customer questions automatically. Test budget: small. Scope: a hundred conversations a day, purely for validation."
+  ],
+  [
+   560,
+   "The results are good. Customers respond positively, the team is enthusiastic, and the pilot's costs barely stand out in the monthly invoice. Everyone is happy. The idea is approved for roll-out to the entire customer service department."
+  ],
+  [
+   561,
+   "Month 2: roll-out without recalculation"
+  ],
+  [
+   562,
+   "The model goes live for all incoming conversations. Nobody recalculates upfront what that means; the pilot worked well, so why would scaling up be any different from more of the same?"
+  ],
+  [
+   563,
+   "The number of conversations rises from a hundred to ten thousand a day. Not gradually, but immediately, because that was the whole point of the roll-out."
+  ],
+  [
+   564,
+   "Month 3: the bill"
+  ],
+  [
+   565,
+   "The first full invoice comes in. Nobody had a number in mind to compare it against, so at first the amount doesn't even stand out. Only when finance puts it next to the previous month does it become clear: the costs are not a hundred times, but almost three hundred times higher than during the pilot."
+  ],
+  [
+   566,
+   "Only then does the reason become visible. The pilot ran on a test environment with a different pricing model. Production has different rates, and nobody had calculated that difference upfront."
+  ],
+  [
+   567,
+   "The model still works well. Customers are still satisfied. But the cost per conversation turns out to be three times higher than the business case had foreseen, and that difference could have been calculated from day one, if someone had asked."
+  ],
+  [
+   568,
+   "The lesson isn't in the technology, but in the order. A pilot proves that something works. A calculation at full scale proves that it stays profitable. Those are two different questions, and usually only the first one is asked."
+  ],
+  [
+   569,
+   "With the {1}AI Cost Calculator{/1} that second answer is there within a few minutes, before a pilot goes to production."
+  ],
+  [
+   570,
+   "Has your latest AI pilot been costed at full adoption, or only at test volume?"
+  ],
+  [
+   571,
+   "Want to have that calculated upfront?"
+  ],
+  [
+   572,
+   "A pilot of a hundred conversations a day became a production environment with almost 300x higher costs within two months. Why a pilot proves that something works, and a calculation proves that it stays profitable."
+  ],
+  [
+   573,
+   "A pilot of a hundred conversations a day became a production environment with almost 300x higher costs within two months."
+  ],
+  [
+   574,
+   "From small pilot to almost 300x higher costs, in two months."
+  ],
+  [
+   575,
+   "The trillion-dollar casino: tracking AI costs, but no view on ROI | AX1S Infra"
+  ],
+  [
+   576,
+   "Everyone counts the costs, almost nobody the return"
+  ],
+  [
+   577,
+   "Companies are pouring money into AI en masse, but what it delivers on the bottom line often remains a big question mark. According to the State of FinOps 2026 report, nearly every organisation ({1}98%{/1}) tracks costs diligently. Yet well over {2}40%{/2} is completely in the dark about the actual return, and more than half struggle to get a good view of total spend at all."
+  ],
+  [
+   578,
+   "That is the core of the problem: recording costs is not the same as understanding costs. You do know what is being spent, but not whether that money delivers anything. Without that answer, every next AI investment effectively becomes a gamble based on gut feeling instead of figures."
+  ],
+  [
+   579,
+   "Why AI costs are so unpredictable"
+  ],
+  [
+   580,
+   "Because AI costs are unpredictable and cause huge spikes in the budget, organisations have to get creative. A model that serves 50 users today behaves completely differently financially once that becomes 5,000. Without a clear picture of model choice, token usage and caching, estimating upfront what an AI feature will structurally cost is almost impossible. That is exactly the gap we want to close with the {1}AI Cost Calculator{/1}: a free calculator that, based on model class, volume and tokens, immediately gives an indication of the monthly costs and their breakdown."
+  ],
+  [
+   581,
+   "Financing through infrastructure optimisation"
+  ],
+  [
+   582,
+   "Organisations are now forced to finance AI projects smartly, including through infrastructure optimisations. At AX1S we see organisations switching to more efficient solutions to drastically reduce the base costs of their AI projects, creating financial room to keep experimenting without the budget spiralling out of control."
+  ],
+  [
+   583,
+   "98% of organisations track AI costs. More than 40% don't know what it delivers. That gap is exactly where budget is needlessly burned."
+  ],
+  [
+   584,
+   "AI projects are fantastic, but without the right infrastructure it remains playing in an expensive casino. How do you make sure the AI cloud bill doesn't unexpectedly explode?"
+  ],
+  [
+   585,
+   "Want to know whether your AI base costs can come down?"
+  ],
+  [
+   586,
+   "Nearly every organisation tracks AI costs diligently, but more than 40% don't know the actual return. Why AI spend without ROI visibility looks like gambling, and how to fix that."
+  ],
+  [
+   587,
+   "Nearly every organisation tracks AI costs diligently, but more than 40% don't know the actual return."
+  ],
+  [
+   588,
+   "Why AI spend without ROI visibility looks like gambling, and how to fix that."
+  ],
+  [
+   589,
+   "Oh no, the budget has been exceeded again | AX1S Infra"
+  ],
+  [
+   590,
+   "A reasonable estimate, on paper"
+  ],
+  [
+   591,
+   "At the start of the quarter the cloud budget is set. An amount based on the usage of the previous months, plus a margin for growth. On paper a reasonable estimate."
+  ],
+  [
+   592,
+   "Halfway through the quarter a new feature goes live. Not planned as a big expense, more as a logical next step on the roadmap. Nobody links that go-live back to the budget, because the feature itself costs \"almost nothing\" to build."
+  ],
+  [
+   593,
+   "What nobody calculates"
+  ],
+  [
+   594,
+   "What nobody calculates is what the feature costs to run. The new functionality makes many calls to an external AI model, and every call counts towards the bill. In the first weeks that barely stands out; usage is still low while users discover the feature."
+  ],
+  [
+   595,
+   "Then adoption increases. Exactly as hoped, which makes it hard to see as a problem. More users, more calls, more costs, all in the same direction as the success of the feature itself."
+  ],
+  [
+   596,
+   "Towards the end of the quarter"
+  ],
+  [
+   597,
+   "Towards the end of the quarter the budget has not been slightly exceeded, but by tens of percent. Nobody saw it coming, because nobody had ever linked the new feature to the existing budget. The budget was based on the past, and the feature changed the future without anyone adjusting the amount."
+  ],
+  [
+   598,
+   "In hindsight the question is easy to ask: why wasn't this spotted earlier? The answer is almost always the same. There was no interim moment when anyone put current usage next to the budget. The only check was the report at the end of the quarter, and by then it was too late to adjust."
+  ],
+  [
+   599,
+   "An overrun is rarely the result of one big miss. Usually it is the sum of small, individually logical decisions that were never fed back to the whole."
+  ],
+  [
+   600,
+   "Request the free Cloud & AI Savings Scan and we'll map where your budget and reality threaten to drift apart, before it becomes an overrun. Want a first indication yourself? The {1}FinOps Radar{/1} gives it within 2 minutes."
+  ],
+  [
+   601,
+   "Is there a moment between the start and the end of the quarter when someone puts budget and usage side by side, or does that only happen at the final settlement?"
+  ],
+  [
+   602,
+   "Want to adjust before the end of the quarter?"
+  ],
+  [
+   603,
+   "A new feature with AI calls seemed to cost next to nothing, until the quarterly budget turned out to be exceeded by tens of percent. Why an overrun is rarely one big miss."
+  ],
+  [
+   604,
+   "A new feature with AI calls seemed to cost next to nothing, until the quarterly budget turned out to be exceeded by tens of percent."
+  ],
+  [
+   605,
+   "Budget exceeded by tens of percent due to growing AI calls and adoption."
+  ],
+  [
+   606,
+   "Case: 23% savings in a focused engagement | AX1S Infra"
+  ],
+  [
+   607,
+   "{1}{2} Back to Insights{/1} {3}Customer case{/3}"
+  ],
+  [
+   608,
+   "The starting point"
+  ],
+  [
+   609,
+   "A fast-growing SaaS scale-up approached us with a familiar problem: the cloud bill was growing faster than revenue. Nobody could say exactly why: there was no clear picture of which team used what, and optimisation had never been a structural part of engineering. The pressure to scale had simply taken priority over cost control."
+  ],
+  [
+   610,
+   "Phase 1: analysis"
+  ],
+  [
+   611,
+   "We began with a full inventory of cloud usage over the previous three months, combined with a tagging audit. It soon turned out that a substantial part of the infrastructure was not labelled consistently, which had made cost analysis per team impossible until then. In parallel we mapped the largest cost items: compute, storage and data transfer, in that order."
+  ],
+  [
+   612,
+   "Phase 2: quick wins"
+  ],
+  [
+   613,
+   "While the broader analysis continued, we immediately implemented the first improvements:"
+  ],
+  [
+   614,
+   "{1} Cleaning up unused storage volumes and outdated snapshots"
+  ],
+  [
+   615,
+   "{1} Automatically shutting down test and staging environments outside office hours"
+  ],
+  [
+   616,
+   "{1} Rightsizing the most oversized production instances"
+  ],
+  [
+   617,
+   "Phase 3: structural optimisation"
+  ],
+  [
+   618,
+   "With cleaner and more transparent usage, we could then tackle the structural layer: a Savings Plan aligned with the demonstrably stable base usage, and a tagging standard that was automatically enforced from then on when creating new resources. A monthly cost overview per team was also set up, so that ownership didn't rest with one person but was carried organisation-wide."
+  ],
+  [
+   619,
+   "Result: an average saving of 23% on monthly cloud and compute spend, achieved in a focused engagement from the first intake, with no impact on performance or scalability."
+  ],
+  [
+   620,
+   "What makes this case typical"
+  ],
+  [
+   621,
+   "This outcome doesn't stand alone: the pattern (quick wins in the first weeks, followed by structural optimisation that keeps working in the long term) we see in almost every engagement. The order matters more than the individual measures: without visibility and clean-up first, structural optimisation is hard to sustain."
+  ],
+  [
+   622,
+   "Curious what a comparable engagement would deliver for you?"
+  ],
+  [
+   623,
+   "How a fast-growing SaaS scale-up saved 23% on cloud costs: from tagging audit to Savings Plans and a structural cost overview per team."
+  ],
+  [
+   624,
+   "How a fast-growing SaaS scale-up saved 23% on cloud costs."
+  ],
+  [
+   625,
+   "Customer case"
+  ],
+  [
+   626,
+   "The FinOps maturity model | AX1S Infra"
+  ],
+  [
+   627,
+   "The FinOps maturity model: where does your organisation stand?"
+  ],
+  [
+   628,
+   "Crawl, walk, run"
+  ],
+  [
+   629,
+   "FinOps is not a project with an end date, but a growth path. The FinOps Foundation describes this path in three phases: Crawl, Walk and Run, where each phase represents a deeper level of cost awareness, automation and collaboration between engineering, finance and business. Most organisations underestimate which phase they are actually in, and that is exactly where savings opportunities remain."
+  ],
+  [
+   630,
+   "Crawl: visibility as the starting point"
+  ],
+  [
+   631,
+   "In this phase cost data is fragmented, consistent tagging is missing and cost control is reactive, usually only when the invoice arrives. Recognisable by loose spreadsheets, a single dashboard nobody consults structurally, and surprise afterwards at spikes in usage. This is nothing to be ashamed of: almost every organisation starts here."
+  ],
+  [
+   632,
+   "Walk: from reactive to proactive"
+  ],
+  [
+   633,
+   "Here structure emerges: consistent tagging, recurring cost reports per team, and the first steps towards rightsizing and commitment discounts. Teams start to weigh costs in technical decisions, and there is usually a designated owner (or small team) for FinOps within the organisation."
+  ],
+  [
+   634,
+   "Run: costs as a continuous part of engineering"
+  ],
+  [
+   635,
+   "In the most mature phase cost awareness is woven into the way of working: automated anomaly detection, cost allocation that directly influences teams, and architectural decisions that take cost-effectiveness into account right from the drawing board. Saving is then no longer an action, but a property of the system."
+  ],
+  [
+   636,
+   "{1} Crawl: cost data is visible, but fragmented and reactive"
+  ],
+  [
+   637,
+   "{1} Walk: structural reporting, first optimisations, clear ownership"
+  ],
+  [
+   638,
+   "{1} Run: automated, proactive, embedded in engineering culture"
+  ],
+  [
+   639,
+   "Important: you don't have to be in the same phase for every practice (cost allocation, optimisation, planning). Most organisations, for example, are far along in visibility but still early in automated optimisation."
+  ],
+  [
+   640,
+   "Why this classification is practically useful"
+  ],
+  [
+   641,
+   "The model prevents you from reaching for advanced automation too quickly while the basics (consistent tagging, shared ownership, reliable reporting) are still missing. Conversely, it also prevents mature organisations from getting stuck in manual processes that could have been automated long ago."
+  ],
+  [
+   642,
+   "The first step is simple: map out which phase you are actually in per practice, instead of going on a feeling. That starting point immediately determines which interventions deliver the most."
+  ],
+  [
+   643,
+   "Want to know where your organisation stands?"
+  ],
+  [
+   644,
+   "Do the FinOps Radar and find out in 2 minutes which phase your organisation is in."
+  ],
+  [
+   645,
+   "The FinOps maturity model mapped out: from Crawl to Run, per practice (cost allocation, optimisation, planning). Where does your organisation stand?"
+  ],
+  [
+   646,
+   "From Crawl to Run: where does your organisation stand in the FinOps maturity model?"
+  ],
+  [
+   647,
+   "Wait, is this investment still profitable? | AX1S Infra"
+  ],
+  [
+   648,
+   "Eighteen months ago, a clear business case"
+  ],
+  [
+   649,
+   "Eighteen months ago an AI model went live that analyses customer data to make personalised recommendations. The business case was clear: higher conversion, satisfied customers, an investment that would pay for itself within a year."
+  ],
+  [
+   650,
+   "The model is still running. The recommendations work, customers respond positively, and nobody has had reason to doubt it. That is exactly the problem: because it functions well, nobody has ever revisited the original calculation."
+  ],
+  [
+   651,
+   "What has changed in the meantime"
+  ],
+  [
+   652,
+   "A lot has changed in the meantime. The customer base has grown, which means the model is called more often than at the start. Provider prices have risen slightly. And the conversion improvement the model was supposed to deliver has not been measured separately since the first months after go-live."
+  ],
+  [
+   653,
+   "When someone finally takes the plunge and redoes the calculation, the picture turns out different from expected. The costs, through growth and price rises combined, have almost doubled compared with the original estimate. The return has never been re-measured, so nobody can say with certainty whether it has grown along."
+  ],
+  [
+   654,
+   "The model isn't necessarily a bad investment. But nobody can currently say out loud whether that is still true, and that is a different problem from a bad business case: it is a business case that has never been tested again."
+  ],
+  [
+   655,
+   "That is a pattern that occurs more often than you'd think. An investment is approved based on a calculation at one point in time, and then keeps running indefinitely without anyone repeating that calculation."
+  ],
+  [
+   656,
+   "Request the free Cloud & AI Savings Scan and we'll put your current costs next to current usage, so you quickly know whether an investment still delivers what it once promised. Want an indication of current costs yourself first? The {1}AI Cost Calculator{/1} works out model usage, volume and tokens in a few minutes."
+  ],
+  [
+   657,
+   "When did someone last recalculate the profitability of your largest cloud or AI investment?"
+  ],
+  [
+   658,
+   "Want to have your AI investment checked to see if it still pays off?"
+  ],
+  [
+   659,
+   "An AI model has been running well for eighteen months, but nobody has ever revisited the original business case. Why a well-functioning model is not the same as a still-profitable investment."
+  ],
+  [
+   660,
+   "An AI model has been running well for eighteen months, but nobody has ever revisited the original business case."
+  ],
+  [
+   661,
+   "An AI investment can keep running well, but without recalculation you don't know whether it still pays off."
+  ],
+  [
+   662,
+   "An AI investment whose profitability was never recalculated, with rising costs and unknown returns"
+  ],
+  [
+   663,
+   "How do you prevent an IT bill that comes in 3x higher than planned? | AX1S Infra"
+  ],
+  [
+   664,
+   "Start with the architecture, not the invoice"
+  ],
+  [
+   665,
+   "It starts with building in financial logic before the developer takes the code live. At AX1S we too often see organisations looking at the bill too late: only when the environment is already running and the first invoice arrives. At that point you can still optimise, but the most important choices have usually already been made."
+  ],
+  [
+   666,
+   "What the figures show"
+  ],
+  [
+   667,
+   "Data from the FinOps Foundation shows how the role of the tech professional is changing, and why this is increasingly becoming a shared responsibility instead of something that lands with finance afterwards."
+  ],
+  [
+   668,
+   "{1} {2}78%{/2} of FinOps practitioners now report directly to IT leadership (CTO/CIO)."
+  ],
+  [
+   669,
+   "{1} {2}53%{/2} of teams with executive support help decide which cloud services are chosen."
+  ],
+  [
+   670,
+   "{1} Organisations with an IT budget of more than {2}$100 million{/2} work with larger FinOps teams of {3}8 to 10 specialists{/3}."
+  ],
+  [
+   671,
+   "Calculate the architecture before roll-out"
+  ],
+  [
+   672,
+   "The challenge is to calculate what the architecture will cost before rolling out the code, not to discover afterwards that an instance choice or an RI commitment doesn't match actual usage. Once your architecture is right, you prevent the damage afterwards. For upfront calculations, our {1}RI vs. Savings Plan Calculator{/1} and {2}AI Cost Calculator{/2} help: both give a concrete picture within a few minutes of what a chosen set-up will structurally cost."
+  ],
+  [
+   673,
+   "The larger the IT budget, the sooner FinOps takes part in architecture decisions instead of explaining the bill afterwards. That difference lies precisely in the moment the cost question is asked: before the roll-out, not after."
+  ],
+  [
+   674,
+   "Do your developers already steer on the financial impact of their code, or does that only become clear once the invoice arrives?"
+  ],
+  [
+   675,
+   "Source: State of FinOps 2026 / FinOps Foundation / Tokenomics Foundation"
+  ],
+  [
+   676,
+   "Want to have architecture costs calculated upfront?"
+  ],
+  [
+   677,
+   "Building in financial logic before code goes live is the cheapest FinOps measure there is. What the FinOps Foundation's figures show about the role of the tech professional."
+  ],
+  [
+   678,
+   "Building in financial logic before code goes live is the cheapest FinOps measure there is. What the FinOps Foundation's figures show."
+  ],
+  [
+   679,
+   "Building in financial logic before code goes live is the cheapest FinOps measure there is."
+  ],
+  [
+   680,
+   "Oh no, nobody ever checked this cost item | AX1S Infra"
+  ],
+  [
+   681,
+   "Two years ago a logical choice"
+  ],
+  [
+   682,
+   "Two years ago a reserved instance was purchased. At the time a logical choice: the team knew exactly what would be running, the discount was attractive, and the commitment seemed a sensible investment."
+  ],
+  [
+   683,
+   "A lot has changed since. A migration to a new architecture, a team that was split up, a product that was developed further. Nobody ever checked whether that old commitment still fits what is actually running now."
+  ],
+  [
+   684,
+   "Stable, until someone asks"
+  ],
+  [
+   685,
+   "The amount still sits neatly in the monthly report. Unchanged, quarter after quarter. To anyone glancing at it, that looks reassuring: stable, predictable, no surprises."
+  ],
+  [
+   686,
+   "Until someone, during a scan, asks the question nobody had asked any more: what is this actually still running on? The answer takes longer than expected. The person who made the original choice no longer works there. The underlying documentation can't be found. And when usage is finally laid next to it, the commitment turns out to be utilised for only a fraction."
+  ],
+  [
+   687,
+   "For two years, capacity has been paid for that largely went unused, not because anyone was negligent, but because nobody ever asked the question the scan now did."
+  ],
+  [
+   688,
+   "That is the pattern behind most outdated cost items. Not one big mistake, but the simple fact that nobody looked at it any more once the amount felt \"normal\"."
+  ],
+  [
+   689,
+   "Do you doubt whether your own reserved instances or savings plans still match current usage? The {1}RI vs. Savings Plan Calculator{/1} compares on-demand, reserved instances and savings plans without you having to leave an email address. Also request the free Cloud & AI Savings Scan and we'll put your current costs next to current usage, so you quickly know whether an investment still delivers what it once promised."
+  ],
+  [
+   690,
+   "Name a cloud or AI cost item that hasn't been rechecked for more than a year. Can you do it without looking?"
+  ],
+  [
+   691,
+   "Want to have your commitments checked to see if they still hold up?"
+  ],
+  [
+   692,
+   "A reserved instance was purchased two years ago and never revisited since. Why a commitment that was once logical can quietly keep leaking money."
+  ],
+  [
+   693,
+   "A reserved instance was purchased two years ago and never revisited since."
+  ],
+  [
+   694,
+   "An old commitment can quietly keep leaking money."
+  ],
+  [
+   695,
+   "A reserved instance commitment that has not been reviewed for two years, with unused capacity"
+  ],
+  [
+   696,
+   "Multi-cloud governance without the complexity | AX1S Infra"
+  ],
+  [
+   697,
+   "Why organisations spread across multiple clouds"
+  ],
+  [
+   698,
+   "Multi-cloud rarely arises from a deliberate strategy. More often it's the result of an acquisition, a team that independently chose a different provider, or a specific service that is simply better elsewhere. The problem is not the presence of multiple clouds as such. The problem is that governance rarely grows along with that reality."
+  ],
+  [
+   699,
+   "The three most common governance gaps"
+  ]
+ ]
+}
