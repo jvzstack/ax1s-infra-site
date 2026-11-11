@@ -241,3 +241,14 @@
 .home #team .person h3 { font-size: 20px; margin-bottom: 8px; }
 .home #team .person p { font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
 @media (max-width: 640px) { .home #team { padding: 44px 0; } .home #team .person { grid-template-columns: 1fr; } }
+
+/* wat we doen: compacter in hoogte */
+.home #services { padding: 60px 0 64px; }
+.home #services .sec-head { margin-bottom: 28px; }
+.home #services .sec-head h2 { font-size: 32px; margin-bottom: 10px; }
+.home #services .sec-head p { font-size: 16px; }
+.home #services .card { padding: 24px 26px; }
+.home #services .card h3 { font-size: 19px; margin-bottom: 8px; }
+.home #services .card p { font-size: 14.5px; line-height: 1.6; margin-bottom: 16px; }
+.home #services .start-row { margin-top: 24px; padding-top: 20px; }
+@media (max-width: 640px) { .home #services { padding: 44px 0 48px; } }
