@@ -1,0 +1,106 @@
+/* AX1S Infra: gedeelde stijl, versie 2 (merkstijl).
+   Wordt NA de paginastijl geladen en past de design-tokens, navigatie, knoppen en footer aan.
+   Pagina's met class "v2-light" op <body> krijgen lichte inhoudssecties onder een donkere kop. */
+
+:root {
+  --bg:            #050c1d;
+  --bg2:           #030816;
+  --card:          rgba(25,120,255,0.06);
+  --card-border:   rgba(25,167,255,0.22);
+  --card-shadow:   0 6px 22px -12px rgba(0,100,255,0.4);
+  --divider:       rgba(255,255,255,0.08);
+  --accent:        #0a7cff;
+  --accent-light:  #19a7ff;
+  --accent-bg:     rgba(10,124,255,0.10);
+  --accent-border: rgba(25,167,255,0.30);
+  --text:          #eef2fa;
+  --muted:         #c9d3e4;
+  --v2-line:       #e3e8ef;
+  --v2-ink:        #14243b;
+  --v2-slate:      #55657c;
+  --v2-soft:       #f2f6fb;
+}
+
+body { font-family: 'Manrope', system-ui, sans-serif; background: radial-gradient(ellipse 70% 45% at 85% -5%, rgba(10,100,255,.20), transparent 70%), radial-gradient(ellipse 50% 40% at 0% 100%, rgba(0,60,170,.16), transparent 70%), var(--bg); background-attachment: fixed; }
+/* oude bewegende orbs-achtergrond vervangen door een rustige vaste achtergrond */
+#bg-canvas { display: none !important; }
+body::before { background: transparent !important; }
+
+h1, h2, h3, .title { letter-spacing: -0.025em; }
+
+/* NAVIGATIE */
+nav { background: rgba(5,12,29,.94) !important; border-bottom: 1px solid rgba(25,167,255,.16) !important; backdrop-filter: blur(14px); }
+.nav-links a { color: rgba(255,255,255,.78); }
+.nav-links a:hover, .nav-links a.active { color: #fff; }
+
+/* KNOPPEN */
+.nav-cta, .btn-primary { background: linear-gradient(135deg, #1aa8ff 0%, #0a66e8 100%) !important; border-radius: 8px; box-shadow: 0 8px 22px -10px rgba(10,124,255,.75); }
+.nav-cta:hover, .btn-primary:hover { background: linear-gradient(135deg, #38b6ff 0%, #0b72ff 100%) !important; }
+.btn-primary.btn-gold-outline { background: linear-gradient(135deg, #1aa8ff 0%, #0a66e8 100%) !important; }
+
+/* FOOTER */
+footer { background: var(--bg2); border-top: 1px solid rgba(25,167,255,.14); }
+
+/* ------------------------------------------------------------------ */
+/* LICHTE INHOUDSPAGINA'S (blogs, wat-is-finops, begrippenlijst, tools) */
+.v2-light { --bg: #ffffff; --card: #ffffff; --card-border: #e3e8ef; --card-shadow: 0 1px 2px rgba(11,31,58,.05), 0 8px 24px -12px rgba(11,31,58,.16);
+  --divider: #e3e8ef; --text: #14243b; --muted: #55657c; --accent-light: #0a6cf0; --accent-bg: #eaf2ff; --accent-border: #c9dcf8; --faint: #f2f6fb;
+  background: #ffffff; color: var(--muted); }
+.v2-light #bg-canvas { display: none !important; }
+.v2-light nav { background: #050c1d !important; }
+
+/* kop: donkere band met witte titel */
+.v2-light section:has(> .article-head), .v2-light section.v2-band {
+  background: radial-gradient(ellipse 70% 120% at 85% 0%, rgba(10,100,255,.30), transparent 70%), #050c1d; color: #fff; }
+.v2-light .article-head { padding-bottom: 96px; }
+.v2-light .article-head h1, .v2-light section.v2-band h1 { color: #fff; }
+.v2-light .article-head .article-meta, .v2-light .article-head .back-link { color: rgba(255,255,255,.7); }
+.v2-light .article-head .back-link:hover { color: #fff; }
+.v2-light .article-head .stag { background: rgba(25,167,255,.16); color: #8fd4ff; border-color: rgba(25,167,255,.4); }
+.v2-light .article-banner { margin-top: -64px; position: relative; z-index: 2; border-color: #e3e8ef; box-shadow: 0 24px 50px -24px rgba(5,12,29,.55); }
+
+/* lopende tekst */
+.v2-light .article-body h2, .v2-light .article-body h3 { color: var(--v2-ink); }
+.v2-light .article-body p, .v2-light .article-body li { color: var(--v2-slate); }
+.v2-light .article-body strong { color: var(--v2-ink); }
+.v2-light .article-body a:not(.btn-primary):not(.btn-diensten) { color: #0a6cf0; }
+.v2-light .pull-note { background: var(--v2-soft); border-color: var(--v2-line); box-shadow: none; }
+.v2-light .pull-note p { color: var(--v2-slate); }
+.v2-light .key-answer { background: #eaf2ff; border-color: #c9dcf8; }
+.v2-light .article-body .key-answer p { color: var(--v2-ink); }
+.v2-light .key-answer-label { color: #0a6cf0; }
+.v2-light .article-body h3.faq-q { color: var(--v2-ink); }
+.v2-light .article-body .source-line a { color: #0a6cf0; }
+.v2-light hr { border-top-color: var(--v2-line); }
+
+/* kaarten */
+.v2-light .blog-card { background: #fff; border: 1px solid var(--v2-line); box-shadow: var(--card-shadow); }
+.v2-light .blog-card:hover { border-color: #b9c8dc; }
+.v2-light .blog-card-body h3 { color: var(--v2-ink); }
+.v2-light .blog-card .stag, .v2-light .stag { background: #eaf2ff; color: #0a6cf0; border-color: #c9dcf8; }
+.v2-light .related-title { color: var(--v2-ink); }
+.v2-light .blog-card-more { color: #0a6cf0; }
+.v2-light .blog-card-avatar-sm, .v2-light .author-avatar { border-color: #e3e8ef; }
+.v2-light .article-head .author-avatar { border-color: rgba(255,255,255,.3); }
+
+/* CTA-blok onderaan artikelen: donker accentblok */
+.v2-light .article-cta { background: linear-gradient(160deg, #0a1a3a, #050c1d); border: 1px solid rgba(25,167,255,.35); box-shadow: 0 20px 44px -24px rgba(5,12,29,.7); }
+.v2-light .article-cta h3 { color: #fff; }
+.v2-light .article-cta p { color: rgba(255,255,255,.74); }
+.v2-light .article-cta-secondary { color: rgba(255,255,255,.7); }
+.v2-light .article-cta-secondary:hover { color: #fff; }
+.v2-light .article-body .article-cta a.btn-primary { color: #fff; }
+
+/* footer blijft donker */
+.v2-light footer { background: #030816; }
+
+/* taalwissel blijft leesbaar op lichte pagina's (de nav is daar donker) */
+.v2-light .lang-switch { color: #fff; }
+.lang-switch { border-color: rgba(25,167,255,.35); }
+
+/* smalle schermen: compactere navigatie */
+@media (max-width: 640px) {
+  .nav-inner { padding: 0 16px; gap: 8px; }
+  .nav-logo { height: 32px; }
+  .nav-cta { font-size: 11.5px; padding: 8px 12px; line-height: 1.25; text-align: center; max-width: 150px; }
+}

@@ -2,11 +2,11 @@
 
 > AX1S Infra helpt digital-first bedrijven besparen op cloud- en AI-kosten. FinOps Certified Practitioners, gevestigd in Amsterdam.
 
-AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klanten realiseren gemiddeld 23% besparing op cloud- en compute-uitgaven na een FinOps-traject. Diensten: FinOps & Technology Cost Management, Managed Colocation (Tier III/IV faciliteiten in Europa) en Hardware & Performance Brokering voor AI-workloads. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation. De Cloud & AI Savings Scan (gratis eerste analyse) is vrijblijvend en kosteloos.
+AX1S Infra is een FinOps & Infrastructure specialist voor B2B-bedrijven, met als kopregel "FinOps-driven cost intelligence for Cloud & AI". Klanten realiseren gemiddeld 23% besparing op cloud- en compute-uitgaven na een FinOps-traject. Diensten: FinOps-as-a-Service (doorlopende ondersteuning), een uitgebreid assessment als losse opdracht en een FinOps-traject op maat. Starten kan vrijblijvend met de gratis Cloud & AI Savings Scan of de FinOps Radar. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation. De Cloud & AI Savings Scan (gratis eerste analyse) is vrijblijvend en kosteloos.
 
 ## Belangrijkste pagina's
 
-- [Homepage](https://ax1s-infra.com/): diensten, team, FinOps-uitleg, veelgestelde vragen en contact
+- [Homepage](https://ax1s-infra.com/): FinOps-driven cost intelligence for Cloud & AI, diensten, team, FinOps-uitleg, veelgestelde vragen en contact
 - [Cloud & AI Savings Scan](https://ax1s-infra.com/savings-scan.html): gratis, vrijblijvende scan van cloud- en AI-uitgaven, met de belangrijkste kostenposten, optimalisatiekansen en een indicatie van het besparingspotentieel
 - [FinOps diensten](https://ax1s-infra.com/finops-diensten.html): drie manieren om te starten, van een gratis Cloud & AI Savings Scan tot een afgebakend FinOps-traject of doorlopende FinOps-as-a-Service
 - [Wat is FinOps?](https://ax1s-infra.com/wat-is-finops.html): definitie en de FinOps Lifecycle (Inform, Optimize, Operate)
@@ -50,7 +50,7 @@ AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klante
 ## Contact
 
 - Cloud & AI Savings Scan (gratis): https://ax1s-infra.com/savings-scan.html
-- Jelle van Zantwijk (Finance & FinOps): https://www.linkedin.com/in/jellevanzantwijk/
+- Jelle van Zantwijk (Cloud & Finance): https://www.linkedin.com/in/jellevanzantwijk/
 - Tom Prager (AI Infrastructure): https://www.linkedin.com/in/tom-prager-898899285/
 
 ## English version

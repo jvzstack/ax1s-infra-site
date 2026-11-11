@@ -3,7 +3,7 @@
 import os, re
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 D = 'https://ax1s-infra.com/'
-EN_LASTMOD = '2026-10-31'
+EN_LASTMOD = '2026-11-11'
 src = open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8').read()
 src = re.sub(r'\s*<xhtml:link[^>]*/>', '', src)
 blocks = re.findall(r'<url>.*?</url>', src, re.S)
