@@ -282,3 +282,16 @@
 .home .person-links .loc, .home .person-links .pill, .home .person-links .li-link { display: inline-flex; align-items: center; line-height: 1; height: 26px; }
 .home .person-links .pill img { display: block; }
 .home .li-link iconify-icon { display: block; }
+
+/* teamkaarten: regel met locatie, certificaat en LinkedIn over de volle kaartbreedte, links uitgelijnd met de foto */
+.home #team .person { grid-template-columns: 100px 1fr; grid-template-rows: auto auto 1fr auto; column-gap: 18px; row-gap: 0; }
+.home #team .person > div { display: contents; }
+.home #team .person img.photo { grid-column: 1; grid-row: 1 / span 3; align-self: start; }
+.home #team .person .role { grid-column: 2; grid-row: 1; }
+.home #team .person h3 { grid-column: 2; grid-row: 2; }
+.home #team .person p { grid-column: 2; grid-row: 3; }
+.home #team .person .person-links { grid-column: 1 / -1; grid-row: 4; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+@media (max-width: 640px) {
+  .home #team .person { grid-template-columns: 1fr; grid-template-rows: none; }
+  .home #team .person img.photo, .home #team .person .role, .home #team .person h3, .home #team .person p, .home #team .person .person-links { grid-column: 1; grid-row: auto; }
+}
