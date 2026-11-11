@@ -163,6 +163,150 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/finops-glossarium.html"/>
   </url>
   <url>
+    <loc>https://ax1s-infra.com/blog/ai-van-pilot-naar-schaal.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-van-pilot-naar-schaal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-van-pilot-naar-schaal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-van-pilot-naar-schaal.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/ai-van-pilot-naar-schaal.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-van-pilot-naar-schaal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-van-pilot-naar-schaal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-van-pilot-naar-schaal.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/blog/resource-tagging-fundament-finops.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/resource-tagging-fundament-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/resource-tagging-fundament-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/resource-tagging-fundament-finops.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/resource-tagging-fundament-finops.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/resource-tagging-fundament-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/resource-tagging-fundament-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/resource-tagging-fundament-finops.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/blog/cloud-economics-wordt-compute-economics.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/cloud-economics-wordt-compute-economics.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/cloud-economics-wordt-compute-economics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/cloud-economics-wordt-compute-economics.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/cloud-economics-wordt-compute-economics.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/cloud-economics-wordt-compute-economics.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/cloud-economics-wordt-compute-economics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/cloud-economics-wordt-compute-economics.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/blog/finops-tool-is-geen-finops.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/finops-tool-is-geen-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/finops-tool-is-geen-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/finops-tool-is-geen-finops.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/finops-tool-is-geen-finops.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/finops-tool-is-geen-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/finops-tool-is-geen-finops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/finops-tool-is-geen-finops.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/blog/ai-model-kiezen-over-modeling.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-model-kiezen-over-modeling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-model-kiezen-over-modeling.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-model-kiezen-over-modeling.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/ai-model-kiezen-over-modeling.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-model-kiezen-over-modeling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-model-kiezen-over-modeling.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-model-kiezen-over-modeling.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/blog/ai-tokenomics-uitgelegd.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-tokenomics-uitgelegd.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-tokenomics-uitgelegd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-tokenomics-uitgelegd.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/ai-tokenomics-uitgelegd.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/ai-tokenomics-uitgelegd.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/ai-tokenomics-uitgelegd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/ai-tokenomics-uitgelegd.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/blog/cloud-en-ai-kosten-uitleggen-boardroom.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/cloud-en-ai-kosten-uitleggen-boardroom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/cloud-en-ai-kosten-uitleggen-boardroom.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/cloud-en-ai-kosten-uitleggen-boardroom.html"/>
+  </url>
+  <url>
+    <loc>https://ax1s-infra.com/en/blog/cloud-en-ai-kosten-uitleggen-boardroom.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/blog/cloud-en-ai-kosten-uitleggen-boardroom.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/blog/cloud-en-ai-kosten-uitleggen-boardroom.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/blog/cloud-en-ai-kosten-uitleggen-boardroom.html"/>
+  </url>
+  <url>
     <loc>https://ax1s-infra.com/blog/budget-alweer-overschreden.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>

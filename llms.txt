@@ -18,6 +18,14 @@ AX1S Infra is een FinOps & Infrastructure consultancy voor B2B-bedrijven. Klante
 
 ## Insights (blog)
 
+- [AI van pilot naar schaal: dan begint de businesscase](https://ax1s-infra.com/blog/ai-van-pilot-naar-schaal.html): welke kosten veranderen als een AI-pilot productie wordt en waarom de echte businesscase daarna begint
+- [Resource tagging: het fundament van FinOps](https://ax1s-infra.com/blog/resource-tagging-fundament-finops.html): vier tags, afdwingen en dekking meten gewogen naar uitgaven als basis voor showback en chargeback
+- [Cloud economics wordt compute economics](https://ax1s-infra.com/blog/cloud-economics-wordt-compute-economics.html): waarom AI cloudkosten laat verschuiven van gebruik naar vooraf vastgelegde rekenkracht en commitments
+- [Niemand voelt zich eigenaar van de cloudrekening](https://ax1s-infra.com/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html): waarom besparen afhankelijk blijft van goede wil zolang wie kosten veroorzaakt de rekening niet ziet
+- [Een FinOps-tool is nog geen FinOps](https://ax1s-infra.com/blog/finops-tool-is-geen-finops.html): het verschil tussen een tool die kosten laat zien en een proces dat er iets mee doet
+- [Over-modeling: het duurste AI-model is zelden nodig](https://ax1s-infra.com/blog/ai-model-kiezen-over-modeling.html): waarom standaard het duurste AI-model kiezen duurder uitpakt dan verspilde rekenkracht en welke vraag je als FinOps-practitioner moet stellen
+- [AI-tokenomics uitgelegd: meer waarde per token](https://ax1s-infra.com/blog/ai-tokenomics-uitgelegd.html): wat tokenomics is en hoe je AI-uitgaven koppelt aan bedrijfsresultaat, met meer waarde per token
+- [Cloud- en AI-kosten uitleggen in de boardroom](https://ax1s-infra.com/blog/cloud-en-ai-kosten-uitleggen-boardroom.html): hoe je gestegen cloud- en AI-kosten kunt uitleggen aan het bestuur, met de FinOps Quick-Win Checklist
 - [Oh nee, het budget is alweer overschreden](https://ax1s-infra.com/blog/budget-alweer-overschreden.html): hoe een nieuwe AI-feature een kwartaalbudget ongemerkt met tientallen procenten overschrijdt
 - [Wacht, is deze investering nog wel rendabel?](https://ax1s-infra.com/blog/investering-nog-rendabel.html): waarom een goed functionerend AI-model niet hetzelfde is als een nog rendabele investering
 - [Dit AI-project leek goedkoop, tot de rekening kwam](https://ax1s-infra.com/blog/ai-project-rekening-kwam.html): van kleine pilot naar bijna 300x hogere kosten na uitrol naar productie
@@ -58,4 +66,12 @@ The full site is also available in English under https://ax1s-infra.com/en/ (lan
 - [RI vs. Savings Plan Calculator (EN)](https://ax1s-infra.com/en/ri-vs-savings-plan-calculator.html): free calculator, no email needed
 - [AI Cost Calculator (EN)](https://ax1s-infra.com/en/ai-kosten-calculator.html): free calculator for AI/LLM costs by model, volume and tokens, no email needed
 - [FinOps Glossary (EN)](https://ax1s-infra.com/en/finops-glossarium.html): 20 key terms from FinOps and cloud cost management
-- [Insights / blog (EN)](https://ax1s-infra.com/en/): all 20 articles are available under https://ax1s-infra.com/en/blog/
+- [Insights / blog (EN)](https://ax1s-infra.com/en/): all 28 articles are available under https://ax1s-infra.com/en/blog/
+  - [Scaling AI beyond the pilot: the real business case](https://ax1s-infra.com/en/blog/ai-van-pilot-naar-schaal.html): which costs change when an AI pilot goes into production and why the real business case starts after the pilot
+  - [Resource tagging: the foundation of FinOps](https://ax1s-infra.com/en/blog/resource-tagging-fundament-finops.html): four tags, enforcement and spend-weighted coverage as the basis for showback and chargeback
+  - [Cloud economics is becoming compute economics](https://ax1s-infra.com/en/blog/cloud-economics-wordt-compute-economics.html): why AI shifts cloud costs from usage to compute committed in advance
+  - [Nobody feels they own the cloud bill](https://ax1s-infra.com/en/blog/niemand-verantwoordelijk-gedeelde-cloudrekening.html): why saving depends on goodwill as long as the people who cause costs do not see the bill
+  - [A FinOps tool is not FinOps](https://ax1s-infra.com/en/blog/finops-tool-is-geen-finops.html): the difference between a tool that shows costs and a process that does something with them
+  - [Over-modeling: you rarely need the priciest AI model](https://ax1s-infra.com/en/blog/ai-model-kiezen-over-modeling.html): why defaulting to the most expensive AI model costs more than wasted compute, and the question every FinOps practitioner should ask
+  - [AI tokenomics explained: more value per token](https://ax1s-infra.com/en/blog/ai-tokenomics-uitgelegd.html): what tokenomics is and how to tie AI spend to business outcomes, with more value per token
+  - [Explaining cloud and AI costs in the boardroom](https://ax1s-infra.com/en/blog/cloud-en-ai-kosten-uitleggen-boardroom.html): how to explain increased cloud and AI costs to the board, with the FinOps Quick-Win Checklist

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Concept v2: merkstijl | AX1S Infra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<style>
+  :root {
+    --navy:      #0b1f3a;
+    --navy-2:    #12305a;
+    --navy-deep: #07152b;
+    --blue:      #0070f3;
+    --blue-dark: #0058c4;
+    --sky:       #8fc2ff;
+    --ink:       #14243b;
+    --muted:     #55657c;
+    --line:      #e3e8ef;
+    --bg:        #ffffff;
+    --bg-soft:   #f5f7fa;
+    --gold:      #b8924a;
+    --radius:    10px;
+    --shadow:    0 1px 2px rgba(11,31,58,.05), 0 8px 24px -12px rgba(11,31,58,.18);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3 { font-family: 'Manrope', system-ui, sans-serif; font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; color: var(--navy); }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+  .eyebrow { display: block; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+  .on-dark .eyebrow { color: var(--sky); }
+
+  /* buttons */
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14.5px; font-weight: 600; padding: 13px 24px; border-radius: 6px; border: 1px solid transparent; transition: background .2s, border-color .2s, color .2s; cursor: pointer; }
+  .btn-primary { background: var(--blue); color: #fff; }
+  .btn-primary:hover { background: var(--blue-dark); }
+  .btn-ghost-light { color: #fff; border-color: rgba(255,255,255,.35); }
+  .btn-ghost-light:hover { border-color: #fff; background: rgba(255,255,255,.06); }
+  .btn-ghost { color: var(--navy); border-color: #c9d3e0; background: #fff; }
+  .btn-ghost:hover { border-color: var(--navy); }
+  .link-arrow { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14.5px; color: var(--blue); }
+  .link-arrow:hover { color: var(--blue-dark); }
+  .link-arrow iconify-icon { transition: transform .2s; }
+  .link-arrow:hover iconify-icon { transform: translateX(3px); }
+
+  /* nav */
+  nav { position: sticky; top: 0; z-index: 50; background: var(--navy); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .nav-inner { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .nav-logo { height: 40px; width: auto; }
+  .nav-links { display: flex; gap: 34px; }
+  .nav-links a { font-size: 14px; font-weight: 500; color: rgba(255,255,255,.78); transition: color .2s; }
+  .nav-links a:hover { color: #fff; }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .lang { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; color: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.25); border-radius: 6px; padding: 7px 11px; }
+  .nav-right .btn { padding: 10px 18px; font-size: 13.5px; }
+
+  /* hero */
+  .hero { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
+  .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 55%, rgba(0,112,243,.16) 100%); pointer-events: none; }
+  .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: 72px; align-items: center; padding: 88px 32px 96px; }
+  .hero h1 { color: #fff; font-size: 52px; font-weight: 800; letter-spacing: -0.035em; line-height: 1.08; margin-bottom: 22px; }
+  .hero-sub { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,.78); max-width: 520px; margin-bottom: 34px; }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 44px; }
+  .cert { display: flex; align-items: center; gap: 16px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.14); max-width: 520px; }
+  .cert img.badge { height: 54px; width: auto; }
+  .cert p { font-size: 13px; line-height: 1.5; color: rgba(255,255,255,.7); }
+  .cert p strong { display: block; color: #fff; font-size: 14px; font-weight: 600; }
+  .proof { background: #fff; color: var(--ink); border-radius: 14px; padding: 34px 34px 28px; box-shadow: 0 30px 60px -30px rgba(0,0,0,.55); }
+  .proof .eyebrow { margin-bottom: 8px; }
+  .proof .big { font-family: 'Manrope', sans-serif; font-size: 72px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; color: var(--navy); }
+  .proof .big span { color: var(--blue); }
+  .proof .cap { font-size: 14.5px; color: var(--muted); margin: 8px 0 24px; }
+  .proof ul { list-style: none; border-top: 1px solid var(--line); }
+  .proof li { display: flex; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+  .proof li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .proof li iconify-icon { color: var(--blue); flex-shrink: 0; margin-top: 3px; }
+  .proof li strong { display: block; color: var(--navy); font-weight: 600; font-size: 14.5px; }
+
+  /* facts strip */
+  .facts { border-bottom: 1px solid var(--line); background: #fff; }
+  .facts-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .fact { padding: 24px 24px 24px 0; font-size: 13.5px; color: var(--muted); display: flex; gap: 12px; align-items: center; }
+  .fact iconify-icon { color: var(--navy); flex-shrink: 0; }
+  .fact strong { color: var(--navy); font-weight: 600; display: block; font-size: 14px; }
+
+  /* sections */
+  section { padding: 96px 0; }
+  .soft { background: var(--bg-soft); }
+  .sec-head { max-width: 680px; margin-bottom: 52px; }
+  .sec-head h2 { font-size: 38px; margin-bottom: 14px; }
+  .sec-head p { font-size: 17px; color: var(--muted); }
+
+  .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .card .ico { width: 46px; height: 46px; border-radius: 8px; background: #eaf2ff; color: var(--blue); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
+  .card h3 { font-size: 21px; margin-bottom: 10px; }
+  .card p { font-size: 15px; color: var(--muted); margin-bottom: 22px; flex: 1; }
+  .card.primary { border-top: 3px solid var(--blue); }
+  .card .tag { font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+
+  /* steps */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid #cfd8e4; }
+  .step { padding: 30px 32px 6px 0; }
+  .step + .step { padding-left: 32px; border-left: 1px solid #cfd8e4; }
+  .step .n { font-family: 'Manrope', sans-serif; font-size: 14px; font-weight: 700; color: var(--blue); margin-bottom: 14px; }
+  .step h3 { font-size: 23px; margin-bottom: 10px; }
+  .step p { font-size: 15px; color: var(--muted); }
+
+  /* case */
+  .case { background: var(--navy); color: #fff; padding: 0; }
+  .case-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+  .case-text { padding: 88px 64px 88px 0; align-self: center; }
+  .case-text h2 { color: #fff; font-size: 38px; margin-bottom: 18px; }
+  .case-text p { font-size: 17px; color: rgba(255,255,255,.76); margin-bottom: 30px; max-width: 480px; }
+  .case-text .link-arrow { color: var(--sky); }
+  .case-img { position: relative; min-height: 380px; }
+  .case-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .case-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--navy) 0%, rgba(11,31,58,0) 28%); }
+
+  /* tools */
+  .cards-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .tool { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; display: flex; flex-direction: column; transition: border-color .2s, box-shadow .2s; }
+  .tool:hover { border-color: #b9c8dc; box-shadow: var(--shadow); }
+  .tool .tag { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+  .tool h3 { font-size: 18px; margin-bottom: 8px; line-height: 1.25; }
+  .tool p { font-size: 14px; color: var(--muted); flex: 1; margin-bottom: 18px; }
+  .tool.feature { background: var(--navy); border-color: var(--navy); }
+  .tool.feature h3 { color: #fff; }
+  .tool.feature p { color: rgba(255,255,255,.72); }
+  .tool.feature .link-arrow { color: var(--sky); }
+  .tool.feature .tag { color: var(--sky); }
+  .more { margin-top: 30px; display: flex; gap: 28px; flex-wrap: wrap; }
+
+  /* insights */
+  .post { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .2s, border-color .2s; }
+  .post:hover { box-shadow: var(--shadow); border-color: #b9c8dc; }
+  .post .img { height: 190px; background: #0a1020; overflow: hidden; }
+  .post .img img { width: 100%; height: 100%; object-fit: cover; }
+  .post .body { padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .post .meta { font-size: 12.5px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+  .post .meta .cat { font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 11px; color: var(--blue); }
+  .post h3 { font-size: 19px; line-height: 1.3; }
+  .post .by { margin-top: auto; font-size: 13px; color: var(--muted); padding-top: 8px; }
+
+  /* team */
+  .team { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .person { display: grid; grid-template-columns: 128px 1fr; gap: 28px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); align-items: start; }
+  .person img { width: 128px; height: 148px; object-fit: cover; border-radius: 8px; }
+  .person .role { font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+  .person h3 { font-size: 22px; margin-bottom: 10px; }
+  .person p { font-size: 14.5px; color: var(--muted); margin-bottom: 14px; }
+  .person .pill { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--navy); font-weight: 600; }
+  .person .pill img { width: 22px; height: 26px; border-radius: 0; }
+
+  /* contact */
+  .contact { background: var(--navy); color: #fff; padding: 88px 0; }
+  .contact-inner { display: grid; grid-template-columns: 1.2fr .8fr; gap: 64px; align-items: center; }
+  .contact h2 { color: #fff; font-size: 38px; margin-bottom: 16px; }
+  .contact p { font-size: 17px; color: rgba(255,255,255,.76); max-width: 560px; }
+  .contact-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+  .contact-actions .small { font-size: 13.5px; color: rgba(255,255,255,.7); }
+  .contact-actions .small a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* footer */
+  footer { background: var(--navy-deep); color: rgba(255,255,255,.7); padding: 52px 0 40px; font-size: 13.5px; }
+  .foot-inner { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+  .foot-logo { height: 34px; margin-bottom: 14px; }
+  .foot-cols { display: flex; gap: 64px; }
+  .foot-cols h4 { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #fff; margin-bottom: 14px; }
+  .foot-cols a { display: block; margin-bottom: 9px; color: rgba(255,255,255,.7); }
+  .foot-cols a:hover { color: #fff; }
+  .foot-bottom { margin-top: 40px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.1); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 12.5px; }
+
+  .concept-flag { position: fixed; bottom: 16px; left: 16px; z-index: 99; background: #fff; color: var(--navy); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font-size: 12px; font-weight: 600; box-shadow: var(--shadow); }
+
+  @media (max-width: 1000px) {
+    .hero-inner, .case-inner, .contact-inner { grid-template-columns: 1fr; gap: 44px; }
+    .hero-inner { padding: 64px 32px 72px; }
+    .hero h1 { font-size: 42px; }
+    .cards-3, .team { grid-template-columns: 1fr; }
+    .cards-4 { grid-template-columns: repeat(2, 1fr); }
+    .facts-inner { grid-template-columns: repeat(2, 1fr); }
+    .nav-links { display: none; }
+    .case-text { padding: 64px 0 24px; }
+    .case-img { min-height: 260px; }
+    .case-img::after { background: linear-gradient(180deg, var(--navy) 0%, rgba(11,31,58,0) 30%); }
+    .steps { grid-template-columns: 1fr; }
+    .step, .step + .step { padding: 26px 0 8px; border-left: 0; border-bottom: 1px solid #cfd8e4; }
+  }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 20px; }
+    .hero-inner { padding: 48px 20px 56px; }
+    .hero h1 { font-size: 34px; }
+    .sec-head h2, .case-text h2, .contact h2 { font-size: 30px; }
+    section { padding: 64px 0; }
+    .cards-4, .facts-inner { grid-template-columns: 1fr; }
+    .person { grid-template-columns: 1fr; }
+    .nav-right .btn { display: none; }
+    .proof .big { font-size: 60px; }
+    .foot-cols { gap: 36px; }
+  }
+</style>
+
+<style id="v2">
+  :root { --navy:#050c1d; --navy-2:#0a1a3a; --navy-deep:#030816; --cyan:#19a7ff; --blue:#0a7cff; --blue-dark:#0662d1; --sky:#5cc4ff; }
+  .eyebrow { color: var(--cyan); }
+  .btn { border-radius: 8px; }
+  .btn-primary { background: linear-gradient(135deg, #1aa8ff 0%, #0a66e8 100%); box-shadow: 0 8px 22px -8px rgba(10,124,255,.7); }
+  .btn-primary:hover { background: linear-gradient(135deg, #38b6ff 0%, #0b72ff 100%); }
+  .link-arrow { color: #0a6cf0; }
+
+  nav { background: rgba(5,12,29,.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(25,167,255,.16); }
+  .lang { border-color: rgba(25,167,255,.35); }
+
+  /* hero: brand look (dark, glow, swoosh, highlighted phrase) */
+  .hero { background: radial-gradient(ellipse 70% 90% at 82% 30%, rgba(10,100,255,.38), transparent 62%), radial-gradient(ellipse 50% 60% at 8% 100%, rgba(0,60,170,.35), transparent 70%), var(--navy); }
+  .hero::after { display: none; }
+  .swoosh { position: absolute; left: -6%; bottom: 14%; width: 62%; height: 46%; z-index: 0; opacity: .5; pointer-events: none; }
+  .hero h1 { font-size: 56px; font-weight: 800; letter-spacing: -0.035em; line-height: 1.06; }
+  .hero h1 em { font-style: normal; color: var(--cyan); }
+  .hero-inner { padding-top: 132px; padding-bottom: 110px; }
+  .facts { position: relative; }
+  .facts::before { content: ''; position: absolute; left: 0; right: 0; top: -44px; height: 45px; background: var(--navy-deep); clip-path: polygon(0 100%, 100% 0, 100% 100%); }
+  .cert { border-top-color: rgba(25,167,255,.22); }
+
+  .proof { background: linear-gradient(160deg, rgba(14,40,92,.72), rgba(5,12,29,.82)); backdrop-filter: blur(6px); border: 1px solid rgba(25,167,255,.38); color: #fff; box-shadow: 0 0 0 1px rgba(25,167,255,.08) inset, 0 30px 60px -28px rgba(0,80,255,.55); }
+  .proof .big { color: #fff; }
+  .proof .big span { color: var(--cyan); }
+  .proof .cap { color: rgba(255,255,255,.72); }
+  .proof ul, .proof li { border-color: rgba(255,255,255,.12); }
+  .proof li { color: rgba(255,255,255,.7); }
+  .proof li strong { color: #fff; }
+  .proof li iconify-icon { color: var(--cyan); }
+
+  .facts { background: var(--navy-deep); border-bottom: 0; }
+  .fact { color: rgba(255,255,255,.62); padding-top: 26px; padding-bottom: 30px; }
+  .fact strong { color: #fff; }
+  .fact iconify-icon { color: var(--cyan); }
+
+  /* headings: bold + short cyan rule, as in the LinkedIn visuals */
+  .sec-head h2 { font-weight: 800; letter-spacing: -0.03em; }
+  .sec-head h2::after, .case-text h2::after, .contact h2::after { content: ''; display: block; width: 46px; height: 3px; border-radius: 2px; margin-top: 18px; background: linear-gradient(90deg, var(--cyan), var(--blue)); }
+  .soft { background: #f2f6fb; }
+  .card { border-radius: 12px; }
+  .card.primary { border-top: 0; background: linear-gradient(160deg, #0a1a3a, #050c1d); border-color: rgba(25,167,255,.35); }
+  .card.primary h3 { color: #fff; } .card.primary p { color: rgba(255,255,255,.74); } .card.primary .tag { color: var(--cyan); } .card.primary .link-arrow { color: var(--sky); }
+  .card .ico { background: linear-gradient(135deg, #e6f3ff, #d3e8ff); color: #0a6cf0; }
+  .step .n { color: var(--cyan); }
+  .step h3 { font-weight: 800; }
+  .case { background: radial-gradient(ellipse 60% 80% at 100% 50%, rgba(10,100,255,.25), transparent 70%), var(--navy); }
+  .case-img::after { background: linear-gradient(90deg, #050c1d 0%, rgba(5,12,29,0) 30%); }
+  .tool.feature { background: linear-gradient(160deg, #0a1a3a, #050c1d); border-color: rgba(25,167,255,.4); }
+  .tool .tag { color: #0a6cf0; }
+  .post .meta .cat { color: #0a6cf0; }
+  .person .role { color: #0a6cf0; }
+  .contact { background: radial-gradient(ellipse 55% 90% at 85% 40%, rgba(10,100,255,.3), transparent 70%), var(--navy); }
+  footer { background: var(--navy-deep); }
+  @media (max-width: 1000px) { .hero h1 { font-size: 42px; } .swoosh { width: 100%; left: -20%; bottom: 4%; } .hero-inner { padding-top: 64px; } .case-img::after { background: linear-gradient(180deg, #050c1d 0%, rgba(5,12,29,0) 30%); } }
+  @media (max-width: 640px) { .hero h1 { font-size: 34px; } }
+</style>
+
+<style id="v2b">
+  .hero h1 { font-size: 52px; line-height: 1.08; }
+  .proof li { padding: 0; }
+  .proof li a { display: flex; gap: 14px; align-items: flex-start; padding: 16px 12px; margin: 0 -12px; border-radius: 8px; transition: background .2s; }
+  .proof li a:hover { background: rgba(25,167,255,.1); }
+  .proof li a div { flex: 1; }
+  .proof li a .go { color: var(--cyan); margin-top: 2px; transition: transform .2s; }
+  .proof li a:hover .go { transform: translateX(3px); }
+  .proof li:last-child a { padding-bottom: 16px; }
+  .start-row { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+  .card .tag { color: #0a6cf0; }
+  @media (max-width: 1000px) { .hero h1 { font-size: 38px; } }
+  @media (max-width: 640px) { .hero h1 { font-size: 31px; } }
+</style>
+
+<style id="v2c">
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  .swoosh { z-index: 0; }
+</style>
+
+
+<style id="v2e">
+  .hero-right { display: flex; flex-direction: column; gap: 16px; }
+  .meet { display: flex; gap: 14px; align-items: center; justify-content: space-between; padding: 14px 16px; border-radius: 14px; background: linear-gradient(160deg, rgba(14,40,92,.55), rgba(5,12,29,.7)); border: 1px solid rgba(25,167,255,.28); backdrop-filter: blur(6px); transition: border-color .2s, background .2s; }
+  .meet:hover { border-color: rgba(25,167,255,.55); }
+  .meet-person { display: flex; align-items: center; gap: 10px; min-width: 0; white-space: nowrap; }
+  .meet-person img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid rgba(25,167,255,.6); box-shadow: 0 0 0 4px rgba(25,167,255,.12); }
+  .meet-person strong { display: block; color: #fff; font-size: 13.5px; font-weight: 700; line-height: 1.25; }
+  .meet-person span { display: block; color: rgba(255,255,255,.62); font-size: 12px; margin-top: 2px; }
+  @media (max-width: 640px) { .meet { flex-direction: column; align-items: flex-start; gap: 14px; } }
+</style>
+
+<style id="v2f">
+  .person .person-links { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 22px; }
+  .li-link { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; color: #0a66c2; transition: color .2s; }
+  .li-link iconify-icon { flex-shrink: 0; }
+  .li-link:hover { color: #0a84ff; text-decoration: underline; text-underline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#top"><img src="../assets/ax1s-logo.png" class="nav-logo" alt="AX1S Infra"></a>
+    <div class="nav-links">
+      <a href="#diensten">Diensten</a>
+      <a href="#aanpak">Aanpak</a>
+      <a href="#tools">Tools</a>
+      <a href="#insights">Insights</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <span class="lang"><iconify-icon icon="solar:global-linear" width="14"></iconify-icon>NL / EN</span>
+      <a href="../savings-scan.html" class="btn btn-primary">Plan een gratis Savings Scan</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero on-dark" id="top">
+  <canvas class="hero-bg" aria-hidden="true"></canvas>
+  <svg class="swoosh" viewBox="0 0 900 340" aria-hidden="true" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="sw" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#0a2a78"/><stop offset=".45" stop-color="#0a6cf0"/><stop offset="1" stop-color="#53c8ff"/>
+      </linearGradient>
+      <filter id="glow" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+    </defs>
+    <path d="M10 332 C250 242 560 112 890 8 C600 172 300 292 10 332 Z" fill="url(#sw)" filter="url(#glow)" opacity=".55"/>
+    <path d="M10 332 C250 242 560 112 890 8 C600 172 300 292 10 332 Z" fill="url(#sw)"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">FinOps &amp; Infrastructure Specialists</span>
+      <h1>FinOps-driven<br><em>cost intelligence</em><br>for Cloud &amp; AI</h1>
+      <p class="hero-sub">AX1S Infra helpt digital-first bedrijven met het in kaart brengen en reduceren van cloud- en AI-uitgaven.</p>
+      <div class="hero-btns">
+        <a href="../savings-scan.html" class="btn btn-primary">Plan een gratis Savings Scan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+        <a href="#aanpak" class="btn btn-ghost-light">Meer over FinOps</a>
+      </div>
+      <div class="cert">
+        <img class="badge" src="../assets/finops-certified-badge.png" alt="FinOps Certified Practitioner">
+        <p><strong>FinOps Certified Practitioner</strong>Beide oprichters zijn gecertificeerd door de FinOps Foundation.</p>
+      </div>
+    </div>
+    <div class="hero-right">
+      <aside class="proof">
+      <span class="eyebrow">Gemiddelde besparing</span>
+      <div class="big">23<span>%</span></div>
+      <p class="cap">na een FinOps-traject, op cloud- en compute-uitgaven.</p>
+      <ul>
+        <li><a href="../savings-scan.html"><iconify-icon icon="solar:magnifer-zoom-in-linear" width="20"></iconify-icon><div><strong>Cloud &amp; AI Savings Scan</strong>Ontdek waar je cloud- en AI-uitgaven naartoe gaan en wat er te besparen valt. Kosteloos.</div><iconify-icon class="go" icon="solar:arrow-right-linear" width="18"></iconify-icon></a></li>
+        <li><a href="../finops-radar.html"><iconify-icon icon="solar:radar-2-linear" width="20"></iconify-icon><div><strong>FinOps Radar</strong>Test zelf binnen 2 minuten je besparingspotentieel.</div><iconify-icon class="go" icon="solar:arrow-right-linear" width="18"></iconify-icon></a></li>
+      </ul>
+    </aside>
+      <a href="#team" class="meet" aria-label="Maak kennis met Jelle en Tom">
+        <div class="meet-person"><img src="team-tom-face.jpg" alt="Tom Prager"><div><strong>Tom Prager</strong><span>AI Infrastructure</span></div></div>
+        <div class="meet-person"><img src="team-jelle.jpg" alt="Jelle van Zantwijk" style="object-position:center 15%"><div><strong>Jelle van Zantwijk</strong><span>Cloud &amp; Finance</span></div></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap facts-inner">
+    <div class="fact"><iconify-icon icon="solar:verified-check-linear" width="24"></iconify-icon><div><strong>FinOps Certified</strong>Gecertificeerd door de FinOps Foundation</div></div>
+    <div class="fact"><iconify-icon icon="solar:hand-heart-linear" width="24"></iconify-icon><div><strong>Gratis &amp; vrijblijvend</strong>Intake en Savings Scan</div></div>
+    <div class="fact"><iconify-icon icon="solar:clock-circle-linear" width="24"></iconify-icon><div><strong>Reactie binnen 24 uur</strong>Op elke intakeaanvraag</div></div>
+    <div class="fact"><iconify-icon icon="solar:map-point-linear" width="24"></iconify-icon><div><strong>Amsterdam</strong>Nederland</div></div>
+  </div>
+</div>
+
+<section id="diensten">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Wat we doen</span>
+      <h2>Drie manieren om samen te werken.</h2>
+      <p>Geen vaste prijslijst, elk traject verschilt in omvang. Begin vrijblijvend, kies een afgebakend project of maak er doorlopende ondersteuning van.</p>
+    </div>
+    <div class="cards-3">
+      <div class="card primary">
+        <div class="tag">Kernaanbod</div>
+        <h3>FinOps-as-a-Service</h3>
+        <p>Cloud- en AI-omgevingen veranderen continu. Wij blijven meekijken, zodat besparingen ook blijven staan en kosten een bewuste keuze blijven.</p>
+        <a href="../finops-diensten.html" class="link-arrow">Plan een gesprek <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+      </div>
+      <div class="card">
+        <div class="tag">Losse opdracht</div>
+        <h3>Uitgebreid assessment</h3>
+        <p>Een diepgaande doorlichting van je cloud- en AI-uitgaven: waar gaat het geld naartoe, waar zit verspilling en wat levert optimalisatie op, met een concreet plan.</p>
+        <a href="../finops-diensten.html" class="link-arrow">Vraag een voorstel aan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+      </div>
+      <div class="card">
+        <div class="tag">Op maat</div>
+        <h3>Traject op maat</h3>
+        <p>Een afgebakend maatwerkproject waarin we verspilling opsporen en een werkend FinOps-framework opzetten, afgestemd op jouw organisatie.</p>
+        <a href="../finops-diensten.html" class="link-arrow">Vraag een voorstel aan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+      </div>
+    </div>
+    <div class="start-row">
+      <span>Liever eerst vrijblijvend kijken?</span>
+      <a href="../savings-scan.html" class="link-arrow">Cloud &amp; AI Savings Scan <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+      <a href="../finops-radar.html" class="link-arrow">FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+    </div>
+  </div>
+</section>
+
+<section id="aanpak" class="soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Waarom FinOps?</span>
+      <h2>Technologiegroei zonder kostenbeheer is een risico.</h2>
+      <p>Cloud- en AI-uitgaven groeien vaak sneller dan de omzet. AX1S brengt finance en engineering samen om dat om te buigen naar structurele besparing.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Inform</h3><p>Inzicht in wat er wordt uitgegeven, door wie en waarom. Elk team ziet zijn eigen verbruik.</p></div>
+      <div class="step"><div class="n">02</div><h3>Optimize</h3><p>Verspilling opsporen en de juiste inkoopkeuzes maken, van commitments tot rechtgetrokken capaciteit.</p></div>
+      <div class="step"><div class="n">03</div><h3>Operate</h3><p>Continu bijsturen met duidelijk eigenaarschap, in plaats van een jaarlijkse exercitie achteraf.</p></div>
+    </div>
+    <p style="margin-top:34px"><a href="../wat-is-finops.html" class="link-arrow">Lees de volledige uitleg over FinOps <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a></p>
+  </div>
+</section>
+
+<section class="case on-dark">
+  <div class="wrap case-inner">
+    <div class="case-text">
+      <span class="eyebrow">Klantcase</span>
+      <h2>23% besparing binnen een gericht traject.</h2>
+      <p>Zo realiseerde een klant structurele besparing op cloud- en compute-uitgaven, met zicht op wie welke kosten stuurt.</p>
+      <a href="../blog/case-23-procent-besparing.html" class="link-arrow">Lees de case <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+    </div>
+    <div class="case-img"><img src="../assets/banner-cloudkosten-elimineren.jpg" alt="Dalende kostengrafiek met wolk en pijl omlaag: structurele besparing op cloudkosten" style="object-position:right center"></div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Nog aan het overwegen?</span>
+      <h2>Eerst zelf proberen.</h2>
+      <p>Gratis tools, geen gesprek nodig. Probeer ze zelf en kom later terug als je vragen hebt.</p>
+    </div>
+    <div class="cards-4">
+      <a href="../finops-radar.html" class="tool feature">
+        <div class="tag">Gratis tool</div>
+        <h3>FinOps Radar: ontdek binnen 2 minuten jouw verborgen besparing</h3>
+        <p>Cloudkosten, AI-kosten of RI vs. Savings Plan: kies je invalshoek, direct resultaat.</p>
+        <span class="link-arrow">Start de FinOps Radar <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></span>
+      </a>
+      <a href="../ai-kosten-calculator.html" class="tool">
+        <div class="tag">Calculator</div>
+        <h3>AI-kostencalculator</h3>
+        <p>Bereken direct wat jullie AI-gebruik gaat kosten, inclusief opbouw en groeiprojectie.</p>
+        <span class="link-arrow">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></span>
+      </a>
+      <a href="../ri-vs-savings-plan-calculator.html" class="tool">
+        <div class="tag">Calculator</div>
+        <h3>RI vs. Savings Plan Calculator</h3>
+        <p>Vergelijk On-Demand, Reserved Instances en Savings Plans. Geen e-mail nodig.</p>
+        <span class="link-arrow">Open de calculator <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></span>
+      </a>
+      <a href="../assets/downloads/AX1S-FinOps-QuickWin-Checklist.pdf" class="tool">
+        <div class="tag">Download</div>
+        <h3>FinOps Quick-Win Checklist</h3>
+        <p>16 concrete acties, van directe quick wins tot structurele borging. Print ’m uit en vink af.</p>
+        <span class="link-arrow">Download checklist <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></span>
+      </a>
+    </div>
+    <div class="more">
+      <a href="../gratis-tools.html" class="link-arrow">Bekijk alle gratis tools &amp; templates <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+      <a href="../finops-glossarium.html" class="link-arrow">FinOps Begrippenlijst <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+    </div>
+  </div>
+</section>
+
+<section id="insights" class="soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Insights</span>
+      <h2>Praktische inzichten over FinOps, cloud- en AI-kosten.</h2>
+    </div>
+    <div class="cards-3">
+      <a href="../blog/ai-van-pilot-naar-schaal.html" class="post">
+        <div class="img"><img src="../assets/banner-ai-van-pilot-naar-schaal.jpg" style="object-position:center 26%" alt="Van pilot naar schaal: AI moet ook financieel schaalbaar zijn"></div>
+        <div class="body"><div class="meta"><span class="cat">AI</span><span>·</span><span>7 okt 2026</span><span>·</span><span>3 min</span></div><h3>AI van pilot naar schaal: dan begint de businesscase</h3><span class="by">Jelle van Zantwijk</span></div>
+      </a>
+      <a href="../blog/resource-tagging-fundament-finops.html" class="post">
+        <div class="img"><img src="../assets/banner-resource-tagging.jpg" alt="Wolk van blokken met tags voor resource tagging"></div>
+        <div class="body"><div class="meta"><span class="cat">FinOps</span><span>·</span><span>5 okt 2026</span><span>·</span><span>3 min</span></div><h3>Resource tagging: het fundament van FinOps</h3><span class="by">Tom Prager</span></div>
+      </a>
+      <a href="../blog/cloud-economics-wordt-compute-economics.html" class="post">
+        <div class="img"><img src="../assets/banner-compute-economics.jpg" style="object-position:center 38%" alt="Cloud economics wordt compute economics"></div>
+        <div class="body"><div class="meta"><span class="cat">AI</span><span>·</span><span>3 okt 2026</span><span>·</span><span>3 min</span></div><h3>Cloud economics wordt compute economics</h3><span class="by">Jelle van Zantwijk</span></div>
+      </a>
+    </div>
+    <p style="margin-top:30px"><a href="../index.html#blog" class="link-arrow">Alle artikelen <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a></p>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Het team</span>
+      <h2>Wie we zijn.</h2>
+    </div>
+    <div class="team">
+      <div class="person">
+        <img src="team-jelle.jpg" alt="Jelle van Zantwijk">
+        <div>
+          <div class="role">Cloud &amp; Finance</div>
+          <h3>Jelle van Zantwijk</h3>
+          <p>Jelle heeft een achtergrond in finance en richt zich op FinOps en cost management voor cloud en AI. Hij spreekt de taal van zowel de CFO als de engineer, en zorgt dat techuitgaven een bewuste keuze worden in plaats van een verrassing op de factuur.</p>
+          <div class="person-links"><span class="pill"><img src="../assets/finops-certified-badge.png" alt="">FinOps Certified Practitioner</span><a class="li-link" href="https://www.linkedin.com/in/jellevanzantwijk/" target="_blank" rel="noopener" aria-label="Jelle van Zantwijk op LinkedIn"><iconify-icon icon="ri:linkedin-box-fill" width="18"></iconify-icon>LinkedIn</a></div>
+        </div>
+      </div>
+      <div class="person">
+        <img src="team-tom-face.jpg" alt="Tom Prager">
+        <div>
+          <div class="role">AI Infrastructure</div>
+          <h3>Tom Prager</h3>
+          <p>Tom is FinOps Certified Practitioner met een wetenschappelijke achtergrond in kunstmatige intelligentie. Binnen FinOps richt hij zich vooral op AI-infrastructuur: hij weet wat high density compute omgevingen vragen en hoe je die technisch en financieel goed inricht.</p>
+          <div class="person-links"><span class="pill"><img src="../assets/finops-certified-badge.png" alt="">FinOps Certified Practitioner</span><a class="li-link" href="https://www.linkedin.com/in/tom-prager-898899285/" target="_blank" rel="noopener" aria-label="Tom Prager op LinkedIn"><iconify-icon icon="ri:linkedin-box-fill" width="18"></iconify-icon>LinkedIn</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact on-dark" id="contact">
+  <div class="wrap contact-inner">
+    <div>
+      <span class="eyebrow">Gratis intake</span>
+      <h2>Vertel ons waar je staat. Wij kijken mee.</h2>
+      <p>Deel welke cloud- of AI-leveranciers je gebruikt, wat de kosten ongeveer zijn en wat de uitdaging is. AX1S geeft al in het eerste gesprek een eerlijk beeld van wat er te besparen valt.</p>
+    </div>
+    <div class="contact-actions">
+      <a href="https://calendly.com/j-vanzantwijk-ax1s-infra" class="btn btn-primary">Plan direct in de agenda <iconify-icon icon="solar:calendar-linear" width="16"></iconify-icon></a>
+      <a href="../index.html#contact" class="btn btn-ghost-light">Of vul het formulier in</a>
+      <span class="small">Liever direct mailen? <a href="mailto:info@ax1s-infra.com">info@ax1s-infra.com</a></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <div>
+        <img src="../assets/ax1s-logo.png" class="foot-logo" alt="AX1S Infra">
+        <p>FinOps &amp; Infrastructure Specialists<br>Amsterdam, Nederland</p>
+      </div>
+      <div class="foot-cols">
+        <div><h4>Diensten</h4><a href="../finops-diensten.html">Diensten &amp; opties</a><a href="../savings-scan.html">Savings Scan</a><a href="../finops-radar.html">FinOps Radar</a></div>
+        <div><h4>Kennis</h4><a href="../wat-is-finops.html">Wat is FinOps?</a><a href="../finops-glossarium.html">Begrippenlijst</a><a href="../gratis-tools.html">Gratis tools</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 AX1S Infra. All Rights Reserved.</span><span>FinOps-driven cost intelligence for Cloud &amp; AI</span></div>
+  </div>
+</footer>
+
+<div class="concept-flag">Concept v2: dichter bij het AX1S-merk</div>
+<script>
+(function () {
+  var cv = document.querySelector('.hero-bg'); if (!cv) return;
+  var ctx = cv.getContext('2d'), W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var orbs = [], dots = [], lines = [], pulses = [], t0 = performance.now(), running = true;
+
+  function rnd(a, b) { return a + Math.random() * (b - a); }
+  function setup() {
+    var r = cv.getBoundingClientRect(); W = r.width; H = r.height;
+    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    orbs = []; for (var i = 0; i < 6; i++) orbs.push({ x: rnd(.05, .95), y: rnd(.1, .95), r: rnd(110, 250), sp: rnd(.00006, .00016), ph: rnd(0, 6.28), a: rnd(.07, .16), c: i % 2 ? '25,167,255' : '10,100,255' });
+    var n = Math.round(W / 26); dots = [];
+    for (var j = 0; j < n; j++) dots.push({ x: rnd(0, W), y: rnd(0, H), vx: rnd(-.12, .12), vy: rnd(-.2, -.04), s: rnd(.8, 2.1), a: rnd(.18, .5) });
+    lines = [
+      { y: .30, A: 22, k: .0062, s: -.00026, k2: .015, s2: .00038, w: 1,   a: .07 },
+      { y: .40, A: 28, k: .0078, s: .00032,  k2: .018, s2: -.00044, w: 1,   a: .08 },
+      { y: .51, A: 32, k: .0056, s: -.0003,  k2: .013, s2: .0004,  w: 1.1, a: .09 },
+      { y: .62, A: 30, k: .0075, s: .00035,  k2: .017, s2: -.0005, w: 1.1, a: .10 },
+      { y: .73, A: 26, k: .0060, s: -.00028, k2: .014, s2: .00042, w: 1,   a: .085 },
+      { y: .84, A: 20, k: .0092, s: .00045,  k2: .021, s2: -.00036, w: 1,   a: .07 }
+    ];
+    pulses = [];
+    for (var li = 0; li < lines.length; li++) { var np = 2 + (W > 1000 ? 1 : 0); for (var pi = 0; pi < np; pi++) pulses.push({ l: li, x: rnd(0, W), v: rnd(.7, 2.1) * (li % 2 ? 1 : .8), a: rnd(.55, 1), r: rnd(.3, .5) }); }
+  }
+  function yAt(l, x, t) { return l.y * H + l.A * Math.sin(x * l.k + t * l.s * 2) + l.A * .45 * Math.sin(x * l.k2 + t * l.s2 * 2); }
+
+  function frame(now) {
+    var t = reduce ? 4000 : now - t0;
+    ctx.clearRect(0, 0, W, H);
+    // glowing orbs
+    for (var i = 0; i < orbs.length; i++) {
+      var o = orbs[i], x = (o.x + Math.sin(t * o.sp + o.ph) * .06) * W, y = (o.y + Math.cos(t * o.sp * 1.3 + o.ph) * .06) * H;
+      var g = ctx.createRadialGradient(x, y, 0, x, y, o.r);
+      g.addColorStop(0, 'rgba(' + o.c + ',' + o.a + ')'); g.addColorStop(1, 'rgba(' + o.c + ',0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, o.r, 0, 6.283); ctx.fill();
+    }
+    // faint data lines with nodes
+    for (var k = 0; k < lines.length; k++) {
+      var l = lines[k]; ctx.beginPath();
+      for (var x2 = 0; x2 <= W; x2 += 8) { var yy = yAt(l, x2, t); if (x2 === 0) ctx.moveTo(x2, yy); else ctx.lineTo(x2, yy); }
+      var lg = ctx.createLinearGradient(0, 0, W, 0);
+      lg.addColorStop(0, 'rgba(25,167,255,0)'); lg.addColorStop(.35, 'rgba(25,167,255,' + l.a + ')'); lg.addColorStop(1, 'rgba(92,196,255,' + l.a + ')');
+      ctx.strokeStyle = lg; ctx.lineWidth = l.w; ctx.stroke();
+      ctx.fillStyle = 'rgba(92,196,255,' + (l.a + .04) + ')';
+      for (var x3 = 60 + k * 23; x3 < W; x3 += 130) { ctx.beginPath(); ctx.arc(x3, yAt(l, x3, t), 2.2, 0, 6.283); ctx.fill(); }
+    }
+    // small lights travelling along the data lines
+    for (var u = 0; u < pulses.length; u++) {
+      var pu = pulses[u], pl = lines[pu.l];
+      if (!reduce) { pu.x += pu.v; if (pu.x > W + 30) pu.x = -30; }
+      var fade = Math.min(1, Math.max(0, Math.min(pu.x + 30, W + 30 - pu.x) / 120));
+      var py = yAt(pl, pu.x, t), al = pu.a * fade;
+      for (var tr = 1; tr <= 9; tr++) {
+        var tx = pu.x - tr * 1.6; ctx.strokeStyle = 'rgba(120,205,255,' + (al * .08 * (1 - tr / 10)) + ')'; ctx.lineWidth = pu.r * 1.2;
+        ctx.beginPath(); ctx.moveTo(tx + 1.6, yAt(pl, tx + 1.6, t)); ctx.lineTo(tx, yAt(pl, tx, t)); ctx.stroke();
+      }
+      var gl = ctx.createRadialGradient(pu.x, py, 0, pu.x, py, 2.4);
+      gl.addColorStop(0, 'rgba(140,215,255,' + (al * .13) + ')'); gl.addColorStop(1, 'rgba(25,167,255,0)');
+      ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(pu.x, py, 2.4, 0, 6.283); ctx.fill();
+      ctx.fillStyle = 'rgba(225,245,255,' + (al * .3) + ')'; ctx.beginPath(); ctx.arc(pu.x, py, pu.r, 0, 6.283); ctx.fill();
+    }
+    // drifting dots + network links
+    for (var d = 0; d < dots.length; d++) {
+      var p = dots[d];
+      if (!reduce) { p.x += p.vx; p.y += p.vy; if (p.y < -6) { p.y = H + 6; p.x = rnd(0, W); } if (p.x < -6) p.x = W + 6; if (p.x > W + 6) p.x = -6; }
+      ctx.fillStyle = 'rgba(120,205,255,' + p.a + ')'; ctx.beginPath(); ctx.arc(p.x, p.y, p.s, 0, 6.283); ctx.fill();
+      for (var e = d + 1; e < dots.length; e++) {
+        var q = dots[e], dx = p.x - q.x, dy = p.y - q.y, dist = dx * dx + dy * dy;
+        if (dist < 9000) { ctx.strokeStyle = 'rgba(25,167,255,' + (.14 * (1 - dist / 9000)) + ')'; ctx.lineWidth = .7; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke(); }
+      }
+    }
+    if (running && !reduce) requestAnimationFrame(frame);
+  }
+  setup(); requestAnimationFrame(frame);
+  var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { setup(); if (reduce) frame(0); }, 150); });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { var v = en[0].isIntersecting; if (v && !running) { running = true; requestAnimationFrame(frame); } running = v; }).observe(cv);
+})();
+</script>
+</body>
+</html>
