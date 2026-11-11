@@ -273,3 +273,12 @@
 .home .person-links .pill img { width: 20px; height: 24px; }
 @media (max-width: 1100px) { .home .person-links { flex-wrap: wrap; } }
 @media (max-width: 640px) { .home #team .person { grid-template-columns: 1fr; } .home .person-links { flex-wrap: wrap; } }
+
+/* teamkaarten: gelijke hoogte, regel met locatie/certificaat/LinkedIn onderaan en verticaal gecentreerd */
+.home #team .person { align-items: stretch; }
+.home #team .person > div { display: flex; flex-direction: column; }
+.home #team .person p { margin-bottom: 14px; }
+.home .person-links { align-items: center; margin-top: auto; }
+.home .person-links .loc, .home .person-links .pill, .home .person-links .li-link { display: inline-flex; align-items: center; line-height: 1; height: 26px; }
+.home .person-links .pill img { display: block; }
+.home .li-link iconify-icon { display: block; }
