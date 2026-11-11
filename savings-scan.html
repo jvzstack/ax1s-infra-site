@@ -200,7 +200,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
 <link rel="stylesheet" href="assets/site-v2.css">
 <script src="assets/lang-switch.js" defer></script>
 </head>
-<body>
+<body class="v2-scan">
 
 <canvas id="bg-canvas"></canvas>
 <nav>
@@ -251,7 +251,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
   </div>
 </section>
 
-<section class="scan-wide" id="wat-we-onderzoeken">
+<section class="scan-wide scan-first" id="wat-we-onderzoeken">
   <div class="why-grid">
     <div class="why-text">
       <h2>Waarom een Savings Scan?</h2>
@@ -270,7 +270,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
   </div>
 </section>
 
-<section class="scan-wide">
+<section class="scan-wide scan-alt">
   <h2>Wat we onderzoeken</h2>
   <div class="research-grid">
     <div class="research-card">
@@ -324,7 +324,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
   </div>
 </section>
 
-<section class="scan-wide" id="scan-form">
+<section class="scan-wide scan-dark" id="scan-form">
   <div class="scan-form-grid">
     <div>
       <h2>Vertel ons waar je staat.</h2>
@@ -402,7 +402,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
       fc.style.transition = 'opacity 0.35s ease';
       fc.style.opacity = '0';
       setTimeout(() => {
-        fc.innerHTML = '<div style="padding:48px 16px;text-align:center;"><div style="width:52px;height:52px;border-radius:50%;background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.4);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;"><iconify-icon icon="solar:check-circle-linear" style="color:#d4af37" width="26"></iconify-icon></div><h3 style="font-size:18px;font-weight:700;color:#e8eaf0;margin-bottom:8px;">Aanvraag ontvangen</h3><p style="font-size:14px;color:#ced4e0;line-height:1.7;">Bedankt. We nemen snel contact met je op om de Savings Scan in te plannen.</p></div>';
+        fc.innerHTML = '<div style="padding:48px 16px;text-align:center;"><div style="width:52px;height:52px;border-radius:50%;background:#eaf2ff;border:1px solid #c9dcf8;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;"><iconify-icon icon="solar:check-circle-linear" style="color:#0a6cf0" width="26"></iconify-icon></div><h3 style="font-size:18px;font-weight:800;color:#14243b;margin-bottom:8px;">Aanvraag ontvangen</h3><p style="font-size:14px;color:#55657c;line-height:1.7;">Bedankt. We nemen snel contact met je op om de Savings Scan in te plannen.</p></div>';
         fc.style.opacity = '1';
       }, 370);
     } else {

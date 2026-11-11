@@ -157,3 +157,80 @@ body.v2-tool { background: #f2f6fb !important; color: var(--v2-slate); }
 
 /* moet na de nowrap-regel hierboven staan: op smalle schermen mag de knoptekst afbreken */
 @media (max-width: 640px) { .nav-cta { white-space: normal; } }
+
+/* ------------------------------------------------------------------ */
+/* SAVINGS SCAN: donkere kopband, lichte inhoud, formulier in donker blok met witte kaart */
+body.v2-scan { background: #fff !important; }
+.v2-scan .scan-hero { background: radial-gradient(ellipse 70% 110% at 85% 10%, rgba(10,100,255,.36), transparent 66%), radial-gradient(ellipse 50% 70% at 5% 100%, rgba(0,60,170,.3), transparent 70%), #050c1d; padding: 128px 32px 96px; }
+.v2-scan .scan-hero h1 { color: #fff; font-size: 44px; letter-spacing: -0.035em; line-height: 1.1; }
+.v2-scan .scan-hero-sub { color: rgba(255,255,255,.78); }
+.v2-scan .scan-eyebrow { color: #19a7ff; }
+.v2-scan .scan-hero-icon { box-shadow: 0 0 0 1px rgba(25,167,255,.45); }
+.v2-scan .scan-proof-card { background: linear-gradient(160deg, rgba(14,40,92,.7), rgba(5,12,29,.8)); border-color: rgba(25,167,255,.38); }
+.v2-scan .scan-proof-label { color: rgba(255,255,255,.74); }
+.v2-scan .btn-primary { border-color: transparent; background: linear-gradient(135deg, #1aa8ff 0%, #0a66e8 100%) !important; }
+.v2-scan .scan-hero .btn-secondary { color: #fff; border-color: rgba(255,255,255,.35); }
+.v2-scan .scan-hero .btn-secondary:hover { border-color: #fff; background: rgba(255,255,255,.06); }
+
+/* inhoud: lichte tokens, volle-breedte vlakken */
+.v2-scan .scan-wide { padding-bottom: 72px; }
+.v2-scan .scan-wide:not(.scan-dark) { --text: #14243b; --muted: #55657c; --card: #fff; --card-border: #dbe3ee; --card-shadow: 0 1px 2px rgba(11,31,58,.05), 0 8px 24px -12px rgba(11,31,58,.16); --accent-light: #0a6cf0; --accent-bg: #eaf2ff; --accent-border: #c9dcf8; }
+.v2-scan .scan-wide h2 { letter-spacing: -0.03em; }
+.v2-scan .scan-wide:not(.scan-dark) h2 { color: #14243b; }
+.v2-scan .scan-wide:not(.scan-dark) h2::after { content: ''; display: block; width: 46px; height: 3px; border-radius: 2px; margin-top: 16px; background: linear-gradient(90deg, #19a7ff, #0a7cff); }
+.v2-scan .scan-alt, .v2-scan .scan-dark { box-shadow: 0 0 0 100vmax var(--v2-soft); clip-path: inset(0 -100vmax); }
+.v2-scan .scan-alt { background: var(--v2-soft); }
+.v2-scan .scan-dark { background: radial-gradient(ellipse 55% 90% at 85% 40%, rgba(10,100,255,.3), transparent 70%), #050c1d; box-shadow: 0 0 0 100vmax #050c1d; padding-top: 80px; padding-bottom: 80px; }
+.v2-scan .scan-dark h2 { color: #fff; }
+.v2-scan .scan-dark h2::after { content: ''; display: block; width: 46px; height: 3px; border-radius: 2px; margin-top: 16px; background: linear-gradient(90deg, #19a7ff, #0a7cff); }
+
+/* goud wordt merkblauw */
+.v2-scan .receive-card { border-color: #c9dcf8; }
+.v2-scan .receive-card h3, .v2-scan .receive-item iconify-icon, .v2-scan .research-list iconify-icon, .v2-scan .scan-next-step a { color: #0a6cf0; }
+.v2-scan .research-card-icon, .v2-scan .step-num { background: #eaf2ff; border-color: #c9dcf8; color: #0a6cf0; }
+.v2-scan .scan-dark .pi iconify-icon { color: #19a7ff; }
+.v2-scan .scan-dark .scan-next-step a { color: #8fd4ff; }
+.v2-scan .scan-dark .scan-next-step, .v2-scan .scan-dark .pi { color: rgba(255,255,255,.8); }
+.v2-scan .scan-dark .cert-block { background: rgba(255,255,255,.05); border-color: rgba(25,167,255,.25); }
+.v2-scan .scan-dark .cert-block-text { color: rgba(255,255,255,.7); }
+.v2-scan .scan-dark .cert-block-text strong { color: #fff; }
+
+/* formulier: witte kaart */
+.v2-scan .scan-dark .form-card { background: #fff; border: 1px solid #e3e8ef; box-shadow: 0 24px 50px -24px rgba(0,0,0,.6); --muted: #55657c; --text: #14243b; --accent-light: #0a6cf0; }
+.v2-scan .scan-dark .field label { color: #14243b; letter-spacing: .04em; }
+.v2-scan .scan-dark .field input, .v2-scan .scan-dark .field textarea { background: #fff; border-color: #cdd6e3; color: #14243b; }
+.v2-scan .scan-dark .field input::placeholder, .v2-scan .scan-dark .field textarea::placeholder { color: #8a97ab; }
+.v2-scan .scan-dark .form-submit { background: linear-gradient(135deg, #1aa8ff 0%, #0a66e8 100%); }
+.v2-scan .scan-dark .calendly-cta { background: rgba(255,255,255,.06); border-color: rgba(25,167,255,.35); }
+.v2-scan .scan-footer-spacer { display: none; }
+@media (max-width: 640px) { .v2-scan .scan-hero { padding: 96px 20px 72px; } .v2-scan .scan-hero h1 { font-size: 32px; } }
+
+/* ------------------------------------------------------------------ */
+/* DIENSTEN & OPTIES: lichte pagina (v2-light), prijskaarten in merkkleuren */
+.v2-diensten .article-head .pricing-intro { color: rgba(255,255,255,.78) !important; }
+.v2-diensten .price-card { background: #fff; border: 1px solid #e3e8ef; box-shadow: 0 1px 2px rgba(11,31,58,.05), 0 8px 24px -12px rgba(11,31,58,.16); }
+.v2-diensten .price-card:hover { box-shadow: 0 14px 34px -16px rgba(11,31,58,.3); }
+.v2-diensten .price-amount { color: #14243b; }
+.v2-diensten .price-icon, .v2-diensten .price-card.theme-blue .price-icon, .v2-diensten .price-card.theme-teal .price-icon { background: #eaf2ff; color: #0a6cf0; }
+.v2-diensten .price-badge, .v2-diensten .price-card.theme-blue .price-badge, .v2-diensten .price-card.theme-teal .price-badge { color: #0a6cf0; background: #eaf2ff; border-color: #c9dcf8; }
+.v2-diensten .theme-blue .price-feature iconify-icon, .v2-diensten .theme-teal .price-feature iconify-icon { color: #0a6cf0; }
+.v2-diensten .price-card.theme-blue { border-color: #0a7cff; }
+.v2-diensten .price-card.theme-teal { border-color: #e3e8ef; }
+
+/* aanbevolen startpunt (Savings Scan): donkere kaart */
+.v2-diensten .price-card.theme-gold { background: linear-gradient(160deg, #0a1a3a, #050c1d); border-color: rgba(25,167,255,.45); box-shadow: 0 24px 50px -26px rgba(5,12,29,.7); }
+.v2-diensten .price-card.theme-gold h3, .v2-diensten .price-card.theme-gold .price-feature { color: #fff; }
+.v2-diensten .price-card.theme-gold .price-desc { color: rgba(255,255,255,.74); }
+.v2-diensten .price-card.theme-gold .price-icon { background: rgba(25,167,255,.16); color: #19a7ff; }
+.v2-diensten .price-card.theme-gold .price-badge { color: #8fd4ff; background: rgba(25,167,255,.14); border-color: rgba(25,167,255,.4); }
+.v2-diensten .theme-gold .price-feature iconify-icon { color: #19a7ff; }
+.v2-diensten .price-ribbon { background: linear-gradient(135deg, #1aa8ff, #0a66e8); color: #fff; box-shadow: 0 4px 14px -4px rgba(10,124,255,.65); }
+
+/* knoppen */
+.v2-diensten .price-cta.cta-gold, .v2-diensten .price-cta.cta-blue { background: linear-gradient(135deg, #1aa8ff 0%, #0a66e8 100%); color: #fff; border-color: transparent; box-shadow: 0 8px 22px -10px rgba(10,124,255,.75); }
+.v2-diensten .price-cta.cta-gold:hover, .v2-diensten .price-cta.cta-blue:hover { background: linear-gradient(135deg, #38b6ff 0%, #0b72ff 100%); }
+.v2-diensten .price-cta.cta-teal { background: #fff; color: #0b1f3a; border: 1px solid #cfd8e4; }
+.v2-diensten .price-cta.cta-teal:hover { border-color: #0b1f3a; background: #fff; }
+.v2-diensten .payresults-banner { border-color: #c9dcf8; box-shadow: 0 1px 2px rgba(11,31,58,.05), 0 8px 24px -12px rgba(11,31,58,.16); }
+.v2-diensten .payresults-cta { background: linear-gradient(135deg, #1aa8ff 0%, #0a66e8 100%); }
+.v2-diensten .honest-note-avatars img { border-color: #fff; }
