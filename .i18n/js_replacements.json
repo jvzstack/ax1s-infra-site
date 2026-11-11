@@ -9,6 +9,10 @@
    "Send request, reply within 24h <iconify"
   ],
   [
+   "<img src=\"assets/finops-certified-badge.png\"",
+   "<img src=\"../assets/finops-certified-badge.png\""
+  ],
+  [
    "Bedankt. We nemen binnen 24 uur contact op.",
    "Thank you. We’ll get back to you within 24 hours."
   ],
@@ -17,12 +21,12 @@
    "Certified by the FinOps Foundation"
   ],
   [
-   "<img src=\"assets/team-jelle.jpg\"",
-   "<img src=\"../assets/team-jelle.jpg\""
+   "<img src=\"assets/team-jelle-v2.jpg\"",
+   "<img src=\"../assets/team-jelle-v2.jpg\""
   ],
   [
-   "<img src=\"assets/team-tom.jpg\"",
-   "<img src=\"../assets/team-tom.jpg\""
+   "<img src=\"assets/team-tom-v2.jpg\"",
+   "<img src=\"../assets/team-tom-v2.jpg\""
   ],
   [
    "Start de FinOps Radar <iconify",
@@ -59,12 +63,12 @@
    "Certified by the FinOps Foundation"
   ],
   [
-   "<img src=\"assets/team-jelle.jpg\"",
-   "<img src=\"../assets/team-jelle.jpg\""
+   "<img src=\"assets/team-jelle-v2.jpg\"",
+   "<img src=\"../assets/team-jelle-v2.jpg\""
   ],
   [
-   "<img src=\"assets/team-tom.jpg\"",
-   "<img src=\"../assets/team-tom.jpg\""
+   "<img src=\"assets/team-tom-v2.jpg\"",
+   "<img src=\"../assets/team-tom-v2.jpg\""
   ],
   [
    "Liever direct mailen? <a",
@@ -413,6 +417,10 @@
    "Prefer to explain your situation first?"
   ],
   [
+   "<img src=\"assets/team-jelle-v2.jpg\"",
+   "<img src=\"../assets/team-jelle-v2.jpg\""
+  ],
+  [
    "hint: 'Vul een positief bedrag in.'",
    "hint: 'Enter a positive amount.'"
   ],
@@ -441,6 +449,10 @@
    "label = 'Aware but fragmented';"
   ],
   [
+   "<img src=\"assets/team-tom-v2.jpg\"",
+   "<img src=\"../assets/team-tom-v2.jpg\""
+  ],
+  [
    "hint: 'Vul positieve waarden in.'",
    "hint: 'Enter positive values.'"
   ],
@@ -459,10 +471,6 @@
   [
    "<option value=\"1\">1 jaar</option>",
    "<option value=\"1\">1 year</option>"
-  ],
-  [
-   "<img src=\"assets/team-jelle.jpg\"",
-   "<img src=\"../assets/team-jelle.jpg\""
   ],
   [
    "hint: 'Vul geldige getallen in.'",
@@ -487,10 +495,6 @@
   [
    "${fmtEUR(r.price / 12)} / maand",
    "${fmtEUR(r.price / 12)} / month"
-  ],
-  [
-   "<img src=\"assets/team-tom.jpg\"",
-   "<img src=\"../assets/team-tom.jpg\""
   ],
   [
    "\"Verweven in een totaalbedrag\"",

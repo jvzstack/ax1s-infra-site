@@ -7,8 +7,8 @@ FILES = ['index.html', 'savings-scan.html', 'finops-radar.html', 'ai-kosten-calc
 ERR = "Er ging iets mis. Probeer het opnieuw of stuur een mail naar info@ax1s-infra.com"
 PAIRS = [
  # asset paths inside JS templates (EN pages live one level deeper)
- ('<img src="assets/team-tom.jpg"', '<img src="../assets/team-tom.jpg"'),
- ('<img src="assets/team-jelle.jpg"', '<img src="../assets/team-jelle.jpg"'),
+ ('<img src="assets/team-tom-v2.jpg"', '<img src="../assets/team-tom-v2.jpg"'),
+ ('<img src="assets/team-jelle-v2.jpg"', '<img src="../assets/team-jelle-v2.jpg"'),
  ('<img src="assets/finops-certified-badge.png"', '<img src="../assets/finops-certified-badge.png"'),
  ('<img src="assets/finops-foundation-logo.png"', '<img src="../assets/finops-foundation-logo.png"'),
  # shared: forms
