@@ -59,7 +59,7 @@ The full site is also available in English under https://ax1s-infra.com/en/ (lan
 
 - [Homepage (EN)](https://ax1s-infra.com/en/): services, team, FinOps explainer, FAQ and contact
 - [Cloud & AI Savings Scan (EN)](https://ax1s-infra.com/en/savings-scan.html): free, non-binding scan of cloud and AI spend with main cost drivers, optimisation opportunities and an indication of savings potential
-- [FinOps services (EN)](https://ax1s-infra.com/en/finops-diensten.html): three ways to start, from a free Cloud & AI Savings Scan to a focused FinOps engagement or ongoing FinOps-as-a-Service
+- [FinOps services (EN)](https://ax1s-infra.com/en/finops-diensten.html): three ways to start, from a free Cloud & AI Savings Scan to a focused FinOps project or ongoing FinOps-as-a-Service
 - [What is FinOps? (EN)](https://ax1s-infra.com/en/wat-is-finops.html): definition and the FinOps Lifecycle (Inform, Optimize, Operate)
 - [Free tools, templates & checklists (EN)](https://ax1s-infra.com/en/gratis-tools.html): overview of all free resources
 - [FinOps Radar (EN)](https://ax1s-infra.com/en/finops-radar.html): free tool with three angles: cloud cost quiz, AI cost calculator and RI vs. Savings Plan comparison
