@@ -25,7 +25,6 @@
 .home .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: 72px; align-items: center; padding: 64px 32px 112px; }
 .home .hero h1 { color: #fff; font-size: 52px; line-height: 1.08; letter-spacing: -0.035em; margin-bottom: 20px; }
 .home .hero h1 em { font-style: normal; color: var(--cyan); }
-.home .hero-lead { font-size: 19px; font-weight: 700; color: #fff; line-height: 1.4; margin-bottom: 10px; }
 .home .hero-sub { font-size: 17px; line-height: 1.7; color: rgba(255,255,255,.78); max-width: 520px; margin-bottom: 32px; }
 .home .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
 .home .cert { display: flex; align-items: center; gap: 16px; padding-top: 28px; border-top: 1px solid rgba(25,167,255,.22); max-width: 520px; }
@@ -230,3 +229,5 @@
 .home .contact-grid > *, .home .two-col > *, .home .hero-inner > * { min-width: 0; }
 .home .cert-block { flex-wrap: wrap; max-width: 100%; }
 @media (max-width: 640px) { .home .cert-block-divider { display: none; } }
+
+.home .sec-head + .steps { margin-top: 0; }
