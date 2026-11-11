@@ -102,7 +102,8 @@ footer { background: var(--bg2); border-top: 1px solid rgba(25,167,255,.14); }
 @media (max-width: 640px) {
   .nav-inner { padding: 0 16px; gap: 8px; }
   .nav-logo { height: 32px; }
-  .nav-cta { font-size: 11.5px; padding: 8px 12px; line-height: 1.25; text-align: center; max-width: 150px; }
+  .nav-cta { font-size: 11.5px; padding: 8px 12px; line-height: 1.25; text-align: center; max-width: 140px; white-space: normal; }
+  .nav-cta-group { gap: 6px; flex-shrink: 0; }
 }
 
 /* menu: compacter zodat alle items op één regel passen */
@@ -114,3 +115,41 @@ footer { background: var(--bg2); border-top: 1px solid rgba(25,167,255,.14); }
 @media (max-width: 1240px) { .nav-links { gap: 18px; } .nav-inner { padding: 0 20px; } .nav-cta-secondary { display: none; } }
 @media (max-width: 1040px) { .nav-links a:nth-child(n+5) { display: none; } }
 @media (max-width: 768px) { .nav-links { display: none; } }
+
+/* ------------------------------------------------------------------ */
+/* TOOL-PAGINA'S (Radar, calculators): donkere kopband, witte kaart op lichte achtergrond */
+body.v2-tool { background: #f2f6fb !important; color: var(--v2-slate); }
+.v2-tool .tool-band { background: radial-gradient(ellipse 70% 120% at 85% 0%, rgba(10,100,255,.34), transparent 70%), radial-gradient(ellipse 50% 90% at 5% 100%, rgba(0,60,170,.3), transparent 70%), #050c1d; padding: 116px 24px 112px; position: relative; z-index: 0; }
+.v2-tool .tool-band-inner { max-width: 640px; margin: 0 auto; }
+.v2-tool .tool-band .tool-title { color: #fff; }
+.v2-tool .tool-band .tool-sub { color: rgba(255,255,255,.78); margin-bottom: 0; }
+.v2-tool .tool-band .eyebrow { color: #19a7ff; }
+.v2-tool .tool-band .back-to-menu-link { color: rgba(255,255,255,.72); margin: 18px 0 0; }
+.v2-tool .tool-band .back-to-menu-link:hover { color: #fff; }
+.v2-tool .wrap { padding-top: 0; margin-top: -64px;
+  --text: #14243b; --muted: #55657c; --card: #fff; --card-border: #dbe3ee; --card-shadow: 0 1px 2px rgba(11,31,58,.05), 0 8px 24px -12px rgba(11,31,58,.16);
+  --faint: #e8eef6; --divider: #e3e8ef; --accent-light: #0a6cf0; --accent-bg: #eaf2ff; --accent-border: #c9dcf8; }
+.v2-tool .wrap .radar-card, .v2-tool .wrap .tool-card { background: #fff; border: 1px solid #e3e8ef; box-shadow: 0 24px 50px -28px rgba(5,12,29,.45); }
+.v2-tool .wrap .intro-item, .v2-tool .wrap .result-desc, .v2-tool .wrap .finding-item, .v2-tool .wrap .savings-note,
+.v2-tool .wrap .reco-note p, .v2-tool .wrap .lead-sub { color: var(--v2-slate); }
+.v2-tool .wrap .q-option, .v2-tool .wrap .mode-card, .v2-tool .wrap .result-card, .v2-tool .wrap .finding-item,
+.v2-tool .wrap .result-empty, .v2-tool .wrap .score-pill, .v2-tool .wrap .reco-note, .v2-tool .wrap .cert-block { background: #f7f9fc; }
+.v2-tool .wrap .q-option:hover, .v2-tool .wrap .mode-card:hover { background: #eef5ff; }
+.v2-tool .wrap .q-option.selected { background: #eaf2ff; color: var(--v2-ink); border-color: var(--accent); }
+.v2-tool .wrap .score-ring-inner { background: #fff; border-color: #e3e8ef; }
+.v2-tool .wrap .score-num, .v2-tool .wrap .savings-amount { color: var(--v2-ink); }
+.v2-tool .wrap .savings-box, .v2-tool .wrap .result-card.recommended { background: linear-gradient(155deg, #eaf2ff, #f6faff); border-color: #c9dcf8; }
+.v2-tool .wrap .result-card.recommended { border-color: var(--accent); }
+.v2-tool .wrap .field input, .v2-tool .wrap .field textarea, .v2-tool .wrap .field select { background-color: #fff; border-color: #cdd6e3; color: var(--v2-ink); }
+.v2-tool .wrap .field input::placeholder, .v2-tool .wrap .field textarea::placeholder { color: #8a97ab; }
+.v2-tool .wrap .field label .opt { color: #8a97ab; }
+.v2-tool .wrap .field-note { color: #6b7a90; }
+.v2-tool .wrap .breakdown-bar { background: #e8eef6; }
+.v2-tool .wrap .duo-avatars img { border-color: #fff; box-shadow: none; }
+.v2-tool .wrap .tool-preview-card { background: #fff; }
+.v2-tool .wrap .tool-preview-link, .v2-tool .wrap .signal-chip { color: #0a6cf0; }
+.v2-tool .wrap .more-tools-diensten-btn { background: #fff; border: 1px solid #cfd8e4; color: #0b1f3a; box-shadow: none; }
+.v2-tool .wrap .more-tools-diensten-btn:hover { border-color: #0b1f3a; background: #fff; }
+.v2-tool .wrap .btn-secondary { color: var(--v2-ink); border-color: #cfd8e4; }
+.v2-tool .wrap .btn-secondary:hover { border-color: var(--v2-ink); }
+@media (max-width: 640px) { .v2-tool .tool-band { padding: 92px 16px 96px; } .v2-tool .wrap { margin-top: -56px; } }

@@ -390,7 +390,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 <link rel="stylesheet" href="assets/lang-switch.css">
 <link rel="stylesheet" href="assets/site-v2.css">
 </head>
-<body>
+<body class="v2-tool">
 
 <canvas id="bg-canvas"></canvas>
 
@@ -413,14 +413,18 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
   </div>
 </nav>
 
-<div class="wrap">
+<div class="tool-band">
+<div class="tool-band-inner">
   <div class="radar-logo"><img src="assets/radar-icon.png" alt="FinOps Radar" width="56" height="56"></div>
   <span class="eyebrow" id="mode-eyebrow">FinOps Radar</span>
   <h1 class="tool-title" id="mode-title">Eén radar, drie manieren<br>om je techkosten te doorgronden.</h1>
   <p class="tool-sub" id="mode-sub">Kies hieronder waar je grip op wil krijgen: cloudkosten, AI-kosten, of Reserved Instances vs. Savings Plans. Geen verplichting, geen wachttijd.</p>
 
   <a href="#" id="back-to-menu-link" class="back-to-menu-link" style="display:none;">&larr; Andere tool kiezen</a>
+</div>
+</div>
 
+<div class="wrap">
   <div class="radar-card" id="radar-card">
     <!-- content injected by JS -->
   </div>
@@ -749,7 +753,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     card.innerHTML = `
       <div class="result-head">
-        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${pct} * 3.6deg), rgba(255,255,255,0.10) calc(${pct} * 3.6deg) 360deg);">
+        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${pct} * 3.6deg), rgba(20,36,59,0.14) calc(${pct} * 3.6deg) 360deg);">
           <div class="score-ring-inner">
             <div class="score-num">${pct}</div>
             <div class="score-max">van 100</div>

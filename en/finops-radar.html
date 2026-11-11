@@ -410,7 +410,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
 <link href="../assets/site-v2.css" rel="stylesheet"/>
 <link href="../assets/lang-switch.css" rel="stylesheet"/></head>
-<body>
+<body class="v2-tool">
 <canvas id="bg-canvas"></canvas>
 <nav>
 <div class="nav-inner">
@@ -419,9 +419,13 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 <div class="nav-cta-group"><a class="nav-cta-secondary" href="finops-diensten.html">Services &amp; options</a> <a class="nav-cta" href="savings-scan.html">Book a Free Savings Scan</a><a aria-label="Nederlandse versie" class="lang-switch" href="../finops-radar.html" hreflang="nl" lang="nl" title="Nederlandse versie"><iconify-icon icon="solar:global-linear" width="14"></iconify-icon><span>NL</span></a></div>
 </div>
 </nav>
-<div class="wrap">
+<div class="tool-band">
+<div class="tool-band-inner">
 <div class="radar-logo"><img alt="FinOps Radar" height="56" src="../assets/radar-icon.png" width="56"/></div><span class="eyebrow" id="mode-eyebrow">FinOps Radar</span><h1 class="tool-title" id="mode-title">One radar, three ways<br/>to understand your tech costs.</h1>
-<p class="tool-sub" id="mode-sub">Choose below where you want to get a grip: cloud costs, AI costs, or Reserved Instances vs. Savings Plans. No obligation, no waiting.</p><a class="back-to-menu-link" href="#" id="back-to-menu-link" style="display:none;">← Choose another tool</a><div class="radar-card" id="radar-card">
+<p class="tool-sub" id="mode-sub">Choose below where you want to get a grip: cloud costs, AI costs, or Reserved Instances vs. Savings Plans. No obligation, no waiting.</p><a class="back-to-menu-link" href="#" id="back-to-menu-link" style="display:none;">← Choose another tool</a></div>
+</div>
+<div class="wrap">
+<div class="radar-card" id="radar-card">
 <!-- content injected by JS -->
 </div><a class="restart-link" href="#" id="restart-link" style="display:none;">Answer the questions again</a><div class="more-tools">
 <div class="more-tools-title">More free tools</div>
@@ -732,7 +736,7 @@ footer { border-top: 1px solid var(--divider); background: var(--bg2); position:
 
     card.innerHTML = `
       <div class="result-head">
-        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${pct} * 3.6deg), rgba(255,255,255,0.10) calc(${pct} * 3.6deg) 360deg);">
+        <div class="score-ring" style="background: conic-gradient(var(--accent-light) 0deg calc(${pct} * 3.6deg), rgba(20,36,59,0.14) calc(${pct} * 3.6deg) 360deg);">
           <div class="score-ring-inner">
             <div class="score-num">${pct}</div>
             <div class="score-max">out of 100</div>
