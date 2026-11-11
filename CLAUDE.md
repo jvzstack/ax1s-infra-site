@@ -48,6 +48,8 @@ Alle pagina's delen hetzelfde design-systeem; zie "Design v2" verderop (tot het 
 - `.concept/` (niet gedeployed, dot-map): ontwerpreferentie en losse varianten.
 - `.ops/restore-v1.sh`: terughaalscript.
 
+**Taal (afgesproken): standaard Engels.** Een bezoeker die van buiten de site op de homepage (`/` of `/index.html`) komt, wordt via een klein inline script bovenin `index.html` doorgestuurd naar `/en/`. Blijft Nederlands wie op de NL-wissel klikt (`assets/lang-switch.js` onthoudt de keuze in `localStorage.axLang`), wie binnen de site navigeert (referrer van dezelfde site), of `?lang=nl` gebruikt. Zoekmachines en link-previews worden niet doorgestuurd (user-agent-check), en alleen de homepage stuurt door; alle andere Nederlandse pagina's (artikelen, tools, `kennismaking.html`) blijven gewoon Nederlands bereikbaar. `hreflang x-default` verwijst nu naar de Engelse versie (pagina's en sitemap, via `.i18n/i18n.py` en `.i18n/make_sitemap.py`). Let op: een JS-redirect op de homepage kan Nederlandse vindbaarheid van de homepage beïnvloeden; bij tegenvallende NL-resultaten dit terugdraaien (script uit `index.html` halen, x-default weer NL).
+
 **Inhoud (afgesproken):** geen colocatie/hardware/Tier III meer, "Consultants" is overal "Specialists" ("FinOps & Infrastructure Specialists"). Rollen: Tom = AI Infrastructure, Jelle = Cloud & Finance. De tekst bij "Uitgebreid assessment" is door de gebruiker goedgekeurd. De homepage-afbeeldingen zijn echte `<img src>` (de oude pagina laadde ze via base64 in JavaScript, slecht voor SEO/GEO). Nieuwe foto's: `assets/team-tom.jpg` (nieuwe foto, uitsnede) en `assets/team-jelle.jpg` (rechtgezet).
 
 ### FinOps Radar (`finops-radar.html`) — 3-in-1 hub-tool

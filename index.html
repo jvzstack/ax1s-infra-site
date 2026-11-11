@@ -2,6 +2,22 @@
 <html lang="nl" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
+<script>
+/* Standaard Engels: bezoekers die van buiten de site op de homepage komen gaan naar /en/.
+   Wie Nederlands koos (NL-wissel) of binnen de site navigeert blijft Nederlands. Zoekmachines en link-previews worden niet doorgestuurd. */
+(function () {
+  try {
+    var p = location.pathname;
+    if (p !== '/' && p !== '/index.html') return;
+    if (/bot|crawl|spider|slurp|bingpreview|facebookexternalhit|linkedinbot|whatsapp|telegram|embedly|preview|lighthouse/i.test(navigator.userAgent)) return;
+    var pref = null; try { pref = localStorage.getItem('axLang'); } catch (e) {}
+    if (pref === 'nl') return;
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/[?&]lang=nl\b/.test(location.search)) return;
+    location.replace('/en/' + location.hash);
+  } catch (e) {}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ06WVBT34"></script>
 <script>
@@ -43,7 +59,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
 <link rel="canonical" href="https://ax1s-infra.com/">
 <link rel="alternate" hreflang="nl" href="https://ax1s-infra.com/">
 <link rel="alternate" hreflang="en" href="https://ax1s-infra.com/en/">
-<link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/">
+<link rel="alternate" hreflang="x-default" href="https://ax1s-infra.com/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AX1S Infra | FinOps & Infrastructure Specialists">
 <meta property="og:description" content="AX1S Infra helpt digital-first bedrijven besparen op cloud- en AI-kosten. FinOps Certified Practitioners, gevestigd in Amsterdam.">
@@ -234,6 +250,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
 <link rel="stylesheet" href="assets/site-v2.css">
 <link rel="stylesheet" href="assets/home-v2.css">
 <link rel="stylesheet" href="assets/lang-switch.css">
+<script src="assets/lang-switch.js" defer></script>
 </head>
 <body class="home">
 <nav>

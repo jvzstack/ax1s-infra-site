@@ -35,7 +35,7 @@
 .home .hero-right { display: flex; flex-direction: column; gap: 16px; }
 .home .proof { background: linear-gradient(160deg, rgba(14,40,92,.72), rgba(5,12,29,.82)); backdrop-filter: blur(6px); border: 1px solid rgba(25,167,255,.38); color: #fff; border-radius: 14px; padding: 32px 32px 24px; box-shadow: 0 0 0 1px rgba(25,167,255,.08) inset, 0 30px 60px -28px rgba(0,80,255,.55); }
 .home .proof .eyebrow { margin-bottom: 8px; }
-.home .proof .big { font-size: 72px; font-weight: 800; line-height: 1; color: #fff; letter-spacing: -0.04em; }
+.home .proof .big { font-size: 54px; font-weight: 800; line-height: 1; color: #fff; letter-spacing: -0.04em; }
 .home .proof .big span { color: var(--cyan); }
 .home .proof .cap { font-size: 14.5px; color: rgba(255,255,255,.72); margin: 8px 0 22px; }
 .home .proof ul { list-style: none; border-top: 1px solid rgba(255,255,255,.12); }
@@ -221,7 +221,7 @@
   .home .cards-4, .home .facts-inner, .home .frow { grid-template-columns: 1fr; }
   .home .person { grid-template-columns: 1fr; }
   .home .meet { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .home .proof .big { font-size: 58px; }
+  .home .proof .big { font-size: 44px; }
   .home .cert { flex-wrap: wrap; }
 }
 

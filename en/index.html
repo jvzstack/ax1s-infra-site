@@ -3,6 +3,22 @@
 <html class="scroll-smooth" lang="en">
 <head>
 <meta charset="utf-8"/>
+<script>
+/* Standaard Engels: bezoekers die van buiten de site op de homepage komen gaan naar /en/.
+   Wie Nederlands koos (NL-wissel) of binnen de site navigeert blijft Nederlands. Zoekmachines en link-previews worden niet doorgestuurd. */
+(function () {
+  try {
+    var p = location.pathname;
+    if (p !== '/' && p !== '/index.html') return;
+    if (/bot|crawl|spider|slurp|bingpreview|facebookexternalhit|linkedinbot|whatsapp|telegram|embedly|preview|lighthouse/i.test(navigator.userAgent)) return;
+    var pref = null; try { pref = localStorage.getItem('axLang'); } catch (e) {}
+    if (pref === 'nl') return;
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/[?&]lang=nl\b/.test(location.search)) return;
+    location.replace('/en/' + location.hash);
+  } catch (e) {}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VZ06WVBT34"></script>
 <script>
@@ -44,7 +60,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
 <link href="https://ax1s-infra.com/en/" rel="canonical"/>
 <link href="https://ax1s-infra.com/" hreflang="nl" rel="alternate"/>
 <link href="https://ax1s-infra.com/en/" hreflang="en" rel="alternate"/>
-<link href="https://ax1s-infra.com/" hreflang="x-default" rel="alternate"/>
+<link href="https://ax1s-infra.com/en/" hreflang="x-default" rel="alternate"/>
 
 
 
@@ -234,6 +250,7 @@ l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;
 <link href="../assets/site-v2.css" rel="stylesheet"/>
 <link href="../assets/home-v2.css" rel="stylesheet"/>
 
+<script defer="" src="../assets/lang-switch.js"></script>
 <link href="../assets/lang-switch.css" rel="stylesheet"/></head>
 <body class="home">
 <nav>

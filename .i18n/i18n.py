@@ -315,7 +315,7 @@ def make_switch(label, href, lang, aria):
 def hreflang_block(rel):
     nl, en = page_urls(rel)
     return ('<link rel="alternate" hreflang="nl" href="%s">\n<link rel="alternate" hreflang="en" href="%s">\n'
-            '<link rel="alternate" hreflang="x-default" href="%s">' % (nl, en, nl))
+            '<link rel="alternate" hreflang="x-default" href="%s">' % (nl, en, en))
 
 
 def build_en(rel, tr, js_repl, missing_all):

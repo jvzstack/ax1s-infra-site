@@ -19,7 +19,7 @@ for b in blocks:
     en = D + 'en/' + ('' if rel == 'index.html' else rel)
     alts = ('\n    <xhtml:link rel="alternate" hreflang="nl" href="%s"/>'
             '\n    <xhtml:link rel="alternate" hreflang="en" href="%s"/>'
-            '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>') % (loc, en, loc)
+            '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>') % (loc, en, en)
     nl_b = b.replace('\n  </url>', alts + '\n  </url>')
     en_b = re.sub(r'<lastmod>.*?</lastmod>', '<lastmod>' + EN_LASTMOD + '</lastmod>', nl_b.replace('<loc>%s</loc>' % loc, '<loc>%s</loc>' % en))
     out += [nl_b, en_b]
