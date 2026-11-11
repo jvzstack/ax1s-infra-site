@@ -231,3 +231,13 @@
 @media (max-width: 640px) { .home .cert-block-divider { display: none; } }
 
 .home .sec-head + .steps { margin-top: 0; }
+
+/* team: compacter in hoogte */
+.home #team { padding: 56px 0 60px; }
+.home #team .sec-head { margin-bottom: 26px; }
+.home #team .sec-head h2 { font-size: 32px; }
+.home #team .person { grid-template-columns: 112px 1fr; gap: 22px; padding: 22px; }
+.home #team .person img.photo { width: 112px; height: 128px; }
+.home #team .person h3 { font-size: 20px; margin-bottom: 8px; }
+.home #team .person p { font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
+@media (max-width: 640px) { .home #team { padding: 44px 0; } .home #team .person { grid-template-columns: 1fr; } }
