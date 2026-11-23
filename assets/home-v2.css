@@ -25,6 +25,8 @@
 .home .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: 72px; align-items: center; padding: 64px 32px 112px; }
 .home .hero h1 { color: #fff; font-size: 52px; line-height: 1.08; letter-spacing: -0.035em; margin-bottom: 20px; }
 .home .hero h1 em { font-style: normal; color: var(--cyan); }
+.home .hero h1 .h1-for { display: block; font-size: .56em; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin-top: 10px; white-space: nowrap; }
+@media (max-width: 420px) { .home .hero h1 .h1-for { white-space: normal; } }
 .home .hero-sub { font-size: 17px; line-height: 1.7; color: rgba(255,255,255,.78); max-width: 520px; margin-bottom: 32px; }
 .home .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
 .home .cert { display: flex; align-items: center; gap: 16px; padding-top: 28px; border-top: 1px solid rgba(25,167,255,.22); max-width: 520px; }

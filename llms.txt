@@ -1,12 +1,12 @@
 # AX1S Infra
 
-> AX1S Infra helpt digital-first bedrijven besparen op cloud- en AI-kosten. FinOps Certified Practitioners, gevestigd in Amsterdam.
+> AX1S Infra helpt banken, verzekeraars en pensioenfondsen grip te krijgen op cloud- en AI-kosten. FinOps Certified Practitioners, gevestigd in Amsterdam en Göteborg.
 
-AX1S Infra is een FinOps & Infrastructure specialist voor B2B-bedrijven, met als kopregel "FinOps-driven cost intelligence for Cloud & AI". Klanten realiseren gemiddeld 23% besparing op cloud- en compute-uitgaven na een FinOps-traject. Diensten: FinOps-as-a-Service (doorlopende ondersteuning), een uitgebreid assessment als losse opdracht en een FinOps-traject op maat. Starten kan vrijblijvend met de gratis Cloud & AI Savings Scan of de FinOps Radar. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation. De Cloud & AI Savings Scan (gratis eerste analyse) is vrijblijvend en kosteloos.
+AX1S Infra is een FinOps-specialist voor Europese financiële instellingen (banken, verzekeraars en pensioenfondsen), met als kopregel "Cloud & AI cost control for financial institutions". Klanten realiseren gemiddeld 23% besparing op cloud- en compute-uitgaven na een FinOps-traject. Diensten: FinOps-as-a-Service (doorlopende ondersteuning), een uitgebreid assessment als losse opdracht en een FinOps-traject op maat. Starten kan vrijblijvend met de gratis Cloud & AI Savings Scan of de FinOps Radar. Beide oprichters, Jelle van Zantwijk en Tom Prager, zijn FinOps Certified Practitioner, gecertificeerd door de FinOps Foundation. De Cloud & AI Savings Scan (gratis eerste analyse) is vrijblijvend en kosteloos.
 
 ## Belangrijkste pagina's
 
-- [Homepage](https://ax1s-infra.com/): FinOps-driven cost intelligence for Cloud & AI, diensten, team, FinOps-uitleg, veelgestelde vragen en contact
+- [Homepage](https://ax1s-infra.com/): Cloud & AI cost control for financial institutions, diensten, team, FinOps-uitleg, veelgestelde vragen en contact
 - [Cloud & AI Savings Scan](https://ax1s-infra.com/savings-scan.html): gratis, vrijblijvende scan van cloud- en AI-uitgaven, met de belangrijkste kostenposten, optimalisatiekansen en een indicatie van het besparingspotentieel
 - [FinOps diensten](https://ax1s-infra.com/finops-diensten.html): drie manieren om te starten, van een gratis Cloud & AI Savings Scan tot een afgebakend FinOps-traject of doorlopende FinOps-as-a-Service
 - [Wat is FinOps?](https://ax1s-infra.com/wat-is-finops.html): definitie en de FinOps Lifecycle (Inform, Optimize, Operate)
@@ -54,6 +54,8 @@ AX1S Infra is een FinOps & Infrastructure specialist voor B2B-bedrijven, met als
 - Tom Prager (AI Infrastructure): https://www.linkedin.com/in/tom-prager-898899285/
 
 ## English version
+
+AX1S Infra helps European financial institutions (banks, insurers and pension funds) get control of their cloud and AI costs. Tagline: "Cloud & AI cost control for financial institutions". Both founders are FinOps Certified Practitioners, based in Amsterdam and Gothenburg.
 
 The full site is also available in English under https://ax1s-infra.com/en/ (language toggle top right on every page). Every Dutch page has an English twin at the same path, e.g. /blog/x.html becomes /en/blog/x.html.
 
